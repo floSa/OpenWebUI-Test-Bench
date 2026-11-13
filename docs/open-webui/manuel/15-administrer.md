@@ -159,7 +159,7 @@ La liste en haut choisit la période (24 heures à toute la période) ; plus bas
 *Où* : menu du compte › « Panneau d'administration » › « Évaluations ».
 
 ![Classement des modèles](../img/15-administrer/07-classement.png)
-*Écran : Panneau d'administration, Évaluations, Classement.*
+*Écran : Panneau d'administration, Évaluations, Classement (capture prise avant la note donnée au chapitre 06 : liste encore vide).*
 
 | N° | Élément | Rôle |
 |---|---|---|

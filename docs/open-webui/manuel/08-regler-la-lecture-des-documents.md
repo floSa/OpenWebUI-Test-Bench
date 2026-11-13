@@ -14,7 +14,7 @@ Avant de répondre, Open WebUI cherche dans une base les passages les plus proch
 
 Sur le jeu d'essai (38 questions), la lecture par défaut a donné 28 bonnes réponses sur 34 : les six échecs portaient tous sur le contrat scanné. Avec Docling, la recherche hybride et le tri par `rerank`, les 34 réponses étaient justes, et les 4 questions sans réponse dans les documents ont été refusées. Le détail est dans l'[annexe A1](../annexes/A1-evaluation-qualite-et-performances.md).
 
-Ces réglages valent pour toute l'instance. Un document déjà déposé n'est pas relu automatiquement après un changement : l'étape 8 le fait relire.
+Ces réglages valent pour toute l'instance. Un document déjà déposé n'est pas relu automatiquement après un changement : l'étape 8 explique comment le faire relire.
 
 ## Préparer le lecteur Docling
 
@@ -74,7 +74,7 @@ Garder les valeurs proposées.
 | 3 | « Chevauchement des chunks » | caractères repris d'un passage au suivant (100) |
 | 4 | « Modèle d'embedding » | modèle qui calcule la représentation des passages (`embed`) |
 
-Changer la taille, le chevauchement ou le modèle d'embedding oblige à faire relire les documents (étape 7). La clé du service de modèles est masquée sur la capture.
+Changer la taille, le chevauchement ou le modèle d'embedding oblige à faire relire les documents (étape 8). La clé du service de modèles est masquée sur la capture.
 
 *Résultat* : le découpage est connu ; aucun changement n'est nécessaire pour le jeu d'essai.
 
@@ -135,7 +135,7 @@ La reconnaissance n'est pas parfaite (« ler mars » pour « 1er mars », « Art
 
 **Étape 8. Relire les documents déjà déposés**
 *Où* : onglet « Documents » du groupe « Administrateur », tout en bas, section « Zone de danger ».
-Cliquer sur « Réindexer » (pastille 2) après un changement du découpage ou du modèle d'embedding.
+« Réindexer » (pastille 2) ne sert qu'après un changement du découpage ou du modèle d'embedding : pour ce manuel, qui ne les change pas, ne pas cliquer ici.
 
 ![Zone de danger](../img/08-regler-la-lecture-des-documents/07-reindexer.png)
 *Écran : bas de l'onglet « Documents », section « Zone de danger ».*
@@ -152,7 +152,7 @@ Les deux boutons « Réinitialiser » au-dessus effacent les fichiers télévers
 ## Accélérer les réponses
 
 **Étape 9. Couper la génération des requêtes de recherche**
-*Où* : menu du compte › « Réglages » › groupe « Administrateur » › « Interface utilisateur », section « Tâches ».
+*Où* : menu du compte › « Réglages » › groupe « Administrateur » › « Interface utilisateur », section « Tâches » (faire défiler l'onglet vers le bas).
 Désactiver « Génération de requête de RAG » (pastille 3), puis cliquer sur « Enregistrer » (pastille 4).
 
 ![Génération de requête de RAG](../img/08-regler-la-lecture-des-documents/08-requetes.png)

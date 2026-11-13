@@ -6,7 +6,7 @@
 
 ## Ce qu'il faut savoir
 
-Les trois conversations de ce chapitre sont gardées dans l'instance comme jeu de démonstration : elles montrent le résultat attendu. Chaque cas suit la même méthode : choisir la source (assistant ou base jointe par « # »), poser une question précise, puis **vérifier** la réponse dans la liste des sources avant de l'utiliser.
+Les trois conversations de ce chapitre ont été gardées sur l'instance d'essai comme jeu de démonstration ; sur une nouvelle installation, poser soi-même les trois questions. Chaque cas suit la même méthode : choisir la source (assistant ou base jointe par « # »), poser une question précise, puis **vérifier** la réponse dans la liste des sources avant de l'utiliser.
 
 Les réponses ont été obtenues avec les réglages du chapitre 08 (Docling, recherche hybride, tri par `rerank`, génération des requêtes coupée) et l'« Assistant qualité Vélanor » sans réflexion (chapitre 07, étape 12). Chacune est arrivée en une quinzaine de secondes au plus.
 
@@ -90,7 +90,7 @@ Quand une réponse tirée d'un enregistrement est incomplète, réécouter l'enr
 
 ## Bon à savoir
 
-- Ces trois conversations restent dans la barre latérale du compte administrateur comme modèles de questions.
+- Sur l'instance d'essai, ces trois conversations restent dans la barre latérale du compte administrateur comme modèles de questions.
 - Poser des questions précises (« prix, délai, pénalités, score ») plutôt que vagues (« que sait-on de Batterix ? ») : la réponse énumère alors exactement les points demandés.
 - La qualité d'une réponse ne dépasse jamais celle du texte lu : un scan mal reconnu ou un audio mal transcrit se retrouvent dans la réponse.
 

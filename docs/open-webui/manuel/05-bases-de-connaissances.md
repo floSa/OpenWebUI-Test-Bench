@@ -176,7 +176,7 @@ Cliquer sur « … » (pastille 1).
 
 **Étape 11. Confirmer une suppression**
 *Où* : menu de la base › « Supprimer ».
-Pour essayer sans risque, créer d'abord une base jetable (étapes 1 et 2), par exemple « Essai à supprimer », et ouvrir son menu : sur « Démo Vélanor », cliquer sur « Annuler ». Cliquer sur « Confirmer » (pastille 1) pour effacer, ou sur « Annuler » (pastille 2).
+Pour essayer sans risque, créer une base jetable (étapes 1 et 2), par exemple « Essai à supprimer », ouvrir son menu « … » › « Supprimer », puis cliquer sur « Confirmer » (pastille 1). Sur « Démo Vélanor », ne cliquer que sur « Annuler » (pastille 2).
 
 ![Confirmation de suppression](../img/05-bases-de-connaissances/11-confirmer-suppression.png)
 *Écran : fenêtre « Confirmer votre action ».*

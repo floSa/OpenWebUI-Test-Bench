@@ -24,7 +24,7 @@ L'exemple crée le compte fictif « Julien Moreau » (directeur de production ch
 
 **Étape 1. Ouvrir la liste des comptes**
 *Où* : menu du compte › « Panneau d'administration » › « Utilisateurs » › « Aperçu ».
-Cliquer sur « Ajouter un utilisateur » (pastille 3, le « + » à droite).
+Cliquer sur « Ajouter un utilisateur » (pastille 3).
 
 ![Liste des comptes](../img/14-comptes-groupes-permissions/01-utilisateurs.png)
 *Écran : Panneau d'administration, Utilisateurs, Aperçu.*
@@ -89,7 +89,7 @@ Saisir le nom `Équipe production` (pastille 3) et une description, puis cliquer
 *Résultat* : le groupe apparaît dans la liste des groupes.
 
 **Étape 5. Lire les permissions**
-*Où* : fenêtre du groupe, onglet « Permissions ».
+*Où* : Panneau d'administration › « Utilisateurs » › « Groupes » › clic sur « Équipe production » › onglet « Permissions ».
 
 ![Permissions d'un groupe](../img/14-comptes-groupes-permissions/05-permissions.png)
 *Écran : fenêtre du groupe, onglet « Permissions ».*

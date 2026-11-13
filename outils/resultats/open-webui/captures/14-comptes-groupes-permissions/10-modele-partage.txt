@@ -12,26 +12,26 @@ Conversations
 Épinglé
 Chiffre d'affaires 2025
 il y a 2 heures
-1h
+2h
 Aujourd'hui
 D’après le message vocal du directeur de production, quelle ligne sera arrêtée, quand, et où la production sera-t-elle transférée ?
-il y a 19 minutes
-19min
+il y a 31 minutes
+31min
 Batterix Audit
-il y a 20 minutes
-19min
+il y a 32 minutes
+31min
 Sécurité batterie
-il y a 20 minutes
-20min
+il y a 32 minutes
+32min
 Point qualité du lundi
-il y a 37 minutes
-37min
+il y a une heure
+49min
 your concise title here
 il y a une heure
-50min
+1h
 Durée garantie cadre
 il y a une heure
-52min
+1h
 Dans quel service et dans quelle ville est-ce que je travaille ?
 il y a une heure
 1h
@@ -42,10 +42,10 @@ Garantie Batteries
 il y a une heure
 1h
 Quelle est la température de stockage des batteries ?
-il y a une heure
+il y a 2 heures
 1h
 Quel est le taux de recyclage des batteries usagées collectées ?
-il y a une heure
+il y a 2 heures
 1h
 Chargement de...
 Claire Admin
@@ -56,18 +56,18 @@ chat
 
 chat
 Suggéré
-Surmonter la procrastination
-donnez-moi des conseils
-Aidez-moi à étudier
-vocabulaire pour un examen d'entrée à l'université
-Dites-moi un fait amusant
-à propos de l'Empire romain
-Expliquer le trading d'options
-si je connais l'achat et la vente d'actions
 Donnez-moi des idées
 que faire avec les dessins de mes enfants
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Dites-moi un fait amusant
+à propos de l'Empire romain
 Montrez-moi un extrait de code
 d'un en-tête collant d'un site web
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Surmonter la procrastination
+donnez-moi des conseils
 Nouvelle conversation
 Open WebUI
 Retour en arrière
@@ -117,7 +117,7 @@ Actions
 Assistant qualité Vélanor
 Partagé
 bge-m3
-Partagé
+Privé
 bge-reranker-v2-m3
 Privé
 chat

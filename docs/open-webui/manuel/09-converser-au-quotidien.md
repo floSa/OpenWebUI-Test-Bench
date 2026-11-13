@@ -80,7 +80,7 @@ La fenêtre propose aussi une « Description » et une « Image d'arrière-plan 
 
 **Étape 5. Ranger une conversation dans le dossier**
 *Où* : barre latérale.
-Faire glisser la conversation « Quel est le chiffre d'affaires 2025 de Vélanor ? » (le doublon créé au chapitre 04) sur le nom du dossier, puis relâcher. Cliquer sur le dossier pour le déplier (pastille 1).
+Poser d'abord de nouveau, dans une nouvelle conversation, la question du chapitre 04 (`Quel est le chiffre d'affaires 2025 de Vélanor ?`) : une conversation de ce titre apparaît dans la barre latérale. La faire glisser sur le nom du dossier, puis relâcher. Cliquer sur le dossier pour le déplier (pastille 1).
 
 ![Conversation rangée](../img/09-converser-au-quotidien/05-dossier.png)
 *Écran : barre latérale, dossier « Questions rapport annuel » déplié.*
@@ -179,7 +179,7 @@ Les deux conversations sont enregistrées séparément dans la barre latérale. 
 ## Archiver
 
 **Étape 11. Archiver une conversation**
-*Où* : menu « … » d'une conversation, ici « Stock Trends » créée à l'étape 10 › « Archiver ». Pour la retrouver : menu du compte › « Réglages » › « Conversations archivées ».
+*Où* : menu « … » d'une conversation, ici la conversation de gauche créée à l'étape 10 (titrée « Stock Trends » lors de l'essai ; le titre généré peut différer) › « Archiver ». Pour la retrouver : menu du compte › « Réglages » › « Conversations archivées ».
 
 ![Conversations archivées](../img/09-converser-au-quotidien/09-archives.png)
 *Écran : Réglages, onglet « Conversations archivées ».*

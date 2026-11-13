@@ -116,7 +116,7 @@ La ligne « Exploré view_note » montre que le modèle a lu la note avant de r�
 
 **Étape 7. Activer la mémoire**
 *Où* : menu du compte › « Réglages » › groupe « Personnel » › « Personnalisation ».
-Activer « Mémoire » (pastille 2), puis ouvrir « Actions » (pastille 3).
+Activer « Mémoire » (pastille 2) et cliquer sur « Enregistrer » en bas de la fenêtre pour garder ce réglage, puis ouvrir « Actions » (pastille 3).
 
 ![Réglage de la mémoire](../img/10-notes-et-memoire/05-memoire.png)
 *Écran : onglet « Personnalisation », section « Mémoire ».*

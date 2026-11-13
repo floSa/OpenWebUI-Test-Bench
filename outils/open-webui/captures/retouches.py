@@ -178,9 +178,18 @@ def retirer_bge(s):
     s.note("accès de bge-m3 : " + dlg.inner_text()[:200].replace("\n", " | "))
 
 
+def liste_modeles_14(s):
+    """14/10 reprise après le retrait de l'accès de `bge-m3` : seul `chat` est partagé."""
+    s.chapitre = "14-comptes-groupes-permissions"
+    p = s.page
+    s.reglages("admin:models")
+    s.cap_souple("10-modele-partage", [(p.locator("button").filter(has_text=re.compile(r"^\s*chat\s+Partagé")).filter(visible=True).first, "chat Partagé"),
+                                       (p.locator("button").filter(has_text=re.compile(r"^\s*gemma-4-e4b\s+Privé")).filter(visible=True).first, "gemma-4-e4b Privé")])
+
+
 if __name__ == "__main__":
     s = Scenario("_retouches")
     try:
-        etapes([general_15, notes_10, comptes_14, base_vide_05, partage_chat_14, admin_15, pause_13, outils_11, consigne_16, retirer_bge], s)
+        etapes([general_15, notes_10, comptes_14, base_vide_05, partage_chat_14, admin_15, pause_13, outils_11, consigne_16, retirer_bge, liste_modeles_14], s)
     finally:
         s.fermer()

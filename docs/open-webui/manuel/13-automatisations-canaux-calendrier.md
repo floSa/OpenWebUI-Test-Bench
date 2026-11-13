@@ -90,10 +90,10 @@ Cliquer sur « Sélectionnez un modèle » et choisir `chat` (pastille 4), laiss
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | « Actif » | interrupteur : met l'automatisation en pause ou la réactive |
-| 2 | « Exécuter maintenant » | lance une exécution tout de suite, sans attendre l'heure prévue |
-| 3 | « Modifier » | rouvre la fenêtre de l'étape 2 |
-| 4 | « Supprimer » | efface l'automatisation |
+| 1 | « Actif » (interrupteur, en haut à droite) | met l'automatisation en pause ou la réactive |
+| 2 | « Exécuter maintenant » (triangle de lecture) | lance une exécution tout de suite, sans attendre l'heure prévue |
+| 3 | « Modifier » (crayon) | rouvre la fenêtre de l'étape 2 |
+| 4 | « Supprimer » (corbeille) | efface l'automatisation |
 | 5 | « Exécutions » | historique des exécutions |
 
 *Résultat* : la page donne le statut, la fréquence, la destination, le modèle, la prochaine et la dernière exécution, et le texte envoyé.
@@ -189,7 +189,7 @@ Taper le message et appuyer sur Entrée.
 
 En haut à droite : épingler, voir les membres, chercher dans le canal, autres actions.
 
-*Résultat* : le message est publié. Les membres ajoutés au canal (« Liste des accès ») le voient dans leur barre latérale.
+*Résultat* : le message est publié. Le canal est privé et sans accès ajouté : seul son créateur le voit. Pour l'ouvrir à une équipe, lui ajouter un accès (« Liste des accès » › « Ajouter un accès » › « Équipe production »), comme pour un modèle au chapitre 14 ; ce partage n'a pas été fait pendant les essais.
 
 ## Consulter le calendrier
 
@@ -197,7 +197,7 @@ En haut à droite : épingler, voir les membres, chercher dans le canal, autres 
 *Où* : menu du compte › « Calendrier ».
 
 ![Calendrier](../img/13-automatisations-canaux-calendrier/09-calendrier.png)
-*Écran : page « Calendrier », vue du mois.*
+*Écran : page « Calendrier », vue du mois (capture prise avant la mise en pause de l'étape 7 : les exécutions prévues de l'automatisation apparaissent chaque jour).*
 
 | N° | Élément | Rôle |
 |---|---|---|

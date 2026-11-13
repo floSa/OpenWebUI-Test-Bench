@@ -72,7 +72,7 @@ La croix à gauche annule l'enregistrement.
 |---|---|---|
 | 1 | texte transcrit | texte reconnu, modifiable avant l'envoi |
 
-Pour l'essai, le message vocal du jeu de démonstration a servi de voix. Transcription obtenue : « Message vocal de Julien Moreau, directeur de production chez Vélanor, enregistré le 3 novembre VVTSEC. La ligne d'assoblage numéro 3 de note sera arrêtée du 2 au 6 mars VVTSI pour maintenant. » Les noms propres sont justes, mais les années (« 2025 », « 2026 ») et quelques mots (« assemblage », « Nantes », « maintenance ») sont mal reconnus : toujours relire avant d'envoyer.
+Pour l'essai, le message vocal du jeu de démonstration a servi de voix. Transcription obtenue : « Message vocal de Julien Moreau, directeur de production chez Vélanor, enregistré le 3 novembre VVTSEC. La ligne d'assoblage numéro 3 de note sera arrêtée du 2 au 6 mars VVTSI pour maintenant. » Les noms des personnes et de l'entreprise sont justes, mais les années (« 2025 », « 2026 ») et quelques mots (« assemblage », « Nantes », « maintenance ») sont mal reconnus : toujours relire avant d'envoyer.
 
 *Résultat* : la question est prête à partir (Entrée).
 

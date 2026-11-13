@@ -102,8 +102,8 @@ Le menu donne aussi accès à « Mettre à jour votre statut », « Notes », «
 ## Régler la langue
 
 **Étape 6. Choisir la langue de l'interface**
-*Où* : menu du compte › « Réglages » › groupe « Personnel » › « Général ».
-Dans la liste « Langue » (pastille 2), choisir « French (France) », puis cliquer sur « Enregistrer » (pastille 3).
+*Où* : menu du compte › « Réglages » › groupe « Personnel » › « Général » (avec une interface encore en anglais : menu du compte › « Settings » › « General »).
+Dans la liste « Langue » (« Language » en anglais) (pastille 2), choisir « French (France) », puis cliquer sur « Enregistrer » (pastille 3).
 
 ![Réglages, onglet Général](../img/03-premiers-pas/06-langue.png)
 *Écran : fenêtre Réglages, onglet « Général » du groupe « Personnel ».*

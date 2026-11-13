@@ -89,7 +89,7 @@ Saisir la valeur de « sujet » (pastille 2), par exemple `contrat Batterix`, pu
 |---|---|---|
 | 1 | texte du prompt complété | « Rédige une fiche de synthèse de contrat Batterix pour un responsable d'atelier… », modifiable avant l'envoi |
 
-*Résultat* : la question est prête ; Entrée l'envoie.
+*Résultat* : la question est prête. Pour que la fiche puisse citer ses sources, joindre aussi la base « Démo Vélanor » par « # » (chapitre 06) ou choisir l'assistant du chapitre 07, puis appuyer sur Entrée.
 
 ## Ajouter un outil
 
@@ -210,7 +210,7 @@ Cliquer sur le « + » de « Serveurs d'outils externes » (pastille 3).
 
 **Étape 12. Déclarer le serveur**
 *Où* : fenêtre « Ajouter une connexion ».
-Cliquer sur « OpenAPI » jusqu'à afficher « MCP Streamable HTTP » (pastille 1), saisir le nom `Vélanor MCP` (pastille 2), une description (`Sites et jours ouvrés (serveur MCP d'essai)`) et l'URL `http://rag-mcp-velanor:8000/mcp` (pastille 3). Laisser « Auth » sur la valeur proposée, « Bearer », avec le champ « Clé API » vide (pastille 4) : le serveur d'essai ne demande pas de clé. Cliquer enfin sur l'icône à deux flèches à droite de l'URL, « Vérifier la connexion » (pastille 5).
+Cliquer sur « OpenAPI » jusqu'à afficher « MCP Streamable HTTP » (pastille 1), saisir le nom `Vélanor MCP` dans le champ « Nom d'utilisateur » (libellé affiché par l'interface ; pastille 2), une description (`Sites et jours ouvrés (serveur MCP d'essai)`) et l'URL `http://rag-mcp-velanor:8000/mcp` (pastille 3). Laisser « Auth » sur la valeur proposée, « Bearer », avec le champ « Clé API » vide (pastille 4) : le serveur d'essai ne demande pas de clé. Cliquer enfin sur l'icône à deux flèches à droite de l'URL, « Vérifier la connexion » (pastille 5).
 
 ![Déclaration du serveur MCP](../img/11-prompts-outils-fonctions/11-serveur-mcp.png)
 *Écran : fenêtre « Ajouter une connexion », type MCP.*
@@ -218,7 +218,7 @@ Cliquer sur « OpenAPI » jusqu'à afficher « MCP Streamable HTTP » (pastille 
 | N° | Élément | Rôle |
 |---|---|---|
 | 1 | « Type » | « OpenAPI » ou « MCP Streamable HTTP » ; un clic change le type |
-| 2 | nom | nom affiché dans les conversations |
+| 2 | « Nom d'utilisateur » | nom du serveur, affiché dans les conversations |
 | 3 | « URL » | adresse du serveur, vue depuis Open WebUI |
 | 4 | « Auth » | type d'authentification ; « Bearer » sans clé pour ce serveur local |
 | 5 | « Vérifier la connexion » | teste l'adresse |
@@ -252,7 +252,7 @@ Cliquer sur « Enregistrer » dans la fenêtre, puis sur « Enregistrer » en ba
 ## Utiliser les outils dans une conversation
 
 **Étape 14. Activer les outils pour la conversation**
-*Où* : nouvelle conversation › « + » (pastille 1) › « Outils » (pastille 2).
+*Où* : nouvelle conversation › « + » (pastille 1) › « Outils » (pastille 2). L'entrée « Outils » n'apparaît dans ce menu qu'une fois un outil ou un serveur d'outils déclaré (absente au chapitre 04).
 Activer « Stocks Vélanor » (pastille 3) et « Vélanor MCP » (pastille 4), puis appuyer sur Échap.
 
 ![Activation des outils](../img/11-prompts-outils-fonctions/14-activer-outils.png)

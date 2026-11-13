@@ -15,6 +15,7 @@ Les termes communs à toute la série de manuels (RAG, embedding, jeton, reranke
 | Administrateur | « Administrateur », « admin » | compte qui règle l'instance pour tout le monde ; le premier compte créé l'est d'office |
 | Barre latérale | « Ouvrir la barre latérale » | colonne de gauche : nouvelle conversation, recherche, notes, espace de travail, liste des conversations |
 | Base de connaissances | « Connaissances », « Base de connaissances » | ensemble de documents rangés sous un nom, que les conversations peuvent interroger |
+| Bearer | « Bearer » | type d'authentification : la clé (le « jeton ») est envoyée telle quelle avec chaque requête |
 | Citation, source | « Sources », nom du fichier en étiquette après une phrase (parfois un identifiant entre crochets) | renvoi, dans une réponse, vers le document qui la justifie ; la liste « Sources » sous la réponse donne les noms |
 | Clé d'API | « Clé API » | mot de passe technique qui permet à un programme d'utiliser l'instance à la place d'une personne |
 | Collection | « Collections », « Rechercher une collection » | nom technique d'une base de connaissances dans certaines listes |
@@ -31,6 +32,7 @@ Les termes communs à toute la série de manuels (RAG, embedding, jeton, reranke
 | Image (Docker) | — | paquet téléchargé qui contient un programme prêt à tourner dans un conteneur |
 | Instance | — | une installation d'Open WebUI, avec ses comptes et ses données |
 | Jeton | « tokens » | unité de texte traitée par un modèle, environ trois quarts de mot en français |
+| JSON | « JSON », « Aperçu JSON », « (.json) » | format de fichier texte structuré, lisible par les programmes ; sert aux exports et aux réglages avancés |
 | MCP | « MCP » | protocole qui permet au modèle d'appeler les fonctions d'un programme externe (serveur MCP) |
 | Mémoire | « Mémoire », « Souvenirs » | informations durables sur l'utilisateur, ajoutées à chaque conversation |
 | Modèle | « Modèle sélectionné » | programme d'IA qui écrit les réponses ; ici `chat`, servi par le service de modèles |

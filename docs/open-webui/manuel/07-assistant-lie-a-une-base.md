@@ -2,7 +2,7 @@
 
 > Ce chapitre apprend à créer un assistant : un modèle personnalisé qui a sa propre consigne et qui consulte toujours la même base de connaissances, sans avoir à l'appeler avec « # ». Il montre aussi comment le partager avec une équipe.
 > **Point de départ** : écran principal, connecté avec le compte administrateur ; base « Démo Vélanor » remplie (chapitre 05) ; groupe « Équipe production » créé (chapitre 14) pour la partie partage.
-> **Durée** : environ 15 minutes. **Avant** : chapitres 05 et 06. Les étapes 6, 7, 10 et 11 demandent en plus le groupe « Équipe production » et le compte « Julien Moreau » (chapitre 14), et l'étape 11 le contrat scanné lu par Docling (chapitre 08) : à une première lecture, les sauter et y revenir après ces chapitres.
+> **Durée** : environ 15 minutes. **Avant** : chapitres 05 et 06. Les étapes 6, 7, 10 et 11 demandent en plus le groupe « Équipe production » et le compte « Julien Moreau » (chapitre 14), et les étapes 11 et 13 le contrat scanné lu par Docling (chapitre 08) : à une première lecture, les sauter et y revenir après ces chapitres.
 
 ## Ce qu'il faut savoir
 
@@ -203,7 +203,7 @@ Si la ligne « Réglages avancés » n'est pas visible, cliquer d'abord sur « A
 | 3 | « Valeur du réglage personnalisé » | `{"enable_thinking": false}` : le modèle répond sans réfléchir d'abord |
 | 4 | « Enregistrer & Mettre à jour » | enregistre l'assistant |
 
-Le modèle `chat` réfléchit longuement avant chaque réponse. Ce réglage, propre au service de modèles utilisé ici, coupe cette réflexion. Le réglage « Effort de raisonnement » de la même liste ne la coupe pas avec ce service. Sur le jeu d'essai complet, les réponses sans réflexion sont restées justes (34 sur 34) et sont arrivées en 1,3 seconde en médiane, contre 24 secondes avec réflexion (annexe A1).
+Le modèle `chat` réfléchit longuement avant chaque réponse. Ce réglage, propre au service de modèles utilisé ici, coupe cette réflexion. Le réglage « Effort de raisonnement » de la même liste ne la coupe pas avec ce service. Sur le jeu d'essai complet, les réponses sans réflexion sont restées justes (34 sur 34) et sont arrivées en 1,3 seconde en médiane, contre 24 secondes avec réflexion, la réécriture des questions étant déjà coupée (chapitre 08, étape 9 ; annexe A1).
 
 *Résultat* : le message « Modèle mis à jour avec succès » s'affiche.
 
