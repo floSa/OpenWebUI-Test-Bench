@@ -98,14 +98,14 @@ Les autres lignes ajoutent des « Outils », des « Skills » ou des « Filtres 
 
 **Étape 6. Donner l'accès à un groupe**
 *Où* : éditeur de l'assistant › « Accès » (en haut à droite) › « Ajouter un accès ».
-Cocher « Équipe production » (pastille 1), puis cliquer sur « Ajouter » (pastille 2).
+Cocher la case à droite de la ligne « Équipe production », sous « Groupes » : le groupe s'affiche alors en étiquette en haut de la fenêtre (pastille 1). Cliquer ensuite sur « Ajouter » (pastille 2).
 
 ![Ajout d'un accès à l'assistant](../img/07-assistant-lie-a-une-base/06-partage.png)
 *Écran : fenêtre « Ajouter un accès ».*
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | « Équipe production » | groupe sélectionné ; la liste « Utilisateurs » permet de choisir des comptes un par un |
+| 1 | « Équipe production » (étiquette) | groupe sélectionné par sa case à cocher ; la liste « Utilisateurs » permet de choisir des comptes un par un |
 | 2 | « Ajouter » | ajoute l'accès |
 
 *Résultat* : la fenêtre « Contrôle d'accès » revient au premier plan.

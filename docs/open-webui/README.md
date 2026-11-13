@@ -14,7 +14,7 @@ Lire les chapitres 01 à 04 dans l'ordre : en une heure environ, l'application e
 |---|---|---|
 | 01 | [Découvrir Open WebUI](manuel/01-decouvrir-open-webui.md) | dire à quoi sert l'outil, pour qui, sur quelle machine, et ce qu'il vaut d'après les essais |
 | 02 | [Installer Open WebUI](manuel/02-installer-open-webui.md) | installer, ouvrir, arrêter, redémarrer et supprimer l'application |
-| 03 | [Premiers pas](manuel/03-premiers-pas.md) | créer le compte administrateur, se repérer dans l'écran, régler la langue, vérifier la connexion aux modèles et ne garder que le modèle de conversation |
+| 03 | [Premiers pas](manuel/03-premiers-pas.md) | créer le compte administrateur, se repérer dans l'écran, régler la langue, vérifier la connexion aux modèles et ne garder que les modèles de conversation |
 | 04 | [Première question en dix minutes](manuel/04-premiere-question.md) | joindre un document à une conversation, poser une question et lire la source citée |
 | 05 | [Créer et alimenter une base de connaissances](manuel/05-bases-de-connaissances.md) | créer une base, y déposer des fichiers, les consulter, les retirer |
 | 06 | [Interroger ses documents et lire les sources](manuel/06-interroger-ses-documents.md) | appeler une base avec « # », lire les citations et le raisonnement, poursuivre, régénérer, noter une réponse |

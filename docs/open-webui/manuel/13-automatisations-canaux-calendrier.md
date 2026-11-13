@@ -91,7 +91,7 @@ Cliquer sur « Sélectionnez un modèle » et choisir `chat` (pastille 4), laiss
 | N° | Élément | Rôle |
 |---|---|---|
 | 1 | « Actif » (interrupteur, en haut à droite) | met l'automatisation en pause ou la réactive |
-| 2 | « Exécuter maintenant » (triangle de lecture) | lance une exécution tout de suite, sans attendre l'heure prévue |
+| 2 | « Exécuter maintenant » (triangle de lecture ; en haut à droite, les icônes se suivent ainsi de gauche à droite : interrupteur, triangle, crayon, corbeille) | lance une exécution tout de suite, sans attendre l'heure prévue |
 | 3 | « Modifier » (crayon) | rouvre la fenêtre de l'étape 2 |
 | 4 | « Supprimer » (corbeille) | efface l'automatisation |
 | 5 | « Exécutions » | historique des exécutions |

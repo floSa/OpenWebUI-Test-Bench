@@ -14,7 +14,7 @@ Pour ouvrir la barre latérale quand elle est repliée, cliquer sur l'icône en 
 
 **Étape 1. Ouvrir le menu d'une conversation**
 *Où* : barre latérale, rubrique « Conversations ».
-Survoler la conversation (pastille 1), puis cliquer sur « … » (pastille 2).
+Survoler la conversation du chapitre 04, « Quel est le chiffre d'affaires 2025 de Vélanor ? » (pastille 1), puis cliquer sur « … » (pastille 2).
 
 ![Menu d'une conversation](../img/09-converser-au-quotidien/01-menu.png)
 *Écran : barre latérale, menu « … » d'une conversation ouvert.*
@@ -37,7 +37,7 @@ Survoler la conversation (pastille 1), puis cliquer sur « … » (pastille 2).
 ## Ranger
 
 **Étape 2. Renommer**
-*Où* : menu « … » de la conversation › « Renommer ».
+*Où* : menu « … » de la conversation du chapitre 04 › « Renommer ».
 Saisir le nouveau titre, `Chiffre d'affaires 2025` (pastille 1), puis appuyer sur Entrée.
 
 ![Renommer une conversation](../img/09-converser-au-quotidien/02-renommer.png)
