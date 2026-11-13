@@ -32,7 +32,7 @@ Les autres entrées du menu : « Prise de vue » (photo par la webcam), « Add C
 
 **Étape 2. Choisir le fichier et écrire la question**
 *Où* : fenêtre « Ouvrir » de Windows, puis zone de saisie.
-Choisir `rapport-annuel-2025.pdf` et cliquer sur « Ouvrir ». Attendre que la vignette du fichier apparaisse au-dessus de la zone de saisie (pastille 1), puis taper la question : `Quel est le chiffre d'affaires 2025 de Vélanor ?` (pastille 2).
+Choisir `rapport-annuel-2025.pdf` et cliquer sur « Ouvrir ». Le dossier du dépôt se trouve dans WSL : dans la barre d'adresse de la fenêtre « Ouvrir », taper `\\wsl.localhost\` suivi du nom de la distribution Ubuntu (sur le poste d'essai `Ubuntu-24.04`) et du chemin du dépôt, puis ouvrir `corpus\documents` ; le nom de la distribution s'affiche dans le terminal avec `echo $WSL_DISTRO_NAME`. Attendre que la vignette du fichier apparaisse au-dessus de la zone de saisie (pastille 1), puis taper la question : `Quel est le chiffre d'affaires 2025 de Vélanor ?` (pastille 2).
 
 ![Document joint et question saisie](../img/04-premiere-question/02-document-joint.png)
 *Écran : nouvelle conversation, document joint, question saisie (la taille affichée sur la vignette, 2.5 KB, est provisoire : elle se met à jour une fois le fichier traité).*

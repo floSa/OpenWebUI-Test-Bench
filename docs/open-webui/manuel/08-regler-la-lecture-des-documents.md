@@ -134,8 +134,8 @@ La reconnaissance n'est pas parfaite (« ler mars » pour « 1er mars », « Art
 *Résultat* : le contrat scanné fait partie de la base ; les questions sur le prix, les délais ou les pénalités du contrat trouvent maintenant leur réponse.
 
 **Étape 8. Relire les documents déjà déposés**
-*Où* : onglet « Documents » du groupe « Administrateur », tout en bas, section « Zone de danger ».
-« Réindexer » (pastille 2) ne sert qu'après un changement du découpage ou du modèle d'embedding : pour ce manuel, qui ne les change pas, ne pas cliquer ici.
+*Où* : page de la base (chapitre 05), puis onglet « Documents » du groupe « Administrateur », section « Zone de danger ».
+Pour faire relire par Docling un document déposé avant l'étape 6 : dans la base, le retirer (menu « … » du fichier › « Remove from knowledge », chapitre 05, étape 9), puis le remettre (« Ajouter du contenu » › « Téléverser des fichiers »). Le bouton « Réindexer » de la « Zone de danger » (pastille 2) ne sert qu'après un changement du découpage ou du modèle d'embedding : pour ce manuel, qui ne les change pas, ne pas cliquer dessus.
 
 ![Zone de danger](../img/08-regler-la-lecture-des-documents/07-reindexer.png)
 *Écran : bas de l'onglet « Documents », section « Zone de danger ».*
@@ -145,9 +145,9 @@ La reconnaissance n'est pas parfaite (« ler mars » pour « 1er mars », « Art
 | 1 | « Zone de danger » | actions qui touchent à toutes les bases à la fois |
 | 2 | « Réindexer » | recalcule les représentations des passages de toutes les bases et de la mémoire |
 
-Les deux boutons « Réinitialiser » au-dessus effacent les fichiers téléversés ou le contenu de toutes les bases : ne pas les utiliser sans sauvegarde (chapitre 15). Pour faire relire un seul document par Docling (par exemple un PDF déjà déposé avec la lecture par défaut), le plus simple est de le retirer de la base puis de le remettre (chapitre 05).
+Les deux boutons « Réinitialiser » au-dessus effacent les fichiers téléversés ou le contenu de toutes les bases : ne pas les utiliser sans sauvegarde (chapitre 15).
 
-*Résultat* : après réindexation, toutes les bases utilisent les nouveaux réglages.
+*Résultat* : le document remis est relu avec le nouveau lecteur ; son texte se contrôle par « Indexed text » (étape 7).
 
 ## Accélérer les réponses
 

@@ -30,7 +30,7 @@ Cliquer sur « Créer » (pastille 1).
 
 **Étape 2. Écrire la question et choisir la fréquence**
 *Où* : fenêtre de création.
-Saisir le titre `Point qualité du lundi` (le titre est libre : il ne fixe pas la fréquence) et, dans « Instructions », la question à poser :
+Saisir le titre `Point qualité du lundi` dans le champ en haut de la fenêtre (pastille 1 de l'étape 3 ; le titre est libre : il ne fixe pas la fréquence) et, dans « Instructions », la question à poser :
 
 ```text
 Rappelle en cinq lignes les contrôles de sécurité des batteries à faire cette semaine dans le local B2 (inspection, extincteurs, formation), en français.

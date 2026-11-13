@@ -194,7 +194,7 @@ Le retrait d'un fichier (« Remove from knowledge », étape 9) passe par la mê
 
 - Un même fichier peut figurer dans plusieurs bases.
 - Les fichiers joints directement à une conversation (chapitre 04) ne figurent dans aucune base ; ils se retrouvent dans Réglages › « Contrôles des données » › « Gérer les fichiers ».
-- Après un changement de la lecture des documents (chapitre 08), les fichiers déjà présents ne sont pas relus automatiquement : utiliser « Réindexer » (chapitre 08) ou retirer puis remettre le fichier.
+- Après un changement de la lecture des documents (chapitre 08), les fichiers déjà présents ne sont pas relus automatiquement : retirer puis remettre le fichier (chapitre 08, étape 8). « Réindexer » sert seulement après un changement du découpage ou du modèle d'embedding.
 
 ## En cas de problème
 
