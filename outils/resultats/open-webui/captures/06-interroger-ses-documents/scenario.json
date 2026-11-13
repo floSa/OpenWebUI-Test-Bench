@@ -52,6 +52,18 @@
   "heure": "14:27:35"
  },
  {
+  "capture": "06-interroger-ses-documents/08-noter.png",
+  "url": "/c/0ae615b0-625f-4caf-a468-57d514312cd7",
+  "pastilles": [
+   [
+    1,
+    "Bonne réponse"
+   ]
+  ],
+  "note": "",
+  "heure": "14:29:46"
+ },
+ {
   "capture": "06-interroger-ses-documents/04-etapes.png",
   "url": "/c/0ae615b0-625f-4caf-a468-57d514312cd7",
   "pastilles": [
@@ -61,7 +73,7 @@
    ]
   ],
   "note": "",
-  "heure": "14:29:31"
+  "heure": "15:22:26"
  },
  {
   "capture": "06-interroger-ses-documents/05-sources.png",
@@ -77,7 +89,7 @@
    ]
   ],
   "note": "",
-  "heure": "14:29:34"
+  "heure": "15:22:28"
  },
  {
   "capture": "06-interroger-ses-documents/06-passage.png",
@@ -89,11 +101,11 @@
    ],
    [
     2,
-    "pertinence"
+    "Contenu"
    ]
   ],
   "note": "",
-  "heure": "14:29:36"
+  "heure": "15:22:31"
  },
  {
   "capture": "06-interroger-ses-documents/07-actions.png",
@@ -137,18 +149,6 @@
    ]
   ],
   "note": "",
-  "heure": "14:29:38"
- },
- {
-  "capture": "06-interroger-ses-documents/08-noter.png",
-  "url": "/c/0ae615b0-625f-4caf-a468-57d514312cd7",
-  "pastilles": [
-   [
-    1,
-    "Bonne réponse"
-   ]
-  ],
-  "note": "",
-  "heure": "14:29:46"
+  "heure": "15:22:33"
  }
 ]

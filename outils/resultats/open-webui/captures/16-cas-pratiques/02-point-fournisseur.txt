@@ -1,0 +1,95 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Épinglé
+Chiffre d'affaires 2025
+il y a une heure
+1h
+Aujourd'hui
+Batterix Audit
+il y a quelques secondes
+Sécurité batterie
+il y a quelques secondes
+1min
+Quelle est l’adresse du site de Nantes de Vélanor ?
+il y a 11 minutes
+11min
+Point qualité du lundi
+il y a 18 minutes
+17min
+your concise title here
+il y a 30 minutes
+30min
+Durée garantie cadre
+il y a 33 minutes
+32min
+...
+il y a 36 minutes
+36min
+...
+il y a 40 minutes
+40min
+Dans quel service et dans quelle ville est-ce que je travaille ?
+il y a 43 minutes
+43min
+Battery Storage Temperature
+il y a une heure
+49min
+Garantie Batteries
+il y a une heure
+51min
+Quelle est la température de stockage des batteries ?
+il y a une heure
+58min
+Quel est le taux de recyclage des batteries usagées collectées ?
+il y a une heure
+59min
+Chargement de...
+Claire Admin
+Response complete
+Conversation par chat
+Démo Vélanor
+Collection
+
+Fais le point sur le fournisseur Batterix : prix unitaire, délai de livraison et pénalités prévus au contrat, et score obtenu à l’audit qualité.
+
+13 nov., 15:28
+Assistant qualité Vélanor
+Exploré search_knowledge_files, 2 view_file
+
+Le prix unitaire du fournisseur Batterix est de 212 euros HT pour les batteries 48 V 14 Ah 
+contrat-batterix-scan.pdf
+.
+Le délai de livraison prévu dans le contrat est de 21 jours après la commande 
+contrat-batterix-scan.pdf
+. Les pénalités en cas de retard sont de 0,5 % du montant de la commande par jour, plafonnées à 8 % 
+contrat-batterix-scan.pdf
+.
+Batterix a obtenu un score de 87/100 lors de l’audit qualité du 18 juin 2025 
+supplier-audit-batterix-en.pdf
+.
+
+2 Sources
+1
+contrat-batterix-scan.pdf
+2
+supplier-audit-batterix-en.pdf
+13 nov., 15:28
+Questions de suivi
+Propose-tu un seuil de performance pour suspendre le fournisseur Batterix ?
+Veux-tu comparer ce score de 87 avec les autres fournisseurs pour évaluer la meilleure option ?
+As-tu besoin d'un extrait du contrat précisant les conditions de déclenchement des pénalités ?
+
+
+
+
+Assistant qualité Vélanor
+Batterix Audit

@@ -1,0 +1,81 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Épinglé
+Chiffre d'affaires 2025
+il y a une heure
+1h
+Aujourd'hui
+Sécurité batterie
+il y a quelques secondes
+Quelle est l’adresse du site de Nantes de Vélanor ?
+il y a 11 minutes
+10min
+Point qualité du lundi
+il y a 17 minutes
+17min
+your concise title here
+il y a 30 minutes
+29min
+Durée garantie cadre
+il y a 32 minutes
+32min
+...
+il y a 36 minutes
+35min
+...
+il y a 40 minutes
+40min
+Dans quel service et dans quelle ville est-ce que je travaille ?
+il y a 43 minutes
+42min
+Battery Storage Temperature
+il y a une heure
+49min
+Garantie Batteries
+il y a une heure
+50min
+Quelle est la température de stockage des batteries ?
+il y a une heure
+58min
+Quel est le taux de recyclage des batteries usagées collectées ?
+il y a une heure
+58min
+Chargement de...
+Claire Admin
+Response complete
+Conversation par chat
+
+Prépare une consigne de sécurité courte pour l’atelier sur le stockage et la charge des batteries : température, local, extincteurs.
+
+13 nov., 15:28
+Assistant qualité Vélanor
+Exploré list_knowledge, view_file
+
+Consigne sécurité atelier – Batteries
+
+Température : stocker entre 10 °C et 25 °C [b6457a0d-95a4-4d32-8512-6760b7c61d7d].
+Local : local B2 avec détection incendie, charge max à 80 % après 30 jours [b6457a0d-95a4-4d32-8512-6760b7c61d7d].
+Extincteurs : vérification tous les 6 mois par Sécurifeu, classe D uniquement [b6457a0d-95a4-4d32-8512-6760b7c61d7d].
+1 Source
+1
+procedure-batteries.docx
+13 nov., 15:28
+Questions de suivi
+Voulez-vous que je détaillai les spécifications techniques des extincteurs de classe D recommandés ?
+Je peux fournir un modèle de fiche de consignation prêt à être imprimé pour l'atelier.
+Soulignerez-vous une contrainte spécifique sur la gestion des batteries lors du chargement ?
+
+
+
+
+Assistant qualité Vélanor
+Sécurité batterie

@@ -1,0 +1,9 @@
+Instance restaurée prête (16 s)
+connexion du compte administrateur : réussie
+bases : ['Banc-docling', 'Démo Vélanor', 'Banc']
+fichiers téléversés : 33
+modèles : ['chat', 'gemma-4-e4b', 'assistant-qualit-vlanor']
+conversations (première page) : 14
+question sur la base restaurée : Le prix unitaire des batteries BAT-48V-14 Ah prévu par le contrat n° BX-2025-117 avec le fournisseur Batterix GmbH est de **212 euros HT**. Ce prix est révisable une fois par an [1].
+sources : ['contrat-batterix-scan.pdf', 'faq-sav.html', 'procedure-batteries.docx', 'rapport-annuel-2025.pdf', 'stocks-octobre-2025.xlsx', 'supplier-audit-batterix-en.pdf']
+Instance d'essai et dossier extrait supprimés.

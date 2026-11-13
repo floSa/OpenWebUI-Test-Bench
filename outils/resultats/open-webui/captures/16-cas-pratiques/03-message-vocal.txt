@@ -1,0 +1,86 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Épinglé
+Chiffre d'affaires 2025
+il y a une heure
+1h
+Aujourd'hui
+D’après le message vocal du directeur de production, quelle ligne sera arrêtée, quand, et où la production sera-t-elle transférée ?
+il y a quelques secondes
+Batterix Audit
+il y a quelques secondes
+1min
+Sécurité batterie
+il y a quelques secondes
+1min
+Quelle est l’adresse du site de Nantes de Vélanor ?
+il y a 12 minutes
+11min
+Point qualité du lundi
+il y a 18 minutes
+17min
+your concise title here
+il y a 30 minutes
+30min
+Durée garantie cadre
+il y a 33 minutes
+32min
+...
+il y a 37 minutes
+36min
+...
+il y a 41 minutes
+40min
+Dans quel service et dans quelle ville est-ce que je travaille ?
+il y a 44 minutes
+43min
+Battery Storage Temperature
+il y a une heure
+50min
+Garantie Batteries
+il y a une heure
+51min
+Quelle est la température de stockage des batteries ?
+il y a une heure
+58min
+Quel est le taux de recyclage des batteries usagées collectées ?
+il y a une heure
+59min
+Chargement de...
+Claire Admin
+Response complete
+Conversation par chat
+Démo Vélanor
+Collection
+
+D’après le message vocal du directeur de production, quelle ligne sera arrêtée, quand, et où la production sera-t-elle transférée ?
+
+13 nov., 15:29
+Assistant qualité Vélanor
+Exploré list_knowledge, display_file, view_file
+
+La ligne d'assemblage numéro 3 de Nantes sera arrêtée du 2 au 6 mars [0cb2573a-63c0-4867-a4c5-f2d822e9e4f9]. La production de Loire Urbain sera transférée sur cette ligne pendant l'arrêt pour maintenance. L'arrêt a été annoncé par Julien Moreau, directeur de production, le 3 novembre [0cb2573a-63c0-4867-a4c5-f2d822e9e4f9].
+
+1 Source
+1
+message-vocal-production.mp3
+13 nov., 15:29
+Questions de suivi
+Merci, je note ces informations de maintenance pour le 2-6 mars à Nantes.
+C'est noté concernant le transfert de Loire Urbain sur la ligne n°3.
+Je confirme que je comprends bien l'impact de l'arrêt annoncé par Julien Moreau.
+
+
+
+
+Assistant qualité Vélanor
+D’après le message vocal du directeur de production, quelle ligne sera arrêtée, quand, et où la production sera-t-elle transférée ?

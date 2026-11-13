@@ -30,7 +30,7 @@ def detail(s):
     p = s.page
     if "/c/" not in p.url:
         cid = p.evaluate("""async () => { const r = await fetch('/api/v1/chats/?page=1',
-            {headers: {Authorization: 'Bearer ' + localStorage.token}}); const d = await r.json(); return d[0].id }""")
+            {headers: {Authorization: 'Bearer ' + localStorage.token}}); const d = await r.json(); return (d.find(c => /taux|recyclage/i.test(c.title)) || d[0]).id }""")
         s.aller(f"/c/{cid}"); p.locator(".chat-assistant").last.wait_for(); p.wait_for_timeout(1500)
     msg = p.locator(".chat-assistant").last
     etapes_ = msg.get_by_text(re.compile("Exploré|Recherché|Pensé")).first
@@ -46,8 +46,8 @@ def detail(s):
     puces.first.click(); p.wait_for_timeout(1500)
     dlg = p.get_by_role("dialog").last
     s.note("fenêtre source : " + dlg.inner_text().replace("\n", " | ")[:600])
-    s.cap_souple("06-passage", [(dlg.locator("a, button, div").filter(has_text=re.compile(r"\.(pdf|docx|xlsx|pptx|html|md|mp3)")).first, "document"),
-                                (dlg.get_by_text(re.compile("Pertinence|Relevance|%")).first, "pertinence")])
+    s.cap_souple("06-passage", [(dlg.get_by_text(re.compile(r"\.(pdf|docx|xlsx|pptx|html|md|mp3)$")).first, "document"),
+                                (dlg.get_by_text("Contenu", exact=True).first, "Contenu")])
     p.keyboard.press("Escape"); p.wait_for_timeout(500)
     # actions sous la réponse
     barre = msg.locator("button[aria-label]")

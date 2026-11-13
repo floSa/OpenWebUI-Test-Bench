@@ -1,0 +1,10 @@
+2026-11-13 15:28:39 01-consigne (13 s, attente de stabilité comprise) : 'Exploré list_knowledge, view_file\n\nConsigne sécurité atelier – Batteries\n\nTempérature : stocker entre 10 °C et 25 °C [b6457a0d-95a4-4d32-8512-6760b7c61d7d].\nLocal : local B2 avec détection incendie, charge max à 80 % après 30 jours [b6457a0d-95a4-4d32-8512-6760b7c61d7d].\nExtincteurs : vérification tous les 6 mois par Sécurifeu, classe D uniquement [b6457a0d-95a4-4d32-8512-6760b7c61d7d].\n1 Source'
+2026-11-13 15:28:40 01-consigne sources : 1
+procedure-batteries.docx
+2026-11-13 15:29:00 02-point-fournisseur (11 s, attente de stabilité comprise) : 'Exploré search_knowledge_files, 2 view_file\n\nLe prix unitaire du fournisseur Batterix est de 212 euros HT pour les batteries 48 V 14 Ah \ncontrat-batterix-scan.pdf\n.\nLe délai de livraison prévu dans le contrat est de 21 jours après la commande \ncontrat-batterix-scan.pdf\n. Les pénalités en cas de retard sont de 0,5 % du montant de la commande par jour, plafonnées à 8 % \ncontrat-batterix-scan.pdf\n.\nBatterix a obtenu un score de 87/100 lors de l’audit qualité du 18 juin 2025 \nsupplier-audit-batterix-en.pdf\n.\n\n2 Sources'
+2026-11-13 15:29:01 02-point-fournisseur sources : contrat-batterix-scan.pdf | contrat-batterix-scan.pdf | contrat-batterix-scan.pdf | supplier-audit-batterix-en.pdf | 1
+contrat-batterix-scan.pdf | 2
+supplier-audit-batterix-en.pdf
+2026-11-13 15:29:21 03-message-vocal (11 s, attente de stabilité comprise) : "Exploré list_knowledge, display_file, view_file\n\nLa ligne d'assemblage numéro 3 de Nantes sera arrêtée du 2 au 6 mars [0cb2573a-63c0-4867-a4c5-f2d822e9e4f9]. La production de Loire Urbain sera transférée sur cette ligne pendant l'arrêt pour maintenance. L'arrêt a été annoncé par Julien Moreau, directeur de production, le 3 novembre [0cb2573a-63c0-4867-a4c5-f2d822e9e4f9].\n\n1 Source"
+2026-11-13 15:29:22 03-message-vocal sources : 1
+message-vocal-production.mp3

@@ -1,0 +1,11 @@
+ Container rag-open-webui Stopping 
+ Container rag-open-webui Stopped 
+rag-docling-serve arrêté.
+Open WebUI arrêté.
+Archive : donnees/sauvegardes/open-webui-2026-11-13-1631.tar.gz (6.1M)
+ Container rag-open-webui Starting 
+ Container rag-open-webui Started 
+Open WebUI prêt : http://127.0.0.1:3000 (18 s)
+ Container rag-docling-serve Starting 
+ Container rag-docling-serve Started 
+Docling prêt : http://rag-docling-serve:5001 (12 s)
