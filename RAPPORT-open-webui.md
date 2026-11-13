@@ -40,6 +40,8 @@ Détail : [annexe A1](docs/open-webui/annexes/A1-evaluation-qualite-et-performan
 
 ## Vérifié, non vérifié
 
+Relectures : lecteur novice (partie 1) en cinq passages, 43, 23, 4, 5 puis **0 remarque** ; relecture adversariale (partie 2), 25 points appliqués.
+
 Vérifié : installation et branchement (`installation-2026-11-13.log`), chaque action de la partie 1 faite à la souris par Playwright, six bancs complets, sauvegarde à froid et restauration sur une instance à part (`essai-restauration-2026-11-13.log`), exemples d'API, ports publiés (`etat-final-2026-11-13.log`).
 
 Non vérifié, et pourquoi :

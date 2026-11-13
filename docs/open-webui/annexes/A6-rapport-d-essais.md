@@ -88,7 +88,7 @@
 - **Réflexion coupée sur des questions de calcul** : le corpus n'en contient pas. [À tester]
 - **Docling sans tri `rerank`**, mode texte intégral, seuil de pertinence non nul : non passés au banc. [À tester]
 - **Une seule mesure par réglage** : variabilité des réponses non chiffrée. [À tester]
-- **Relecture par un lecteur novice et relecture adversariale** de ce manuel : prévues en clôture (`kit/PROMPT.md`, phase H), non faites à la date de rédaction de cette annexe. [À tester]
+- **Relecture par un lecteur novice** (partie 1, sous-agent neuf à chaque passage, sans accès au logiciel ni aux annexes) : cinq passages, 43, 23, 4, 5 puis 0 remarque ; chaque remarque corrigée (textes, renvois, captures réannotées) entre deux passages. **Relecture adversariale** (partie 2) : 25 points, appliqués (preuves citées, étiquettes requalifiées, calculs). Constat consigné dans `JOURNAL.md` et dans l'historique git (commits « corrections de la … relecture »), pas dans un fichier de résultat brut.
 
 ## 6. Étiquettes
 

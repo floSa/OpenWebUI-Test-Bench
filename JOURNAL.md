@@ -60,3 +60,9 @@ Mission : `kit/PROMPT.md` pour la fiche `kit/fiches/05-open-webui.md`. Une entr�
 - Relecture novice 1 : 43 remarques, toutes traitées (renvois, étapes manquantes, fenêtre « Variables d'entrée » des prompts capturée, archivage déplacé après la comparaison, captures réannotées : 13/13, 14/09-10 sur `chat`, 15/05 et 15/10, 11/15 et 11/17, 16/01 ; conventions des masques dans le README du manuel).
 - Relecture adversariale : 25 points, appliqués (preuves citées, étiquettes requalifiées, calculs arrondis, carte : Skills, sous-agents et réglages personnels d'affichage « Non couvert »). Correction de fond : aucune question au modèle par une capture pendant un banc (bancs en heure de Paris, notes de captures en UTC).
 - `verifier_docs.py` : 0 point. Relecture novice 2 en cours.
+
+### 2026-11-13 19:30 — Phase H : clôture
+
+- Relectures novice 2 à 5 : 23, 4, 5 puis **0 remarque** (cinquième lecteur : « Aucune remarque »). Corrections : renvois d'étapes, chemin Windows vers le corpus, relecture d'un document par retrait et remise (au lieu de « Réindexer »), captures 14/10 reprise après retrait du partage de `bge-m3`, légendes de captures prises à un autre moment, glossaire (Bearer, JSON, Collection, RAG, Skills, OpenAPI, Exploré, image).
+- Vérifications finales : `curl http://127.0.0.1:3000` → HTTP 200 (version 0.13.3) ; aucun port publié hors de 127.0.0.1 ; `verifier_docs.py` 0 point ; fichiers attendus présents. Instance laissée en marche (Open WebUI, Docling, serveur MCP d'essai ; automatisation en pause).
+- Mission terminée.
