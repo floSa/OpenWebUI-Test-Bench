@@ -20,26 +20,6 @@
   "heure": "09:15:20"
  },
  {
-  "capture": "15-administrer/05-analytique.png",
-  "url": "/",
-  "pastilles": [
-   [
-    1,
-    "Analytique"
-   ],
-   [
-    2,
-    "Tokens"
-   ],
-   [
-    3,
-    "Messages"
-   ]
-  ],
-  "note": "",
-  "heure": "09:15:48"
- },
- {
   "capture": "15-administrer/06-consommation.png",
   "url": "/",
   "pastilles": [
@@ -106,34 +86,6 @@
   ],
   "note": "",
   "heure": "09:16:42"
- },
- {
-  "capture": "15-administrer/10-interface-taches.png",
-  "url": "/",
-  "pastilles": [
-   [
-    1,
-    "Interface utilisateur"
-   ],
-   [
-    2,
-    "Modèle de tâche local"
-   ],
-   [
-    3,
-    "Modèle de tâche externe"
-   ],
-   [
-    4,
-    "Configurer"
-   ],
-   [
-    5,
-    "Génération du Titre"
-   ]
-  ],
-  "note": "",
-  "heure": "09:18:39"
  },
  {
   "capture": "15-administrer/12-fiche-utilisateur.png",
@@ -262,5 +214,101 @@
   ],
   "note": "",
   "heure": "13:51:52"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/09-partage-modele-a.png",
+  "url": "/workspace/models/edit?id=assistant-qualit-vlanor",
+  "pastilles": [
+   [
+    1,
+    "case à cocher"
+   ],
+   [
+    2,
+    "Ajouter"
+   ]
+  ],
+  "note": "",
+  "heure": "15:44:38"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/09-partage-modele-b.png",
+  "url": "/workspace/models/edit?id=assistant-qualit-vlanor",
+  "pastilles": [
+   [
+    1,
+    "Visibilité"
+   ],
+   [
+    2,
+    "Équipe production"
+   ]
+  ],
+  "note": "",
+  "heure": "15:44:39"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/10-modele-partage.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "chat Partagé"
+   ],
+   [
+    2,
+    "gemma-4-e4b Privé"
+   ]
+  ],
+  "note": "",
+  "heure": "15:44:46"
+ },
+ {
+  "capture": "15-administrer/05-analytique.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Analytique"
+   ],
+   [
+    2,
+    "Tokens"
+   ],
+   [
+    3,
+    "Messages"
+   ]
+  ],
+  "note": "",
+  "heure": "15:54:05"
+ },
+ {
+  "capture": "15-administrer/10-interface-taches.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Interface utilisateur"
+   ],
+   [
+    2,
+    "Modèle de tâche local"
+   ],
+   [
+    3,
+    "Modèle de tâche externe"
+   ],
+   [
+    4,
+    "Configurer"
+   ],
+   [
+    5,
+    "Génération du Titre"
+   ]
+  ],
+  "note": "",
+  "heure": "15:54:11"
  }
 ]

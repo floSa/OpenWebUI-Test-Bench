@@ -12,9 +12,9 @@ Avant de répondre, Open WebUI cherche dans une base les passages les plus proch
 - **le découpage** : chaque document est coupé en passages (« chunks ») d'environ 1 000 caractères, qui se chevauchent un peu pour ne pas couper une phrase importante en deux ;
 - **la recherche** : par défaut, Open WebUI cherche les passages par le sens (recherche sémantique, modèle `embed`). La **recherche hybride** y ajoute une recherche par mots exacts (utile pour une référence comme `BAT-48V-14Ah`), et permet de faire **trier** les passages trouvés par le modèle `rerank`, qui relit chaque passage face à la question.
 
-Sur le jeu d'essai (38 questions), la lecture par défaut a donné 28 bonnes réponses sur 34 : les six échecs portaient tous sur le contrat scanné. Avec Docling, la recherche hybride et le tri par `rerank`, les 34 réponses étaient justes, et les 4 questions sans réponse dans les documents ont été refusées. Le détail est dans l'[annexe A6](../annexes/A6-rapport-d-essais.md).
+Sur le jeu d'essai (38 questions), la lecture par défaut a donné 28 bonnes réponses sur 34 : les six échecs portaient tous sur le contrat scanné. Avec Docling, la recherche hybride et le tri par `rerank`, les 34 réponses étaient justes, et les 4 questions sans réponse dans les documents ont été refusées. Le détail est dans l'[annexe A1](../annexes/A1-evaluation-qualite-et-performances.md).
 
-Ces réglages valent pour toute l'instance. Un document déjà déposé n'est pas relu automatiquement après un changement : l'étape 7 le fait relire.
+Ces réglages valent pour toute l'instance. Un document déjà déposé n'est pas relu automatiquement après un changement : l'étape 8 le fait relire.
 
 ## Préparer le lecteur Docling
 
@@ -25,7 +25,7 @@ Ces réglages valent pour toute l'instance. Un document déjà déposé n'est pa
 outils/open-webui/docling.sh start
 ```
 
-Le premier lancement télécharge l'image de Docling (environ 900 Mo). Docling n'est pas joignable depuis le navigateur : seul Open WebUI lui parle, à l'adresse `http://rag-docling-serve:5001`.
+Le premier lancement télécharge l'image de Docling, qui occupe 5 Go une fois installée. Docling n'est pas joignable depuis le navigateur : seul Open WebUI lui parle, à l'adresse `http://rag-docling-serve:5001`.
 
 *Résultat* : le terminal affiche `Docling prêt : http://rag-docling-serve:5001`. Docling occupe environ 1 Go de mémoire au repos, plus de 2 Go pendant la lecture d'un document. `outils/open-webui/docling.sh stop` l'arrête.
 

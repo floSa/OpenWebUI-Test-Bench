@@ -23,3 +23,12 @@ Call log:
 2026-11-13 15:02:34 étapes dépliées : Exploré stock_piece, velanor-mcp_jours_ouvres | Réflexion | Voir le résultat de stock_piece | Voir le résultat de velanor-mcp_jours_ouvres | Réflexion pendant 1 secondes |  | Voici les réponses à vos questions : |  | Moteurs centraux en stock : 238 unités (au 31 octobre 2025) | Jours ouvrés entre le 16 et le 27 novembre 2026 : 10 jours
 2026-11-13 15:03:08 20-mention : élément absent « mention ajoutée par le filtre »
 2026-11-13 15:03:35 20-mention : élément absent « mention ajoutée par le filtre »
+2026-11-13 15:47:10 17-detail-appel : élément absent « stock_piece »
+2026-11-13 15:47:15 17-detail-appel : élément absent « jours_ouvres »
+2026-11-13 15:49:50 conversation ouverte : http://rag-open-webui:8080/c/6be0692a-fd46-4aad-9d61-ec70d4794b80 | Exploré list_knowledge, display_file, view_file |  | La ligne d'assemblage numéro 3 de Nantes sera arrêtée du 2 au 6 mars [0cb2573a-63c0-4867-a4c5-f2d822e9e4f9]. La production de Loire Urbain sera transfé
+2026-11-13 15:49:51 après clic : Exploré list_knowledge, display_file, view_file | Voir le résultat de list_knowledge | Voir le résultat de display_file | Voir le résultat de view_file |  | La ligne d'assemblage numéro 3 de Nantes sera arrêtée du 2 au 6 mars [0cb2573a-63c0-4867-a4c5-f2d822e9e4f9]. La production de Loire Urbain sera transférée sur cette ligne pendant l'arrêt pour maintenance. L'arrêt a été annoncé par Julien Moreau, directe
+2026-11-13 15:49:56 17-detail-appel : élément absent « stock_piece »
+2026-11-13 15:50:01 17-detail-appel : élément absent « jours_ouvres »
+2026-11-13 15:50:25 conversation ouverte : http://rag-open-webui:8080/c/d09059c9-d20d-47b5-acca-4aae969bac24 | Exploré stock_piece, velanor-mcp_jours_ouvres |  | Voici les réponses à vos questions : |  | Moteurs centraux en stock : 238 unités (au 31 octobre 2025) | Jours ouvrés entre le 16 et le 27 novembre 2026 : 10 jo
+2026-11-13 15:50:26 après clic : Exploré stock_piece, velanor-mcp_jours_ouvres | Réflexion | Voir le résultat de stock_piece | Voir le résultat de velanor-mcp_jours_ouvres | Réflexion pendant 1 secondes |  | Voici les réponses à vos questions : |  | Moteurs centraux en stock : 238 unités (au 31 octobre 2025) | Jours ouvrés entre le 16 et le 27 novembre 2026 : 10 jours
+2026-11-13 15:51:45 texte inséré : Rédige une fiche de synthèse de contrat Batterix pour un responsable d'atelier : contexte, chiffres clés, actions à mener. Cite le document source de chaque chiffre.

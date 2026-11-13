@@ -132,8 +132,10 @@ Le chapitre 08 montre l'effet de ces tâches sur le temps d'attente des question
 | N° | Élément | Rôle |
 |---|---|---|
 | 1 | « Analytique » | onglet des statistiques d'usage de tous les comptes |
-| 2 | « Tokens » | jetons envoyés et reçus, par période |
-| 3 | « Messages » | nombre de messages, de conversations et de comptes actifs |
+| 2 | « Tokens » | total des jetons de la période (« Entrée » et « Sortie » à côté) |
+| 3 | « Messages » | nombre de réponses ; « Conversations » et « Utilisateurs » suivent sur la même ligne |
+
+Sur l'instance d'essai, les compteurs de jetons restent à 0 alors que 16 réponses ont été produites : ce compteur n'est pas fiable avec ce service de modèles ; le nombre de messages l'est.
 
 La liste en haut choisit la période (24 heures à toute la période) ; plus bas, des tableaux par modèle et par compte.
 
@@ -245,7 +247,7 @@ La fiche montre aussi les groupes du compte, son rôle, son nom, son e-mail, sa 
 |---|---|---|
 | Pas de bouton « Créer une nouvelle clé secrète » | « Clés API » désactivé dans « Authentification » | étape 3 |
 | Un script reçoit « 401 » | clé fausse, supprimée ou régénérée | recréer la clé (étape 5) ; voir l'annexe A3 |
-| L'administrateur a perdu son mot de passe | aucun autre administrateur pour le changer | voir le [chapitre 17](17-en-cas-de-probleme.md) |
+| L'administrateur a perdu son mot de passe | aucun autre administrateur pour le changer | prévenir ce cas en créant un second compte administrateur (chapitre 14) ; une réinitialisation sans administrateur n'a pas été essayée |
 
 ---
 *Version décrite : Open WebUI 0.13.3, essais du 13 novembre 2026. Détails et preuves : [rapport d'essais](../annexes/A6-rapport-d-essais.md).*

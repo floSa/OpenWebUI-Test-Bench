@@ -223,9 +223,26 @@ def mention_reprise(s):
                                 (msg.get_by_text(re.compile("10 jours ouvrés")).first, "fin de la réponse : mention absente à l'écran")])
 
 
+def prompt_variable(s):
+    """Choix du prompt /synthese : fenêtre « Variables d'entrée », puis texte inséré (rien n'est envoyé)."""
+    p = s.page
+    s.aller("/")
+    p.locator("#chat-input").click(); p.keyboard.type("/syn"); p.wait_for_timeout(1500)
+    p.keyboard.press("Enter"); p.wait_for_timeout(1500)
+    dlg = p.get_by_role("dialog").last
+    champ = dlg.locator("input, textarea").filter(visible=True).first
+    champ.fill("contrat Batterix")
+    s.cap_souple("03b-variables", [(dlg.get_by_text("sujet", exact=True).first, "sujet"), (champ, "valeur"),
+                                   (dlg.get_by_role("button", name="Enregistrer"), "Enregistrer")])
+    dlg.get_by_role("button", name="Enregistrer").click(); p.wait_for_timeout(1200)
+    s.note("texte inséré : " + p.locator("#chat-input").inner_text()[:300])
+    s.cap_souple("03c-prompt-insere", [(p.locator("#chat-input"), "texte du prompt complété")])
+    p.locator("#chat-input").click(); p.keyboard.press("Control+A"); p.keyboard.press("Delete")
+
+
 if __name__ == "__main__":
     s = Scenario(CH)
     try:
-        etapes([prompt, outil, fonction, mcp, usage_outils, filtre_actif, mention_reprise], s)
+        etapes([prompt, prompt_variable, outil, fonction, mcp, usage_outils, filtre_actif, mention_reprise], s)
     finally:
         s.fermer()

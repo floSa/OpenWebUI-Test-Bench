@@ -60,9 +60,127 @@ def base_vide_05(s):
     s.note(f"base temporaire {kid} supprimée : HTTP {r}")
 
 
+GROUPE = "Équipe production"
+
+
+def ouvrir_chat_admin(s, nom="chat"):
+    p = s.page
+    s.reglages("admin:models")
+    i = p.evaluate("""(nom) => [...document.querySelectorAll('button[aria-label=Modifier]')].filter(b => b.offsetParent)
+        .findIndex(b => b.parentElement.parentElement.innerText.trim().split(/\\s/)[0] === nom)""", nom)
+    p.locator("button[aria-label='Modifier']").filter(visible=True).nth(i).click()
+    p.wait_for_timeout(2000)
+    s.note("fiche ouverte : " + p.url)
+
+
+def partage_chat_14(s):
+    """14/09 et 14/10 : partage montré sur `chat` (les premières captures montraient `bge-m3`). Aucun accès ajouté."""
+    s.chapitre = "14-comptes-groupes-permissions"
+    p = s.page
+    ouvrir_chat_admin(s)
+    p.locator("button").filter(has_text=re.compile(r"^\s*Accès\s*$")).filter(visible=True).last.click(); p.wait_for_timeout(1200)
+    dlg = p.get_by_role("dialog").last
+    if GROUPE in dlg.inner_text():  # accès déjà donné : le retirer pour refaire le parcours complet (enregistré aussitôt)
+        ligne = dlg.locator("div").filter(has_text=GROUPE).filter(has=p.locator("button")).last
+        ligne.locator("button").last.click(); p.wait_for_timeout(1500)
+        s.note("accès du groupe retiré avant reprise : " + dlg.inner_text()[:200].replace("\n", " | "))
+    dlg.get_by_role("button", name=re.compile("Ajouter un accès")).first.click(); p.wait_for_timeout(1200)
+    choix = p.get_by_role("dialog").last
+    case = choix.locator("div, label, li").filter(has_text=GROUPE).locator("input[type=checkbox], button[role=checkbox]").first
+    if case.count():
+        case.click(); p.wait_for_timeout(400)
+    s.cap_souple("09-partage-modele-a", [(choix.get_by_text(GROUPE).first, GROUPE),
+                                         (choix.locator("input[type=checkbox], button[role=checkbox]").first, "case à cocher"),
+                                         (choix.get_by_role("button", name="Ajouter"), "Ajouter")])
+    choix.get_by_role("button", name="Ajouter").click(); p.wait_for_timeout(1500)
+    dlg = p.get_by_role("dialog").filter(has_text="Contrôle d'accès").last
+    if not dlg.count():
+        p.locator("button").filter(has_text=re.compile(r"^\s*Accès\s*$")).filter(visible=True).last.click(); p.wait_for_timeout(1200)
+        dlg = p.get_by_role("dialog").last
+    s.cap_souple("09-partage-modele-b", [(dlg.get_by_role("button", name=re.compile("^Visibilité")).first, "Visibilité"),
+                                         (dlg.get_by_text(GROUPE).first, GROUPE)])
+    s.note("contrôle d'accès de chat : " + dlg.inner_text()[:300].replace("\n", " | "))
+    s.reglages("admin:models")
+    s.cap_souple("10-modele-partage", [(p.locator("button").filter(has_text=re.compile(r"^\s*chat\s+Partagé")).filter(visible=True).first, "chat Partagé"),
+                                       (p.locator("button").filter(has_text=re.compile(r"^\s*gemma-4-e4b\s+Privé")).filter(visible=True).first, "gemma-4-e4b Privé")])
+
+
+def admin_15(s):
+    s.chapitre = "15-administrer"
+    p = s.page
+    s.reglages("admin:analytics")
+    d = p.get_by_role("dialog").last
+    s.cap_souple("05-analytique", [(s.onglet("Analytique", admin=True), "Analytique"),
+                                   (d.get_by_text("Tokens", exact=True).first, "Tokens"), (d.get_by_text("Messages", exact=True).first, "Messages")])
+    s.reglages("admin:interface")
+    s.cap_souple("10-interface-taches", [(s.onglet("Interface utilisateur", admin=True), "Interface utilisateur"),
+                                         (p.get_by_text("Modèle de tâche local", exact=True).locator("xpath=following::select[1]"), "Modèle de tâche local"),
+                                         (p.get_by_text("Modèle de tâche externe", exact=True).locator("xpath=following::select[1]"), "Modèle de tâche externe"),
+                                         (p.get_by_role("button", name=re.compile("Configurer")).filter(visible=True).first, "Configurer"),
+                                         (s.champ("Génération du Titre"), "Génération du Titre")])
+
+
+def pause_13(s):
+    s.chapitre = "13-automatisations-canaux-calendrier"
+    p = s.page
+    s.aller("/automations")
+    p.get_by_role("link", name=re.compile("Point qualité du lundi")).first.click(); p.wait_for_timeout(2000)
+    inter = p.locator("main [role=switch], main button[aria-label='En pause'], main button[aria-label='Actif']").first
+    s.note("interrupteur : " + str(inter.get_attribute("aria-label")) + " / " + str(inter.get_attribute("aria-checked")))
+    s.cap_souple("13-pause", [(inter, "interrupteur"), (p.get_by_text("En pause", exact=True).first, "statut")])
+
+
+def outils_11(s):
+    """11/15 et 11/17 : question saisie (non envoyée) ; détail des deux appels d'outils dans la conversation existante."""
+    s.chapitre = "11-prompts-outils-fonctions"
+    p = s.page
+    s.aller("/")
+    plus = p.locator("button[aria-label='Plus']").filter(visible=True).last
+    p.locator("#chat-input").click()
+    p.keyboard.type("Combien de moteurs centraux reste-t-il en stock, et combien de jours ouvrés y a-t-il entre le 16 et le 27 novembre 2026 ?")
+    s.cap_souple("15-outils-actifs", [(p.locator("#chat-input"), "question"), (plus, "+")])
+    p.keyboard.press("Control+A"); p.keyboard.press("Delete")
+    cid = p.evaluate("""async () => { const r = await fetch('/api/v1/chats/?page=1', {headers: {Authorization: 'Bearer ' + localStorage.token}});
+        const d = await r.json(); return d.find(c => c.id.startsWith('d09059c9')).id }""")  # essai d'outils réussi (essai-outils-filtre-2026-11-13.json)
+    s.aller(f"/c/{cid}"); p.locator(".chat-assistant").last.wait_for(); p.wait_for_timeout(1500)
+    msg = p.locator(".chat-assistant").last
+    s.note("conversation ouverte : " + p.url + " | " + msg.inner_text()[:200].replace("\n", " | "))
+    msg.get_by_text("Exploré", exact=False).first.click(); p.wait_for_timeout(1200)
+    s.note("après clic : " + msg.inner_text()[:400].replace("\n", " | "))
+    s.cap_souple("17-detail-appel", [(msg.get_by_text(re.compile("Voir le résultat de stock_piece")).first, "stock_piece"),
+                                     (msg.get_by_text(re.compile("Voir le résultat de velanor-mcp_jours_ouvres")).first, "jours_ouvres")])
+
+
+def consigne_16(s):
+    s.chapitre = "16-cas-pratiques"
+    p = s.page
+    cid = p.evaluate("""async () => { const r = await fetch('/api/v1/chats/?page=1', {headers: {Authorization: 'Bearer ' + localStorage.token}});
+        const d = await r.json(); return d.find(c => /Sécurité batterie/.test(c.title)).id }""") if False else None
+    s.aller("/")
+    cid = p.evaluate("""async () => { const r = await fetch('/api/v1/chats/?page=1', {headers: {Authorization: 'Bearer ' + localStorage.token}});
+        const d = await r.json(); return d.find(c => /Sécurité batterie/.test(c.title)).id }""")
+    s.aller(f"/c/{cid}"); p.locator(".chat-assistant").last.wait_for(); p.wait_for_timeout(1500)
+    msg = p.locator(".chat-assistant").last
+    src = msg.locator("button").filter(has_text=re.compile("Source")).last
+    src.click(); p.wait_for_timeout(800)
+    s.cap_souple("01-consigne", [(msg.get_by_text(re.compile("^\\s*Exploré")).first, "Exploré"),
+                                 (msg.locator("ol, ul").first, "réponse"), (src, "1 Source")])
+
+
+def retirer_bge(s):
+    """Retire l'accès du groupe au modèle technique `bge-m3`, partagé par erreur (sans capture)."""
+    p = s.page
+    ouvrir_chat_admin(s, "bge-m3")
+    p.locator("button").filter(has_text=re.compile(r"^\s*Accès\s*$")).filter(visible=True).last.click(); p.wait_for_timeout(1200)
+    dlg = p.get_by_role("dialog").last
+    if GROUPE in dlg.inner_text():
+        dlg.locator("div").filter(has_text=GROUPE).filter(has=p.locator("button")).last.locator("button").last.click(); p.wait_for_timeout(1500)
+    s.note("accès de bge-m3 : " + dlg.inner_text()[:200].replace("\n", " | "))
+
+
 if __name__ == "__main__":
     s = Scenario("_retouches")
     try:
-        etapes([general_15, notes_10, comptes_14, base_vide_05], s)
+        etapes([general_15, notes_10, comptes_14, base_vide_05, partage_chat_14, admin_15, pause_13, outils_11, consigne_16, retirer_bge], s)
     finally:
         s.fermer()

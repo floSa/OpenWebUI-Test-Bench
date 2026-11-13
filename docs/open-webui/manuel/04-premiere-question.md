@@ -26,7 +26,7 @@ Cliquer sur « + » (pastille 1), à gauche sous la zone de saisie, puis sur « 
 | 1 | « + » | ouvre le menu d'ajout |
 | 2 | « Téléverser des fichiers » | ouvre la fenêtre de choix de fichiers de Windows |
 
-Les autres entrées du menu : « Prise de vue » (photo par la webcam), « Add Context » (joindre une base de connaissances, une note ou une conversation, chapitre 06) et « Interpréteur de code » (chapitre 11).
+Les autres entrées du menu : « Prise de vue » (photo par la webcam), « Add Context » (joindre une base de connaissances, une note ou une conversation, chapitre 06) et « Interpréteur de code » (exécution de code par le modèle, non traitée dans ce manuel).
 
 *Résultat* : la fenêtre « Ouvrir » de Windows s'affiche.
 
@@ -35,7 +35,7 @@ Les autres entrées du menu : « Prise de vue » (photo par la webcam), « Add C
 Choisir `rapport-annuel-2025.pdf` et cliquer sur « Ouvrir ». Attendre que la vignette du fichier apparaisse au-dessus de la zone de saisie (pastille 1), puis taper la question : `Quel est le chiffre d'affaires 2025 de Vélanor ?` (pastille 2).
 
 ![Document joint et question saisie](../img/04-premiere-question/02-document-joint.png)
-*Écran : nouvelle conversation, document joint, question saisie.*
+*Écran : nouvelle conversation, document joint, question saisie (la taille affichée sur la vignette, 2.5 KB, est provisoire : elle se met à jour une fois le fichier traité).*
 
 | N° | Élément | Rôle |
 |---|---|---|
@@ -59,7 +59,7 @@ Cliquer sur la flèche « Envoyer » (pastille 3 de l'étape 2). La réponse s'�
 | 1 | « Exploré query_chat_files » | le modèle a cherché dans le document joint ; un clic déplie le détail de la recherche |
 | 2 | « 1 Source » | nombre de documents utilisés ; un clic les liste |
 
-La réponse donne 48,6 M€, avec le détail par trimestre. Sous la réponse, une rangée d'icônes permet de la modifier, la copier, la lire à voix haute, voir ses statistiques, la noter (pouce levé ou baissé), la poursuivre ou la régénérer (chapitre 06). Plus bas, « Questions de suivi » propose des questions à poser ensuite, rédigées par le modèle.
+La réponse donne 48,6 M€, avec le détail par trimestre. Sous la réponse, une rangée d'icônes permet de la modifier, la copier, la lire à haute voix, dupliquer la conversation, la noter (pouce levé ou baissé), la poursuivre ou la régénérer (chapitre 06, étape 7). Plus bas, « Questions de suivi » propose des questions à poser ensuite, rédigées par le modèle.
 
 *Résultat* : la réponse est affichée, avec le nombre de sources.
 
@@ -101,7 +101,7 @@ Un document joint de petite taille (moins de 50 000 caractères, soit une vingta
 
 - Le document joint reste affiché au-dessus de la question dans la conversation ; il n'est pas ajouté aux bases de connaissances.
 - Les formats lus sans réglage : PDF avec texte, Word, PowerPoint, Excel, HTML, Markdown, texte, audio (transcrit). Un PDF scanné (pages en image) n'est pas lu sans le lecteur Docling (chapitre 08).
-- Le temps d'attente vient surtout de la réflexion du modèle ; le chapitre 08 montre comment le réduire.
+- Le temps d'attente vient surtout de la réflexion du modèle et de la réécriture de la question avant la recherche : le chapitre 08 (étape 9) et le chapitre 07 (étape 12) montrent comment le réduire.
 
 ## En cas de problème
 

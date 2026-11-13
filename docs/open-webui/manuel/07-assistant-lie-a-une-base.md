@@ -2,7 +2,7 @@
 
 > Ce chapitre apprend à créer un assistant : un modèle personnalisé qui a sa propre consigne et qui consulte toujours la même base de connaissances, sans avoir à l'appeler avec « # ». Il montre aussi comment le partager avec une équipe.
 > **Point de départ** : écran principal, connecté avec le compte administrateur ; base « Démo Vélanor » remplie (chapitre 05) ; groupe « Équipe production » créé (chapitre 14) pour la partie partage.
-> **Durée** : environ 15 minutes. **Avant** : chapitres 05 et 06.
+> **Durée** : environ 15 minutes. **Avant** : chapitres 05 et 06. Les étapes 6, 7, 10 et 11 demandent en plus le groupe « Équipe production » et le compte « Julien Moreau » (chapitre 14), et l'étape 11 le contrat scanné lu par Docling (chapitre 08) : à une première lecture, les sauter et y revenir après ces chapitres.
 
 ## Ce qu'il faut savoir
 
@@ -191,7 +191,7 @@ Réponse obtenue : « Le délai de livraison prévu par le contrat avec Batterix
 
 **Étape 12. Couper la réflexion du modèle**
 *Où* : Espace de travail › « Modèles » › « Assistant qualité Vélanor » › « Réglages avancés ».
-Cliquer sur « Réglages avancés » (pastille 1), puis sur « Ajoutez votre réglage personnalisé » en bas de la liste. Saisir `chat_template_kwargs` dans « Nom du réglage personnalisé » (pastille 2) et `{"enable_thinking": false}` dans « Valeur du réglage personnalisé » (pastille 3). Cliquer sur « Enregistrer & Mettre à jour » (pastille 4).
+Si la ligne « Réglages avancés » n'est pas visible, cliquer d'abord sur « Afficher plus » sous le prompt système. Cliquer sur « Réglages avancés » (pastille 1) : la liste des paramètres se déplie ; tout en bas de cette liste, cliquer sur le lien « Ajoutez votre réglage personnalisé » (hors de la capture) : deux champs apparaissent. Saisir `chat_template_kwargs` dans « Nom du réglage personnalisé » (pastille 2) et `{"enable_thinking": false}` dans « Valeur du réglage personnalisé » (pastille 3). Cliquer sur « Enregistrer & Mettre à jour » (pastille 4).
 
 ![Réglage personnalisé](../img/07-assistant-lie-a-une-base/12-reglage-personnalise.png)
 *Écran : éditeur de l'assistant, réglage personnalisé ajouté.*

@@ -17,7 +17,7 @@ La **mémoire** est une liste de **souvenirs** propres au compte : des phrases c
 Cliquer sur « Créer » (pastille 2).
 
 ![Liste des notes](../img/10-notes-et-memoire/01-notes.png)
-*Écran : page « Notes ».*
+*Écran : page « Notes » (capture prise après la création de la note de l'étape 2).*
 
 | N° | Élément | Rôle |
 |---|---|---|
@@ -108,7 +108,7 @@ Le panneau propose aussi des « Invites suggérées » : « Améliorez cette not
 |---|---|---|
 | 1 | réponse | décision tirée de la note : « L'inspection du local B2 avancée au lundi 16 novembre. » |
 
-La ligne « Exploré view_note » montre que le modèle a lu la note avant de répondre.
+La ligne « Exploré view_note » montre que le modèle a lu la note avant de répondre. La mention « Active note page_id: main », ajoutée sous la question, est insérée d'office par Open WebUI pour désigner la note ouverte : rien à saisir.
 
 *Résultat* : la note se consulte en langage courant. La croix en haut du panneau le ferme.
 
@@ -145,7 +145,6 @@ Saisir le souvenir (pastille 1), par exemple `Je travaille au service qualité d
 
 **Étape 9. Contrôler les souvenirs**
 *Où* : Réglages › « Personnalisation ».
-Cliquer ensuite sur « Enregistrer » en bas de la fenêtre.
 
 ![Souvenirs enregistrés](../img/10-notes-et-memoire/07-souvenirs.png)
 *Écran : onglet « Personnalisation », un souvenir enregistré.*

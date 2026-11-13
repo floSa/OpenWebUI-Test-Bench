@@ -27,7 +27,7 @@ Survoler la conversation (pastille 1), puis cliquer sur « … » (pastille 2).
 | 4 | « Télécharger » | enregistre la conversation dans un fichier (étape 7) |
 | 5 | « Renommer » | change le titre (étape 2) |
 | 6 | « Épingler » | garde la conversation en haut de la liste (étape 3) |
-| 7 | « Archiver » | retire la conversation de la liste sans l'effacer (étape 9) |
+| 7 | « Archiver » | retire la conversation de la liste sans l'effacer (étape 11) |
 | 8 | « Supprimer » | efface la conversation |
 
 « Marquer comme non lu » la signale comme non lue ; « Cloner » en crée une copie, utile pour repartir d'un point sans toucher à l'original. Dès qu'un dossier existe, le menu propose aussi « Déplacer ».
@@ -80,7 +80,7 @@ La fenêtre propose aussi une « Description » et une « Image d'arrière-plan 
 
 **Étape 5. Ranger une conversation dans le dossier**
 *Où* : barre latérale.
-Faire glisser la conversation sur le nom du dossier, puis relâcher. Cliquer sur le dossier pour le déplier (pastille 1).
+Faire glisser la conversation « Quel est le chiffre d'affaires 2025 de Vélanor ? » (le doublon créé au chapitre 04) sur le nom du dossier, puis relâcher. Cliquer sur le dossier pour le déplier (pastille 1).
 
 ![Conversation rangée](../img/09-converser-au-quotidien/05-dossier.png)
 *Écran : barre latérale, dossier « Questions rapport annuel » déplié.*
@@ -143,24 +143,9 @@ La recherche couvre aussi les notes et les canaux ; la liste « Everything » en
 
 *Résultat* : la conversation est retrouvée sans parcourir la liste.
 
-**Étape 9. Archiver une conversation**
-*Où* : menu « … » de la conversation › « Archiver ». Pour la retrouver : menu du compte › « Réglages » › « Conversations archivées ».
-
-![Conversations archivées](../img/09-converser-au-quotidien/09-archives.png)
-*Écran : Réglages, onglet « Conversations archivées ».*
-
-| N° | Élément | Rôle |
-|---|---|---|
-| 1 | « Conversations archivées » | liste des conversations retirées de la barre latérale |
-| 2 | conversation archivée | un clic l'ouvre ; les icônes à droite la désarchivent ou la suppriment |
-
-Le menu « Actions » de cette page agit sur toutes les archives à la fois.
-
-*Résultat* : la conversation n'encombre plus la barre latérale mais reste disponible.
-
 ## Comparer deux modèles
 
-**Étape 10. Ouvrir un écran partagé**
+**Étape 9. Ouvrir un écran partagé**
 *Où* : écran principal, en haut à droite.
 Cliquer sur l'icône d'écran partagé (pastille 1, « Split screen »). Dans le panneau de droite, cliquer sur le sélecteur de modèle et choisir `gemma-4-e4b` (pastille 3).
 
@@ -175,7 +160,7 @@ Cliquer sur l'icône d'écran partagé (pastille 1, « Split screen »). Dans le
 
 *Résultat* : deux conversations indépendantes sont ouvertes, chacune avec son modèle.
 
-**Étape 11. Poser la même question des deux côtés**
+**Étape 10. Poser la même question des deux côtés**
 *Où* : zone de saisie de chaque panneau.
 Taper la même question dans les deux zones, par exemple `En une phrase : pourquoi stocker les batteries entre 10 et 25 °C ?`, et l'envoyer de chaque côté.
 
@@ -191,6 +176,23 @@ Les deux conversations sont enregistrées séparément dans la barre latérale. 
 
 *Résultat* : les deux réponses se lisent côte à côte.
 
+## Archiver
+
+**Étape 11. Archiver une conversation**
+*Où* : menu « … » d'une conversation, ici « Stock Trends » créée à l'étape 10 › « Archiver ». Pour la retrouver : menu du compte › « Réglages » › « Conversations archivées ».
+
+![Conversations archivées](../img/09-converser-au-quotidien/09-archives.png)
+*Écran : Réglages, onglet « Conversations archivées ».*
+
+| N° | Élément | Rôle |
+|---|---|---|
+| 1 | « Conversations archivées » | liste des conversations retirées de la barre latérale |
+| 2 | conversation archivée | un clic l'ouvre ; les icônes à droite la désarchivent ou la suppriment |
+
+Le menu « Actions » de cette page agit sur toutes les archives à la fois.
+
+*Résultat* : la conversation n'encombre plus la barre latérale mais reste disponible.
+
 ## Bon à savoir
 
 - « conversation temporaire » (icône en haut à droite de l'écran principal) sert aux échanges qu'il n'est pas utile de garder ; ce mode n'a pas été essayé pour ce manuel.
@@ -201,7 +203,7 @@ Les deux conversations sont enregistrées séparément dans la barre latérale. 
 | Symptôme | Cause | Que faire |
 |---|---|---|
 | Le menu « … » n'apparaît pas | il ne s'affiche qu'au survol | passer la souris sur la conversation |
-| Une conversation a disparu de la liste | archivée ou rangée dans un dossier | étape 9 (archives) ou rubrique « Dossiers » |
+| Une conversation a disparu de la liste | archivée ou rangée dans un dossier | étape 11 (archives) ou rubrique « Dossiers » |
 
 ---
 *Version décrite : Open WebUI 0.13.3, essais du 13 novembre 2026. Détails et preuves : [rapport d'essais](../annexes/A6-rapport-d-essais.md).*

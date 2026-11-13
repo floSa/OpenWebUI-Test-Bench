@@ -227,58 +227,6 @@
   "heure": "09:12:41"
  },
  {
-  "capture": "14-comptes-groupes-permissions/09-partage-modele-a.png",
-  "url": "/",
-  "pastilles": [
-   [
-    1,
-    "Équipe production"
-   ],
-   [
-    2,
-    "case à cocher"
-   ],
-   [
-    3,
-    "Ajouter"
-   ]
-  ],
-  "note": "",
-  "heure": "09:14:30"
- },
- {
-  "capture": "14-comptes-groupes-permissions/09-partage-modele-b.png",
-  "url": "/",
-  "pastilles": [
-   [
-    1,
-    "Visibilité"
-   ],
-   [
-    2,
-    "Équipe production"
-   ]
-  ],
-  "note": "",
-  "heure": "09:14:32"
- },
- {
-  "capture": "14-comptes-groupes-permissions/10-modele-partage.png",
-  "url": "/",
-  "pastilles": [
-   [
-    1,
-    "chat Partagé"
-   ],
-   [
-    2,
-    "gemma-4-e4b Privé"
-   ]
-  ],
-  "note": "",
-  "heure": "09:14:39"
- },
- {
   "capture": "15-administrer/01-general.png",
   "url": "/",
   "pastilles": [
@@ -341,5 +289,57 @@
   ],
   "note": "",
   "heure": "13:53:16"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/09-partage-modele-a.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Équipe production"
+   ],
+   [
+    2,
+    "case à cocher"
+   ],
+   [
+    3,
+    "Ajouter"
+   ]
+  ],
+  "note": "",
+  "heure": "15:48:33"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/09-partage-modele-b.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Visibilité"
+   ],
+   [
+    2,
+    "Équipe production"
+   ]
+  ],
+  "note": "",
+  "heure": "15:48:36"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/10-modele-partage.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "chat Partagé"
+   ],
+   [
+    2,
+    "gemma-4-e4b Privé"
+   ]
+  ],
+  "note": "",
+  "heure": "15:48:42"
  }
 ]

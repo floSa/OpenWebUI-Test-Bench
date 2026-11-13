@@ -23,7 +23,7 @@ Taper `#` (pastille 1) : la liste des bases accessibles s'ouvre. Cliquer sur « 
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | « # » | ouvre la liste des bases, notes et fichiers à joindre |
+| 1 | « # » | ouvre la liste à joindre : « Collections » désigne les bases de connaissances, puis viennent les notes et les fichiers |
 | 2 | « Démo Vélanor » | base à interroger |
 
 *Résultat* : la base est jointe à la question.
@@ -136,9 +136,9 @@ Cliquer sur « Bonne réponse » (pastille 1).
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | « Bonne réponse » | enregistre une note positive |
+| 1 | « Bonne réponse » | enregistre une note positive et ouvre un panneau de précisions |
 
-Les notes sont visibles par l'administrateur dans Panneau d'administration › « Évaluations » (chapitre 15) : elles aident à repérer les questions mal traitées.
+Le panneau qui s'ouvre sous la réponse demande « Comment évalueriez-vous cette réponse ? » (note de 1 à 10) et « Pourquoi ? » ; ces précisions sont facultatives, « Enregistrer » les garde. Le bouton « Laisser un avis public » n'a pas été essayé : ne pas s'en servir pour des documents internes. Les notes sont visibles par l'administrateur dans Panneau d'administration › « Évaluations » (chapitre 15) : elles aident à repérer les questions mal traitées.
 
 *Résultat* : la réponse est notée.
 

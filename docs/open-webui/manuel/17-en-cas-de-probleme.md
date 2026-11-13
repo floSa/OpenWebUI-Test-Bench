@@ -65,7 +65,7 @@ Le premier affiche l'état des conteneurs d'Open WebUI (dont Docling), leur sant
 ## Des outils qui ne répondent pas
 
 **Étape 4. Le serveur MCP est arrêté**
-*Où* : conversation avec « Vélanor MCP » activé (chapitre 11, étape 14).
+*Où* : nouvelle conversation › « + » › « Outils » (chapitre 11, étape 14), serveur MCP arrêté, avant activation de « Vélanor MCP ».
 
 ![Outils proposés, serveur arrêté](../img/17-en-cas-de-probleme/03-mcp-menu.png)
 *Écran : sous-menu « Outils », serveur MCP arrêté.*

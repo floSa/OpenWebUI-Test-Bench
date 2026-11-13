@@ -30,7 +30,13 @@ Cliquer sur « Créer » (pastille 1).
 
 **Étape 2. Écrire la question et choisir la fréquence**
 *Où* : fenêtre de création.
-Saisir le titre `Point qualité du lundi` et les instructions (la question à poser), puis cliquer sur « Daily » (pastille 1) : un panneau « Planifier » s'ouvre.
+Saisir le titre `Point qualité du lundi` (le titre est libre : il ne fixe pas la fréquence) et, dans « Instructions », la question à poser :
+
+```text
+Rappelle en cinq lignes les contrôles de sécurité des batteries à faire cette semaine dans le local B2 (inspection, extincteurs, formation), en français.
+```
+
+Cliquer ensuite sur « Daily » (pastille 1) : un panneau « Planifier » s'ouvre.
 
 ![Choix de la fréquence](../img/13-automatisations-canaux-calendrier/02-frequence.png)
 *Écran : fenêtre de création, panneau « Planifier » ouvert.*

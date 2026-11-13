@@ -59,7 +59,7 @@ Saisir le nom `Démo Vélanor` (pastille 1) et une description, obligatoire (pas
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | nom et description | modifiables directement en cliquant dessus |
+| 1 | nom de la base, avec sa description juste en dessous | modifiables directement en cliquant dessus |
 | 2 | « Ajouter du contenu » (« + ») | ouvre le menu d'ajout |
 | 3 | « Accès » | qui peut lire ou modifier la base (chapitre 14) |
 
@@ -100,14 +100,14 @@ Sélectionner les huit fichiers autres que `contrat-batterix-scan.pdf` et clique
 *Où* : page de la base.
 
 ![Base remplie](../img/05-bases-de-connaissances/06-base-remplie.png)
-*Écran : page de la base « Démo Vélanor », huit fichiers.*
+*Écran : page de la base « Démo Vélanor », huit fichiers, dont certains encore en traitement.*
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | « Rechercher une collection » | filtre les fichiers par nom ; l'icône à côté trie la liste |
+| 1 | « Rechercher une collection » | filtre les fichiers par nom (« collection » est le nom technique d'une base de connaissances) ; l'icône à côté trie la liste |
 | 2 | « procedure-batteries.docx » | un fichier de la base, avec sa taille ; un clic ouvre son aperçu |
 
-*Résultat* : les huit fichiers sont listés sous « All files ».
+*Résultat* : les huit fichiers sont listés sous « All files ». Tant qu'un fichier est en traitement, la mention « Téléversement en cours » s'affiche à sa place ; elle disparaît au bout de quelques secondes.
 
 **Étape 7. Vérifier ce qui a été lu**
 *Où* : page de la base, liste des fichiers.
@@ -176,7 +176,7 @@ Cliquer sur « … » (pastille 1).
 
 **Étape 11. Confirmer une suppression**
 *Où* : menu de la base › « Supprimer ».
-Cliquer sur « Confirmer » (pastille 1) pour effacer, ou sur « Annuler » (pastille 2). L'essai a été fait sur une base jetable, « Essai à supprimer ».
+Pour essayer sans risque, créer d'abord une base jetable (étapes 1 et 2), par exemple « Essai à supprimer », et ouvrir son menu : sur « Démo Vélanor », cliquer sur « Annuler ». Cliquer sur « Confirmer » (pastille 1) pour effacer, ou sur « Annuler » (pastille 2).
 
 ![Confirmation de suppression](../img/05-bases-de-connaissances/11-confirmer-suppression.png)
 *Écran : fenêtre « Confirmer votre action ».*

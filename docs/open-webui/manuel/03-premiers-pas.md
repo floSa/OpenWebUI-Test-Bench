@@ -140,7 +140,7 @@ Le « + » à droite de « Gérer les connexions API OpenAI » ajoute une autre 
 
 **Étape 8. Vérifier la connexion**
 *Où* : onglet « Connexions », roue dentée de la ligne `http://llm-central:8080/v1`.
-Cliquer sur la roue dentée, puis sur le bouton rond « Vérifier la connexion » (pastille 3).
+Cliquer sur la roue dentée, puis sur l'icône à deux flèches à droite de l'adresse, « Vérifier la connexion » (pastille 3).
 
 ![Fenêtre Modifier la connexion](../img/03-premiers-pas/08-modifier-connexion.png)
 *Écran : fenêtre « Modifier la connexion » (la clé est masquée sur la capture).*
@@ -229,7 +229,7 @@ Cliquer sur « chat » (pastille 1).
 |---|---|---|
 | Le sélecteur affiche « Sélectionnez un modèle » et la liste est vide | la connexion est désactivée, ou le service de modèles est arrêté | vérifier la connexion (étape 8) ; démarrer LLM-Service ; voir le [chapitre 17](17-en-cas-de-probleme.md) |
 | La vérification de la connexion échoue | mauvaise adresse (par exemple `127.0.0.1` au lieu de `llm-central`) ou mauvaise clé | reprendre l'adresse `http://llm-central:8080/v1` et la clé du fichier `.env` |
-| Mot de passe administrateur oublié | aucun envoi d'e-mail dans cette installation | voir le [chapitre 17](17-en-cas-de-probleme.md) |
+| Mot de passe administrateur oublié | aucun envoi d'e-mail dans cette installation | prévenir ce cas en créant un second compte administrateur (chapitre 14) ; une réinitialisation sans administrateur n'a pas été essayée |
 
 ---
 *Version décrite : Open WebUI 0.13.3, essais du 13 novembre 2026. Détails et preuves : [rapport d'essais](../annexes/A6-rapport-d-essais.md).*

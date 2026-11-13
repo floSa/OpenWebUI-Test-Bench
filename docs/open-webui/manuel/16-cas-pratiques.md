@@ -8,7 +8,7 @@
 
 Les trois conversations de ce chapitre sont gardées dans l'instance comme jeu de démonstration : elles montrent le résultat attendu. Chaque cas suit la même méthode : choisir la source (assistant ou base jointe par « # »), poser une question précise, puis **vérifier** la réponse dans la liste des sources avant de l'utiliser.
 
-Les réponses ont été obtenues avec les réglages du chapitre 08 (Docling, recherche hybride, tri par `rerank`, génération des requêtes coupée) ; le cas 1 utilise en plus l'assistant sans réflexion (chapitre 07, étape 12). Chacune est arrivée en une quinzaine de secondes au plus.
+Les réponses ont été obtenues avec les réglages du chapitre 08 (Docling, recherche hybride, tri par `rerank`, génération des requêtes coupée) et l'« Assistant qualité Vélanor » sans réflexion (chapitre 07, étape 12). Chacune est arrivée en une quinzaine de secondes au plus.
 
 ## Cas 1. Rédiger une consigne de sécurité pour l'atelier
 
@@ -28,7 +28,7 @@ Prépare une consigne de sécurité courte pour l'atelier sur le stockage et la 
 | N° | Élément | Rôle |
 |---|---|---|
 | 1 | « Exploré » | l'assistant a consulté sa base |
-| 2 | réponse | consigne en trois points : température de 10 °C à 25 °C, local B2 avec détection incendie, extincteurs de classe D vérifiés tous les 6 mois |
+| 2 | réponse | liste en trois points : température de 10 °C à 25 °C, local B2 avec détection incendie, extincteurs de classe D vérifiés tous les 6 mois |
 | 3 | « 1 Source » | document utilisé : `procedure-batteries.docx` |
 
 Dans le texte, les renvois s'affichent ici sous la forme d'un identifiant technique entre crochets (`[b6457a0d-…]`) au lieu du nom du fichier : la liste « 1 Source » donne le nom du document. Avant de diffuser la consigne, ouvrir la source (chapitre 06, étape 6) et vérifier chaque valeur.
@@ -40,7 +40,7 @@ Dans le texte, les renvois s'affichent ici sous la forme d'un identifiant techni
 But : réunir, avant une réunion, les clauses du contrat Batterix (un PDF scanné) et le résultat de son audit qualité (un PDF en anglais).
 
 **Étape 2. Interroger la base**
-*Où* : nouvelle conversation, modèle `chat`, base « Démo Vélanor » jointe par « # » (chapitre 06, étape 1).
+*Où* : nouvelle conversation ; le sélecteur garde « Assistant qualité Vélanor » choisi au cas 1 ; base « Démo Vélanor » jointe en plus par « # » (chapitre 06, étape 1).
 Taper la demande suivante, puis appuyer sur Entrée :
 
 ```text
@@ -65,7 +65,7 @@ Chaque chiffre est suivi du document dont il vient. La réponse est en français
 But : retrouver ce que dit un message vocal sans l'écouter, et vérifier ce que la transcription a perdu.
 
 **Étape 3. Interroger la base sur le message**
-*Où* : nouvelle conversation, modèle `chat`, base « Démo Vélanor » jointe par « # ».
+*Où* : nouvelle conversation, « Assistant qualité Vélanor », base « Démo Vélanor » jointe par « # ».
 Taper la demande suivante, puis appuyer sur Entrée :
 
 ```text

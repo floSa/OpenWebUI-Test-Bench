@@ -82,7 +82,7 @@ Saisir le nom `Équipe production` (pastille 3) et une description, puis cliquer
 |---|---|---|
 | 1 | « Général » | nom, description, groupe parent, modèles par défaut |
 | 2 | « Permissions » | droits des membres (étape 5) |
-| 3 | « Nom du groupe » | nom affiché dans les partages |
+| 3 | « Nom d'utilisateur » (libellé affiché pour le nom du groupe) | nom du groupe, affiché dans les partages |
 | 4 | « Qui est autorisé à partager avec ce groupe » | « Personne », « Membres » ou « Tout le monde » |
 | 5 | « Enregistrer » | crée le groupe |
 
@@ -104,7 +104,7 @@ Les droits sont rangés en familles : « Autorisations de l'espace de travail »
 
 **Étape 6. Ajouter un membre**
 *Où* : Panneau d'administration › « Utilisateurs » › « Groupes » › clic sur « Équipe production » › onglet « Utilisateurs ».
-Cocher la case « MEMBRE » de la ligne « Julien Moreau » (pastille 2). La case est enregistrée tout de suite.
+Cocher la case « MEMBRE » de la ligne « Julien Moreau » (pastille 2). La case est enregistrée tout de suite. Le compte administrateur qui a créé le groupe en est membre d'office : sa case est déjà cochée.
 
 ![Membres d'un groupe](../img/14-comptes-groupes-permissions/06-membres.png)
 *Écran : fenêtre « Modifier le groupe d'utilisateurs », onglet « Utilisateurs ».*

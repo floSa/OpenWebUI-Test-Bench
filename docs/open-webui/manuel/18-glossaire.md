@@ -13,10 +13,11 @@ Les termes communs à toute la série de manuels (RAG, embedding, jeton, reranke
 | Mot | Libellé dans l'interface | Sens |
 |---|---|---|
 | Administrateur | « Administrateur », « admin » | compte qui règle l'instance pour tout le monde ; le premier compte créé l'est d'office |
-| Base de connaissances | « Connaissances », « Base de connaissances » | ensemble de documents rangés sous un nom, que les conversations peuvent interroger |
 | Barre latérale | « Ouvrir la barre latérale » | colonne de gauche : nouvelle conversation, recherche, notes, espace de travail, liste des conversations |
-| Citation, source | « Sources », numéros « [1] » | renvoi, dans une réponse, vers le passage de document qui la justifie |
+| Base de connaissances | « Connaissances », « Base de connaissances » | ensemble de documents rangés sous un nom, que les conversations peuvent interroger |
+| Citation, source | « Sources », nom du fichier en étiquette après une phrase (parfois un identifiant entre crochets) | renvoi, dans une réponse, vers le document qui la justifie ; la liste « Sources » sous la réponse donne les noms |
 | Clé d'API | « Clé API » | mot de passe technique qui permet à un programme d'utiliser l'instance à la place d'une personne |
+| Collection | « Collections », « Rechercher une collection » | nom technique d'une base de connaissances dans certaines listes |
 | Connexion | « Connexions », « API compatibles OpenAI » | adresse et clé d'un service de modèles déclaré dans l'instance |
 | Conteneur | — | petite machine isolée lancée par Docker, qui contient l'application |
 | Conversation temporaire | « conversation temporaire » | conversation qui n'est pas enregistrée dans la liste |
@@ -24,8 +25,10 @@ Les termes communs à toute la série de manuels (RAG, embedding, jeton, reranke
 | Docling | « Docling » (moteur d'extraction) | lecteur de documents qui reconnaît aussi le texte des pages scannées ; fourni ici par un conteneur à part |
 | Embedding | « Embedding », « Modèle d'embedding » | suite de nombres qui représente le sens d'un passage ; deux passages proches ont des embeddings proches |
 | Espace de travail | « Espace de travail » | page qui réunit les modèles personnalisés, les bases de connaissances, les prompts, les outils et les skills |
+| Exploré | « Exploré » suivi de noms d'outils (`list_knowledge`, `query_knowledge_files`, `view_file`…) | ligne au-dessus d'une réponse qui résume les recherches faites par le modèle ; un clic les déplie |
 | Fonction | « Fonctions » | extension écrite en Python et installée par l'administrateur : filtre, pipeline ou action |
 | Groupe | « Groupes » | ensemble de comptes qui reçoit les mêmes droits et les mêmes partages |
+| Image (Docker) | — | paquet téléchargé qui contient un programme prêt à tourner dans un conteneur |
 | Instance | — | une installation d'Open WebUI, avec ses comptes et ses données |
 | Jeton | « tokens » | unité de texte traitée par un modèle, environ trois quarts de mot en français |
 | MCP | « MCP » | protocole qui permet au modèle d'appeler les fonctions d'un programme externe (serveur MCP) |
@@ -33,14 +36,17 @@ Les termes communs à toute la série de manuels (RAG, embedding, jeton, reranke
 | Modèle | « Modèle sélectionné » | programme d'IA qui écrit les réponses ; ici `chat`, servi par le service de modèles |
 | Modèle personnalisé | « Modèles » (espace de travail) | assistant construit sur un modèle, avec un nom, une consigne et, au besoin, des bases de connaissances |
 | Note | « Notes » | page de texte libre, enregistrée dans l'instance, que le modèle peut aider à rédiger |
+| OpenAPI | « OpenAPI » | format standard de description d'un service web ; un des deux types de serveurs d'outils (l'autre étant MCP) |
 | Outil | « Outils » | fonction écrite en Python que le modèle peut appeler pendant une conversation |
 | Passage | « chunk » | morceau de document retrouvé pour répondre |
 | Prompt | « Prompts » | texte réutilisable, appelé dans la zone de saisie par une commande commençant par « / » |
-| Raisonnement | « Pensé pendant … » | réflexion que le modèle écrit avant sa réponse ; repliée au-dessus de la réponse |
+| RAG | « Génération de requête de RAG » | « génération augmentée par la recherche » : chercher des passages dans les documents, puis les donner au modèle pour rédiger la réponse |
+| Raisonnement | « Réflexion », « Réflexion pendant … secondes » | réflexion que le modèle écrit avant sa réponse ; repliée au-dessus de la réponse |
 | Recherche hybride | « Recherche hybride » | recherche qui combine les mots exacts et le sens des passages |
-| Reranker | « Moteur de ré-ranking », « Modèle de ré-ranking » | modèle qui reclasse les passages retrouvés pour mettre les plus utiles en tête ; ici `rerank` |
 | Réglages | « Réglages » | fenêtre unique qui réunit les réglages personnels et, pour un administrateur, ceux de l'instance |
+| Reranker | « Moteur de ré-ranking », « Modèle de ré-ranking » | modèle qui reclasse les passages retrouvés pour mettre les plus utiles en tête ; ici `rerank` |
 | Service de modèles | — | service LLM central (projet LLM-Service) qui fournit `chat`, `embed`, `rerank` et `transcribe` |
+| Skills | « Skills » | consignes ou savoir-faire réutilisables que l'on peut attacher à un modèle ; non utilisés dans ce manuel |
 | Transcription | « Speech-to-Text », « Saisie vocale » | conversion de la parole en texte ; ici par `transcribe` |
 
 ---

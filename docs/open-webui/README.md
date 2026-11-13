@@ -26,7 +26,7 @@ Lire les chapitres 01 à 04 dans l'ordre : en une heure environ, l'application e
 | 12 | [Voix et recherche web](manuel/12-voix-et-recherche-web.md) | dicter une question, faire lire une réponse, brancher une recherche web locale |
 | 13 | [Automatisations, canaux et calendrier](manuel/13-automatisations-canaux-calendrier.md) | programmer une question récurrente, ouvrir un canal d'équipe, consulter le calendrier |
 | 14 | [Comptes, groupes et permissions](manuel/14-comptes-groupes-permissions.md) | créer des comptes, des groupes, régler les droits et le partage des bases |
-| 15 | [Administrer l'instance](manuel/15-administrer.md) | régler l'instance (nom, inscriptions, interface), créer une clé d'API, suivre l'usage et les évaluations, sauvegarder la base |
+| 15 | [Administrer l'instance](manuel/15-administrer.md) | régler l'instance (fonctions, inscriptions, interface), créer une clé d'API, suivre l'usage et les évaluations, sauvegarder la base |
 | 16 | [Cas pratiques](manuel/16-cas-pratiques.md) | mettre en place trois usages complets, de bout en bout |
 | 17 | [En cas de problème](manuel/17-en-cas-de-probleme.md) | reconnaître les erreurs réellement rencontrées et les corriger |
 | 18 | [Glossaire](manuel/18-glossaire.md) | retrouver le sens des mots employés |
@@ -54,7 +54,14 @@ Lire les chapitres 01 à 04 dans l'ordre : en une heure environ, l'application e
 
 ## Ce qui reste ouvert
 
-À compléter en fin de mission.
+- Recherche web (SearXNG) non installée : la page de réglage est montrée au chapitre 12, la fonction n'a pas été essayée.
+- Configuration sans carte graphique non mesurée : ses temps d'attente sont estimés (chapitre 01, annexe A2).
+- Fonctions vues sans être essayées : « Mode vocal », conversation temporaire, Playground, Skills, sous-agents, génération d'images (voir la carte de l'interface, annexe).
+- Dans cette version, la mention ajoutée par un filtre en fin de réponse n'est pas affichée (chapitre 11) et un modèle peut oublier d'appeler un outil (chapitres 11 et 17).
+
+## Conventions des captures
+
+Chaque capture porte des rectangles rouges numérotés (pastilles), repris dans le tableau N° | Élément | Rôle qui la suit. Un rectangle noir bordé de rouge, **sans numéro**, n'est pas une annotation : il masque une clé ou un mot de passe.
 
 ## Décisions en attente
 

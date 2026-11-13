@@ -292,22 +292,6 @@
   "heure": "14:58:24"
  },
  {
-  "capture": "11-prompts-outils-fonctions/15-outils-actifs.png",
-  "url": "/",
-  "pastilles": [
-   [
-    1,
-    "question"
-   ],
-   [
-    2,
-    "outils actifs"
-   ]
-  ],
-  "note": "",
-  "heure": "14:58:26"
- },
- {
   "capture": "11-prompts-outils-fonctions/16-reponse-outils.png",
   "url": "/c/d09059c9-d20d-47b5-acca-4aae969bac24",
   "pastilles": [
@@ -328,22 +312,6 @@
   "heure": "15:02:32"
  },
  {
-  "capture": "11-prompts-outils-fonctions/17-detail-appel.png",
-  "url": "/c/d09059c9-d20d-47b5-acca-4aae969bac24",
-  "pastilles": [
-   [
-    1,
-    "stock_piece"
-   ],
-   [
-    2,
-    "jours_ouvres"
-   ]
-  ],
-  "note": "",
-  "heure": "15:02:35"
- },
- {
   "capture": "11-prompts-outils-fonctions/20-mention.png",
   "url": "/c/712013bd-c9c9-42ec-b44d-f34abff546f1",
   "pastilles": [
@@ -358,5 +326,133 @@
   ],
   "note": "",
   "heure": "15:04:02"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/09-partage-modele-a.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "case à cocher"
+   ],
+   [
+    2,
+    "Ajouter"
+   ]
+  ],
+  "note": "",
+  "heure": "15:46:35"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/09-partage-modele-b.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Visibilité"
+   ],
+   [
+    2,
+    "Équipe production"
+   ]
+  ],
+  "note": "",
+  "heure": "15:46:36"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/10-modele-partage.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "chat Partagé"
+   ],
+   [
+    2,
+    "gemma-4-e4b Privé"
+   ]
+  ],
+  "note": "",
+  "heure": "15:46:43"
+ },
+ {
+  "capture": "13-automatisations-canaux-calendrier/13-pause.png",
+  "url": "/automations/8728d77b-452b-4a2b-8119-7ac9d8079c10",
+  "pastilles": [
+   [
+    1,
+    "interrupteur"
+   ],
+   [
+    2,
+    "statut"
+   ]
+  ],
+  "note": "",
+  "heure": "15:46:51"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/15-outils-actifs.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "question"
+   ],
+   [
+    2,
+    "+"
+   ]
+  ],
+  "note": "",
+  "heure": "15:50:19"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/17-detail-appel.png",
+  "url": "/c/d09059c9-d20d-47b5-acca-4aae969bac24",
+  "pastilles": [
+   [
+    1,
+    "stock_piece"
+   ],
+   [
+    2,
+    "jours_ouvres"
+   ]
+  ],
+  "note": "",
+  "heure": "15:50:27"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/03b-variables.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "sujet"
+   ],
+   [
+    2,
+    "valeur"
+   ],
+   [
+    3,
+    "Enregistrer"
+   ]
+  ],
+  "note": "",
+  "heure": "15:51:43"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/03c-prompt-insere.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "texte du prompt complété"
+   ]
+  ],
+  "note": "",
+  "heure": "15:51:46"
  }
 ]

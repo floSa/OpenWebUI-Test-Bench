@@ -10,3 +10,12 @@
 2026-11-13 09:14:32 09-partage-modele : Contrôle d'accès | Visibilité | Privé |  | Seuls les utilisateurs et groupes autorisés peuvent accéder |  | Liste des accès | Ajouter un accès | É | Équipe production | 2 membres | LIRE
 2026-11-13 13:52:41 03-liste-comptes : élément absent « rôle »
 2026-11-13 13:53:01 03-liste-comptes : élément absent « rôle »
+2026-11-13 15:44:29 fiche ouverte : http://rag-open-webui:8080/workspace/models/edit?id=assistant-qualit-vlanor
+2026-11-13 15:44:37 09-partage-modele-a : élément absent « Équipe production »
+2026-11-13 15:44:39 contrôle d'accès de chat : Contrôle d'accès | Visibilité | Privé |  | Seuls les utilisateurs et groupes autorisés peuvent accéder |  | Liste des accès | Ajouter un accès | É | Équipe production | 2 membres | Lire | Écrire
+2026-11-13 15:46:26 fiche ouverte : http://rag-open-webui:8080/
+2026-11-13 15:46:34 09-partage-modele-a : élément absent « Équipe production »
+2026-11-13 15:46:36 contrôle d'accès de chat : Contrôle d'accès | Visibilité | Privé |  | Seuls les utilisateurs et groupes autorisés peuvent accéder |  | Liste des accès | Ajouter un accès | É | Équipe production | 2 membres | LIRE
+2026-11-13 15:48:28 fiche ouverte : http://rag-open-webui:8080/
+2026-11-13 15:48:31 accès du groupe retiré avant reprise : Contrôle d'accès | Visibilité | Privé |  | Seuls les utilisateurs et groupes autorisés peuvent accéder |  | Liste des accès | Ajouter un accès | Aucun partage. Visible uniquement par vous.
+2026-11-13 15:48:36 contrôle d'accès de chat : Contrôle d'accès | Visibilité | Privé |  | Seuls les utilisateurs et groupes autorisés peuvent accéder |  | Liste des accès | Ajouter un accès | É | Équipe production | 2 membres | LIRE

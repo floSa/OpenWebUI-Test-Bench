@@ -65,13 +65,37 @@ Taper `/syn` (pastille 2), puis choisir « Fiche de synthèse » (pastille 1).
 | 1 | « Fiche de synthèse » | prompt proposé |
 | 2 | `/syn` | début de la commande ; la liste se filtre au fil de la saisie |
 
-*Résultat* : le prompt est proposé dès les premières lettres de sa commande ; le choisir l'utilise dans la question.
+*Résultat* : le prompt est proposé dès les premières lettres de sa commande. Appuyer sur Entrée (ou cliquer sur « Fiche de synthèse ») pour le choisir.
+
+**Étape 3 bis. Remplir la variable**
+*Où* : fenêtre « Variables d'entrée », ouverte d'office quand le prompt contient une variable.
+Saisir la valeur de « sujet » (pastille 2), par exemple `contrat Batterix`, puis cliquer sur « Enregistrer » (pastille 3).
+
+![Variables d'entrée](../img/11-prompts-outils-fonctions/03b-variables.png)
+*Écran : fenêtre « Variables d'entrée ».*
+
+| N° | Élément | Rôle |
+|---|---|---|
+| 1 | « sujet » | nom de la variable écrite `{{sujet}}` dans le prompt |
+| 2 | valeur | texte qui remplacera la variable |
+| 3 | « Enregistrer » | insère le prompt complété dans la zone de saisie |
+
+*Où* : zone de saisie.
+
+![Prompt complété](../img/11-prompts-outils-fonctions/03c-prompt-insere.png)
+*Écran : zone de saisie remplie par le prompt complété.*
+
+| N° | Élément | Rôle |
+|---|---|---|
+| 1 | texte du prompt complété | « Rédige une fiche de synthèse de contrat Batterix pour un responsable d'atelier… », modifiable avant l'envoi |
+
+*Résultat* : la question est prête ; Entrée l'envoie.
 
 ## Ajouter un outil
 
 **Étape 4. Créer l'outil**
 *Où* : Espace de travail › onglet « Outils » › « Créer ».
-Saisir le nom `Stocks Vélanor` (pastille 1), l'identifiant `stocks_velanor` (pastille 2) et une description (pastille 3). Remplacer le code proposé par celui de `outils/open-webui/extensions/outil_stocks.py` (pastille 4), puis cliquer sur « Enregistrer & Créer » (pastille 5).
+Saisir le nom `Stocks Vélanor` (pastille 1), l'identifiant `stocks_velanor` (pastille 2) et une description (pastille 3). Remplacer le code proposé par tout le contenu du fichier `outils/open-webui/extensions/outil_stocks.py` du dépôt (l'ouvrir dans un éditeur de texte, ou l'afficher avec `cat` dans le terminal, puis tout copier et coller ; pastille 4), puis cliquer sur « Enregistrer & Créer » (pastille 5).
 
 ![Nouvel outil](../img/11-prompts-outils-fonctions/04-nouvel-outil.png)
 *Écran : éditeur d'outil, code de l'outil « Stocks Vélanor ».*
@@ -131,7 +155,7 @@ Cliquer sur « Créer » (pastille 2).
 
 **Étape 8. Créer le filtre**
 *Où* : éditeur de fonction.
-Saisir le nom `Mention de source interne` (pastille 1), remplacer le code par celui de `outils/open-webui/extensions/filtre_signature.py` (pastille 3), puis cliquer sur « Enregistrer & Créer » (pastille 4) et confirmer l'avertissement.
+Saisir le nom `Mention de source interne` (pastille 1) ; l'identifiant `mention_de_source_interne` se remplit tout seul en dessous ; saisir une description (`Réponse en français et mention en fin de réponse`). Choisir le type « Filtre » dans la liste à droite (pastille 2). Remplacer le code par tout le contenu du fichier `outils/open-webui/extensions/filtre_signature.py`, copié comme à l'étape 4 (pastille 3), puis cliquer sur « Enregistrer & Créer » (pastille 4) et confirmer l'avertissement.
 
 ![Nouvelle fonction](../img/11-prompts-outils-fonctions/08-nouvelle-fonction.png)
 *Écran : éditeur de fonction, code du filtre.*
@@ -139,7 +163,7 @@ Saisir le nom `Mention de source interne` (pastille 1), remplacer le code par ce
 | N° | Élément | Rôle |
 |---|---|---|
 | 1 | « Nom de la fonction » | nom affiché |
-| 2 | modèle de départ | exemple de code proposé par l'interface |
+| 2 | type de fonction | « Filtre » : la fonction transforme les questions et les réponses |
 | 3 | code du filtre | classe `Filter` : `inlet` ajoute une consigne avant l'envoi, `outlet` ajoute une mention à la fin de la réponse |
 | 4 | « Enregistrer & Créer » | enregistre la fonction |
 
@@ -186,7 +210,7 @@ Cliquer sur le « + » de « Serveurs d'outils externes » (pastille 3).
 
 **Étape 12. Déclarer le serveur**
 *Où* : fenêtre « Ajouter une connexion ».
-Cliquer sur « OpenAPI » jusqu'à afficher « MCP Streamable HTTP » (pastille 1), saisir le nom `Vélanor MCP` (pastille 2) et l'URL `http://rag-mcp-velanor:8000/mcp` (pastille 3), laisser « Auth » sur « Aucun » (pastille 4), puis cliquer sur « Vérifier la connexion » (pastille 5).
+Cliquer sur « OpenAPI » jusqu'à afficher « MCP Streamable HTTP » (pastille 1), saisir le nom `Vélanor MCP` (pastille 2), une description (`Sites et jours ouvrés (serveur MCP d'essai)`) et l'URL `http://rag-mcp-velanor:8000/mcp` (pastille 3). Laisser « Auth » sur la valeur proposée, « Bearer », avec le champ « Clé API » vide (pastille 4) : le serveur d'essai ne demande pas de clé. Cliquer enfin sur l'icône à deux flèches à droite de l'URL, « Vérifier la connexion » (pastille 5).
 
 ![Déclaration du serveur MCP](../img/11-prompts-outils-fonctions/11-serveur-mcp.png)
 *Écran : fenêtre « Ajouter une connexion », type MCP.*
@@ -196,7 +220,7 @@ Cliquer sur « OpenAPI » jusqu'à afficher « MCP Streamable HTTP » (pastille 
 | 1 | « Type » | « OpenAPI » ou « MCP Streamable HTTP » ; un clic change le type |
 | 2 | nom | nom affiché dans les conversations |
 | 3 | « URL » | adresse du serveur, vue depuis Open WebUI |
-| 4 | « Auth » | authentification : aucune pour ce serveur local |
+| 4 | « Auth » | type d'authentification ; « Bearer » sans clé pour ce serveur local |
 | 5 | « Vérifier la connexion » | teste l'adresse |
 | 6 | « Enregistrer » | garde la connexion |
 
@@ -248,12 +272,12 @@ Activer « Stocks Vélanor » (pastille 3) et « Vélanor MCP » (pastille 4), p
 Taper `Combien de moteurs centraux reste-t-il en stock, et combien de jours ouvrés y a-t-il entre le 16 et le 27 novembre 2026 ?` (pastille 1) et appuyer sur Entrée.
 
 ![Question pour les outils](../img/11-prompts-outils-fonctions/15-outils-actifs.png)
-*Écran : question saisie, outils actifs.*
+*Écran : question saisie, outils activés par le menu « + ».*
 
 | N° | Élément | Rôle |
 |---|---|---|
 | 1 | question | une partie pour l'outil de stock, une partie pour le serveur MCP |
-| 2 | outils actifs | zone de saisie ; aucun repère n'y signale les outils activés |
+| 2 | « + » | menu par lequel les outils ont été activés ; aucun repère dans la zone de saisie ne les signale |
 
 *Résultat* : le modèle répond (étape 16).
 
@@ -276,8 +300,8 @@ Taper `Combien de moteurs centraux reste-t-il en stock, et combien de jours ouvr
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | `stock_piece` | résultat de l'outil de stock |
-| 2 | `jours_ouvres` | résultat du serveur MCP |
+| 1 | « Voir le résultat de stock_piece » | résultat de l'outil de stock ; un clic l'affiche |
+| 2 | « Voir le résultat de velanor-mcp_jours_ouvres » | résultat du serveur MCP |
 
 **Toujours vérifier la ligne « Exploré »** : lors d'un premier essai, le modèle a prévu d'appeler les deux outils, puis a répondu sans les appeler, avec des chiffres inventés (8 unités et 12 jours). Sans ligne « Exploré » qui nomme l'outil, une réponse chiffrée ne vient pas de l'outil : la redemander (« Regénérer »).
 
@@ -324,7 +348,7 @@ Poser une question, par exemple `Quelle est la durée de garantie du cadre ?`.
 | 1 | « Assistant qualité Vélanor » | modèle auquel le filtre est rattaché |
 | 2 | fin de la réponse | la mention « Réponse générée par l'assistant interne Vélanor. » n'apparaît pas à l'écran |
 
-Dans cette version, la mention ajoutée par `outlet` est bien enregistrée dans la conversation (elle figure dans le texte renvoyé par l'API, annexe A3) mais l'interface ne l'affiche pas.
+Dans cette version, la mention ajoutée par `outlet` est bien enregistrée dans la conversation (elle figure dans le texte enregistré, lu par l'API : annexe A6, section 4) mais l'interface ne l'affiche pas.
 
 *Résultat* : le filtre agit sur les échanges ; son ajout en fin de réponse ne se voit pas dans l'interface.
 

@@ -6,15 +6,47 @@ Recherche
 Ctrl+K
 Notes
 Espace de travail
+Canaux
 Dossiers
 Conversations
+Épinglé
+Chiffre d'affaires 2025
+il y a 2 heures
+1h
 Aujourd'hui
-Quel est le chiffre d’affaires 2025 de Vélanor ?
+D’après le message vocal du directeur de production, quelle ligne sera arrêtée, quand, et où la production sera-t-elle transférée ?
+il y a 19 minutes
+19min
+Batterix Audit
+il y a 19 minutes
+19min
+Sécurité batterie
 il y a 20 minutes
-20min
-Quel est le chiffre d’affaires 2025 de Vélanor ?
-il y a 23 minutes
-22min
+19min
+Point qualité du lundi
+il y a 37 minutes
+37min
+your concise title here
+il y a une heure
+49min
+Durée garantie cadre
+il y a une heure
+52min
+Dans quel service et dans quelle ville est-ce que je travaille ?
+il y a une heure
+1h
+Battery Storage Temperature
+il y a une heure
+1h
+Garantie Batteries
+il y a une heure
+1h
+Quelle est la température de stockage des batteries ?
+il y a une heure
+1h
+Quel est le taux de recyclage des batteries usagées collectées ?
+il y a une heure
+1h
 Chargement de...
 Claire Admin
 chat
@@ -24,19 +56,20 @@ chat
 
 chat
 Suggéré
-Expliquer le trading d'options
-si je connais l'achat et la vente d'actions
-Aidez-moi à étudier
-vocabulaire pour un examen d'entrée à l'université
 Montrez-moi un extrait de code
 d'un en-tête collant d'un site web
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
 Donnez-moi des idées
 que faire avec les dessins de mes enfants
-Dites-moi un fait amusant
-à propos de l'Empire romain
 Surmonter la procrastination
 donnez-moi des conseils
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
 Nouvelle conversation
+Enregistré
 Open WebUI
 Retour en arrière
 Recherche
@@ -166,6 +199,8 @@ Outils
 Aucun
 Skills
 Aucun
+Filtres
+Aucun
 Capacités
 Vision, Téléversement du fichier, Interpréteur de code
 +4
@@ -173,7 +208,7 @@ Fonctionnalités par défaut
 Aucun
 Outils intégrés
 Horodatage, Entrée utilisateur, Mémoire
-+9
++10
 Voix
 Par défaut
 Aperçu JSON

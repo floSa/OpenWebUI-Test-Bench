@@ -1,25 +1,5 @@
 [
  {
-  "capture": "16-cas-pratiques/01-consigne.png",
-  "url": "/c/bfc08e69-620e-453e-99eb-bf5d4cf81d9c",
-  "pastilles": [
-   [
-    1,
-    "recherche dans la base"
-   ],
-   [
-    2,
-    "réponse"
-   ],
-   [
-    3,
-    "sources"
-   ]
-  ],
-  "note": "",
-  "heure": "15:28:41"
- },
- {
   "capture": "16-cas-pratiques/02-point-fournisseur.png",
   "url": "/c/fd05d4d8-4a3a-41bb-961b-97f27458ce9d",
   "pastilles": [
@@ -58,5 +38,112 @@
   ],
   "note": "",
   "heure": "15:29:23"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/09-partage-modele-a.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "case à cocher"
+   ],
+   [
+    2,
+    "Ajouter"
+   ]
+  ],
+  "note": "",
+  "heure": "15:46:35"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/09-partage-modele-b.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Visibilité"
+   ],
+   [
+    2,
+    "Équipe production"
+   ]
+  ],
+  "note": "",
+  "heure": "15:46:36"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/10-modele-partage.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "chat Partagé"
+   ],
+   [
+    2,
+    "gemma-4-e4b Privé"
+   ]
+  ],
+  "note": "",
+  "heure": "15:46:43"
+ },
+ {
+  "capture": "13-automatisations-canaux-calendrier/13-pause.png",
+  "url": "/automations/8728d77b-452b-4a2b-8119-7ac9d8079c10",
+  "pastilles": [
+   [
+    1,
+    "interrupteur"
+   ],
+   [
+    2,
+    "statut"
+   ]
+  ],
+  "note": "",
+  "heure": "15:46:51"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/15-outils-actifs.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "question"
+   ],
+   [
+    2,
+    "+"
+   ]
+  ],
+  "note": "",
+  "heure": "15:46:57"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/17-detail-appel.png",
+  "url": "/c/6be0692a-fd46-4aad-9d61-ec70d4794b80",
+  "pastilles": [],
+  "note": "",
+  "heure": "15:47:15"
+ },
+ {
+  "capture": "16-cas-pratiques/01-consigne.png",
+  "url": "/c/bfc08e69-620e-453e-99eb-bf5d4cf81d9c",
+  "pastilles": [
+   [
+    1,
+    "Exploré"
+   ],
+   [
+    2,
+    "réponse"
+   ],
+   [
+    3,
+    "1 Source"
+   ]
+  ],
+  "note": "",
+  "heure": "15:47:28"
  }
 ]
