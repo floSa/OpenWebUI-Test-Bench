@@ -1,0 +1,21 @@
+== conteneurs
+rag-docling-serve Up 5 minutes 5001/tcp, 8080/tcp
+rag-open-webui Up 5 minutes (healthy) 127.0.0.1:3000->8080/tcp
+== /health
+{"status":true}
+== version
+{"version":"0.13.3","deployment_id":""}
+== mémoire
+rag-docling-serve 774.9MiB / 31.35GiB 0.14%
+rag-open-webui 960MiB / 31.35GiB 0.43%
+== disque
+26M	donnees/open-webui
+== ports publiés hors de 127.0.0.1 (doit être vide)
+== service LLM central
+== http://127.0.0.1:8080/v1/models
+  chat (chat)
+  embed (embedding)
+  rerank (rerank)
+  transcribe (audio_transcription)
+  gemma-4-e4b (chat)
+9988 MiB, 16380 MiB
