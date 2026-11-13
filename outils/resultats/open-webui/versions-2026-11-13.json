@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-13T08:57:35",
+  "composants": [
+    {
+      "depot": "open-webui/open-webui",
+      "derniere_stable": "v0.13.3",
+      "publiee_le": "2026-11-08",
+      "utilisee": null,
+      "a_jour": true,
+      "raison": null
+    },
+    {
+      "depot": "docling-project/docling-serve",
+      "derniere_stable": "v1.38.2",
+      "publiee_le": "2026-10-27",
+      "utilisee": null,
+      "a_jour": true,
+      "raison": null
+    },
+    {
+      "depot": "searxng/searxng",
+      "derniere_stable": null,
+      "publiee_le": null,
+      "utilisee": null,
+      "a_jour": true,
+      "raison": null
+    },
+    {
+      "depot": "apache/tika",
+      "derniere_stable": null,
+      "publiee_le": null,
+      "utilisee": null,
+      "a_jour": true,
+      "raison": null
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+v1.38.2: Pulling from docling-project/docling-serve-cpu
+e4b47918e0a7: Pulling fs layer
+bd9ddc54bea9: Pulling fs layer
+abb311cb9297: Pulling fs layer
+2b34400997e9: Pulling fs layer
+c33c7435a024: Pulling fs layer
+bf03a93ece0f: Pulling fs layer
+57a4f7f297d0: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+9d691498eef5: Pulling fs layer
+8f467c24febf: Pulling fs layer
+487390b531c6: Pulling fs layer
+aa7ca54035b6: Pulling fs layer
+5163c9f95006: Pulling fs layer
+4f4fb700ef54: Waiting
+9d691498eef5: Waiting
+8f467c24febf: Waiting
+487390b531c6: Waiting
+aa7ca54035b6: Waiting
+5163c9f95006: Waiting
+2b34400997e9: Waiting
+c33c7435a024: Waiting
+bf03a93ece0f: Waiting
+57a4f7f297d0: Waiting
+bd9ddc54bea9: Verifying Checksum
+bd9ddc54bea9: Download complete
+e4b47918e0a7: Verifying Checksum
+e4b47918e0a7: Download complete
+abb311cb9297: Download complete
+c33c7435a024: Verifying Checksum
+c33c7435a024: Download complete
+57a4f7f297d0: Verifying Checksum
+57a4f7f297d0: Download complete
+4f4fb700ef54: Verifying Checksum
+4f4fb700ef54: Download complete
+bf03a93ece0f: Verifying Checksum
+bf03a93ece0f: Download complete
+2b34400997e9: Verifying Checksum
+2b34400997e9: Download complete
+487390b531c6: Download complete
+aa7ca54035b6: Verifying Checksum
+aa7ca54035b6: Download complete
+5163c9f95006: Verifying Checksum
+5163c9f95006: Download complete
+e4b47918e0a7: Pull complete
+bd9ddc54bea9: Pull complete
+abb311cb9297: Pull complete
+9d691498eef5: Verifying Checksum
+9d691498eef5: Download complete
+8f467c24febf: Verifying Checksum
+8f467c24febf: Download complete
+2b34400997e9: Pull complete
