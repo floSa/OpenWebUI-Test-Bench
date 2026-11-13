@@ -13,3 +13,13 @@ Mission : `kit/PROMPT.md` pour la fiche `kit/fiches/05-open-webui.md`. Une entr�
 - `outils/communs/diagnostic.sh` : `outils/resultats/machine/diagnostic-2026-11-13.json`. Machine du profil B (Ryzen 5 9600X, 32 Go dans WSL, RTX 4060 Ti 16 Go, pilote 616.92), Docker 29.9.3, Compose 5.7.0, 530 Go libres, service central en profil `gpu`.
 - Versions (`outils/communs/versions.py`) : Open WebUI v0.13.3 (8 novembre 2026) dernière stable ; docling-serve v1.38.2. Image `ghcr.io/open-webui/open-webui:v0.13.3@sha256:46b59158e6558eeb980bc828e0f1b30238ad24d82ed84d5e5eda1dab2a082f14` (4,59 Go, 85 s de téléchargement).
 - Prochaine étape : cadrage (sous-agent sur le code au tag), compose et installation.
+
+### 2026-11-13 09:30 — Phases C et D : cadrage, installation, branchement, essai minimal
+
+- Cadrage par sous-agent sur le code au tag (`outils/resultats/open-webui/cadrage-source-v0.13.3.md`) ; relecture consignée (`relecture.md`). Points clés : réglages lus dans l'environnement au premier démarrage puis gardés en base ; écriture des réglages de recherche par `/api/v1/retrieval/config/update` ; reranker externe compatible `/v1/rerank`, actif seulement en recherche hybride ; dans l'interface, les bases passent par l'appel d'outils natif.
+- Installation `outils/open-webui/installer.sh` : 35 s, prêt en 24 s, 969 Mio au repos, port `127.0.0.1:3000` seulement (`installation-2026-11-13.log`) ; aucun modèle téléchargé au premier démarrage (`premier-demarrage-2026-11-13.log`). Interface en français d'emblée.
+- Compte administrateur créé à la souris (scénario `captures/c03_premiers_pas.py premier_compte`) ; identifiants fictifs dans `donnees/IDENTIFIANTS-LOCAUX.txt`.
+- Configuration effective vérifiée par l'API : connexion OpenAI `http://llm-central:8080/v1` (9 modèles listés), embeddings `openai`/`embed`, transcription `openai`/`transcribe`, synthèse vocale du navigateur.
+- Essai minimal API (`essai-minimal-api-2026-11-13.json`) : base, rapport PDF (2,1 s), question Q01 : « 48,6 M€ [1] », sources avec page, 53 s (réflexion de 1 458 jetons).
+- Constat : le PDF scanné est refusé à l'ajout dans une base avec l'extraction par défaut (« The content provided is empty »).
+- Prochaine étape : banc sans puis avec reranker ; plan du manuel ; carte de l'interface.

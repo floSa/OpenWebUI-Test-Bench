@@ -50,3 +50,16 @@ abb311cb9297: Pull complete
 8f467c24febf: Verifying Checksum
 8f467c24febf: Download complete
 2b34400997e9: Pull complete
+c33c7435a024: Pull complete
+bf03a93ece0f: Pull complete
+57a4f7f297d0: Pull complete
+4f4fb700ef54: Pull complete
+9d691498eef5: Pull complete
+8f467c24febf: Pull complete
+487390b531c6: Pull complete
+aa7ca54035b6: Pull complete
+5163c9f95006: Pull complete
+Digest: sha256:7a480a1604fa3b42efeddc7db9527690d9f9bc903226136013e2bfe6b1a4dfb0
+Status: Downloaded newer image for quay.io/docling-project/docling-serve-cpu:v1.38.2
+quay.io/docling-project/docling-serve-cpu:v1.38.2
+quay.io/docling-project/docling-serve-cpu@sha256:7a480a1604fa3b42efeddc7db9527690d9f9bc903226136013e2bfe6b1a4dfb0 5060911843

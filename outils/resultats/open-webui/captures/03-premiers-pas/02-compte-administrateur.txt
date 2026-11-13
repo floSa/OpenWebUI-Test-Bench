@@ -1,0 +1,8 @@
+Aller au contenu principal
+Démarrez avec Open WebUI
+ⓘ Open WebUI n'établit aucune connexion externe et garde vos données en sécurité sur votre serveur local.
+Nom d'utilisateur
+E-mail
+Mot de passe
+Entrez votre mot de passe
+Créer un compte administrateur

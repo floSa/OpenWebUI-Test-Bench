@@ -1,0 +1,57 @@
+# Open WebUI v0.13.3, d'après docker-compose.yaml et la documentation officielle (relus dans
+# outils/resultats/open-webui/relecture.md).
+# Écarts au compose officiel :
+#  - service ollama retiré : tous les modèles viennent du service LLM central (http://llm-central:8080/v1) ;
+#  - image standard figée par étiquette et empreinte (ni :ollama ni :cuda, ni :main) ;
+#  - projet, conteneur et réseaux préfixés rag- ; port publié sur 127.0.0.1 seulement (3000 -> 8080) ;
+#  - données dans donnees/open-webui/data (ignoré par git) au lieu d'un volume nommé ;
+#  - réseaux externes llm-net (service LLM central) et rag-local (captures Playwright, banc) ;
+#  - branchement au service central par variables (lues au premier démarrage puis gardées en base,
+#    modifiables ensuite dans Paramètres d'administration) ; clé lue dans le .env du dépôt par compose.sh ;
+#  - connexion Ollama coupée, télémétrie coupée, langue par défaut fr-FR.
+name: rag-open-webui
+
+services:
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:v0.13.3@sha256:46b59158e6558eeb980bc828e0f1b30238ad24d82ed84d5e5eda1dab2a082f14
+    container_name: rag-open-webui
+    ports:
+      - "127.0.0.1:3000:8080"
+    env_file:
+      # WEBUI_SECRET_KEY généré par installer.sh (secret local, ignoré par git) et options facultatives
+      - path: ../../donnees/open-webui/options.env
+        required: false
+    environment:
+      DEFAULT_LOCALE: fr-FR
+      # Connexions aux modèles : OpenAI-compatible vers le service central, pas d'Ollama
+      ENABLE_OLLAMA_API: "false"
+      ENABLE_OPENAI_API: "true"
+      OPENAI_API_BASE_URL: http://llm-central:8080/v1
+      OPENAI_API_KEY: ${LLM_CENTRAL_KEY:?clé LLM_CENTRAL_KEY absente du .env}
+      # Documents : embeddings par le service central (aucun modèle téléchargé par l'application)
+      RAG_EMBEDDING_ENGINE: openai
+      RAG_EMBEDDING_MODEL: embed
+      RAG_OPENAI_API_BASE_URL: http://llm-central:8080/v1
+      RAG_OPENAI_API_KEY: ${LLM_CENTRAL_KEY}
+      RAG_EMBEDDING_BATCH_SIZE: "4"
+      # Transcription par le service central
+      AUDIO_STT_ENGINE: openai
+      AUDIO_STT_OPENAI_API_BASE_URL: http://llm-central:8080/v1
+      AUDIO_STT_OPENAI_API_KEY: ${LLM_CENTRAL_KEY}
+      AUDIO_STT_MODEL: transcribe
+      # Pas de télémétrie
+      SCARF_NO_ANALYTICS: "true"
+      DO_NOT_TRACK: "true"
+      ANONYMIZED_TELEMETRY: "false"
+    volumes:
+      - ../../donnees/open-webui/data:/app/backend/data
+    networks:
+      - llm-net
+      - rag-local
+    restart: unless-stopped
+
+networks:
+  llm-net:
+    external: true
+  rag-local:
+    external: true

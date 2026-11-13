@@ -1,0 +1,15 @@
+== installer.sh 2026-11-13T09:01:31+01:00
+RAM disponible avant installation : 24514 Mo
+image : ghcr.io/open-webui/open-webui:v0.13.3 ghcr.io/open-webui/open-webui@sha256:46b59158e6558eeb980bc828e0f1b30238ad24d82ed84d5e5eda1dab2a082f14 4586452578 octets
+secret généré : /home/florian/mes_projets/Tutoriels/OpenWebUI-Test-Bench/donnees/open-webui/options.env (jamais affiché)
+ Container rag-open-webui Creating 
+ Container rag-open-webui Created 
+ Container rag-open-webui Starting 
+ Container rag-open-webui Started 
+Open WebUI prêt : http://127.0.0.1:3000 (24 s)
+rag-open-webui 127.0.0.1:3000->8080/tcp
+ports : tous liés à 127.0.0.1
+{"version":"0.13.3","deployment_id":""}
+durée : 35 s
+RAM au repos : rag-open-webui 969.2MiB / 31.35GiB
+disque des données : 1.2M	/home/florian/mes_projets/Tutoriels/OpenWebUI-Test-Bench/donnees/open-webui
