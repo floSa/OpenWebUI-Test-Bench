@@ -72,3 +72,9 @@ Mission : `kit/PROMPT.md` pour la fiche `kit/fiches/05-open-webui.md`. Une entr�
 - Contrôle `--essai` du début de session : fait à 08:56, sortie dans `outils/resultats/open-webui/sante-llm-central-2026-11-13-debut.log` (versé par `c9cd08c` à 09:00) ; la sortie d'origine n'est plus visible dans la conversation après la compaction du contexte. Relance de fin de session réussie (mêmes réponses).
 - Relecture novice : cinquième lecteur sans remarque, détail par chapitre (156 renvois de captures) ; trois captures tirées au hasard affichées (§10.8) ; l'affichage des 153 captures dans la conversation n'a pas été fait (taille du contexte).
 - Tous les autres critères de fin sont prouvés dans la conversation. Mission close de mon côté.
+
+### 2026-11-13 — Uniformisation de la série
+
+- `docs/README.md` remplacé par l'index commun aux cinq dépôts (Open Notebook, RAGFlow, AnythingLLM, Kotaemon, Open WebUI) : modèles utilisés, services déportables (OCR, audio, reranker), comparatif à deux lignes par solution (défaut, meilleur réglage). Chiffres repris des résultats bruts du 12 et du 13 novembre, aucun nouveau banc.
+- README : section « Résultats » au même format que les autres dépôts, « Le parcours » placé juste après le sommaire.
+- `verifier_docs.py` : 0 point.

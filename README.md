@@ -16,6 +16,7 @@ Cinquième banc de la série après Open Notebook, RAGFlow, AnythingLLM et Kotae
 
 ## Sommaire
 
+- [Le parcours](#le-parcours)
 - [Architecture](#architecture)
 - [Démarrage](#démarrage)
 - [Configuration](#configuration)
@@ -23,13 +24,28 @@ Cinquième banc de la série après Open Notebook, RAGFlow, AnythingLLM et Kotae
 - [Tests](#tests)
 - [Structure du projet](#structure-du-projet)
 - [Licences & composants](#licences--composants)
-- [Le parcours](#le-parcours)
 - [Commandes utiles](#commandes-utiles)
 - [Données du banc](#données-du-banc)
 - [Les pièges que ce banc documente](#les-pièges-que-ce-banc-documente)
 - [Résultats](#résultats)
 - [Versions](#versions)
 - [Ressources](#ressources)
+
+## Le parcours
+
+| Manuel | Ce qu'on saura faire |
+|---|---|
+| [01 Découvrir](docs/open-webui/manuel/01-decouvrir-open-webui.md) | dire à quoi sert l'outil, pour qui, sur quelle machine |
+| [02 Installer](docs/open-webui/manuel/02-installer-open-webui.md) | installer, ouvrir, arrêter, redémarrer, supprimer |
+| [03 Premiers pas](docs/open-webui/manuel/03-premiers-pas.md) | créer le compte administrateur, se repérer, vérifier la connexion aux modèles |
+| [04 Première question](docs/open-webui/manuel/04-premiere-question.md) | joindre un document, poser une question, lire la source citée |
+| [05 Bases de connaissances](docs/open-webui/manuel/05-bases-de-connaissances.md) à [08 Lecture des documents](docs/open-webui/manuel/08-regler-la-lecture-des-documents.md) | bases, questions citées, assistant lié à une base, Docling, recherche hybride, tri par `rerank` |
+| [09 Converser au quotidien](docs/open-webui/manuel/09-converser-au-quotidien.md) à [13 Automatisations](docs/open-webui/manuel/13-automatisations-canaux-calendrier.md) | conversations, notes et mémoire, prompts, outils, fonctions, MCP, voix, automatisations, canaux |
+| [14 Comptes](docs/open-webui/manuel/14-comptes-groupes-permissions.md) et [15 Administrer](docs/open-webui/manuel/15-administrer.md) | comptes, groupes, permissions, réglages de l'instance, clés d'API, sauvegarde |
+| [16 Cas pratiques](docs/open-webui/manuel/16-cas-pratiques.md), [17 En cas de problème](docs/open-webui/manuel/17-en-cas-de-probleme.md), [18 Glossaire](docs/open-webui/manuel/18-glossaire.md) | trois usages complets, erreurs réelles, vocabulaire |
+| [Annexes A1 à A6](docs/open-webui/README.md#partie-2--évaluation-et-compléments) | banc, matériel, API, exploitation, fonctionnement interne, rapport d'essais |
+
+Parcours conseillés : interroger ses documents seul (01 à 08, puis 16) ; équipe (01 à 07, 14, 15, A4) ; automatiser (01 à 04, 15, A3) ; choisir (01, A1, A2).
 
 ## Architecture
 
@@ -158,22 +174,6 @@ Détail des scripts : [outils/README.md](outils/README.md).
 
 Ce projet : MIT — Copyright (c) 2026 floSa (fichier [LICENSE](LICENSE)).
 
-## Le parcours
-
-| Manuel | Ce qu'on saura faire |
-|---|---|
-| [01 Découvrir](docs/open-webui/manuel/01-decouvrir-open-webui.md) | dire à quoi sert l'outil, pour qui, sur quelle machine |
-| [02 Installer](docs/open-webui/manuel/02-installer-open-webui.md) | installer, ouvrir, arrêter, redémarrer, supprimer |
-| [03 Premiers pas](docs/open-webui/manuel/03-premiers-pas.md) | créer le compte administrateur, se repérer, vérifier la connexion aux modèles |
-| [04 Première question](docs/open-webui/manuel/04-premiere-question.md) | joindre un document, poser une question, lire la source citée |
-| [05 Bases de connaissances](docs/open-webui/manuel/05-bases-de-connaissances.md) à [08 Lecture des documents](docs/open-webui/manuel/08-regler-la-lecture-des-documents.md) | bases, questions citées, assistant lié à une base, Docling, recherche hybride, tri par `rerank` |
-| [09 Converser au quotidien](docs/open-webui/manuel/09-converser-au-quotidien.md) à [13 Automatisations](docs/open-webui/manuel/13-automatisations-canaux-calendrier.md) | conversations, notes et mémoire, prompts, outils, fonctions, MCP, voix, automatisations, canaux |
-| [14 Comptes](docs/open-webui/manuel/14-comptes-groupes-permissions.md) et [15 Administrer](docs/open-webui/manuel/15-administrer.md) | comptes, groupes, permissions, réglages de l'instance, clés d'API, sauvegarde |
-| [16 Cas pratiques](docs/open-webui/manuel/16-cas-pratiques.md), [17 En cas de problème](docs/open-webui/manuel/17-en-cas-de-probleme.md), [18 Glossaire](docs/open-webui/manuel/18-glossaire.md) | trois usages complets, erreurs réelles, vocabulaire |
-| [Annexes A1 à A6](docs/open-webui/README.md#partie-2--évaluation-et-compléments) | banc, matériel, API, exploitation, fonctionnement interne, rapport d'essais |
-
-Parcours conseillés : interroger ses documents seul (01 à 08, puis 16) ; équipe (01 à 07, 14, 15, A4) ; automatiser (01 à 04, 15, A3) ; choisir (01, A1, A2).
-
 ## Commandes utiles
 
 ```bash
@@ -213,16 +213,16 @@ Questions : 13 faits simples, 10 tableaux, 4 sur le scan, 3 multi-documents, 2 e
 
 ## Résultats
 
-Modèle `chat` du service central (réflexion active), 10 passages, contexte 16 384 jetons, machine avec RTX 4060 Ti :
+Banc de 38 questions (34 avec réponse, 4 pièges), modèles du service central : Qwen3.5-4B avec réflexion, bge-m3, bge-reranker-v2-m3.
 
-| Réglage | Exactes | Refus pièges | p50 | p95 |
-|---|---|---|---|---|
-| lecture par défaut, recherche par le sens, sans tri | 28/34 | 4/4 | 60 s | 106 s |
-| idem avec recherche hybride et tri `rerank` | 28/34 | 4/4 | 66 s | 119 s |
-| scan lu par Docling, recherche hybride, tri `rerank` | 34/34 | 4/4 | 58 s | 115 s |
-| idem, génération des requêtes de recherche coupée | 34/34 | 4/4 | 24 s | 87 s |
+| Réglage | OCR | Recherche | Passages | Reranker | Exactes /34 | Pièges refusés /4 | Médiane | Pic RAM de l'application |
+|---|---|---|---|---|---|---|---|---|
+| défaut | aucun : scan refusé | vecteurs | 10 | aucun | 28 | 4 | 60,1 s | 2,3 Go |
+| meilleur | Docling déporté | hybride | 10 | bge-reranker-v2-m3 | 34 | 4 | 24,0 s | 3,6 Go |
 
-Les 6 échecs sans Docling portent sur le contrat scanné (4 questions) et sur deux questions multi-documents qui en dépendent. Sources : `outils/resultats/open-webui/banc-2026-11-13-*.md`. Détail : [annexe A1](docs/open-webui/annexes/A1-evaluation-qualite-et-performances.md).
+Meilleur réglage : génération des requêtes de recherche coupée (laissée active, la médiane passe à 58 s). Réflexion du modèle coupée en plus : 34/34, médiane 1,3 s.
+
+Toutes les variantes : [annexe A1](docs/open-webui/annexes/A1-evaluation-qualite-et-performances.md). Méthode et preuves : [annexe A6](docs/open-webui/annexes/A6-rapport-d-essais.md). Bilan : [RAPPORT-open-webui.md](RAPPORT-open-webui.md). Comparaison avec les quatre autres solutions : [index de la série](docs/README.md).
 
 ## Versions
 
