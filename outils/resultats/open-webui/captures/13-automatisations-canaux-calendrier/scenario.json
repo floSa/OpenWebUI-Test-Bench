@@ -1,0 +1,166 @@
+[
+ {
+  "capture": "13-automatisations-canaux-calendrier/01-automatisations.png",
+  "url": "/automations",
+  "pastilles": [
+   [
+    1,
+    "Créer"
+   ],
+   [
+    2,
+    "Rechercher des automatisations"
+   ]
+  ],
+  "note": "",
+  "heure": "09:26:54"
+ },
+ {
+  "capture": "13-automatisations-canaux-calendrier/02-frequence.png",
+  "url": "/automations",
+  "pastilles": [
+   [
+    1,
+    "Daily"
+   ]
+  ],
+  "note": "",
+  "heure": "09:27:02"
+ },
+ {
+  "capture": "13-automatisations-canaux-calendrier/03-nouvelle-automatisation.png",
+  "url": "/automations",
+  "pastilles": [
+   [
+    1,
+    "Titre"
+   ],
+   [
+    2,
+    "Instructions"
+   ],
+   [
+    3,
+    "fréquence"
+   ],
+   [
+    4,
+    "modèle"
+   ],
+   [
+    5,
+    "destination"
+   ],
+   [
+    6,
+    "Créer"
+   ]
+  ],
+  "note": "",
+  "heure": "09:27:05"
+ },
+ {
+  "capture": "13-automatisations-canaux-calendrier/04-liste.png",
+  "url": "/automations",
+  "pastilles": [
+   [
+    1,
+    "Point qualité du lundi"
+   ],
+   [
+    2,
+    "interrupteur"
+   ]
+  ],
+  "note": "",
+  "heure": "09:27:16"
+ },
+ {
+  "capture": "13-automatisations-canaux-calendrier/05-activer-canaux.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Canaux"
+   ],
+   [
+    2,
+    "Enregistrer"
+   ]
+  ],
+  "note": "",
+  "heure": "09:27:23"
+ },
+ {
+  "capture": "13-automatisations-canaux-calendrier/06-barre-canaux.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Canaux"
+   ],
+   [
+    2,
+    "Créer un canal"
+   ]
+  ],
+  "note": "",
+  "heure": "09:27:31"
+ },
+ {
+  "capture": "13-automatisations-canaux-calendrier/07-nouveau-canal.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "nom du canal"
+   ],
+   [
+    2,
+    "Créer"
+   ]
+  ],
+  "note": "",
+  "heure": "09:27:33"
+ },
+ {
+  "capture": "13-automatisations-canaux-calendrier/08-canal.png",
+  "url": "/channels/00f44563-8ccd-4d09-a684-9bc7d5018c2a",
+  "pastilles": [
+   [
+    1,
+    "atelier-nantes"
+   ],
+   [
+    2,
+    "message publié"
+   ],
+   [
+    3,
+    "zone de saisie"
+   ]
+  ],
+  "note": "",
+  "heure": "09:27:38"
+ },
+ {
+  "capture": "13-automatisations-canaux-calendrier/09-calendrier.png",
+  "url": "/calendar",
+  "pastilles": [
+   [
+    1,
+    "Aujourd'hui"
+   ],
+   [
+    2,
+    "Créer"
+   ],
+   [
+    3,
+    "Scheduled Tasks"
+   ]
+  ],
+  "note": "",
+  "heure": "09:27:44"
+ }
+]

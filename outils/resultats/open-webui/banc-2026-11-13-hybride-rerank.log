@@ -38,3 +38,19 @@ Q20 fait simple     OK    46.4s  'Selon la procédure PR-SEC-04 — Charge et st
 Q21 tableau         OK    48.3s  'Selon la procédure PR-SEC-04, le local B2 est inspecté le premier lundi de chaque mois [1]'
 Q22 fait simple     OK    53.9s  'Le prix public du modèle Vilaine Compact est de 2 490 € TTC [1].'
 Q23 fait simple     OK    58.6s  "La capacité prévue de l'usine de Saint-Nazaire est de 25 000 vélos par an [1]."
+Q24 tableau         OK    67.8s  'Selon les données de stock disponibles dans le contexte, il reste **1240 unités** de batte'
+Q25 fait simple     OK    69.5s  'Selon le document FAQ du service après-vente, la durée de garantie du cadre est de 7 ans ['
+Q26 fait simple     OK    67.8s  'Le numéro de téléphone du service après-vente est le 02 40 00 12 34 [1].'
+Q27 fait simple     OK    53.7s  "Le montant de la prime d'intéressement pour l'année 2025 est de **1 150 euros par salarié*"
+Q28 anglais         OK    44.2s  'According to the Supplier Quality Audit document for Batterix GmbH, the overall score obta'
+Q29 anglais         OK    57.4s  "Selon le rapport d'audit fournisseur de qualité (Supplier Quality Audit) fourni, le taux d"
+Q30 multi-documents NON  119.8s  'Selon le document de gestion des fournisseurs, le délai moyen constaté pour les batteries '
+Q31 multi-documents NON   81.7s  "Selon le document d'audit de qualité fourni, le score global obtenu par Batterix lors de l"
+Q32 multi-documents OK    51.1s  "Selon les informations disponibles, Vélanor vise un chiffre d'affaires de 55 M€ en 2026 [1"
+Q33 audio           OK   109.9s  "La ligne d'assemblage numéro 3 de Nantes sera arrêtée pour maintenance du 2 au 6 mars [1]."
+Q34 audio           OK    42.7s  'Le directeur de production de Vélanor est Julien Moreau [2].'
+Q35 piège           OK   109.0s  "D'après les documents fournis, il n'est pas possible de connaître le chiffre d'affaires ex"
+Q36 piège           OK   119.5s  "D'après les documents fournis, l'identité du directeur financier de Vélanor n'est pas ment"
+Q37 piège           OK   179.8s  'Les documents fournis ne contiennent aucune information concernant la vente de trottinette'
+Q38 piège           OK    56.3s  "D'après le contexte fourni, il n'existe aucune information concernant le salaire ou la rém"
+-> outils/resultats/open-webui/banc-2026-11-13-hybride-rerank.json

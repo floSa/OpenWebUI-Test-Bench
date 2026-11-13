@@ -1,0 +1,6 @@
+2026-11-13 09:26:56 fréquences : Une fois | Par heure | Journalier | Hebdomadaire | Mensuel | Sur mesure
+2026-11-13 09:27:01 02-frequence : élément absent « première fréquence »
+2026-11-13 09:27:03 après fréquence : Instructions | Daily | Sélectionnez un modèle | Nouvelle conversation | Annuler | Créer
+2026-11-13 09:27:10 après création : http://rag-open-webui:8080/automations/8728d77b-452b-4a2b-8119-7ac9d8079c10 | Automatisations | 1 | / | Point qualité du lundi | Statut | Actif | Planifier | Quotidien à 9:00 | Destination | Nouvelle conversation | Modèle | chat | Prochaine exécution | 14/11/2026 09:00 | Dernière exécution | Jamais | Prompt | Rappelle en cinq lignes les contrôles de sécurité des batteries à faire cette semaine dans le local B2 (inspection, extincteurs, formation), en français. | Exécutions | Aucune exécution pour l'instant
+2026-11-13 09:27:30 barre latérale : 
+2026-11-13 09:27:32 fenêtre canal : Créer un canal | Type de canal | Canal | Canal de groupe | Message direct | Canal de discussion où l'accès est basé sur les groupes et les permissions | Nom du canal | Visibilité | Privé |  | Seuls les utilisateurs et groupes autorisés peuvent accéder |  | Liste des accès | Ajouter un accès | Aucun partage. Visible uniquement par vous. | Créer

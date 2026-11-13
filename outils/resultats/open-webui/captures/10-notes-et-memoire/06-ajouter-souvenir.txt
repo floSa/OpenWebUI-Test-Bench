@@ -1,0 +1,97 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Aujourd'hui
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 39 minutes
+38min
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 42 minutes
+41min
+Chargement de...
+Claire Admin
+chat
+
+
+
+
+chat
+Suggéré
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Montrez-moi un extrait de code
+d'un en-tête collant d'un site web
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Surmonter la procrastination
+donnez-moi des conseils
+Donnez-moi des idées
+que faire avec les dessins de mes enfants
+Nouvelle conversation
+Open WebUI
+Retour en arrière
+Recherche
+Personnel
+Bases
+Général
+Interface utilisateur
+Notifications
+Raccourcis
+Préférences
+Personnalisation
+Audio
+Données
+Contrôles des données
+Consommation de tokens
+Conversations archivées
+Profil
+Compte
+À propos
+Administrateur
+Système
+Général
+Authentification
+Interface utilisateur
+IA
+Connexions
+Modèles
+Sous-agents
+Outils
+Intégrations
+Documents
+Audio
+Images
+Recherche Web
+Exécution de code
+Pipelines
+Qualité
+Analytique
+Évaluations
+Données
+Base de données
+Personnalisation
+Mémoire
+Mémoire
+EXPÉRIMENTAL
+
+Vous pouvez personnaliser vos interactions avec les LLM en ajoutant des mémoires à l'aide du bouton « Ajouter un souvenir » ci-dessous, ce qui les rendra plus utiles et mieux adaptées à vos besoins.
+
+Mémoires enregistrées 0
+Actions
+Les souvenirs accessibles par les LLMs seront affichées ici.
+Enregistrer
+Ajouter un souvenir
+Type
+Utilisateur
+Chemin (optionnel)
+Ajouter

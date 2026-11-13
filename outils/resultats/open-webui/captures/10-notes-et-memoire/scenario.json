@@ -1,0 +1,122 @@
+[
+ {
+  "capture": "10-notes-et-memoire/01-notes.png",
+  "url": "/notes",
+  "pastilles": [
+   [
+    1,
+    "Notes"
+   ],
+   [
+    2,
+    "Créer"
+   ],
+   [
+    3,
+    "Rechercher des notes"
+   ]
+  ],
+  "note": "",
+  "heure": "09:31:01"
+ },
+ {
+  "capture": "10-notes-et-memoire/02-nouvelle-note.png",
+  "url": "/notes/a0d6f9d5-16ac-4352-b670-5ee10988caba",
+  "pastilles": [
+   [
+    1,
+    "titre"
+   ],
+   [
+    2,
+    "texte de la note"
+   ],
+   [
+    3,
+    "Menu des notes"
+   ],
+   [
+    4,
+    "Accès"
+   ]
+  ],
+  "note": "",
+  "heure": "09:31:12"
+ },
+ {
+  "capture": "10-notes-et-memoire/03-menu-note.png",
+  "url": "/notes/a0d6f9d5-16ac-4352-b670-5ee10988caba",
+  "pastilles": [
+   [
+    1,
+    "première action"
+   ]
+  ],
+  "note": "",
+  "heure": "09:31:14"
+ },
+ {
+  "capture": "10-notes-et-memoire/04-liste-notes.png",
+  "url": "/notes",
+  "pastilles": [
+   [
+    1,
+    "Réunion qualité du 13 novembre"
+   ]
+  ],
+  "note": "",
+  "heure": "09:31:20"
+ },
+ {
+  "capture": "10-notes-et-memoire/05-memoire.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Personnalisation"
+   ],
+   [
+    2,
+    "Mémoire"
+   ],
+   [
+    3,
+    "Actions"
+   ]
+  ],
+  "note": "",
+  "heure": "09:33:15"
+ },
+ {
+  "capture": "10-notes-et-memoire/06-ajouter-souvenir.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "souvenir"
+   ],
+   [
+    2,
+    "Ajouter"
+   ]
+  ],
+  "note": "",
+  "heure": "09:33:18"
+ },
+ {
+  "capture": "10-notes-et-memoire/07-souvenirs.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Mémoires enregistrées"
+   ],
+   [
+    2,
+    "souvenir enregistré"
+   ]
+  ],
+  "note": "",
+  "heure": "09:33:29"
+ }
+]
