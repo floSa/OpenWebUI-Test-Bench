@@ -1,0 +1,153 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Aujourd'hui
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 21 minutes
+21min
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 24 minutes
+24min
+Chargement de...
+Claire Admin
+chat
+
+
+
+
+chat
+Suggéré
+Donnez-moi des idées
+que faire avec les dessins de mes enfants
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Surmonter la procrastination
+donnez-moi des conseils
+Montrez-moi un extrait de code
+d'un en-tête collant d'un site web
+Nouvelle conversation
+Open WebUI
+Retour en arrière
+Recherche
+Personnel
+Bases
+Général
+Interface utilisateur
+Notifications
+Raccourcis
+Préférences
+Personnalisation
+Audio
+Données
+Contrôles des données
+Consommation de tokens
+Conversations archivées
+Profil
+Compte
+À propos
+Administrateur
+Système
+Général
+Authentification
+Interface utilisateur
+IA
+Connexions
+Modèles
+Sous-agents
+Outils
+Intégrations
+Documents
+Audio
+Images
+Recherche Web
+Exécution de code
+Pipelines
+Qualité
+Analytique
+Évaluations
+Données
+Base de données
+Analytique
+Tous les utilisateurs
+Équipe production
+Dernières 24 heures
+7 derniers jours
+30 derniers jours
+90 derniers jours
+Year to date
+Last 12 months
+Toute la période
+Plage personnalisée
+Aperçu
+Sessions
+Tokens
+0
+Entrée
+0
+Sortie
+0
+Messages
+2
+Conversations
+2
+Utilisateurs
+1
+Tokens
+Messages
+Comparer
+Volume
+Activité
+Par heure
+Journalier
+All models
+Tokens
+4
+3
+2
+1
+0
+nov. 6, 09:00
+nov. 9, 21:00
+nov. 13, 09:00
+All models
+chat
+0
+Select to isolate model
+
+Select a model to isolate it. · Server time
+
+Modèles
+Utilisateurs
+#	
+Modèle
+	
+Messages
+	
+Utilisateurs
+	
+Conversations
+	
+Entrée
+	
+Sortie
+	
+Total
+	
+Token share
+
+1	
+chat
+	2	1	2	0	0	0	
+0%
+Le nombre de messages est basé sur le nombre de réponses de l'assistant. Le nombre de tokens est une estimation et peut ne pas refléter l'utilisation réelle de l'API

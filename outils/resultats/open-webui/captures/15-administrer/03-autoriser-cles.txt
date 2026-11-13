@@ -1,0 +1,228 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Aujourd'hui
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 26 minutes
+25min
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 28 minutes
+28min
+Chargement de...
+Claire Admin
+chat
+
+
+
+
+chat
+Suggéré
+Surmonter la procrastination
+donnez-moi des conseils
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Montrez-moi un extrait de code
+d'un en-tête collant d'un site web
+Donnez-moi des idées
+que faire avec les dessins de mes enfants
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Nouvelle conversation
+Open WebUI
+Retour en arrière
+Recherche
+Personnel
+Bases
+Général
+Interface utilisateur
+Notifications
+Raccourcis
+Préférences
+Personnalisation
+Audio
+Données
+Contrôles des données
+Consommation de tokens
+Conversations archivées
+Profil
+Compte
+À propos
+Administrateur
+Système
+Général
+Authentification
+Interface utilisateur
+IA
+Connexions
+Modèles
+Sous-agents
+Outils
+Intégrations
+Documents
+Audio
+Images
+Recherche Web
+Exécution de code
+Pipelines
+Qualité
+Analytique
+Évaluations
+Données
+Base de données
+Authentification
+Accès utilisateur
+Rôle utilisateur par défaut
+en attente
+utilisateur
+administrateur
+
+Rôle par défaut pour les nouveaux utilisateurs.
+
+Groupe par défaut
+Aucun
+Équipe production
+
+Groupe par défaut pour les nouveaux utilisateurs.
+
+Formulaire de connexion
+
+Afficher le formulaire de connexion.
+
+Nouveaux comptes
+
+Autoriser les nouveaux utilisateurs à créer un compte.
+
+Clés API
+
+Autoriser les utilisateurs à créer des clés API pour un accès programmatique.
+
+Restrictions des points de terminaison de la clé API
+
+Restrictions des points de terminaison pour les clés API.
+
+Expiration du jeton JWT
+
+Durée de validité du jeton JWT.
+
+Multi-factor authentication
+Require an authenticator for all users
+
+Changes sign out all devices. Users enroll on their next sign-in.
+
+Comptes en attente
+Détails de l'administrateur
+
+Détails de l'administrateur pour l'interface.
+
+Email de contact de l'administrateur
+
+Email de contact de l'administrateur pour les utilisateurs.
+
+Titre de l'overlay utilisateur en attente
+
+Titre de l'overlay pour les utilisateurs en attente.
+
+Contenu de l'overlay utilisateur en attente
+
+Contenu de l'overlay pour les utilisateurs en attente.
+
+LDAP
+LDAP
+
+Autoriser les utilisateurs à s'authentifier auprès d'un annuaire LDAP.
+
+OAuth/OIDC
+Ces paramètres sont lus depuis les variables d'environnement et ne peuvent pas être modifiés ici tant que ENABLE_OAUTH_PERSISTENT_CONFIG est désactivé.
+OAuth/OIDC
+
+Autoriser les utilisateurs à s'authentifier auprès d'un fournisseur OAuth / OIDC.
+
+Restart all Open WebUI instances to apply changes to the provider connection settings.
+
+Nom du fournisseur
+
+Nom du fournisseur OAuth.
+
+URL du fournisseur
+
+URL du fournisseur OAuth.
+
+ID client
+
+ID client pour OAuth.
+
+Secret client
+Entrez le Client Secret
+
+Secret client pour OAuth.
+
+URI de redirection
+
+URI de redirection pour OAuth.
+
+Portées
+
+Portées OAuth demandées.
+
+Revendication email
+
+Revendication OAuth utilisée comme email.
+
+Revendication nom d'utilisateur
+
+Revendication OAuth utilisée comme nom d'utilisateur.
+
+Revendication image
+
+Revendication OAuth utilisée comme image de profil.
+
+Revendication secondaire
+
+Revendication secondaire pour OAuth.
+
+Inscription OAuth
+
+Autoriser les utilisateurs à créer un compte via OAuth.
+
+Fusionner les comptes par email
+
+Fusionner les comptes avec le même email.
+
+Redirection automatique
+
+Redirection automatique vers le fournisseur OAuth.
+
+Domaines autorisés
+
+Domaines autorisés pour les connexions utilisateur.
+
+Mappage des rôles
+
+Mappage des rôles OAuth aux rôles Open WebUI.
+
+Autoriser la gestion de groupes OAuth
+
+Autoriser la gestion de groupes via OAuth.
+
+Mettre à jour l'email
+
+Autoriser les utilisateurs à mettre à jour leur email.
+
+Mettre à jour le nom
+
+Autoriser les utilisateurs à mettre à jour leur nom.
+
+Mettre à jour l'image
+
+Autoriser les utilisateurs à mettre à jour leur image de profil.
+
+Enregistrer

@@ -1,0 +1,44 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Aujourd'hui
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 30 minutes
+30min
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 33 minutes
+33min
+Chargement de...
+Claire Admin
+Modèles
+0
+Connaissances
+2
+Prompts
+1
+Skills
+0
+Outils
+1
+Créer
+Outils
+Tout
+Nom d'utilisateur
+Owner
+Mise à jour le
+Actions
+Stocks Vélanor
+v1.0.0
+Stock d'une pièce chez Vélanor (fictif)
+Claire Admin
+il y a quelques secondes
+Réalisé par la communauté OpenWebUI
+Trouvez un outil
+Découvrez, téléchargez et explorez des outils personnalisés

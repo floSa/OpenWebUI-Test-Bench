@@ -1,0 +1,1 @@
+2026-11-13 : GET /api/v1/configs/export (même contenu que Réglages › Base de données › Exporter la configuration) : 22 024 caractères ; contient la clé du service LLM central : True (valeur non affichée).

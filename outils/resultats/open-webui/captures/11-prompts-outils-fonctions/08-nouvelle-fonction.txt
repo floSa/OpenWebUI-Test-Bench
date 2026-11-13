@@ -1,0 +1,171 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Aujourd'hui
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 31 minutes
+30min
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 33 minutes
+33min
+Chargement de...
+Claire Admin
+Utilisateurs
+Évaluations
+Fonctions
+Réglages
+Retour en arrière
+Par défaut
+English (US)
+English (GB)
+Arabic (العربية)
+Arabic (Bahrain)
+Azərbaycanca
+Basque (Euskara)
+Bengali (বাংলা)
+Bosanski Latinica
+Tibetan (བོད)
+Bulgarian (български)
+Catalan (català)
+Cebuano (Filipino)
+Croatian (Hrvatski)
+Czech (čeština)
+Danish (Denmark)
+Dutch (Netherlands)
+Estonian (Eesti)
+Finnish (Suomalainen)
+Faroese (Faroe Islands)
+French (Canada)
+French (France)
+Galician (Galego)
+Georgian (ქართული)
+German (Deutsch)
+Greek (Ἑλλάδα)
+Hebrew (עברית)
+Hindi (हिंदी)
+Hungarian (Magyar)
+Indonesian (Bahasa Indonesia)
+Irish (Gaeilge)
+Italian (Italiano)
+Japanese (日本語)
+Kabyle (Taqbaylit)
+Korean (한국어)
+Lithuanian (Lietuvių)
+Latvian (Latviešu)
+Malay (Bahasa Malaysia)
+Norwegian Bokmål (Norway)
+Persian (فارسی)
+Polish (Polski)
+Portuguese (Brazil)
+Portuguese (Portugal)
+Punjabi (India)
+Romanian (Romania)
+Russian (Russia)
+Serbian (Српски)
+Slovak (Slovenčina)
+Slovenian (Slovenščina)
+Spanish (Español)
+Swedish (Svenska)
+Tagalog (Filipino)
+தமிழ் (இந்தியா)
+Thailand (ไทย)
+Turkish (Türkçe)
+Turkmen (Türkmençe)
+Ukrainian (Українська)
+Urdu (اردو)
+Uyghur (ئۇيغۇرچە)
+Uzbek (Cyrillic)
+Uzbek (Latin)
+Vietnamese (Tiếng Việt)
+Chinese (简体中文)
+Chinese (繁體中文)
+Doge (🐶)
+Filtre
+Événement
+Selection deleted
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+⌄
+⌄
+⌄
+⌄
+⌄
+⌄
+⌄
+⌄
+"""
+title: Mention de source interne
+author: banc d'essai (fictif)
+description: Filtre qui ajoute une consigne de réponse en français et une mention en fin de réponse.
+version: 1.0.0
+"""
+# Filtre écrit pour le manuel : aucune dépendance, aucun accès réseau ni disque.
+from pydantic import BaseModel, Field
+
+
+
+
+class Filter:
+    class Valves(BaseModel):
+        mention: str = Field(default="Réponse générée par l'assistant interne Vélanor.",
+                             description="Texte ajouté à la fin de chaque réponse")
+
+
+    def __init__(self):
+        self.valves = self.Valves()
+
+
+    def inlet(self, body: dict, __user__: dict = None) -> dict:
+        # avant l'envoi au modèle : consigne de langue ajoutée en tête de conversation
+        body.setdefault("messages", []).insert(0, {"role": "system", "content": "Réponds toujours en français."})
+        return body
+
+
+    def outlet(self, body: dict, __user__: dict = None) -> dict:
+        # après la réponse : mention ajoutée au dernier message de l'assistant
+        for m in reversed(body.get("messages", [])):
+            if m.get("role") == "assistant":
+                m["content"] = (m.get("content") or "") + f"\n\n_{self.valves.mention}_"
+                break
+        return body
+
+
+Avertissement : Les fonctions peuvent exécuter du code arbitraire. N'installez des fonctions que depuis des sources de confiance.
+Enregistrer & Créer
+Fonctions / Open WebUI

@@ -1,0 +1,128 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Aujourd'hui
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 22 minutes
+21min
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 24 minutes
+24min
+Chargement de...
+Claire Admin
+chat
+
+
+
+
+chat
+Suggéré
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Donnez-moi des idées
+que faire avec les dessins de mes enfants
+Surmonter la procrastination
+donnez-moi des conseils
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Montrez-moi un extrait de code
+d'un en-tête collant d'un site web
+Nouvelle conversation
+Open WebUI
+Retour en arrière
+Recherche
+Personnel
+Bases
+Général
+Interface utilisateur
+Notifications
+Raccourcis
+Préférences
+Personnalisation
+Audio
+Données
+Contrôles des données
+Consommation de tokens
+Conversations archivées
+Profil
+Compte
+À propos
+Administrateur
+Système
+Général
+Authentification
+Interface utilisateur
+IA
+Connexions
+Modèles
+Sous-agents
+Outils
+Intégrations
+Documents
+Audio
+Images
+Recherche Web
+Exécution de code
+Pipelines
+Qualité
+Analytique
+Évaluations
+Données
+Base de données
+Consommation de tokens
+Aperçu
+0
+Tokens de durée de vie
+0
+Tokens de pointe
+0m
+Conversation active la plus longue
+1
+Série actuelle
+1
+Série la plus longue
+Activité des tokens
+Journalier
+Hebdomadaire
+Cumulatif
+févr.
+mai
+juil.
+sept.
+nov.
+janv.
+mars
+mai
+juil.
+sept.
+nov.
+chat
+Analyse de l'activité
+Modèles
+1
+Nombre moyen de tokens par conversation
+0
+Nombre moyen de messages par jour actif
+4
+Messages utilisateur
+2 · 50%
+Messages de l'assistant
+2 · 50%
+Total des conversations
+2
+Meilleurs modèles
+chat
+2 messages · 0
+Outils les plus utilisés
+query_chat_files
+2 exécutions
+Le nombre de tokens est une estimation et peut ne pas refléter l'utilisation réelle de l'API

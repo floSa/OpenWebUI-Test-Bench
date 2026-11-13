@@ -1,0 +1,107 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Aujourd'hui
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 25 minutes
+25min
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 28 minutes
+28min
+Chargement de...
+Claire Admin
+chat
+
+
+
+
+chat
+Suggéré
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Donnez-moi des idées
+que faire avec les dessins de mes enfants
+Surmonter la procrastination
+donnez-moi des conseils
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Montrez-moi un extrait de code
+d'un en-tête collant d'un site web
+Nouvelle conversation
+Open WebUI
+Retour en arrière
+Recherche
+Personnel
+Bases
+Général
+Interface utilisateur
+Notifications
+Raccourcis
+Préférences
+Personnalisation
+Audio
+Données
+Contrôles des données
+Consommation de tokens
+Conversations archivées
+Profil
+Compte
+À propos
+Administrateur
+Système
+Général
+Authentification
+Interface utilisateur
+IA
+Connexions
+Modèles
+Sous-agents
+Outils
+Intégrations
+Documents
+Audio
+Images
+Recherche Web
+Exécution de code
+Pipelines
+Qualité
+Analytique
+Évaluations
+Données
+Base de données
+Base de données
+Configuration
+Importer la configuration
+Importer
+
+Importer la configuration.
+
+Exporter la configuration
+Exporter
+
+Exporter la configuration.
+
+Exporter
+Base de données
+Base de données
+
+Base de données pour le stockage.
+
+Exporter toutes les conversations
+Exporter
+
+Exporter toutes les conversations.
+
+Utilisateurs
+Exporter
+
+Exporter les utilisateurs.

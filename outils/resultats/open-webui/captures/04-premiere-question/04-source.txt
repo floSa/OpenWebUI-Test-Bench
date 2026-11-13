@@ -1,0 +1,217 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Aujourd'hui
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 2 minutes
+Chargement de...
+Claire Admin
+Response complete
+Conversation par chat
+rapport-annuel-2025.pdf
+52.5 KB
+
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+
+13 nov., 8:51
+chat
+Exploré query_chat_files
+
+Le chiffre d'affaires de Vélanor en 2025 s'élève à 48,6 M€ 
+rapport-annuel-2025.pdf
+, soit une croissance de +12,4% par rapport à l'année précédente.
+
+Voici les détails du chiffre d'affaires par trimestre :
+
+TRIMESTRE
+	
+CHIFFRE D'AFFAIRES (M€)
+	
+PART DU TOTAL
+
+
+T1 2025
+	
+9,8 M€
+	
+20 %
+
+
+T2 2025
+	
+13,7 M€
+	
+28 %
+
+
+T3 2025
+	
+14,2 M€
+	
+29 %
+
+
+T4 2025
+	
+10,9 M€
+	
+22 %
+
+Le troisième trimestre a été le plus élevé de l'année, porté par la saison estivale.
+
+1 Source
+13 nov., 8:51
+Questions de suivi
+Peux-tu me fournir les marges d'exploitation ou le résultat net correspondant à ces chiffres ?
+Est-ce qu'il existe des prévisions de croissance pour 2026 ou des objectifs d'évolution ?
+Quels produits ou initiatives spécifiques ont été moteurs de cette hausse en T3 ?
+Comment ces performances s'insèrent-elles par rapport aux moyennes du secteur technologique ?
+
+
+
+
+chat
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+rapport-annuel-2025.pdf
+Contenu
+
+Vélanor SAS — document fictif — page 1
+Vélanor SAS — Rapport annuel 2025
+Document fictif généré pour des essais. Toute ressemblance serait fortuite.
+Sommaire : 1. Mot de la présidente — 2. Chiffres clés — 3. Chiffre d'affaires trimestriel
+— 4. Production par modèle — 5. Effectifs — 6. Environnement — 7. Fournisseurs — 8.
+Risques — 9. Perspectives 2026. Vélanor SAS — document fictif — page 2
+
+Mot de la présidente
+Fondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance
+électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène
+Marchais, dirige l'entreprise depuis 2019.
+L'année 2025 a été marquée par une croissance soutenue malgré les tensions sur les
+cellules de batterie. L'entreprise a franchi pour la première fois le seuil de 60 000 vélos
+produits dans l'année. Vélanor SAS — document fictif — page 3
+Chiffres clés 2025
+Indicateur
+2025
+Évolution
+Chiffre d'affaires
+48,6 M€
++12,4 %
+Résultat net
+3,1 M€
++0,6 M€
+Vélos produits
+61 800
++9 %
+Effectif au 31/12/2025
+412 salariés
++38
+Part de l'export
+27 %
++4 points
+Le taux de retour sous garantie s'établit à 1,8 % des vélos vendus. Vélanor SAS — document fictif — page 4
+Chiffre d'affaires trimestriel
+Trimestre
+Chiffre d'affaires (M€)
+Part du total
+T1 2025
+9,8
+20 %
+T2 2025
+13,7
+28 %
+T3 2025
+14,2
+29 %
+T4 2025
+10,9
+22 %
+Total
+48,6
+100 %
+Le troisième trimestre est le plus élevé de l'année, porté par la saison estivale. Vélanor SAS — document fictif — page 5
+Production par modèle
+Modèle
+Usage
+Unités produites
+Prix public TTC
+Loire Urban
+ville
+24 300
+1 890 €
+Sèvre Trail
+VTT
+15 400
+3 150 €
+Brière Kid
+enfant
+13 200
+990 €
+Erdre Cargo
+cargo
+8 900
+4 290 €
+Total
+61 800
+Le modèle cargo Erdre Cargo est le plus cher de la gamme ; le Loire Urban est le plus
+vendu. Vélanor SAS — document fictif — page 6
+Effectifs par site
+Site
+Activité
+Salariés au 31/12/2025
+Nantes
+siège et assemblage
+268
+Cholet
+fabrication des cadres
+97
+Lyon
+agence commerciale
+31
+Bruxelles
+filiale Benelux
+16
+Total
+412
+L'âge moyen des salariés est de 36 ans. 41 % des postes d'encadrement sont occupés
+par des femmes. Vélanor SAS — document fictif — page 7
+Environnement
+Les cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation
+électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de
+ses sites en 2030.
+Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au
+partenariat avec la filière de collecte Recylo. Vélanor SAS — document fictif — page 8
+Fournisseurs principaux
+Composant
+Fournisseur
+Pays
+Batteries
+Batterix GmbH
+Allemagne (Brême)
+Moteurs
+Motodrive Co.
+Taïwan
+Freins
+Stopline
+Italie
+Pneus
+Gomma Ouest
+France
+Le contrat d'approvisionnement en batteries avec Batterix a été renouvelé en mars
+Vélanor SAS — document fictif — page 9
+Risques
+Les principaux risques identifiés sont la pénurie de cellules lithium-ion, la hausse du
+prix de l'aluminium et la concurrence des marques asiatiques à bas prix. Un stock de
+sécurité de batteries a été mis en place.
+Le risque de change concerne surtout les achats de moteurs, réglés en dollars
+américains. Vélanor SAS — document fictif — page 10
+Perspectives 2026
+Vélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage
+ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues.
+Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.

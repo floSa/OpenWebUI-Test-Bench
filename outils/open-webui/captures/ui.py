@@ -45,6 +45,17 @@ class Scenario:
         if connecter:
             self.connecter(compte)
 
+    def autre_session(self, compte=None):
+        """Seconde session (autre compte) dans le même navigateur : nouveau contexte, mêmes captures."""
+        u = Scenario.__new__(Scenario)
+        u.chapitre, u.journal, u._pw, u.navigateur = self.chapitre, self.journal, None, self.navigateur
+        u.contexte = self.navigateur.new_context(viewport={"width": 1440, "height": 900}, locale="fr-FR", accept_downloads=True)
+        u.contexte.add_init_script("try { if (!localStorage.getItem('locale')) localStorage.setItem('locale', 'fr-FR') } catch (e) {}")
+        u.page = u.contexte.new_page(); u.page.set_default_timeout(30000)
+        if compte:
+            u.connecter(compte)
+        return u
+
     # ---------- navigation ----------
     def aller(self, chemin, attendre=None):
         self.page.goto(BASE + chemin)
@@ -177,6 +188,11 @@ class Scenario:
         b = self.page.locator("button").filter(has_text=re.compile(r"^\s*" + re.escape(libelle) + r"\s*$")).filter(visible=True)
         return b.last if admin else b.first
 
+    def el(self, texte, debut=False):
+        """Lien ou bouton visible dont le texte vaut `texte` (ou commence par `texte` si debut=True)."""
+        motif = r"^\s*" + re.escape(texte) + (r"" if debut else r"\s*$")
+        return self.page.locator("a, button").filter(has_text=re.compile(motif)).filter(visible=True).first
+
     def reglages(self, onglet):
         """Ouvre la fenêtre Réglages sur un onglet (ex. « general », « admin:documents »)."""
         self.aller(f"/?settings={onglet}")
@@ -196,6 +212,8 @@ class Scenario:
         return self.page.get_by_text(t, exact=exact)
 
     def fermer(self):
+        if self._pw is None:  # seconde session : fermer seulement son contexte
+            self.contexte.close(); return
         try:
             self.navigateur.close()
         finally:

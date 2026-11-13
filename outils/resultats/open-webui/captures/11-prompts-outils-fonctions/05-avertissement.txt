@@ -1,0 +1,174 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Aujourd'hui
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 30 minutes
+30min
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 33 minutes
+33min
+Chargement de...
+Claire Admin
+Modèles
+0
+Connaissances
+2
+Prompts
+1
+Skills
+0
+Outils
+0
+Retour en arrière
+Par défaut
+English (US)
+English (GB)
+Arabic (العربية)
+Arabic (Bahrain)
+Azərbaycanca
+Basque (Euskara)
+Bengali (বাংলা)
+Bosanski Latinica
+Tibetan (བོད)
+Bulgarian (български)
+Catalan (català)
+Cebuano (Filipino)
+Croatian (Hrvatski)
+Czech (čeština)
+Danish (Denmark)
+Dutch (Netherlands)
+Estonian (Eesti)
+Finnish (Suomalainen)
+Faroese (Faroe Islands)
+French (Canada)
+French (France)
+Galician (Galego)
+Georgian (ქართული)
+German (Deutsch)
+Greek (Ἑλλάδα)
+Hebrew (עברית)
+Hindi (हिंदी)
+Hungarian (Magyar)
+Indonesian (Bahasa Indonesia)
+Irish (Gaeilge)
+Italian (Italiano)
+Japanese (日本語)
+Kabyle (Taqbaylit)
+Korean (한국어)
+Lithuanian (Lietuvių)
+Latvian (Latviešu)
+Malay (Bahasa Malaysia)
+Norwegian Bokmål (Norway)
+Persian (فارسی)
+Polish (Polski)
+Portuguese (Brazil)
+Portuguese (Portugal)
+Punjabi (India)
+Romanian (Romania)
+Russian (Russia)
+Serbian (Српски)
+Slovak (Slovenčina)
+Slovenian (Slovenščina)
+Spanish (Español)
+Swedish (Svenska)
+Tagalog (Filipino)
+தமிழ் (இந்தியா)
+Thailand (ไทย)
+Turkish (Türkçe)
+Turkmen (Türkmençe)
+Ukrainian (Українська)
+Urdu (اردو)
+Uyghur (ئۇيغۇرچە)
+Uzbek (Cyrillic)
+Uzbek (Latin)
+Vietnamese (Tiếng Việt)
+Chinese (简体中文)
+Chinese (繁體中文)
+Doge (🐶)
+Accès
+Selection deleted
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+⌄
+⌄
+⌄
+⌄
+⌄
+⌄
+⌄
+"""
+title: Stocks Vélanor
+author: banc d'essai (fictif)
+description: Donne le stock d'une pièce de l'entreprise fictive Vélanor (données d'octobre 2025, figées dans le code).
+version: 1.0.0
+"""
+# Outil écrit pour le manuel : aucune dépendance, aucun accès réseau ni disque.
+
+
+STOCKS = {
+    "batterie 500 wh": 412,
+    "moteur central": 238,
+    "cadre aluminium m": 156,
+    "écran de commande": 590,
+}
+
+
+
+
+class Tools:
+    def stock_piece(self, piece: str) -> str:
+        """
+        Donne le nombre d'unités en stock d'une pièce chez Vélanor.
+        :param piece: nom de la pièce, par exemple « batterie 500 Wh » ou « moteur central ».
+        """
+        cle = piece.strip().lower()
+        for nom, qte in STOCKS.items():
+            if nom in cle or cle in nom:
+                return f"Stock de « {nom} » au 31 octobre 2025 : {qte} unités (source : outil Stocks Vélanor)."
+        return "Pièce inconnue. Pièces suivies : " + ", ".join(STOCKS)
+
+
+Avertissement : Les outils peuvent exécuter du code arbitraire. N'installez des outils que depuis des sources de confiance.
+Enregistrer & Créer
+Outils / Open WebUI
+Confirmer votre action
+Veuillez lire attentivement les avertissements suivants :
+Les outils ont un système d'appel de fonction qui permet l'exécution de code arbitraire.
+N'installez pas d'outils provenant de sources auxquelles vous ne faites pas entièrement confiance.
+Je reconnais avoir lu et compris les implications de mes actions. Je suis conscient des risques associés à l'exécution d'un code arbitraire et j'ai vérifié la fiabilité de la source.
+Annuler
+Confirmer

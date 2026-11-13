@@ -1,0 +1,124 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Aujourd'hui
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 31 minutes
+31min
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 34 minutes
+34min
+Chargement de...
+Claire Admin
+chat
+
+
+
+
+chat
+Suggéré
+Montrez-moi un extrait de code
+d'un en-tête collant d'un site web
+Donnez-moi des idées
+que faire avec les dessins de mes enfants
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Surmonter la procrastination
+donnez-moi des conseils
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Nouvelle conversation
+Connexion réussie
+Open WebUI
+Retour en arrière
+Recherche
+Personnel
+Bases
+Général
+Interface utilisateur
+Notifications
+Raccourcis
+Préférences
+Personnalisation
+Audio
+Données
+Contrôles des données
+Consommation de tokens
+Conversations archivées
+Profil
+Compte
+À propos
+Administrateur
+Système
+Général
+Authentification
+Interface utilisateur
+IA
+Connexions
+Modèles
+Sous-agents
+Outils
+Intégrations
+Documents
+Audio
+Images
+Recherche Web
+Exécution de code
+Pipelines
+Qualité
+Analytique
+Évaluations
+Données
+Base de données
+Intégrations
+Outils
+Serveurs d'outils externes
+Aucune connexion à un serveur d'outils configurée.
+Connectez-vous à vos serveurs d'outils externes.
+Terminal
+Ouvrir le terminal
+Aucune connexion à un terminal configurée.
+Se connecter à des instances Open Terminal. Les administrateurs et les utilisateurs autorisés peuvent utiliser les outils de navigation de fichiers et de terminal via ces serveurs.
+En savoir plus sur Open Terminal ↗
+Connaissances
+Connaissances externes
+EXPÉRIMENTAL
+Aucune source de connaissances externe configurée.
+Le test doit réussir avant de créer une source.
+Connexions utilisateur
+Intégrations directes
+
+Activer les intégrations directes pour les utilisateurs.
+
+Enregistrer
+Ajouter une connexion
+Importer
+Exporter
+Type
+MCP Streamable HTTP
+Nom d'utilisateur
+Connection ID
+Description
+URL
+Auth
+Aucun
+Bearer
+Session
+OAuth
+OAuth 2.1
+OAuth 2.1 (Statique)
+Clé API
+Avancé
+Contrôle d'accès
+Liste de filtrage des fonctions par nom
+Avertissement: Le support du MCP est expérimental et sa spécification évolue fréquemment, ce qui peut entraîner des incompatibilités. Le support de la spécification OpenAPI est directement maintenu par l'équipe Open WebUI, ce qui en fait l'option la plus fiable en termes de compatibilité. En savoir plus →
+Enregistrer

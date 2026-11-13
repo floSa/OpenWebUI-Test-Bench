@@ -1,0 +1,270 @@
+[
+ {
+  "capture": "15-administrer/01-general.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Général"
+   ],
+   [
+    2,
+    "Vérifier les mises à jour disponibles"
+   ],
+   [
+    3,
+    "Canaux"
+   ],
+   [
+    4,
+    "Notes"
+   ],
+   [
+    5,
+    "Automatisations"
+   ]
+  ],
+  "note": "",
+  "heure": "09:15:19"
+ },
+ {
+  "capture": "15-administrer/02-general-bas.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "URL de WebUI"
+   ],
+   [
+    2,
+    "Ajouter une bannière"
+   ],
+   [
+    3,
+    "Enregistrer"
+   ]
+  ],
+  "note": "",
+  "heure": "09:15:20"
+ },
+ {
+  "capture": "15-administrer/05-analytique.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Analytique"
+   ],
+   [
+    2,
+    "Tokens"
+   ],
+   [
+    3,
+    "Messages"
+   ]
+  ],
+  "note": "",
+  "heure": "09:15:48"
+ },
+ {
+  "capture": "15-administrer/06-consommation.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Consommation de tokens"
+   ]
+  ],
+  "note": "",
+  "heure": "09:15:55"
+ },
+ {
+  "capture": "15-administrer/07-classement.png",
+  "url": "/admin/evaluations/leaderboard",
+  "pastilles": [
+   [
+    1,
+    "Évaluations"
+   ],
+   [
+    2,
+    "Classement"
+   ],
+   [
+    3,
+    "Avis"
+   ]
+  ],
+  "note": "",
+  "heure": "09:16:01"
+ },
+ {
+  "capture": "15-administrer/08-arene.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Évaluations"
+   ],
+   [
+    2,
+    "Modèles d'arène"
+   ]
+  ],
+  "note": "",
+  "heure": "09:16:07"
+ },
+ {
+  "capture": "15-administrer/11-a-propos.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "À propos"
+   ],
+   [
+    2,
+    "v0.13.3"
+   ],
+   [
+    3,
+    "Vérifier les mises à jour disponibles"
+   ]
+  ],
+  "note": "",
+  "heure": "09:16:42"
+ },
+ {
+  "capture": "15-administrer/10-interface-taches.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Interface utilisateur"
+   ],
+   [
+    2,
+    "Modèle de tâche local"
+   ],
+   [
+    3,
+    "Modèle de tâche externe"
+   ],
+   [
+    4,
+    "Configurer"
+   ],
+   [
+    5,
+    "Génération du Titre"
+   ]
+  ],
+  "note": "",
+  "heure": "09:18:39"
+ },
+ {
+  "capture": "15-administrer/12-fiche-utilisateur.png",
+  "url": "/admin/users/overview",
+  "pastilles": [
+   [
+    1,
+    "Nouveau mot de passe"
+   ],
+   [
+    2,
+    "Enregistrer"
+   ]
+  ],
+  "note": "",
+  "heure": "09:18:46"
+ },
+ {
+  "capture": "15-administrer/09-base-de-donnees.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Base de données (onglet)"
+   ],
+   [
+    2,
+    "Importer"
+   ],
+   [
+    3,
+    "Exporter (configuration)"
+   ],
+   [
+    4,
+    "Base de données (télécharger)"
+   ],
+   [
+    5,
+    "Exporter (conversations)"
+   ],
+   [
+    6,
+    "Exporter (utilisateurs)"
+   ]
+  ],
+  "note": "",
+  "heure": "09:19:32"
+ },
+ {
+  "capture": "15-administrer/03-autoriser-cles.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Clés API"
+   ],
+   [
+    2,
+    "Enregistrer"
+   ]
+  ],
+  "note": "",
+  "heure": "09:19:52"
+ },
+ {
+  "capture": "15-administrer/04-compte-cles.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Compte"
+   ],
+   [
+    2,
+    "Clés API"
+   ],
+   [
+    3,
+    "Afficher"
+   ]
+  ],
+  "note": "",
+  "heure": "09:20:01"
+ },
+ {
+  "capture": "15-administrer/04b-cle-creee.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Jeton JWT (masqué)"
+   ],
+   [
+    2,
+    "Clé API (masquée)"
+   ],
+   [
+    3,
+    "copier"
+   ]
+  ],
+  "note": "",
+  "heure": "09:20:04"
+ }
+]

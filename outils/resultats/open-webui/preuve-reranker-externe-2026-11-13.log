@@ -1,0 +1,32 @@
+2026-11-13 08:59:27.105 | INFO     | open_webui.routers.retrieval:update_rag_config:1048 - Updating reranking model:  to rerank
+2026-11-13 08:59:58.823 | INFO     | open_webui.retrieval.utils:query_collection_with_hybrid_search:834 - Starting hybrid search for 3 queries in 1 collections...
+2026-11-13 08:59:58.896 | INFO     | open_webui.retrieval.models.external:predict:38 - ExternalReranker:predict:model rerank
+2026-11-13 08:59:58.908 | INFO     | open_webui.retrieval.models.external:predict:38 - ExternalReranker:predict:model rerank
+2026-11-13 08:59:58.910 | INFO     | open_webui.retrieval.models.external:predict:38 - ExternalReranker:predict:model rerank
+2026-11-13 08:59:59.151 | INFO     | open_webui.retrieval.utils:query_doc_with_hybrid_search:604 - query_doc_with_hybrid_search:result [[{'title': 'Vélanor — Rapport annuel 2025', 'name': 'rapport-annuel-2025.pdf', 'keywords': '', 'page': 2, 'embedding_config': "{'engine': 'openai', 'model': 'emb
+2026-11-13 08:59:59.228 | INFO     | open_webui.retrieval.utils:query_doc_with_hybrid_search:604 - query_doc_with_hybrid_search:result [[{'title': 'Vélanor — Rapport annuel 2025', 'name': 'rapport-annuel-2025.pdf', 'keywords': '', 'page': 2, 'embedding_config': "{'engine': 'openai', 'model': 'emb
+2026-11-13 08:59:59.276 | INFO     | open_webui.retrieval.utils:query_doc_with_hybrid_search:604 - query_doc_with_hybrid_search:result [[{'title': 'Vélanor — Rapport annuel 2025', 'name': 'rapport-annuel-2025.pdf', 'keywords': '', 'page': 2, 'embedding_config': "{'engine': 'openai', 'model': 'emb
+2026-11-13 09:00:39.834 | INFO     | open_webui.retrieval.utils:query_collection_with_hybrid_search:834 - Starting hybrid search for 2 queries in 1 collections...
+2026-11-13 09:00:39.879 | INFO     | open_webui.retrieval.models.external:predict:38 - ExternalReranker:predict:model rerank
+2026-11-13 09:00:39.882 | INFO     | open_webui.retrieval.models.external:predict:38 - ExternalReranker:predict:model rerank
+2026-11-13 09:00:39.958 | INFO     | open_webui.retrieval.utils:query_doc_with_hybrid_search:604 - query_doc_with_hybrid_search:result [[{'file_id': 'ef90280b-87f9-4985-83c9-5c48ec52e026', 'hash': 'a424d2a6917439a619e746a2b4c1ad9c2fdd11dc68e55cba7baa26b1d29a9066', 'title': 'Vélanor — Rapport annu
+2026-11-13 09:00:40.081 | INFO     | open_webui.retrieval.utils:query_doc_with_hybrid_search:604 - query_doc_with_hybrid_search:result [[{'file_id': 'ef90280b-87f9-4985-83c9-5c48ec52e026', 'hash': 'a424d2a6917439a619e746a2b4c1ad9c2fdd11dc68e55cba7baa26b1d29a9066', 'title': 'Vélanor — Rapport annu
+2026-11-13 09:01:36.303 | INFO     | open_webui.retrieval.utils:query_collection_with_hybrid_search:834 - Starting hybrid search for 2 queries in 1 collections...
+2026-11-13 09:01:36.338 | INFO     | open_webui.retrieval.models.external:predict:38 - ExternalReranker:predict:model rerank
+2026-11-13 09:01:36.348 | INFO     | open_webui.retrieval.models.external:predict:38 - ExternalReranker:predict:model rerank
+2026-11-13 09:01:36.470 | INFO     | open_webui.retrieval.utils:query_doc_with_hybrid_search:604 - query_doc_with_hybrid_search:result [[{'keywords': '', 'creator': 'generer_corpus.py', 'source': 'rapport-annuel-2025.pdf', 'trapped': '/False', 'page': 9, 'subject': '(unspecified)', 'hash': 'a424d2a6
+2026-11-13 09:01:36.549 | INFO     | open_webui.retrieval.utils:query_doc_with_hybrid_search:604 - query_doc_with_hybrid_search:result [[{'total_pages': 10, 'page_label': '2', 'producer': 'ReportLab PDF Library - (opensource)', 'author': 'Vélanor SAS (fictif)', 'keywords': '', 'file_id': 'ef90280b-
+2026-11-13 09:02:19.407 | INFO     | open_webui.retrieval.utils:query_collection_with_hybrid_search:834 - Starting hybrid search for 3 queries in 1 collections...
+2026-11-13 09:02:19.450 | INFO     | open_webui.retrieval.models.external:predict:38 - ExternalReranker:predict:model rerank
+2026-11-13 09:02:19.462 | INFO     | open_webui.retrieval.models.external:predict:38 - ExternalReranker:predict:model rerank
+2026-11-13 09:02:19.464 | INFO     | open_webui.retrieval.models.external:predict:38 - ExternalReranker:predict:model rerank
+2026-11-13 09:02:19.548 | INFO     | open_webui.retrieval.utils:query_doc_with_hybrid_search:604 - query_doc_with_hybrid_search:result [[{'producer': 'ReportLab PDF Library - (opensource)', 'file_hash': '292f04ccc1df2dfbe8903590dab3f66e5aa6d28e0390c98b3dc320f44ee95d36', 'title': 'Vélanor — Rappor
+2026-11-13 09:02:19.595 | INFO     | open_webui.retrieval.utils:query_doc_with_hybrid_search:604 - query_doc_with_hybrid_search:result [[{'producer': 'ReportLab PDF Library - (opensource)', 'file_hash': '292f04ccc1df2dfbe8903590dab3f66e5aa6d28e0390c98b3dc320f44ee95d36', 'title': 'Vélanor — Rappor
+2026-11-13 09:02:19.695 | INFO     | open_webui.retrieval.utils:query_doc_with_hybrid_search:604 - query_doc_with_hybrid_search:result [[{'producer': 'ReportLab PDF Library - (opensource)', 'file_hash': '292f04ccc1df2dfbe8903590dab3f66e5aa6d28e0390c98b3dc320f44ee95d36', 'title': 'Vélanor — Rappor
+2026-11-13 09:03:18.496 | INFO     | open_webui.retrieval.utils:query_collection_with_hybrid_search:834 - Starting hybrid search for 3 queries in 1 collections...
+2026-11-13 09:03:18.543 | INFO     | open_webui.retrieval.models.external:predict:38 - ExternalReranker:predict:model rerank
+2026-11-13 09:03:18.554 | INFO     | open_webui.retrieval.models.external:predict:38 - ExternalReranker:predict:model rerank
+2026-11-13 09:03:18.555 | INFO     | open_webui.retrieval.models.external:predict:38 - ExternalReranker:predict:model rerank
+2026-11-13 09:03:18.629 | INFO     | open_webui.retrieval.utils:query_doc_with_hybrid_search:604 - query_doc_with_hybrid_search:result [[{'file_hash': '292f04ccc1df2dfbe8903590dab3f66e5aa6d28e0390c98b3dc320f44ee95d36', 'trapped': '/False', 'title': 'Vélanor — Rapport annuel 2025', 'producer': 'Re
+2026-11-13 09:03:18.679 | INFO     | open_webui.retrieval.utils:query_doc_with_hybrid_search:604 - query_doc_with_hybrid_search:result [[{'file_hash': '292f04ccc1df2dfbe8903590dab3f66e5aa6d28e0390c98b3dc320f44ee95d36', 'trapped': '/False', 'title': 'Vélanor — Rapport annuel 2025', 'producer': 'Re
+2026-11-13 09:03:18.721 | INFO     | open_webui.retrieval.utils:query_doc_with_hybrid_search:604 - query_doc_with_hybrid_search:result [[{'file_hash': '292f04ccc1df2dfbe8903590dab3f66e5aa6d28e0390c98b3dc320f44ee95d36', 'trapped': '/False', 'title': 'Vélanor — Rapport annuel 2025', 'producer': 'Re

@@ -36,3 +36,21 @@ Q18 scan            NON   98.9s  'Dans les documents fournis, aucune information
 Q19 fait simple     OK    38.1s  'Les batteries doivent être stockées entre 10 °C et 25 °C [1].'
 Q20 fait simple     OK    69.6s  'Selon le document de la procédure PR-SEC-04 « Charge et stockage des batteries », la respo'
 Q21 tableau         OK    53.7s  'Le local B2 est inspecté le premier lundi de chaque mois [1].'
+Q22 fait simple     OK    60.1s  "Le prix public du modèle Vilaine Compact s'élève à 2 490 € TTC [1]."
+Q23 fait simple     OK    49.8s  "La capacité prévue de l'usine de Saint-Nazaire est de 25 000 vélos par an [2]."
+Q24 tableau         OK    37.0s  'Le stock actuel de batteries **BAT-48V-14Ah** (Batterie 48 V 14 Ah) est de **1240 unités**'
+Q25 fait simple     OK    46.6s  'Selon les FAQ du service après-vente, le cadre est garanti **7 ans** [1]. La batterie et l'
+Q26 fait simple     OK    55.7s  'Le numéro de téléphone du service après-vente est le 02 40 00 12 34 [1].'
+Q27 fait simple     OK    73.0s  "Le montant de la prime d'intéressement pour l'année 2025 est de 1 150 euros par salarié [1"
+Q28 anglais         OK    36.7s  'At the supplier audit, Batterix GmbH obtained an overall score of 87 out of 100 [1].'
+Q29 anglais         OK    50.7s  "Le taux de cellules défectueuses mesuré chez Batterix lors de l'audit est de 0,3 % [1]."
+Q30 multi-documents NON   84.1s  'D’après le document contenant les données sur les délais moyens constatés [3], la durée mo'
+Q31 multi-documents NON   79.2s  "Selon le rapport d'audit de qualité fournisseur, Batterix GmbH a obtenu un **score de 87 s"
+Q32 multi-documents OK    54.0s  "En 2026, Vélanor vise un chiffre d'affaires de 55 M€ [1]. Par ailleurs, une seconde usine "
+Q33 audio           OK   104.9s  "La ligne d'assemblage numéro 3 de Nantes sera arrêtée pour maintenance du 2 au 6 mars [1]."
+Q34 audio           OK    48.2s  'Le directeur de production de Vélanor est Julien Moreau [3].'
+Q35 piège           OK   110.2s  "D'après les documents fournis, il n'est pas possible de déterminer le chiffre d'affaires d"
+Q36 piège           OK    80.2s  'D’après les documents fournis, aucune information n’est mentionnée concernant le directeur'
+Q37 piège           OK    94.4s  "D'après les documents fournis, il n'est pas possible de donner un chiffre précis concernan"
+Q38 piège           OK   110.5s  "Selon les documents fournis, il n'est pas possible de déterminer le salaire de Karim Benal"
+-> outils/resultats/open-webui/banc-2026-11-13-defaut-sans-rerank.json

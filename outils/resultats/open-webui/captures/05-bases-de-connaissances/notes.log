@@ -1,0 +1,16 @@
+2026-11-13 08:58:36 menu Ajouter du contenu : Nouveau répertoire | Téléverser des fichiers | Téléverser un dossier | Synchroniser le répertoire | Ajouter une page web | Ajouter du contenu textuel | Réinitialiser
+2026-11-13 08:58:51 07-apercu-fichier : élément absent « texte extrait »
+2026-11-13 08:59:08 scan absent de la liste (refusé) : retrait montré sur la ligne faq-sav.html sans cliquer « Supprimer »
+2026-11-13 08:59:09 menu du fichier : Télécharger | Renommer | Remove from knowledge
+2026-11-13 08:59:16 menu de la base : Accès | Exporter | Supprimer
+2026-11-13 08:59:51 scan absent de la liste (refusé) : retrait montré sur la ligne faq-sav.html sans cliquer « Supprimer »
+2026-11-13 08:59:53 menu du fichier : Télécharger | Renommer | Remove from knowledge
+2026-11-13 08:59:59 menu de la base : Accès | Exporter | Supprimer
+2026-11-13 09:01:45 options de visibilité : 
+2026-11-13 09:01:46 Avancé : Créer une base de connaissances | Sur quoi travaillez-vous ? | Que cherchez-vous à accomplir ? | Visibilité | Privé |  | Seuls les utilisateurs et groupes autorisés peuvent accéder |  | Liste des accès | Ajouter un accès | Aucun partage. Visible uniquement par vous. | Avancé | File count limit |  | Maximum total files. |  | File size limit (MB) |  | Maximum size per file. |  | Global limits always apply. |  | Annuler | Créer une connaissance
+2026-11-13 09:02:41 Avancé : Créer une base de connaissances | Sur quoi travaillez-vous ? | Que cherchez-vous à accomplir ? | Visibilité | Privé |  | Seuls les utilisateurs et groupes autorisés peuvent accéder |  | Liste des accès | Ajouter un accès | Aucun partage. Visible uniquement par vous. | Avancé | File count limit |  | Maximum total files. |  | File size limit (MB) |  | Maximum size per file. |  | Global limits always apply. |  | Annuler | Créer une connaissance
+2026-11-13 09:03:31 Avancé : Créer une base de connaissances | Sur quoi travaillez-vous ? | Que cherchez-vous à accomplir ? | Visibilité | Privé |  | Seuls les utilisateurs et groupes autorisés peuvent accéder |  | Liste des accès | Ajouter un accès | Aucun partage. Visible uniquement par vous. | Avancé | File count limit |  | Maximum total files. |  | File size limit (MB) |  | Maximum size per file. |  | Global limits always apply. |  | Annuler | Créer une connaissance
+2026-11-13 09:03:43 Indexed text : Modèles | 0 | Connaissances | 3 | Prompts | 0 | Skills | 0 | Outils | 0 | Retour en arrière | Accès | afa9b623-ea34-431e-9380-053bea9c9a1c | All files | note-de-test.md | 87.0 B | note-de-test.md | Aperçu | Indexed text | Modifier | 1 | 2 | 3 | 4 | # Note de test |  |  | Fichier jetable pour vérifier le retrait d’un fichier d’une base. |  | 
+2026-11-13 09:03:45 retrait : fenêtre de confirmation = True ; fichier encore listé = 1
+2026-11-13 09:03:51 suppression : Confirmer votre action | Cette action ne peut pas être annulée. Souhaitez-vous continuer ? | Annuler | Confirmer
+2026-11-13 09:03:54 base d'essai supprimée : True

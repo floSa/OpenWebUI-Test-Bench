@@ -1,0 +1,202 @@
+[
+ {
+  "capture": "05-bases-de-connaissances/01-liste.png",
+  "url": "/workspace/knowledge",
+  "pastilles": [
+   [
+    1,
+    "Connaissances"
+   ],
+   [
+    2,
+    "Créer"
+   ],
+   [
+    3,
+    "Rechercher des connaissances"
+   ]
+  ],
+  "note": "",
+  "heure": "08:58:25"
+ },
+ {
+  "capture": "05-bases-de-connaissances/02-creer.png",
+  "url": "/workspace/knowledge",
+  "pastilles": [
+   [
+    1,
+    "Nommez votre base de connaissances"
+   ],
+   [
+    2,
+    "description"
+   ],
+   [
+    3,
+    "Visibilité"
+   ],
+   [
+    4,
+    "Créer une connaissance"
+   ]
+  ],
+  "note": "",
+  "heure": "08:58:26"
+ },
+ {
+  "capture": "05-bases-de-connaissances/03-base-vide.png",
+  "url": "/workspace/knowledge/bded018b-b7e0-4f9c-a70c-fdd62f7b174b",
+  "pastilles": [
+   [
+    1,
+    "nom de la base"
+   ],
+   [
+    2,
+    "Ajouter du contenu"
+   ],
+   [
+    3,
+    "Accès"
+   ]
+  ],
+  "note": "",
+  "heure": "08:58:29"
+ },
+ {
+  "capture": "05-bases-de-connaissances/04-menu-ajout.png",
+  "url": "/workspace/knowledge/bded018b-b7e0-4f9c-a70c-fdd62f7b174b",
+  "pastilles": [
+   [
+    1,
+    "Ajouter du contenu"
+   ],
+   [
+    2,
+    "Téléverser des fichiers"
+   ]
+  ],
+  "note": "",
+  "heure": "08:58:37"
+ },
+ {
+  "capture": "05-bases-de-connaissances/05-televersement.png",
+  "url": "/workspace/knowledge/bded018b-b7e0-4f9c-a70c-fdd62f7b174b",
+  "pastilles": [
+   [
+    1,
+    "fichier en cours de traitement"
+   ]
+  ],
+  "note": "pendant le traitement",
+  "heure": "08:58:40"
+ },
+ {
+  "capture": "05-bases-de-connaissances/06-base-remplie.png",
+  "url": "/workspace/knowledge/bded018b-b7e0-4f9c-a70c-fdd62f7b174b",
+  "pastilles": [
+   [
+    1,
+    "Rechercher une collection"
+   ],
+   [
+    2,
+    "procedure-batteries.docx"
+   ]
+  ],
+  "note": "",
+  "heure": "08:58:44"
+ },
+ {
+  "capture": "05-bases-de-connaissances/08-scan-refuse.png",
+  "url": "/workspace/knowledge/bded018b-b7e0-4f9c-a70c-fdd62f7b174b",
+  "pastilles": [
+   [
+    1,
+    "message d'erreur"
+   ]
+  ],
+  "note": "",
+  "heure": "08:59:01"
+ },
+ {
+  "capture": "05-bases-de-connaissances/07-apercu-fichier.png",
+  "url": "/workspace/knowledge/bded018b-b7e0-4f9c-a70c-fdd62f7b174b",
+  "pastilles": [
+   [
+    1,
+    "fichier choisi"
+   ],
+   [
+    2,
+    "texte extrait"
+   ]
+  ],
+  "note": "",
+  "heure": "08:59:45"
+ },
+ {
+  "capture": "05-bases-de-connaissances/09-menu-fichier.png",
+  "url": "/workspace/knowledge/bded018b-b7e0-4f9c-a70c-fdd62f7b174b",
+  "pastilles": [
+   [
+    1,
+    "Plus"
+   ],
+   [
+    2,
+    "Télécharger"
+   ],
+   [
+    3,
+    "Renommer"
+   ],
+   [
+    4,
+    "Remove from knowledge"
+   ]
+  ],
+  "note": "",
+  "heure": "08:59:53"
+ },
+ {
+  "capture": "05-bases-de-connaissances/10-menu-base.png",
+  "url": "/workspace/knowledge",
+  "pastilles": [
+   [
+    1,
+    "Plus d'options"
+   ],
+   [
+    2,
+    "Accès"
+   ],
+   [
+    3,
+    "Exporter"
+   ],
+   [
+    4,
+    "Supprimer"
+   ]
+  ],
+  "note": "",
+  "heure": "08:59:59"
+ },
+ {
+  "capture": "05-bases-de-connaissances/11-confirmer-suppression.png",
+  "url": "/workspace/knowledge",
+  "pastilles": [
+   [
+    1,
+    "Confirmer"
+   ],
+   [
+    2,
+    "Annuler"
+   ]
+  ],
+  "note": "",
+  "heure": "09:03:52"
+ }
+]

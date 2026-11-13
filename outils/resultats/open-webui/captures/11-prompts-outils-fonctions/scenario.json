@@ -1,0 +1,242 @@
+[
+ {
+  "capture": "11-prompts-outils-fonctions/01-prompts.png",
+  "url": "/workspace/prompts",
+  "pastilles": [
+   [
+    1,
+    "Prompts"
+   ],
+   [
+    2,
+    "Créer"
+   ]
+  ],
+  "note": "",
+  "heure": "09:24:12"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/02-nouveau-prompt.png",
+  "url": "/workspace/prompts",
+  "pastilles": [
+   [
+    1,
+    "Nom du prompt"
+   ],
+   [
+    2,
+    "Commande"
+   ],
+   [
+    3,
+    "Contenu du prompt"
+   ],
+   [
+    4,
+    "Enregistrer & Créer"
+   ]
+  ],
+  "note": "",
+  "heure": "09:24:13"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/03-appel-prompt.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Fiche de synthèse"
+   ],
+   [
+    2,
+    "/syn"
+   ]
+  ],
+  "note": "",
+  "heure": "09:24:25"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/04-nouvel-outil.png",
+  "url": "/workspace/tools/create",
+  "pastilles": [
+   [
+    1,
+    "Nom de l'outil"
+   ],
+   [
+    2,
+    "ID de l'outil"
+   ],
+   [
+    3,
+    "Description"
+   ],
+   [
+    4,
+    "code de l'outil"
+   ],
+   [
+    5,
+    "Enregistrer & Créer"
+   ]
+  ],
+  "note": "",
+  "heure": "09:24:31"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/05-avertissement.png",
+  "url": "/workspace/tools/create",
+  "pastilles": [
+   [
+    1,
+    "Confirmer"
+   ]
+  ],
+  "note": "",
+  "heure": "09:24:34"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/06-liste-outils.png",
+  "url": "/workspace/tools",
+  "pastilles": [
+   [
+    1,
+    "Stocks Vélanor"
+   ]
+  ],
+  "note": "",
+  "heure": "09:24:44"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/07-fonctions.png",
+  "url": "/admin/functions",
+  "pastilles": [
+   [
+    1,
+    "Fonctions"
+   ],
+   [
+    2,
+    "Créer"
+   ]
+  ],
+  "note": "",
+  "heure": "09:24:50"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/08-nouvelle-fonction.png",
+  "url": "/admin/functions/create",
+  "pastilles": [
+   [
+    1,
+    "Nom de la fonction"
+   ],
+   [
+    2,
+    "modèle de départ"
+   ],
+   [
+    3,
+    "code du filtre"
+   ],
+   [
+    4,
+    "Enregistrer & Créer"
+   ]
+  ],
+  "note": "",
+  "heure": "09:24:51"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/09-liste-fonctions.png",
+  "url": "/admin/functions",
+  "pastilles": [
+   [
+    1,
+    "Mention de source interne"
+   ],
+   [
+    2,
+    "interrupteur (désactivée)"
+   ]
+  ],
+  "note": "",
+  "heure": "09:25:03"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/10-integrations.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Intégrations"
+   ],
+   [
+    2,
+    "Serveurs d'outils externes"
+   ],
+   [
+    3,
+    "+"
+   ]
+  ],
+  "note": "",
+  "heure": "09:25:35"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/11-serveur-mcp.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Type"
+   ],
+   [
+    2,
+    "Nom"
+   ],
+   [
+    3,
+    "URL"
+   ],
+   [
+    4,
+    "Auth"
+   ],
+   [
+    5,
+    "Vérifier la connexion"
+   ],
+   [
+    6,
+    "Enregistrer"
+   ]
+  ],
+  "note": "",
+  "heure": "09:25:38"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/12-mcp-verifie.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "message"
+   ]
+  ],
+  "note": "",
+  "heure": "09:25:42"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/13-mcp-liste.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Vélanor MCP"
+   ]
+  ],
+  "note": "",
+  "heure": "09:25:52"
+ }
+]

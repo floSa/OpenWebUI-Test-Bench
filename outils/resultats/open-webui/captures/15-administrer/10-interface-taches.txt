@@ -1,0 +1,174 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Aujourd'hui
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 24 minutes
+24min
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 27 minutes
+27min
+Chargement de...
+Claire Admin
+chat
+
+
+
+
+chat
+Suggéré
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Donnez-moi des idées
+que faire avec les dessins de mes enfants
+Surmonter la procrastination
+donnez-moi des conseils
+Montrez-moi un extrait de code
+d'un en-tête collant d'un site web
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Nouvelle conversation
+Open WebUI
+Retour en arrière
+Recherche
+Personnel
+Bases
+Général
+Interface utilisateur
+Notifications
+Raccourcis
+Préférences
+Personnalisation
+Audio
+Données
+Contrôles des données
+Consommation de tokens
+Conversations archivées
+Profil
+Compte
+À propos
+Administrateur
+Système
+Général
+Authentification
+Interface utilisateur
+IA
+Connexions
+Modèles
+Sous-agents
+Outils
+Intégrations
+Documents
+Audio
+Images
+Recherche Web
+Exécution de code
+Pipelines
+Qualité
+Analytique
+Évaluations
+Données
+Base de données
+Interface utilisateur
+Visibilité
+Visible controls
+Afficher
+
+Choose which controls appear for users. Hiding a control keeps its current setting and underlying feature available. Administrators always see available controls.
+
+Tâches
+Modèle pour les tâches
+Modèle pour les tâches.
+Modèle de tâche local
+Modèle actuel
+chat
+gemma-4-e4b
+Modèle de tâche externe
+Modèle actuel
+chat
+gemma-4-e4b
+Paramètres du modèle de tâche
+Configurer
+Conversation
+Compaction du contexte
+
+Activer la compaction du contexte.
+
+Tools
+Tool Call Labels
+
+Ask the model to include short labels for running and completed tool calls.
+
+Permissions des outils
+EXPÉRIMENTAL
+
+Permissions pour les outils.
+
+Tool Search
+EXPÉRIMENTAL
+
+Leave large tool definitions out of the request and let the model look them up on demand. Reduces prompt size when many tools are enabled.
+
+Génération
+Génération du Titre
+
+Autoriser les noms automatiques pour les nouvelles conversations.
+
+Prompt de génération de titre
+
+Prompt pour la génération de titres.
+
+Prompt du mode vocal
+
+Prompt pour le mode vocal.
+
+Modèle d'invite
+
+Modèle pour les invites.
+
+Génération de questions de suivi
+
+Activer la génération de questions de suivi.
+
+Prompt de génération de questions de suivi
+
+Prompt pour la génération de questions de suivi.
+
+Génération de tags
+
+Activer la génération automatique de tags.
+
+Prompt de génération de tags
+
+Prompt pour la génération de tags.
+
+Génération de requête de RAG
+
+Activer la génération de requêtes de récupération.
+
+Prompt de génération de requête
+
+Prompt pour la génération de requêtes.
+
+Génération des suggestions
+
+Activer la génération d'autocomplétion.
+
+Prompt de génération de prompts d'images
+
+Prompt pour la génération de prompts d'images.
+
+Prompt pour les appels de fonction des outils
+
+Prompt pour les appels de fonction des outils.
+
+Enregistrer

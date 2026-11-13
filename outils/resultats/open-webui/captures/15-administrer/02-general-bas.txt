@@ -1,0 +1,191 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Aujourd'hui
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 21 minutes
+20min
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 24 minutes
+23min
+Chargement de...
+Claire Admin
+chat
+
+
+
+
+chat
+Suggéré
+Surmonter la procrastination
+donnez-moi des conseils
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Donnez-moi des idées
+que faire avec les dessins de mes enfants
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Montrez-moi un extrait de code
+d'un en-tête collant d'un site web
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Nouvelle conversation
+Open WebUI
+Retour en arrière
+Recherche
+Personnel
+Bases
+Général
+Interface utilisateur
+Notifications
+Raccourcis
+Préférences
+Personnalisation
+Audio
+Données
+Contrôles des données
+Consommation de tokens
+Conversations archivées
+Profil
+Compte
+À propos
+Administrateur
+Système
+Général
+Authentification
+Interface utilisateur
+IA
+Connexions
+Modèles
+Sous-agents
+Outils
+Intégrations
+Documents
+Audio
+Images
+Recherche Web
+Exécution de code
+Pipelines
+Qualité
+Analytique
+Évaluations
+Données
+Base de données
+Général
+Version:
+v0.13.3
+(dernière version)
+Découvrez les nouvelles fonctionnalités
+Vérifier les mises à jour disponibles
+Aide
+Découvrez comment utiliser Open WebUI et obtenir de l'aide de la communauté.
+Documentation
+Discord
+X
+GitHub
+Licence
+Effectuez la mise à niveau vers le plan payant pour bénéficier de fonctionnalités améliorées, notamment les thèmes et le branding personnalisé, ainsi qu'un support dédié.
+Fonctionnalités
+Partage communautaire
+
+Autoriser les utilisateurs à partager des conversations avec la communauté Open WebUI.
+
+Évaluation des messages
+
+Activer l'évaluation des messages.
+
+Dossiers
+
+Autoriser les utilisateurs à organiser leurs conversations en dossiers.
+
+Nombre maximum de fichiers par dossier
+
+Nombre maximum de fichiers autorisés par dossier.
+
+Souvenirs
+
+Autoriser les utilisateurs à enregistrer des souvenirs pour des réponses plus personnalisées.
+
+Contexte système de la mémoire
+
+Contexte système pour la mémoire.
+
+Load selected skills on demand
+
+Load selected and model-attached skills when needed instead of including instructions upfront. Explicit skill mentions still load immediately. Requires built-in skill tools; otherwise instructions load upfront.
+
+Skill Read Limit
+
+Maximum characters per skill read. Longer instructions open as a preview. Leave empty to use the default.
+
+Skill Preview Length
+
+Characters shown when instructions exceed the read limit. Cannot exceed that limit. Leave empty to use the default.
+
+Chat Read Limit
+
+Maximum characters returned when a model reads a previous chat. The newest messages are kept. Leave empty for no limit.
+
+Notes
+
+Autoriser les utilisateurs à créer et gérer des notes.
+
+Comments
+
+Allow users to comment on workspace items, notes, and chats they can access.
+
+Notifications
+
+Enable in-app notifications for all users. Webhook delivery is configured separately.
+
+Canaux
+
+Autoriser les utilisateurs à utiliser les canaux pour les conversations partagées.
+
+Apps
+
+Allow admins to connect external apps to Open WebUI.
+
+Calendrier
+
+Autoriser les utilisateurs à accéder aux fonctionnalités de calendrier.
+
+Automatisations
+
+Autoriser les utilisateurs à créer et exécuter des automatisations.
+
+Webhooks utilisateur
+
+Autoriser les utilisateurs à configurer des webhooks depuis leur compte.
+
+Statut utilisateur
+
+Activer le statut utilisateur.
+
+Filigramme de la réponse
+
+Filigrane pour les réponses.
+
+URL de WebUI
+
+Entrez l'URL publique de votre WebUI. Cette URL sera utilisée pour générer des liens dans les notifications.
+
+Événements
+Webhooks
+Activer les webhooks pour les événements.
+Aucun webhook d'événement configuré.
+UI
+Traductions de l'interface
+Paramètres d'interface par défaut
+Définir les valeurs par défaut de l'interface pour tous les comptes. Les paramètres personnels remplacent ces valeurs par défaut.
+Configurer
+Bannières
+Créer des annonces affichées aux utilisateurs dans l'application.
+Enregistrer

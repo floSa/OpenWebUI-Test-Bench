@@ -1,0 +1,102 @@
+[
+ {
+  "capture": "04-premiere-question/04-source.png",
+  "url": "/c/d70db3b1-7c1a-42a1-8e9d-a2784b64fa2b",
+  "pastilles": [
+   [
+    1,
+    "document"
+   ],
+   [
+    2,
+    "passage utilisé"
+   ]
+  ],
+  "note": "",
+  "heure": "08:53:33"
+ },
+ {
+  "capture": "04-premiere-question/01-menu-plus.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "+"
+   ],
+   [
+    2,
+    "Téléverser des fichiers"
+   ]
+  ],
+  "note": "",
+  "heure": "08:53:57"
+ },
+ {
+  "capture": "04-premiere-question/02-document-joint.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "rapport-annuel-2025.pdf"
+   ],
+   [
+    2,
+    "question"
+   ],
+   [
+    3,
+    "Envoyer"
+   ]
+  ],
+  "note": "",
+  "heure": "08:54:02"
+ },
+ {
+  "capture": "04-premiere-question/03-reponse.png",
+  "url": "/c/a1dd6b00-dbe1-406f-b71a-af2d59793565",
+  "pastilles": [
+   [
+    1,
+    "Exploré query_chat_files"
+   ],
+   [
+    2,
+    "1 Source"
+   ]
+  ],
+  "note": "",
+  "heure": "08:57:11"
+ },
+ {
+  "capture": "04-premiere-question/04-liste-sources.png",
+  "url": "/c/a1dd6b00-dbe1-406f-b71a-af2d59793565",
+  "pastilles": [
+   [
+    1,
+    "1 Source"
+   ],
+   [
+    2,
+    "rapport-annuel-2025.pdf"
+   ]
+  ],
+  "note": "",
+  "heure": "08:58:05"
+ },
+ {
+  "capture": "04-premiere-question/05-source.png",
+  "url": "/c/a1dd6b00-dbe1-406f-b71a-af2d59793565",
+  "pastilles": [
+   [
+    1,
+    "rapport-annuel-2025.pdf"
+   ],
+   [
+    2,
+    "Contenu"
+   ]
+  ],
+  "note": "",
+  "heure": "08:58:07"
+ }
+]

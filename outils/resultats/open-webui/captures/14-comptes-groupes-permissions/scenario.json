@@ -1,0 +1,301 @@
+[
+ {
+  "capture": "14-comptes-groupes-permissions/01-utilisateurs.png",
+  "url": "/admin/users/overview",
+  "pastilles": [
+   [
+    1,
+    "Utilisateurs"
+   ],
+   [
+    2,
+    "Aperçu"
+   ],
+   [
+    3,
+    "Ajouter un utilisateur"
+   ]
+  ],
+  "note": "",
+  "heure": "09:06:12"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/02-ajouter-utilisateur.png",
+  "url": "/admin/users/overview",
+  "pastilles": [
+   [
+    1,
+    "Formulaire"
+   ],
+   [
+    2,
+    "Rôle"
+   ],
+   [
+    3,
+    "Nom d'utilisateur"
+   ],
+   [
+    4,
+    "E-mail"
+   ],
+   [
+    5,
+    "Mot de passe"
+   ],
+   [
+    6,
+    "Enregistrer"
+   ]
+  ],
+  "note": "",
+  "heure": "09:06:13"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/03-liste-comptes.png",
+  "url": "/admin/users/overview",
+  "pastilles": [
+   [
+    1,
+    "nouveau compte"
+   ],
+   [
+    2,
+    "rôle"
+   ],
+   [
+    3,
+    "Modifier l'utilisateur"
+   ]
+  ],
+  "note": "",
+  "heure": "09:06:14"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/04-nouveau-groupe.png",
+  "url": "/admin/users/groups",
+  "pastilles": [
+   [
+    1,
+    "Général"
+   ],
+   [
+    2,
+    "Permissions"
+   ],
+   [
+    3,
+    "Nom du groupe"
+   ],
+   [
+    4,
+    "Qui est autorisé à partager avec ce groupe"
+   ],
+   [
+    5,
+    "Enregistrer"
+   ]
+  ],
+  "note": "",
+  "heure": "09:06:20"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/05-permissions.png",
+  "url": "/admin/users/groups",
+  "pastilles": [
+   [
+    1,
+    "Permissions"
+   ]
+  ],
+  "note": "permissions par défaut",
+  "heure": "09:06:22"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/06-membres.png",
+  "url": "/admin/users/groups",
+  "pastilles": [
+   [
+    1,
+    "Utilisateurs"
+   ],
+   [
+    2,
+    "case MEMBRE de Julien Moreau"
+   ]
+  ],
+  "note": "",
+  "heure": "09:07:24"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/07-groupes.png",
+  "url": "/admin/users/groups",
+  "pastilles": [
+   [
+    1,
+    "Équipe production"
+   ],
+   [
+    2,
+    "Autorisations par défaut"
+   ]
+  ],
+  "note": "",
+  "heure": "09:07:32"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/08-authentification.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Authentification"
+   ],
+   [
+    2,
+    "Rôle utilisateur par défaut"
+   ],
+   [
+    3,
+    "Groupe par défaut"
+   ],
+   [
+    4,
+    "Nouveaux comptes"
+   ],
+   [
+    5,
+    "Clés API"
+   ]
+  ],
+  "note": "",
+  "heure": "09:07:38"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/13-accueil-utilisateur.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "modèle proposé"
+   ],
+   [
+    2,
+    "zone de saisie"
+   ]
+  ],
+  "note": "",
+  "heure": "09:09:22"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/14-bases-utilisateur.png",
+  "url": "/",
+  "pastilles": [],
+  "note": "",
+  "heure": "09:09:33"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/11-partage-base-a.png",
+  "url": "/workspace/knowledge/bded018b-b7e0-4f9c-a70c-fdd62f7b174b",
+  "pastilles": [
+   [
+    1,
+    "Équipe production"
+   ],
+   [
+    2,
+    "case à cocher"
+   ],
+   [
+    3,
+    "Ajouter"
+   ]
+  ],
+  "note": "",
+  "heure": "09:12:32"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/11-partage-base-b.png",
+  "url": "/workspace/knowledge/bded018b-b7e0-4f9c-a70c-fdd62f7b174b",
+  "pastilles": [
+   [
+    1,
+    "Visibilité"
+   ],
+   [
+    2,
+    "Équipe production"
+   ]
+  ],
+  "note": "",
+  "heure": "09:12:34"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/15-utilisateur-apres.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "chat"
+   ],
+   [
+    2,
+    "Démo Vélanor"
+   ]
+  ],
+  "note": "",
+  "heure": "09:12:41"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/09-partage-modele-a.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Équipe production"
+   ],
+   [
+    2,
+    "case à cocher"
+   ],
+   [
+    3,
+    "Ajouter"
+   ]
+  ],
+  "note": "",
+  "heure": "09:14:30"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/09-partage-modele-b.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Visibilité"
+   ],
+   [
+    2,
+    "Équipe production"
+   ]
+  ],
+  "note": "",
+  "heure": "09:14:32"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/10-modele-partage.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "chat Partagé"
+   ],
+   [
+    2,
+    "gemma-4-e4b Privé"
+   ]
+  ],
+  "note": "",
+  "heure": "09:14:39"
+ }
+]

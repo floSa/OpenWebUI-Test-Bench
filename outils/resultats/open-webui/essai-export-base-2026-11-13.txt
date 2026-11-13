@@ -1,0 +1,2 @@
+fichier : Démo Vélanor.zip
+['message-vocal-production.mp3.txt', 'supplier-audit-batterix-en.pdf.txt', 'stocks-octobre-2025.xlsx.txt', 'rapport-annuel-2025.pdf.txt', 'strategie-2026.pptx.txt', 'procedure-batteries.docx.txt', 'cse-2025-10-14.md.txt', 'faq-sav.html.txt']

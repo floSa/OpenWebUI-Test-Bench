@@ -1,0 +1,138 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Aujourd'hui
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 26 minutes
+25min
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 29 minutes
+28min
+Chargement de...
+Claire Admin
+chat
+
+
+
+
+chat
+Suggéré
+Surmonter la procrastination
+donnez-moi des conseils
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Donnez-moi des idées
+que faire avec les dessins de mes enfants
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Montrez-moi un extrait de code
+d'un en-tête collant d'un site web
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Nouvelle conversation
+Open WebUI
+Retour en arrière
+Recherche
+Personnel
+Bases
+Général
+Interface utilisateur
+Notifications
+Raccourcis
+Préférences
+Personnalisation
+Audio
+Données
+Contrôles des données
+Consommation de tokens
+Conversations archivées
+Profil
+Compte
+À propos
+Administrateur
+Système
+Général
+Authentification
+Interface utilisateur
+IA
+Connexions
+Modèles
+Sous-agents
+Outils
+Intégrations
+Documents
+Audio
+Images
+Recherche Web
+Exécution de code
+Pipelines
+Qualité
+Analytique
+Évaluations
+Données
+Base de données
+Compte
+Profil
+Claire Admin
+Téléverser une photo
+·
+Retirer
+·
+Initiales
+·
+Gravatar
+Nom d'utilisateur
+
+Nom de l'utilisateur.
+
+Bio
+
+Biographie de l'utilisateur.
+
+Genre
+Je préfère ne pas répondre
+Homme
+Femme
+Sur mesure
+
+Genre de l'utilisateur.
+
+Date de naissance
+
+Date de naissance de l'utilisateur.
+
+Variables utilisateur
+0
+Ajouter
+Aucune variable utilisateur configurée.
+Utilisez ceux-ci dans les invites système du modèle comme {{user.variables.key_name}}.
+Mot de passe
+Changer le mot de passe
+Afficher
+
+Changer le mot de passe.
+
+Clés API
+Secrets
+Cacher
+
+Secrets de l'utilisateur.
+
+Jeton JWT
+Jeton JWT
+
+Jeton JWT pour l'utilisateur.
+
+Clé API
+Clé API
+
+Clé API pour l'utilisateur.
+
+Enregistrer

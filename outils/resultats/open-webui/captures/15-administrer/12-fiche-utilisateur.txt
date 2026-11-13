@@ -1,0 +1,77 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Aujourd'hui
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 24 minutes
+24min
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 27 minutes
+27min
+Chargement de...
+Claire Admin
+Utilisateurs
+Évaluations
+Fonctions
+Réglages
+Aperçu
+2
+Groupes
+1
+Ajouter un utilisateur
+Nom d'utilisateur
+	
+Rôle
+	
+E-mail
+	
+Dernière activité
+	
+Créé le
+	
+ACTIONS
+
+
+Claire Admin
+	
+Changer Le Rôle De L'utilisateur
+Administrateur	admin@velanor.example	
+il y a quelques secondes
+	13 novembre 2026	
+
+
+Julien Moreau
+	
+Changer Le Rôle De L'utilisateur
+Utilisateur	julien.moreau@velanor.example	
+il y a 6 minutes
+	13 novembre 2026	
+ⓘ Cliquez sur le bouton de rôle d'utilisateur pour modifier son rôle.
+Modifier l'utilisateur
+Retirer
+Initiales
+Gravatar
+Julien Moreau
+Créé le 13 novembre 2026
+Groupes d'utilisateurs
+Équipe production
+Rôle
+Administrateur
+Utilisateur
+en attente
+Nom d'utilisateur
+E-mail
+Nouveau mot de passe
+Entrez votre nouveau mots de passe
+Clé API
+Rotate
+Supprimer
+Sign out all devices
+Enregistrer

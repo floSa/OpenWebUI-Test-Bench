@@ -1,0 +1,91 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Aujourd'hui
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 12 minutes
+12min
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 15 minutes
+14min
+Chargement de...
+Claire Admin
+Utilisateurs
+Évaluations
+Fonctions
+Réglages
+Aperçu
+2
+Groupes
+0
+Nom d'utilisateur
+Nouveau groupe
+Aucun groupe trouvé
+Utilisez les groupes pour organiser vos utilisateurs et attribuer des permissions.
+Autorisations par défaut
+s'applique à tous les utilisateurs ayant le rôle « utilisateur »
+Modifier
+Ajouter un groupe d'utilisateurs
+Général
+Permissions
+Autorisations de l'espace de travail
+Accès aux modèles
+Accès aux connaissances
+Accès aux prompts
+Accès aux outils
+Accès aux skills
+Autorisation de partage
+Partage des modèles
+Partage des connaissances
+Partage de prompts
+Partage des outils
+Partage des skills
+Partage des notes
+Partage des dossiers
+Partage public des conversations
+Partage ouvert des conversations
+Partage public des calendriers
+Droits d'accès
+Autoriser le partage aux utilisateurs
+Autoriser le partage avec des groupes
+Autorisations de la conversation
+Autoriser le téléversement de fichiers
+Autoriser le téléversement depuis le web
+Autoriser les contrôles de la conversation
+Autoriser les vannes de conversation
+Autoriser le prompt système de la conversation
+Autoriser les paramètres de discussion
+Autoriser la modification de la conversation
+Autoriser la suppression de la conversation
+Autoriser la suppression des messages
+Autoriser la réponse continue
+Autoriser la regénération de la réponse
+Autoriser l'évaluation de la réponse
+Autoriser le partage de la conversation
+Autoriser l'exportation de la conversation
+Autoriser l'importation de la conversation
+Autoriser la reconnaissance vocale
+Autoriser la synthèse vocale
+Autoriser les appels
+Autoriser plusieurs modèles dans la conversation
+Autoriser la conversation temporaire
+Imposer les discussions temporaires
+Allow Side Chat
+Autorisations des fonctionnalités
+Notes
+Dossiers
+Interpréteur de code
+Souvenirs
+Automatisations
+Calendrier
+Autorisations des paramètres
+Accès aux paramètres de l'interface
+Réinitialiser aux valeurs par défaut
+Enregistrer

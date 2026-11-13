@@ -1,0 +1,8 @@
+2026-11-13 08:53:23 réponse : "Exploré query_chat_files\n\nLe chiffre d'affaires de Vélanor en 2025 s'élève à 48,6 M€ \nrapport-annuel-2025.pdf\n, soit une croissance de +12,4% par rapport à l'année précédente.\n\nVoici les détails du chiffre d'affaires par trimestre :\n\nTRIMESTRE\n\t\nCHIFFRE D'AFFAIRES (M€)\n\t\nPART DU TOTAL\n\n\nT1 2025\n\t\n9,8 M€\n\t\n20 %\n\n\nT2 2025\n\t\n13,7 M€\n\t\n28 %\n\n\nT3 2025\n\t\n14,2 M€\n\t\n29 %\n\n\nT4 2025\n\t\n10,9 M€\n\t\n22 %\n\nLe tro"
+2026-11-13 08:53:29 03-reponse : élément absent « Pensé pendant … »
+2026-11-13 08:57:04 réponse : "Exploré query_chat_files\n\nLe chiffre d'affaires de Vélanor pour l'année 2025 est de 48,6 millions d'euros .\n\nCette figure représente une croissance de +12,4% par rapport à l'exercice précédent. Le chiffre d'affaires a été réparti sur les quatre trimestres comme suit :\n\nT1 2025 : 9,8 M€ (20 % du total)\nT2 2025 : 13,7 M€ (28 % du total)\nT3 2025 : 14,2 M€ (29 % du total) - trimestre le plus élevé de "
+2026-11-13 08:57:10 03-reponse : élément absent « rapport-annuel-2025.pdf (citation) »
+2026-11-13 08:57:41 source : Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator(".chat-assistant").last.locator("button").filter(has_text="rapport-annuel-2025").first
+
