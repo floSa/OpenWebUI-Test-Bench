@@ -1,0 +1,40 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Claire Admin
+Utilisateurs
+Évaluations
+Fonctions
+Réglages
+Aperçu
+1
+Groupes
+0
+Ajouter un utilisateur
+Nom d'utilisateur
+	
+Rôle
+	
+E-mail
+	
+Dernière activité
+	
+Créé le
+	
+ACTIONS
+
+
+Claire Admin
+	
+Changer Le Rôle De L'utilisateur
+Administrateur	admin@velanor.example	
+il y a quelques secondes
+	13 novembre 2026	
+ⓘ Cliquez sur le bouton de rôle d'utilisateur pour modifier son rôle.

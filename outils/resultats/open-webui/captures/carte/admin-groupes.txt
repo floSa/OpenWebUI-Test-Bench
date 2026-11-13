@@ -1,0 +1,26 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Claire Admin
+Utilisateurs
+Évaluations
+Fonctions
+Réglages
+Aperçu
+1
+Groupes
+0
+Nom d'utilisateur
+Nouveau groupe
+Aucun groupe trouvé
+Utilisez les groupes pour organiser vos utilisateurs et attribuer des permissions.
+Autorisations par défaut
+s'applique à tous les utilisateurs ayant le rôle « utilisateur »
+Modifier

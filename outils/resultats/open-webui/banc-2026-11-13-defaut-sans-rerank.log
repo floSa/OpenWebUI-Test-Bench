@@ -15,3 +15,24 @@ Mem:           32098        8545         656         914       24181       23553
   Message vocale de Julien Moreau, directeur de production chez Vélanor, enregistrait le 3 novembre VVTSEC. La ligne d'assoblage numéro 3 de Nantes sera arrêtée du 2 au 6 mars VVTSI pour maintenance. Pe
 réglages appliqués : {'ENABLE_RAG_HYBRID_SEARCH': False, 'RAG_RERANKING_ENGINE': ''}
 indexation : 0.0 s
+Q01 tableau         OK    57.9s  "Le chiffre d'affaires de Vélanor en 2025 s'élève à 48,6 M€ [1]."
+Q02 fait simple     OK    36.1s  'Vélanor a été fondée en 2014 [1].'
+Q03 fait simple     OK    43.9s  'La présidente de Vélanor est Hélène Marchais [1].'
+Q04 fait simple     OK    57.8s  "L'adresse du siège de Vélanor est située au 12 quai de la Fosse à Nantes [1]."
+Q05 tableau         OK    69.2s  "Selon le rapport annuel fictif de Vélanor SAS, l'entreprise compte **412 salariés** au 31 "
+Q06 tableau         OK    48.6s  "Le chiffre d'affaires du troisième trimestre 2025 s'est établi à 14,2 M€ [1]."
+Q07 tableau         OK    78.0s  "Selon le rapport annuel de Vélanor SAS, la production du modèle Sèvre Trail s'est élevée à"
+Q08 tableau         OK    60.8s  'Le prix public TTC du modèle Erdre Cargo est de 4 290 € [1].'
+Q09 tableau         OK    78.1s  'Selon les effectifs par site du document Vélanor SAS, le site de Cholet compte **97 salari'
+Q10 fait simple     OK    63.3s  "Selon le document de Vélanor SAS, les cadres sont fabriqués à partir d'aluminium recyclé à"
+Q11 fait simple     OK    59.4s  'Le taux de recyclage des batteries usagées collectées atteint 96 % [1].'
+Q12 tableau         OK    55.3s  'Selon les informations fournies, le fournisseur des moteurs est **Motodrive Co.** et il es'
+Q13 tableau         OK    70.6s  "D'après le document annuel 2025, Vélanor a dégagé un résultat net de 3,1 M€ en 2025 [1]."
+Q14 fait simple     OK    71.1s  "Le taux de retour sous garantie s'établit à 1,8 % des vélos vendus [1]."
+Q15 scan            NON   89.5s  "D'après les documents fournis, le **prix unitaire des batteries** prévu par le contrat ave"
+Q16 scan            NON   53.0s  'Selon le document fourni, le délai moyen constaté pour les batteries livrées par Batterix '
+Q17 scan            NON  106.0s  "Dans les documents fournis, aucune information n'est disponible concernant le plafond des "
+Q18 scan            NON   98.9s  'Dans les documents fournis, aucune information précise sur le volume minimal annuel de bat'
+Q19 fait simple     OK    38.1s  'Les batteries doivent être stockées entre 10 °C et 25 °C [1].'
+Q20 fait simple     OK    69.6s  'Selon le document de la procédure PR-SEC-04 « Charge et stockage des batteries », la respo'
+Q21 tableau         OK    53.7s  'Le local B2 est inspecté le premier lundi de chaque mois [1].'

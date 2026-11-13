@@ -1,0 +1,78 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Claire Admin
+chat
+
+
+
+
+chat
+Suggéré
+Montrez-moi un extrait de code
+d'un en-tête collant d'un site web
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Surmonter la procrastination
+donnez-moi des conseils
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Donnez-moi des idées
+que faire avec les dessins de mes enfants
+Nouvelle conversation
+Open WebUI
+Retour en arrière
+Recherche
+Personnel
+Bases
+Général
+Interface utilisateur
+Notifications
+Raccourcis
+Préférences
+Personnalisation
+Audio
+Données
+Contrôles des données
+Consommation de tokens
+Conversations archivées
+Profil
+Compte
+À propos
+Administrateur
+Système
+Général
+Authentification
+Interface utilisateur
+IA
+Connexions
+Modèles
+Sous-agents
+Outils
+Intégrations
+Documents
+Audio
+Images
+Recherche Web
+Exécution de code
+Pipelines
+Qualité
+Analytique
+Évaluations
+Données
+Base de données
+Sous-agents
+Activer les sous-agents
+
+Autoriser l'IA à déléguer des tâches à des sous-agents. Chaque sous-agent crée une véritable conversation avec un accès complet aux outils. Consomme des appels LLM supplémentaires.
+
+Enregistrer

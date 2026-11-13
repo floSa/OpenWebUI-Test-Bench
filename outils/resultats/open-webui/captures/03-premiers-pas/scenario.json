@@ -34,5 +34,217 @@
   ],
   "note": "",
   "heure": "08:03:03"
+ },
+ {
+  "capture": "03-premiers-pas/04-ecran-principal.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Nouvelle conversation"
+   ],
+   [
+    2,
+    "Recherche"
+   ],
+   [
+    3,
+    "Notes"
+   ],
+   [
+    4,
+    "Espace de travail"
+   ],
+   [
+    5,
+    "chat (sélecteur de modèle)"
+   ],
+   [
+    6,
+    "Comment puis-je vous aider aujourd'hui ?"
+   ]
+  ],
+  "note": "",
+  "heure": "08:23:59"
+ },
+ {
+  "capture": "03-premiers-pas/05-menu-compte.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Réglages"
+   ],
+   [
+    2,
+    "Espace de travail"
+   ],
+   [
+    3,
+    "Panneau d'administration"
+   ],
+   [
+    4,
+    "Déconnexion"
+   ]
+  ],
+  "note": "",
+  "heure": "08:24:01"
+ },
+ {
+  "capture": "03-premiers-pas/06-langue.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Général"
+   ],
+   [
+    2,
+    "Langue"
+   ],
+   [
+    3,
+    "Enregistrer"
+   ]
+  ],
+  "note": "",
+  "heure": "08:25:55"
+ },
+ {
+  "capture": "03-premiers-pas/07-connexions.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Connexions"
+   ],
+   [
+    2,
+    "http://llm-central:8080/v1"
+   ],
+   [
+    3,
+    "Configurer (roue dentée)"
+   ],
+   [
+    4,
+    "API Ollama (désactivée)"
+   ],
+   [
+    5,
+    "Enregistrer"
+   ]
+  ],
+  "note": "",
+  "heure": "08:27:06"
+ },
+ {
+  "capture": "03-premiers-pas/08-modifier-connexion.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "URL"
+   ],
+   [
+    2,
+    "Clé (masquée)"
+   ],
+   [
+    3,
+    "Vérifier la connexion"
+   ],
+   [
+    4,
+    "Enregistrer"
+   ]
+  ],
+  "note": "",
+  "heure": "08:27:09"
+ },
+ {
+  "capture": "03-premiers-pas/09-connexion-verifiee.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Vérification de la connexion réussie"
+   ]
+  ],
+  "note": "",
+  "heure": "08:27:13"
+ },
+ {
+  "capture": "03-premiers-pas/10-modeles-avant.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Modèles"
+   ],
+   [
+    2,
+    "Activé (ligne embed)"
+   ],
+   [
+    3,
+    "Activé (ligne chat)"
+   ]
+  ],
+  "note": "",
+  "heure": "08:27:19"
+ },
+ {
+  "capture": "03-premiers-pas/11-modeles-apres.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Activé (désactivé pour embed)"
+   ],
+   [
+    2,
+    "Activé (ligne chat)"
+   ]
+  ],
+  "note": "",
+  "heure": "08:27:25"
+ },
+ {
+  "capture": "03-premiers-pas/12-selecteur-modeles.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "chat"
+   ],
+   [
+    2,
+    "gemma-4-e4b"
+   ]
+  ],
+  "note": "",
+  "heure": "08:27:32"
+ },
+ {
+  "capture": "03-premiers-pas/03-connexion.png",
+  "url": "/auth",
+  "pastilles": [
+   [
+    1,
+    "E-mail"
+   ],
+   [
+    2,
+    "Mot de passe"
+   ],
+   [
+    3,
+    "Connexion"
+   ]
+  ],
+  "note": "",
+  "heure": "08:28:46"
  }
 ]

@@ -1,0 +1,86 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Claire Admin
+chat
+
+
+
+
+chat
+Suggéré
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Donnez-moi des idées
+que faire avec les dessins de mes enfants
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Montrez-moi un extrait de code
+d'un en-tête collant d'un site web
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Surmonter la procrastination
+donnez-moi des conseils
+Nouvelle conversation
+Open WebUI
+Retour en arrière
+Recherche
+Personnel
+Bases
+Général
+Interface utilisateur
+Notifications
+Raccourcis
+Préférences
+Personnalisation
+Audio
+Données
+Contrôles des données
+Consommation de tokens
+Conversations archivées
+Profil
+Compte
+À propos
+Administrateur
+Système
+Général
+Authentification
+Interface utilisateur
+IA
+Connexions
+Modèles
+Sous-agents
+Outils
+Intégrations
+Documents
+Audio
+Images
+Recherche Web
+Exécution de code
+Pipelines
+Qualité
+Analytique
+Évaluations
+Données
+Base de données
+Connexions
+API compatibles OpenAI
+Gérer les connexions API OpenAI
+API Ollama
+Connexions utilisateur
+Direct connexions
+
+Les connexions directes permettent aux utilisateurs de se connecter à leurs propres points d'extension API compatibles OpenAI.
+
+Mettre en cache la liste des modèles de base
+
+La mise en cache de la liste des modèles de base accélère l'accès en ne récupérant les modèles de base qu'au démarrage ou lors de la sauvegarde des réglages - plus rapide, mais peut ne pas afficher les modifications récentes des modèles de base.
+
+Enregistrer

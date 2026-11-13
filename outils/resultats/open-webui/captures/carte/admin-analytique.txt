@@ -1,0 +1,124 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Claire Admin
+chat
+
+
+
+
+chat
+Suggéré
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Montrez-moi un extrait de code
+d'un en-tête collant d'un site web
+Surmonter la procrastination
+donnez-moi des conseils
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Donnez-moi des idées
+que faire avec les dessins de mes enfants
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Nouvelle conversation
+Open WebUI
+Retour en arrière
+Recherche
+Personnel
+Bases
+Général
+Interface utilisateur
+Notifications
+Raccourcis
+Préférences
+Personnalisation
+Audio
+Données
+Contrôles des données
+Consommation de tokens
+Conversations archivées
+Profil
+Compte
+À propos
+Administrateur
+Système
+Général
+Authentification
+Interface utilisateur
+IA
+Connexions
+Modèles
+Sous-agents
+Outils
+Intégrations
+Documents
+Audio
+Images
+Recherche Web
+Exécution de code
+Pipelines
+Qualité
+Analytique
+Évaluations
+Données
+Base de données
+Analytique
+Dernières 24 heures
+7 derniers jours
+30 derniers jours
+90 derniers jours
+Year to date
+Last 12 months
+Toute la période
+Plage personnalisée
+Aperçu
+Sessions
+Tokens
+0
+Entrée
+0
+Sortie
+0
+Messages
+0
+Conversations
+0
+Utilisateurs
+0
+Tokens
+Messages
+Comparer
+Volume
+Activité
+Par heure
+Journalier
+No activity in this period
+Modèles
+Utilisateurs
+#	
+Modèle
+	
+Messages
+	
+Utilisateurs
+	
+Conversations
+	
+Entrée
+	
+Sortie
+	
+Total
+	
+Token share
+
+Aucune donnée
+Le nombre de messages est basé sur le nombre de réponses de l'assistant. Le nombre de tokens est une estimation et peut ne pas refléter l'utilisation réelle de l'API

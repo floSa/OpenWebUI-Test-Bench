@@ -1,0 +1,115 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Claire Admin
+chat
+
+
+
+
+chat
+Suggéré
+Montrez-moi un extrait de code
+d'un en-tête collant d'un site web
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Donnez-moi des idées
+que faire avec les dessins de mes enfants
+Surmonter la procrastination
+donnez-moi des conseils
+Nouvelle conversation
+Open WebUI
+Retour en arrière
+Recherche
+Personnel
+Bases
+Général
+Interface utilisateur
+Notifications
+Raccourcis
+Préférences
+Personnalisation
+Audio
+Données
+Contrôles des données
+Consommation de tokens
+Conversations archivées
+Profil
+Compte
+À propos
+Administrateur
+Système
+Général
+Authentification
+Interface utilisateur
+IA
+Connexions
+Modèles
+Sous-agents
+Outils
+Intégrations
+Documents
+Audio
+Images
+Recherche Web
+Exécution de code
+Pipelines
+Qualité
+Analytique
+Évaluations
+Données
+Base de données
+Audio
+Réglages de Speech-to-Text
+Moteur de reconnaissance vocale
+Par défaut
+API Web
+
+Moteur pour la reconnaissance vocale.
+
+Langue
+
+Langue pour la synthèse vocale.
+
+Envoi automatique après la transcription
+
+Envoyer automatiquement après la transcription vocale.
+
+Réglages de Text-to-Speech
+Moteur de Text-to-Speech
+Par défaut
+Kokoro.js (Navigateur)
+
+Moteur pour la synthèse vocale.
+
+Lire automatiquement la réponse
+
+Lire automatiquement les réponses.
+
+Vitesse de lecture de la parole
+x
+
+Vitesse de lecture de la parole.
+
+Voix
+Choisir la voix
+Par défaut
+
+Voix du navigateur pour la synthèse vocale.
+
+Autoriser les voix non locales
+
+Autoriser les voix non locales.
+
+Enregistrer

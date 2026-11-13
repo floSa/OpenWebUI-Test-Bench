@@ -1,0 +1,57 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Claire Admin
+Utilisateurs
+Évaluations
+Fonctions
+Réglages
+Classement
+9
+Avis
+0
+RK
+	
+MODÈLE
+	
+NOTE
+	
+VICTOIRES
+	
+PERDU
+
+-	
+chat
+	-	-	-
+-	
+embed
+	-	-	-
+-	
+rerank
+	-	-	-
+-	
+transcribe
+	-	-	-
+-	
+gemma-4-e4b
+	-	-	-
+-	
+qwen3.5-4b
+	-	-	-
+-	
+bge-m3
+	-	-	-
+-	
+bge-reranker-v2-m3
+	-	-	-
+-	
+faster-whisper-small
+	-	-	-
+ⓘ Le classement est basé sur le système de notation Elo et est mis à jour en temps réel.

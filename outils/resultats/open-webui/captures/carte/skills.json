@@ -1,0 +1,212 @@
+[
+[
+"A",
+"Aller au contenu principal",
+"",
+"",
+"#main-content"
+],
+[
+"BUTTON",
+"",
+"Ouvrir la barre latérale",
+"",
+""
+],
+[
+"A",
+"",
+"Nouvelle conversation",
+"",
+"/"
+],
+[
+"BUTTON",
+"",
+"Recherche",
+"",
+""
+],
+[
+"A",
+"",
+"Notes",
+"",
+"/notes"
+],
+[
+"A",
+"",
+"Espace de travail",
+"",
+"/workspace"
+],
+[
+"BUTTON",
+"",
+"Menu utilisateur",
+"",
+""
+],
+[
+"A",
+"",
+"Nouvelle conversation",
+"",
+"/"
+],
+[
+"A",
+"Open WebUI",
+"",
+"",
+"/"
+],
+[
+"BUTTON",
+"",
+"Notifications",
+"",
+""
+],
+[
+"BUTTON",
+"",
+"Ouvrir la barre latérale",
+"",
+""
+],
+[
+"A",
+"Nouvelle conversation Ctrl+Shift+O",
+"Nouvelle conversation",
+"",
+"/"
+],
+[
+"BUTTON",
+"Recherche Ctrl+K",
+"Recherche",
+"",
+""
+],
+[
+"A",
+"Notes",
+"Notes",
+"",
+"/notes"
+],
+[
+"A",
+"Espace de travail",
+"Espace de travail",
+"",
+"/workspace"
+],
+[
+"BUTTON",
+"Dossiers",
+"",
+"",
+""
+],
+[
+"BUTTON",
+"",
+"Nouveau dossier",
+"",
+""
+],
+[
+"BUTTON",
+"Conversations",
+"",
+"",
+""
+],
+[
+"BUTTON",
+"",
+"Plus",
+"",
+""
+],
+[
+"BUTTON",
+"Claire Admin",
+"",
+"",
+""
+],
+[
+"A",
+"Modèles 0",
+"",
+"",
+"/workspace/models"
+],
+[
+"A",
+"Connaissances 1",
+"",
+"",
+"/workspace/knowledge"
+],
+[
+"A",
+"Prompts 0",
+"",
+"",
+"/workspace/prompts"
+],
+[
+"A",
+"Skills 0",
+"",
+"",
+"/workspace/skills"
+],
+[
+"A",
+"Outils 0",
+"",
+"",
+"/workspace/tools"
+],
+[
+"BUTTON",
+"Créer",
+"",
+"",
+""
+],
+[
+"BUTTON",
+"",
+"Ouvrir le menu de création",
+"",
+""
+],
+[
+"INPUT",
+"",
+"Rechercher des skills",
+"Rechercher des skills",
+""
+],
+[
+"BUTTON",
+"Tout",
+"",
+"",
+""
+],
+[
+"A",
+"Discover a skill Discover, download, and explore community s",
+"",
+"",
+"https://openwebui.com/search?type=skill"
+]
+]

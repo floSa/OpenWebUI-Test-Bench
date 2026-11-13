@@ -50,6 +50,18 @@ services:
       - rag-local
     restart: unless-stopped
 
+  # Lecteur de documents Docling (facultatif, profil « docling ») : image officielle relue et déjà essayée au banc
+  # Kotaemon (kit/PROMPT.md §11) ; sans port publié, joignable par Open WebUI à http://rag-docling-serve:5001.
+  docling-serve:
+    profiles: ["docling"]
+    image: quay.io/docling-project/docling-serve-cpu:v1.38.2@sha256:7a480a1604fa3b42efeddc7db9527690d9f9bc903226136013e2bfe6b1a4dfb0
+    container_name: rag-docling-serve
+    environment:
+      DOCLING_SERVE_ENABLE_UI: "false"
+    networks:
+      - llm-net
+    restart: unless-stopped
+
 networks:
   llm-net:
     external: true

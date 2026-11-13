@@ -1,0 +1,240 @@
+[
+[
+"A",
+"Aller au contenu principal",
+"",
+"",
+"#main-content"
+],
+[
+"BUTTON",
+"",
+"Ouvrir la barre latérale",
+"",
+""
+],
+[
+"A",
+"",
+"Nouvelle conversation",
+"",
+"/"
+],
+[
+"BUTTON",
+"",
+"Recherche",
+"",
+""
+],
+[
+"A",
+"",
+"Notes",
+"",
+"/notes"
+],
+[
+"A",
+"",
+"Espace de travail",
+"",
+"/workspace"
+],
+[
+"BUTTON",
+"",
+"Menu utilisateur",
+"",
+""
+],
+[
+"A",
+"",
+"Nouvelle conversation",
+"",
+"/"
+],
+[
+"A",
+"Open WebUI",
+"",
+"",
+"/"
+],
+[
+"BUTTON",
+"",
+"Notifications",
+"",
+""
+],
+[
+"BUTTON",
+"",
+"Ouvrir la barre latérale",
+"",
+""
+],
+[
+"A",
+"Nouvelle conversation Ctrl+Shift+O",
+"Nouvelle conversation",
+"",
+"/"
+],
+[
+"BUTTON",
+"Recherche Ctrl+K",
+"Recherche",
+"",
+""
+],
+[
+"A",
+"Notes",
+"Notes",
+"",
+"/notes"
+],
+[
+"A",
+"Espace de travail",
+"Espace de travail",
+"",
+"/workspace"
+],
+[
+"BUTTON",
+"Dossiers",
+"",
+"",
+""
+],
+[
+"BUTTON",
+"",
+"Nouveau dossier",
+"",
+""
+],
+[
+"BUTTON",
+"Conversations",
+"",
+"",
+""
+],
+[
+"BUTTON",
+"",
+"Plus",
+"",
+""
+],
+[
+"BUTTON",
+"Claire Admin",
+"",
+"",
+""
+],
+[
+"A",
+"Modèles 0",
+"",
+"",
+"/workspace/models"
+],
+[
+"A",
+"Connaissances 1",
+"",
+"",
+"/workspace/knowledge"
+],
+[
+"A",
+"Prompts 0",
+"",
+"",
+"/workspace/prompts"
+],
+[
+"A",
+"Skills 0",
+"",
+"",
+"/workspace/skills"
+],
+[
+"A",
+"Outils 0",
+"",
+"",
+"/workspace/tools"
+],
+[
+"BUTTON",
+"Créer",
+"",
+"",
+""
+],
+[
+"INPUT",
+"",
+"Rechercher des connaissances",
+"Rechercher des connaissances",
+""
+],
+[
+"BUTTON",
+"Tout",
+"",
+"",
+""
+],
+[
+"BUTTON",
+"Toutes Les Sources",
+"",
+"",
+""
+],
+[
+"BUTTON",
+"Nom d'utilisateur",
+"",
+"",
+""
+],
+[
+"BUTTON",
+"Mise à jour le",
+"",
+"",
+""
+],
+[
+"A",
+"Banc",
+"",
+"",
+"/workspace/knowledge/e700d435-5a6f-42b4-8312-d6a462a5a9b0"
+],
+[
+"BUTTON",
+"Claire Admin",
+"Claire Admin",
+"",
+""
+],
+[
+"BUTTON",
+"",
+"Plus d'options",
+"",
+""
+]
+]

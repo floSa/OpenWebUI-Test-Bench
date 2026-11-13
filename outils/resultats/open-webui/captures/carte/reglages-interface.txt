@@ -1,0 +1,292 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Claire Admin
+chat
+
+
+
+
+chat
+Suggéré
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Montrez-moi un extrait de code
+d'un en-tête collant d'un site web
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Surmonter la procrastination
+donnez-moi des conseils
+Donnez-moi des idées
+que faire avec les dessins de mes enfants
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Nouvelle conversation
+Open WebUI
+Retour en arrière
+Recherche
+Personnel
+Bases
+Général
+Interface utilisateur
+Notifications
+Raccourcis
+Préférences
+Personnalisation
+Audio
+Données
+Contrôles des données
+Consommation de tokens
+Conversations archivées
+Profil
+Compte
+À propos
+Administrateur
+Système
+Général
+Authentification
+Interface utilisateur
+IA
+Connexions
+Modèles
+Sous-agents
+Outils
+Intégrations
+Documents
+Audio
+Images
+Recherche Web
+Exécution de code
+Pipelines
+Qualité
+Analytique
+Évaluations
+Données
+Base de données
+Interface utilisateur
+UI
+Zoom de l'interface utilisateur
+Par défaut
+
+Définir un niveau de zoom local pour l'interface de l'application.
+
+Famille de polices
+Par défaut
+
+Famille de polices pour l'interface.
+
+Mode accessibilité
+
+Activer le mode accessibilité.
+
+Afficher le nom de la conversation dans l'onglet
+
+Afficher le titre de la conversation dans l'onglet.
+
+Autoriser l'emplacement de l'utilisateur
+
+Autoriser l'accès à la localisation.
+
+Retour haptique (Android)
+
+Utiliser le retour haptique de l'appareil sur les appareils Android pris en charge.
+
+Copier le texte en gardant le format
+
+Copier le texte formaté.
+
+Notifications toast pour les nouvelles mises à jour
+
+Afficher les notifications pour les nouvelles mises à jour.
+
+Afficher la fenêtre modale "Quoi de neuf" lors de la connexion
+
+Ouvrir la fenêtre modale du journal des modifications après la connexion si activé.
+
+Conversation
+Activer la mise en file d'attente de message
+
+Activer la file d'attente des messages.
+
+Direction de la conversation
+Automatique
+
+Direction de la conversation.
+
+Mode de la page d'accueil
+Par défaut
+
+Mode de la page d'accueil.
+
+Image d'arrière-plan de la fenêtre de la conversation
+Téléverser
+
+Image d'arrière-plan de la conversation.
+
+Bulles de conversation
+
+Utiliser l'interface à bulles.
+
+Mode grand écran
+
+Mode grand écran.
+
+Conversation temporaire par défaut
+
+Utiliser des conversations temporaires par défaut.
+
+Effet de fondu pour le texte en streaming
+
+Activer l'effet de fondu pour le texte en streaming.
+
+Afficher le Markdown dans les messages de l'utilisateur
+
+Afficher le Markdown dans les messages utilisateur.
+
+Afficher le Markdown dans les messages de l'assistant
+
+Afficher le Markdown dans les messages de l'assistant.
+
+Afficher le Markdown dans les aperçus
+
+Afficher le Markdown dans les aperçus.
+
+Génération automatique des titres
+
+Générer automatiquement les titres.
+
+Génération automatique de questions de suivi
+
+Générer automatiquement les questions de suivi.
+
+Génération automatique des tags
+
+Générer automatiquement les tags.
+
+Copie automatique de la réponse vers le presse-papiers
+
+Copier automatiquement les réponses dans le presse-papiers.
+
+Défilement automatique
+
+Défilement automatique des réponses.
+
+Défilement lors du changement de branche
+
+Faire défiler lors du changement de branche.
+
+Insérer le prompt suggéré dans la zone de saisie
+
+Insérer les invites suggérées dans la zone de saisie.
+
+Conserver les questions de suivi précédentes dans la conversation
+
+Conserver les questions de suivi dans la conversation.
+
+Insérer la question de suivi dans la zone de saisie
+
+Insérer les questions de suivi dans la zone de saisie.
+
+Menu Regénérer
+
+Afficher le menu de régénération.
+
+Toujours réduire les blocs de code
+
+Toujours réduire les blocs de code.
+
+Toujours afficher les détails
+
+Toujours développer les détails.
+
+Aperçus au survol
+
+Afficher les aperçus au survol.
+
+Afficher les réponses multi-modèles dans des onglets
+
+Afficher les réponses multi-modèles dans des onglets.
+
+Export de PDF stylisés
+
+Exporter les PDF avec style.
+
+Actions rapides flottantes
+Gérer
+
+Afficher la barre d'outils d'actions rapides flottante dans la conversation.
+
+Entrée
+Comportement de la touche Entrée
+Taper entrer pour envoyer
+
+Comportement de la touche Entrée.
+
+Show Input Selections
+
+Show selected tools, skills, filters, and capabilities beside the + menu. Hiding them preserves your selections.
+
+Saisie de texte enrichi pour la conversation
+
+Utiliser la saisie de texte riche.
+
+Afficher la barre d'outils de formatage
+
+Afficher la barre d'outils de formatage.
+
+Insérer le prompt en tant que texte enrichi
+
+Insérer les invites en texte riche.
+
+Coller un texte volumineux comme fichier
+
+Coller le texte long comme fichier.
+
+Artéfacts
+Détection automatique des Artifacts
+
+Détecter automatiquement les artefacts.
+
+Scripts dans iframes
+
+Autoriser les scripts dans les iframes.
+
+Autoriser même origine dans l'iframe sandbox
+
+Autoriser les artéfacts à accéder aux API du navigateur de même origine dans l'iframe sandbox.
+
+Autoriser les formulaires dans l'iframe sandbox
+
+Autoriser les formulaires dans les iframes sandbox des artéfacts.
+
+Téléchargements dans iframes
+
+Autoriser les téléchargements dans les iframes.
+
+Voix
+Autoriser l'interruption vocale pendant un appel
+
+Autoriser l'interruption vocale.
+
+Afficher les emojis pendant l'appel
+
+Afficher les emojis dans l'appel.
+
+Fichier
+Mode par défaut
+Utilisation de la récupération ciblée
+
+Mode de téléversement par défaut.
+
+Compression d'image
+
+Compresser les images téléversées avant l'envoi ou le stockage.
+
+Enregistrer

@@ -1,0 +1,184 @@
+[
+[
+"A",
+"Aller au contenu principal",
+"",
+"",
+"#main-content"
+],
+[
+"BUTTON",
+"",
+"Ouvrir la barre latérale",
+"",
+""
+],
+[
+"A",
+"",
+"Nouvelle conversation",
+"",
+"/"
+],
+[
+"BUTTON",
+"",
+"Recherche",
+"",
+""
+],
+[
+"A",
+"",
+"Notes",
+"",
+"/notes"
+],
+[
+"A",
+"",
+"Espace de travail",
+"",
+"/workspace"
+],
+[
+"BUTTON",
+"",
+"Menu utilisateur",
+"",
+""
+],
+[
+"A",
+"",
+"Nouvelle conversation",
+"",
+"/"
+],
+[
+"A",
+"Open WebUI",
+"",
+"",
+"/"
+],
+[
+"BUTTON",
+"",
+"Notifications",
+"",
+""
+],
+[
+"BUTTON",
+"",
+"Ouvrir la barre latérale",
+"",
+""
+],
+[
+"A",
+"Nouvelle conversation Ctrl+Shift+O",
+"Nouvelle conversation",
+"",
+"/"
+],
+[
+"BUTTON",
+"Recherche Ctrl+K",
+"Recherche",
+"",
+""
+],
+[
+"A",
+"Notes",
+"Notes",
+"",
+"/notes"
+],
+[
+"A",
+"Espace de travail",
+"Espace de travail",
+"",
+"/workspace"
+],
+[
+"BUTTON",
+"Dossiers",
+"",
+"",
+""
+],
+[
+"BUTTON",
+"",
+"Nouveau dossier",
+"",
+""
+],
+[
+"BUTTON",
+"Conversations",
+"",
+"",
+""
+],
+[
+"BUTTON",
+"",
+"Plus",
+"",
+""
+],
+[
+"BUTTON",
+"Claire Admin",
+"",
+"",
+""
+],
+[
+"A",
+"Utilisateurs",
+"",
+"",
+"/admin"
+],
+[
+"A",
+"Évaluations",
+"",
+"",
+"/admin/evaluations"
+],
+[
+"A",
+"Fonctions",
+"",
+"",
+"/admin/functions"
+],
+[
+"A",
+"Réglages",
+"",
+"",
+"/admin/settings"
+],
+[
+"A",
+"Classement 9",
+"",
+"",
+"/admin/evaluations/leaderboard"
+],
+[
+"A",
+"Avis 0",
+"",
+"",
+"/admin/evaluations/feedback"
+]
+]

@@ -1,0 +1,30 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Claire Admin
+Modèles
+0
+Connaissances
+1
+Prompts
+0
+Skills
+0
+Outils
+0
+Créer
+Modèles
+Tout
+Actions
+No models yet
+Items you create or that are shared with you will appear here.
+Réalisé par la communauté OpenWebUI
+Trouvez un modèle
+Découvrir, télécharger et explorer des préréglages de modèles

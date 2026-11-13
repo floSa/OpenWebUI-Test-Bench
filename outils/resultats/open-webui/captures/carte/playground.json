@@ -1,0 +1,219 @@
+[
+[
+"A",
+"Aller au contenu principal",
+"",
+"",
+"#main-content"
+],
+[
+"BUTTON",
+"",
+"Ouvrir la barre latérale",
+"",
+""
+],
+[
+"A",
+"",
+"Nouvelle conversation",
+"",
+"/"
+],
+[
+"BUTTON",
+"",
+"Recherche",
+"",
+""
+],
+[
+"A",
+"",
+"Notes",
+"",
+"/notes"
+],
+[
+"A",
+"",
+"Espace de travail",
+"",
+"/workspace"
+],
+[
+"BUTTON",
+"",
+"Menu utilisateur",
+"",
+""
+],
+[
+"A",
+"",
+"Nouvelle conversation",
+"",
+"/"
+],
+[
+"A",
+"Open WebUI",
+"",
+"",
+"/"
+],
+[
+"BUTTON",
+"",
+"Notifications",
+"",
+""
+],
+[
+"BUTTON",
+"",
+"Ouvrir la barre latérale",
+"",
+""
+],
+[
+"A",
+"Nouvelle conversation Ctrl+Shift+O",
+"Nouvelle conversation",
+"",
+"/"
+],
+[
+"BUTTON",
+"Recherche Ctrl+K",
+"Recherche",
+"",
+""
+],
+[
+"A",
+"Notes",
+"Notes",
+"",
+"/notes"
+],
+[
+"A",
+"Espace de travail",
+"Espace de travail",
+"",
+"/workspace"
+],
+[
+"BUTTON",
+"Dossiers",
+"",
+"",
+""
+],
+[
+"BUTTON",
+"",
+"Nouveau dossier",
+"",
+""
+],
+[
+"BUTTON",
+"Conversations",
+"",
+"",
+""
+],
+[
+"BUTTON",
+"",
+"Plus",
+"",
+""
+],
+[
+"BUTTON",
+"Claire Admin",
+"",
+"",
+""
+],
+[
+"A",
+"Conversation",
+"",
+"",
+"/playground"
+],
+[
+"A",
+"Complétions",
+"",
+"",
+"/playground/completions"
+],
+[
+"A",
+"Images",
+"",
+"",
+"/playground/images"
+],
+[
+"BUTTON",
+"",
+"Instructions système",
+"",
+""
+],
+[
+"BUTTON",
+"",
+"Plus d'options",
+"",
+""
+],
+[
+"TEXTAREA",
+"",
+"Entrez le message un utilisateur ici",
+"Entrez le message un utilisateur ici",
+""
+],
+[
+"BUTTON",
+"Utilisateur Switch to Assistant role",
+"",
+"",
+""
+],
+[
+"SELECT",
+"chat embed rerank transcribe gemma-4-e4b qwen3.5-4b bge-m3 b",
+"Modèle",
+"",
+""
+],
+[
+"BUTTON",
+"",
+"Contrôles",
+"",
+""
+],
+[
+"BUTTON",
+"Ajouter",
+"",
+"",
+""
+],
+[
+"BUTTON",
+"Exécuter",
+"",
+"",
+""
+]
+]

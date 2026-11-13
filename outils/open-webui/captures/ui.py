@@ -49,7 +49,7 @@ class Scenario:
     def aller(self, chemin, attendre=None):
         self.page.goto(BASE + chemin)
         try:
-            self.page.wait_for_load_state("networkidle", timeout=15000)
+            self.page.wait_for_load_state("networkidle", timeout=4000)
         except Exception:
             pass
         if attendre is not None:
@@ -171,6 +171,23 @@ class Scenario:
             p.wait_for_timeout(700)
         self.note("réponse non stabilisée dans le délai")
         return dernier
+
+    def onglet(self, libelle, admin=False):
+        """Bouton d'onglet visible de la fenêtre Réglages ; admin=True pour le groupe « Administrateur »."""
+        b = self.page.locator("button").filter(has_text=re.compile(r"^\s*" + re.escape(libelle) + r"\s*$")).filter(visible=True)
+        return b.last if admin else b.first
+
+    def reglages(self, onglet):
+        """Ouvre la fenêtre Réglages sur un onglet (ex. « general », « admin:documents »)."""
+        self.aller(f"/?settings={onglet}")
+        self.page.get_by_role("button", name="Retour en arrière").wait_for()
+        self.page.wait_for_timeout(800)
+
+    def champ(self, libelle):
+        """Contrôle (liste, champ, interrupteur) de la ligne de réglage dont le libellé est `libelle`."""
+        ligne = self.page.locator("div[class*='setting-row']").filter(
+            has=self.page.locator("label").filter(has_text=re.compile(r"^\s*" + re.escape(libelle) + r"\s*$"))).filter(visible=True).first
+        return ligne.locator("select, input, textarea, button[role=switch], button[id$='-control']").first
 
     def bouton(self, nom, exact=False):
         return self.page.get_by_role("button", name=nom, exact=exact)

@@ -1,0 +1,186 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Claire Admin
+chat
+
+
+
+
+chat
+Suggéré
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Montrez-moi un extrait de code
+d'un en-tête collant d'un site web
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Donnez-moi des idées
+que faire avec les dessins de mes enfants
+Surmonter la procrastination
+donnez-moi des conseils
+Nouvelle conversation
+Open WebUI
+Retour en arrière
+Recherche
+Personnel
+Bases
+Général
+Interface utilisateur
+Notifications
+Raccourcis
+Préférences
+Personnalisation
+Audio
+Données
+Contrôles des données
+Consommation de tokens
+Conversations archivées
+Profil
+Compte
+À propos
+Administrateur
+Système
+Général
+Authentification
+Interface utilisateur
+IA
+Connexions
+Modèles
+Sous-agents
+Outils
+Intégrations
+Documents
+Audio
+Images
+Recherche Web
+Exécution de code
+Pipelines
+Qualité
+Analytique
+Évaluations
+Données
+Base de données
+Raccourcis
+Réinitialiser les valeurs par défaut
+Raccourcis clavier
+
+Activer les raccourcis clavier.
+
+Commande
+Clé
+Tabs
+Voice Note
+Ctrl+Alt+M
+Quick Open
+Ctrl+P
+Files
+Ctrl+Shift+E
+Desktop
+Ctrl+Alt+D
+New Chat Tab
+Ctrl+Alt+O
+Comments
+Ctrl+Shift+Y
+New File
+Ctrl+Alt+N
+New Terminal
+Ctrl+`
+New Browser
+Ctrl+Shift+B
+Close Tab
+Ctrl+W
+Next Tab
+Ctrl+Shift+]
+Previous Tab
+Ctrl+Shift+[
+Toggle Split
+Ctrl+\
+Conversation
+Nouvelle conversation
+Ctrl+Shift+O
+Nouvelle conversation temporaire
+Ctrl+Shift+'
+Supprimer la Conversation
+Ctrl+Shift+Backspace
+Ouvrir la liste des modèles
+Ctrl+Shift+M
+Activer/Désactiver la dictée
+Ctrl+Shift+L
+Naviguer vers le haut
+Non assigné
+Naviguer vers le bas
+Non assigné
+Global
+Recherche
+Ctrl+K
+Ouvrir les réglages
+Ctrl+.
+Afficher les raccourcis clavier
+Ctrl+/
+Afficher/Masquer la barre latérale
+Ctrl+Shift+S
+Basculer les contrôles
+Non assigné
+Fermer la fenêtre
+Esc
+Entrée
+Activer la zone de saisie
+Shift+Esc
+Clear Input Selections
+*
+Remove the model override, deselect tools and filters, and turn off web search, image generation, and code interpreter. Only active when the chat input is in focus.
+Esc
+Accepter l'autocomplétion
+Tab
+Empêcher la création de fichier
+*
+Uniquement lorsque le paramètre "Coller un texte volumineux comme fichier" est activé.
+Ctrl + Shift + V
+Joindre un fichier depuis les connaissances
+#
+Ajouter un prompt personnalisé
+/
+Parler au modèle
+@
+Envoyer un message
+Générer une paire de messages
+*
+Uniquement lorsque la zone de saisie de la conversation est active.
+Ctrl+Shift+Enter
+Regénérer la réponse
+Ctrl+R
+Autoriser l'appel d'outil
+*
+Uniquement actif lorsqu'un appel d'outil attend une approbation.
+Ctrl+Alt+Enter
+Refuser l'appel d'outil
+*
+Uniquement actif lorsqu'un appel d'outil attend une approbation.
+Ctrl+Alt+Backspace
+Arrêter la génération
+*
+Uniquement lorsque la zone de saisie de la conversation est active et qu'un LLM génère une réponse.
+Esc
+Modifier le dernier message
+*
+Ne peut être déclenché que lorsque le champ de saisie est actif.
+↑
+Copier la dernière réponse
+Ctrl+Shift+C
+Copier le dernier bloc de code
+Ctrl+Shift+;
+Voix
+Basculer le mode muet
+*
+Uniquement actif en mode vocal.
+M

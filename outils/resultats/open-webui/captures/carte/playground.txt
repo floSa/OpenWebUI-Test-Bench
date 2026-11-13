@@ -1,0 +1,28 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Claire Admin
+Conversation
+Complétions
+Images
+Instructions système
+Utilisateur
+Switch to Assistant role
+chat
+embed
+rerank
+transcribe
+gemma-4-e4b
+qwen3.5-4b
+bge-m3
+bge-reranker-v2-m3
+faster-whisper-small
+Ajouter
+Exécuter

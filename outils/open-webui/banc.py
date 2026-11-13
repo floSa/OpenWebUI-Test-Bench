@@ -37,9 +37,19 @@ class Adaptateur:
     def __init__(self, a):
         self.a, self.api = a, API()
         self.kid = None
-        if a.reglages:
-            r = self.api.post("/api/v1/retrieval/config/update", json.loads(a.reglages))
-            print("réglages appliqués :", {k: r.get(k) for k in json.loads(a.reglages) if k in r}, flush=True)
+        reglages = json.loads(a.reglages) if a.reglages else {}
+        if a.rerank:  # reranker externe du service central (actif seulement avec la recherche hybride)
+            reglages.update({"ENABLE_RAG_HYBRID_SEARCH": True, "RAG_RERANKING_ENGINE": "external",
+                             "RAG_EXTERNAL_RERANKER_URL": "http://llm-central:8080/v1/rerank",
+                             "RAG_EXTERNAL_RERANKER_API_KEY": commun._env()["LLM_CENTRAL_KEY"],
+                             "RAG_RERANKING_MODEL": "rerank"})
+        if a.taches:  # tâches de fond (réécriture des requêtes de recherche, titres…) : Réglages › Interface utilisateur
+            t = self.api.get("/api/v1/tasks/config"); t.update(json.loads(a.taches))
+            r = self.api.post("/api/v1/tasks/config/update", t)
+            print("tâches :", {k: r.get(k) for k in json.loads(a.taches)}, flush=True)
+        if reglages:
+            r = self.api.post("/api/v1/retrieval/config/update", reglages)
+            print("réglages appliqués :", {k: r.get(k) for k in reglages if k in r and "KEY" not in k}, flush=True)
 
     def _base(self):
         if not self.kid:
@@ -102,7 +112,9 @@ class Adaptateur:
     def config(self):
         c = self.api.get("/api/v1/retrieval/config")
         e = self.api.get("/api/v1/retrieval/embedding")
+        tc = self.api.get("/api/v1/tasks/config")
         return {"url": BASE, "base": self.a.base, "modele": "chat",
+                "taches": {k: tc.get(k) for k in ("TASK_MODEL", "TASK_MODEL_PARAMS", "ENABLE_RETRIEVAL_QUERY_GENERATION")},
                 "recherche": {k: c.get(k) for k in CLES},
                 "embedding": {k: e.get(k) for k in ("RAG_EMBEDDING_ENGINE", "RAG_EMBEDDING_MODEL", "RAG_EMBEDDING_BATCH_SIZE")}}
 
@@ -113,6 +125,8 @@ def main():
     p.add_argument("--base", default="Banc")
     p.add_argument("--reindexer", action="store_true")
     p.add_argument("--reglages", help="JSON écrit par /api/v1/retrieval/config/update avant le banc")
+    p.add_argument("--rerank", action="store_true", help="recherche hybride et reranker externe `rerank` du service central")
+    p.add_argument("--taches", help="JSON fusionné dans /api/v1/tasks/config (ex. génération des requêtes de recherche)")
     p.add_argument("--limite", type=int)
     p.add_argument("--ids")
     p.add_argument("--sans-juge", action="store_true")

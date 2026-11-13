@@ -1,0 +1,18 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Claire Admin
+Automatisations
+0
+Créer
+Tout
+Actions
+Aucune automatisation trouvée
+Créer des invites planifiées qui s'exécutent automatiquement de manière récurrente.

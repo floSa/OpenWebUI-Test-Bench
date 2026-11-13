@@ -1,0 +1,88 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Dossiers
+Conversations
+Claire Admin
+chat
+
+
+
+
+chat
+Suggéré
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Donnez-moi des idées
+que faire avec les dessins de mes enfants
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Surmonter la procrastination
+donnez-moi des conseils
+Montrez-moi un extrait de code
+d'un en-tête collant d'un site web
+Nouvelle conversation
+Open WebUI
+Retour en arrière
+Recherche
+Personnel
+Bases
+Général
+Interface utilisateur
+Notifications
+Raccourcis
+Préférences
+Personnalisation
+Audio
+Données
+Contrôles des données
+Consommation de tokens
+Conversations archivées
+Profil
+Compte
+À propos
+Administrateur
+Système
+Général
+Authentification
+Interface utilisateur
+IA
+Connexions
+Modèles
+Sous-agents
+Outils
+Intégrations
+Documents
+Audio
+Images
+Recherche Web
+Exécution de code
+Pipelines
+Qualité
+Analytique
+Évaluations
+Données
+Base de données
+Notifications
+Notifications du navigateur
+
+Autoriser les notifications du navigateur lorsque les réponses sont terminées.
+
+Son de notification
+
+Play a sound when a response is ready.
+
+Notification sound style
+Chime
+Soft
+Bell
+Tap
+
+Choose a sound and use the play button to preview it.
