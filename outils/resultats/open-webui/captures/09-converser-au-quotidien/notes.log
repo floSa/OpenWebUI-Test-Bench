@@ -1,0 +1,37 @@
+2026-11-13 13:58:00 boutons au survol : 
+2026-11-13 13:59:04 menu de la conversation : Partager | Télécharger | Renommer | Marquer comme non lu | Épingler | Cloner | Archiver | Supprimer
+2026-11-13 13:59:07 en-tête : 
+2026-11-13 13:59:07 menu « Plus » de l'en-tête : Téléverser des fichiers | Prise de vue | Add Context | Outils 2
+2026-11-13 13:59:09 recherche : Everything | Pinned & recent | 4 | Réunion qualité du 13 novembre | Personal note | Claire Admin | #atelier-nantes | Quel est le chiffre d’affaires 2025 de Vélanor ? | Personal chat | Quel est le chiffre d’affaires 2025 de Vélanor ? | Personal chat | Retour en arrière | Notes | Réunion qualité du 13 novembre | Personal note · 13 nov. | Réunion qualité du 13 novembre |  | Participants : Karim Benali (HSE), Julien Moreau (production
+2026-11-13 13:59:10 nouveau dossier :  / Entrez le nom du dossier
+2026-11-13 14:00:05 barre après épingle : 
+2026-11-13 14:00:49 glisser-déposer : Locator.drag_to: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("a[href^='/c/']").filter(has_text="chiffre d").visible.first
+    - locator resolved to <a id="bits-c2" role="button" draggable="false" data-state="closed" aria-expanded="false" aria-haspopup="dialog" data-link-preview-trigger="" href="/c/a1dd6b00-dbe1-406f-b71a-af2d59793565" class="flex min-w-0 flex-1 -my-1.5 py-1.5 items-center">…</a>
+  - attempting move and down action
+    - waiting for element to be visible and stable
+    - element is visible and stable
+    - scrolling into view if needed
+    - done scrolling
+    - performing move and down action
+    - move and down action done
+    - waiting for scheduled navigations to finish
+    - navigations have finished
+  - waiting for get_by_text("Questions rapport annuel").visible.first
+
+2026-11-13 14:00:49 barre après dossier : 
+2026-11-13 14:01:45 dossier visible : False ; barre : Open WebUI | Nouvelle conversation | Ctrl+Shift+O | Recherche | Ctrl+K | Notes | Espace de travail | Canaux | Dossiers | Conversations | Épinglé | Chiffre d'affaires 2025 | il y a 2 minutes | 1min | Aujourd'hui | Quel est le chiffre d’affaires 2025 de Vélanor ? | il y a 5 heures | 5h | Claire Admin
+2026-11-13 14:02:30 dossier visible : True ; barre : Open WebUI | Nouvelle conversation | Ctrl+Shift+O | Recherche | Ctrl+K | Notes | Espace de travail | Canaux | Dossiers | Questions rapport annuel | Conversations | Épinglé | Chiffre d'affaires 2025 | il y a 2 minutes | 2min | Aujourd'hui | Quel est le chiffre d’affaires 2025 de Vélanor ? | il y a 5 heures | 5h | Claire Admin
+2026-11-13 14:02:32 barre après rangement : Open WebUI | Nouvelle conversation | Ctrl+Shift+O | Recherche | Ctrl+K | Notes | Espace de travail | Canaux | Dossiers | Questions rapport annuel | Quel est le chiffre d’affaires 2025 de Vélanor ? | il y a 5 heures | 5h | Conversations | Épinglé | Chiffre d'affaires 2025 | il y a 2 minutes | 2min | Claire Admin
+2026-11-13 14:02:50 fenêtre partage : Partage de conversation | Your link is private until you choose who can view it. | Visibilité | Privé |  | Seuls les utilisateurs et groupes autorisés peuvent accéder |  | Liste des accès | Ajouter un accès | Aucun partage. Visible uniquement par vous. | Partager avec la communauté OpenWebUI | Copier le lien
+2026-11-13 14:02:50 boutons partage : Fermer | Visibilité
+Privé | Ajouter un accès | Partager avec la communauté OpenWebUI | Copier le lien
+2026-11-13 14:02:59 sous-menu Télécharger : Partager | Télécharger | Renommer | Marquer comme non lu | Désépingler | Cloner | Déplacer | Archiver | Supprimer | Exporter la conversation (.json) | Texte (.txt) | Document au format PDF (.pdf)
+2026-11-13 14:03:04 07-telecharger : élément absent « JSON »
+2026-11-13 14:03:05 téléchargé : chat-Chiffre d'affaires 2025.pdf
+2026-11-13 14:03:12 recherche « chiffre » : Everything | Results | 2 | Chiffre d'affaires 2025 | Personal chat | Le chiffre d'affaires de Vélanor pour l'année 2025 est de **48,6 millions d'euros** [9]. Cette figure représente une croissance de **+12,4%** par rapport à l'exercice précédent. Le chiffre d'affaires… | Quel est le chiffre d’affaires 2025 de Vélanor ? | Questions rapport annuel | Quel est le chiffre d’affaires 2025 de Vélanor ? | Retour en arrière | Conversations | Chiffre d'affaires 2025 | Conversation par chat | rapport-annuel-2025.pdf | 52.5 KB |  | Quel e
+2026-11-13 14:03:31 sous-menu Télécharger : Partager | Télécharger | Renommer | Marquer comme non lu | Désépingler | Cloner | Déplacer | Archiver | Supprimer | Exporter la conversation (.json) | Texte (.txt) | Document au format PDF (.pdf)
+2026-11-13 14:03:32 téléchargé : chat-Chiffre d'affaires 2025.pdf
+2026-11-13 14:04:13 sous-menu Télécharger : Partager | Télécharger | Renommer | Marquer comme non lu | Désépingler | Cloner | Déplacer | Archiver | Supprimer | Exporter la conversation (.json) | Texte (.txt) | Document au format PDF (.pdf)
+2026-11-13 14:04:14 téléchargé : chat-Chiffre d'affaires 2025.pdf

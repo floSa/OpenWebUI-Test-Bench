@@ -6,34 +6,34 @@ Recherche
 Ctrl+K
 Notes
 Espace de travail
+Canaux
 Dossiers
 Conversations
 Aujourd'hui
 Quel est le chiffre d’affaires 2025 de Vélanor ?
-il y a 4 minutes
-4min
+il y a 5 heures
+4h
 Quel est le chiffre d’affaires 2025 de Vélanor ?
-il y a 7 minutes
-7min
+il y a 5 heures
+5h
 Chargement de...
 Claire Admin
 Modèles
-0
+1
 Connaissances
-2
+4
 Prompts
-0
+1
 Skills
 0
 Outils
-0
+1
 Retour en arrière
 Accès
-bded018b-b7e0-4f9c-a70c-fdd62f7b174b
+3d8a0d3d-b430-4ccb-baf9-a03da34460ac
 All files
 
 No files
 
 Select a file to preview
-Connaissance créée avec succès.
 Connaissances / Open WebUI

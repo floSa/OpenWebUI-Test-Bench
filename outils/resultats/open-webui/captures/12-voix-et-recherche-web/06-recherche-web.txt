@@ -1,0 +1,124 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Épinglé
+Chiffre d'affaires 2025
+il y a 11 minutes
+11min
+Claire Admin
+chat
+
+
+
+
+chat
+Suggéré
+Montrez-moi un extrait de code
+d'un en-tête collant d'un site web
+Surmonter la procrastination
+donnez-moi des conseils
+Donnez-moi des idées
+que faire avec les dessins de mes enfants
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Nouvelle conversation
+Open WebUI
+Retour en arrière
+Recherche
+Personnel
+Bases
+Général
+Interface utilisateur
+Notifications
+Raccourcis
+Préférences
+Personnalisation
+Audio
+Données
+Contrôles des données
+Consommation de tokens
+Conversations archivées
+Profil
+Compte
+À propos
+Administrateur
+Système
+Général
+Authentification
+Interface utilisateur
+IA
+Connexions
+Modèles
+Sous-agents
+Outils
+Intégrations
+Documents
+Audio
+Images
+Recherche Web
+Exécution de code
+Pipelines
+Qualité
+Analytique
+Évaluations
+Données
+Base de données
+Recherche Web
+Recherche
+Recherche Web
+
+Autoriser les utilisateurs à effectuer des recherches sur le Web depuis les conversations.
+
+Ignorer l'Embedding et le Retrieval
+
+Utiliser la récupération segmentée pour une extraction de contenu ciblée et pertinente.
+
+Faire confiance au proxy de l'environement
+
+Faire confiance à l'environnement proxy.
+
+Chargeur
+Moteur de chargement Web
+Par défaut
+playwright
+firecrawl
+tavily
+exa
+microsoft_web_iq
+external
+
+Moteur pour le chargeur Web.
+
+Délai d'expiration
+
+Délai d'expiration pour les requêtes Web.
+
+Vérifier le certificat SSL
+
+Vérifier les certificats SSL.
+
+Demandes concurrentes
+
+Nombre de requêtes simultanées.
+
+Langue de YouTube
+
+Langue pour YouTube.
+
+URL du proxy YouTube
+
+URL du proxy pour YouTube.
+
+Enregistrer

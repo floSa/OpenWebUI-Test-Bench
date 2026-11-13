@@ -44,26 +44,6 @@
   "heure": "08:58:26"
  },
  {
-  "capture": "05-bases-de-connaissances/03-base-vide.png",
-  "url": "/workspace/knowledge/bded018b-b7e0-4f9c-a70c-fdd62f7b174b",
-  "pastilles": [
-   [
-    1,
-    "nom de la base"
-   ],
-   [
-    2,
-    "Ajouter du contenu"
-   ],
-   [
-    3,
-    "Accès"
-   ]
-  ],
-  "note": "",
-  "heure": "08:58:29"
- },
- {
   "capture": "05-bases-de-connaissances/04-menu-ajout.png",
   "url": "/workspace/knowledge/bded018b-b7e0-4f9c-a70c-fdd62f7b174b",
   "pastilles": [
@@ -198,5 +178,89 @@
   ],
   "note": "",
   "heure": "09:03:52"
+ },
+ {
+  "capture": "15-administrer/01-general.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Général"
+   ],
+   [
+    2,
+    "Canaux"
+   ],
+   [
+    3,
+    "Notes"
+   ],
+   [
+    4,
+    "Automatisations"
+   ]
+  ],
+  "note": "",
+  "heure": "13:51:52"
+ },
+ {
+  "capture": "10-notes-et-memoire/01-notes.png",
+  "url": "/notes",
+  "pastilles": [
+   [
+    1,
+    "Notes"
+   ],
+   [
+    2,
+    "Créer"
+   ],
+   [
+    3,
+    "Rechercher des notes"
+   ]
+  ],
+  "note": "",
+  "heure": "13:51:58"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/03-liste-comptes.png",
+  "url": "/admin/users/overview",
+  "pastilles": [
+   [
+    1,
+    "nouveau compte"
+   ],
+   [
+    2,
+    "rôle"
+   ],
+   [
+    3,
+    "Modifier l'utilisateur"
+   ]
+  ],
+  "note": "",
+  "heure": "13:52:03"
+ },
+ {
+  "capture": "05-bases-de-connaissances/03-base-vide.png",
+  "url": "/workspace/knowledge/3d8a0d3d-b430-4ccb-baf9-a03da34460ac",
+  "pastilles": [
+   [
+    1,
+    "nom de la base"
+   ],
+   [
+    2,
+    "Ajouter du contenu"
+   ],
+   [
+    3,
+    "Accès"
+   ]
+  ],
+  "note": "",
+  "heure": "13:52:15"
  }
 ]

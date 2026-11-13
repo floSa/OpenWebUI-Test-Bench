@@ -130,9 +130,83 @@ def mcp(s):
     s.cap_souple("13-mcp-liste", [(p.get_by_text("Vélanor MCP").first, "Vélanor MCP")])
 
 
+QUESTION_OUTILS = ("Combien de moteurs centraux reste-t-il en stock, et combien de jours ouvrés y a-t-il "
+                   "entre le 16 et le 27 novembre 2026 ?")
+
+
+def usage_outils(s):
+    """Sollicite le modèle : outil « Stocks Vélanor » et serveur « Vélanor MCP » activés pour une conversation."""
+    p = s.page
+    s.aller("/")
+    plus = p.locator("button[aria-label='Plus']").filter(visible=True).last
+    plus.click(); p.wait_for_timeout(800)
+    menu = p.get_by_role("menuitem").filter(has_text="Outils").filter(visible=True).first
+    menu.click(); p.wait_for_timeout(1000)
+    stocks = p.get_by_role("button", name=re.compile("Stocks Vélanor")).filter(visible=True).first
+    mcpb = p.get_by_role("button", name=re.compile("Vélanor MCP")).filter(visible=True).first
+    stocks.click(); p.wait_for_timeout(500)
+    mcpb.click(); p.wait_for_timeout(500)
+    s.note("après activation : " + " | ".join(str(b.get_attribute("aria-checked") or b.get_attribute("aria-pressed") or b.inner_text())
+                                               for b in (stocks, mcpb)))
+    s.cap_souple("14-activer-outils", [(plus, "+"), (menu, "Outils"), (stocks, "Stocks Vélanor"), (mcpb, "Vélanor MCP")])
+    p.keyboard.press("Escape"); p.wait_for_timeout(500)
+    p.locator("#chat-input").click(); p.keyboard.type(QUESTION_OUTILS)
+    s.cap_souple("15-outils-actifs", [(p.locator("#chat-input"), "question"),
+                                      (p.locator("form, #message-input-container").get_by_text(re.compile("Stocks|Outils|2")).first, "outils actifs")])
+    p.locator("#send-message-button").click()
+    rep = s.attendre_reponse()
+    s.note(f"réponse outils : {rep[:700]!r}")
+    msg = p.locator(".chat-assistant").last
+    etapes_ = msg.get_by_text(re.compile("stock_piece|jours_ouvres|Exploré|Utilisé|Appel|Pensé")).first
+    s.cap_souple("16-reponse-outils", [(etapes_, "appels d'outils"), (msg.get_by_text(re.compile("238")).first, "stock"),
+                                       (msg.get_by_text(re.compile(r"\b10\b")).first, "jours ouvrés")])
+    try:
+        etapes_.click(); p.wait_for_timeout(1200)
+        s.note("étapes dépliées : " + msg.inner_text()[:900].replace("\n", " | "))
+        s.cap_souple("17-detail-appel", [(msg.get_by_text(re.compile("stock_piece")).first, "stock_piece"),
+                                         (msg.get_by_text(re.compile("jours_ouvres")).first, "jours_ouvres")])
+    except Exception as e:
+        s.note(f"détail des appels : {e}")
+
+
+def filtre_actif(s):
+    """Active le filtre, le rattache à l'assistant du chapitre 07, puis une question (sollicite le modèle)."""
+    p = s.page
+    s.aller("/admin/functions")
+    inter = p.get_by_role("switch").first
+    if inter.get_attribute("aria-checked") != "true":
+        inter.click(); p.wait_for_timeout(1500)
+    s.sans_toasts()
+    s.cap_souple("18-filtre-active", [(p.get_by_text("Mention de source interne").first, "Mention de source interne"), (inter, "interrupteur (activée)")])
+    s.aller("/workspace/models")
+    p.get_by_text("Assistant qualité Vélanor").first.click(); p.wait_for_timeout(2000)
+    p.get_by_text("Filtres", exact=True).filter(visible=True).last.click(); p.wait_for_timeout(1000)
+    s.note("choix des filtres : " + p.locator("body").inner_text()[-500:].replace("\n", " | "))
+    choix = p.get_by_text("Mention de source interne").filter(visible=True).last
+    s.cap_souple("19-filtre-assistant", [(choix, "Mention de source interne")])
+    choix.click(); p.wait_for_timeout(600)
+    fin = p.get_by_text("Terminé", exact=True).filter(visible=True)
+    if fin.count():
+        fin.first.click(); p.wait_for_timeout(600)
+    else:
+        p.keyboard.press("Escape")
+    enr = p.get_by_role("button", name=re.compile("Enregistrer & Mettre à jour|Enregistrer")).filter(visible=True).last
+    enr.click(); p.wait_for_timeout(2000)
+    s.sans_toasts()
+    s.aller("/")
+    p.locator("button[aria-label^='Modèle sélectionné']").first.click(); p.wait_for_timeout(800)
+    p.get_by_text("Assistant qualité Vélanor").filter(visible=True).first.click(); p.wait_for_timeout(800)
+    p.locator("#chat-input").click(); p.keyboard.type("Quelle est la durée de garantie du cadre ?")
+    p.locator("#send-message-button").click()
+    rep = s.attendre_reponse()
+    s.note(f"réponse avec filtre : {rep[-400:]!r}")
+    msg = p.locator(".chat-assistant").last
+    s.cap_souple("20-mention", [(msg.get_by_text(re.compile("assistant interne Vélanor")).first, "mention ajoutée par le filtre")])
+
+
 if __name__ == "__main__":
     s = Scenario(CH)
     try:
-        etapes([prompt, outil, fonction, mcp], s)
+        etapes([prompt, outil, fonction, mcp, usage_outils, filtre_actif], s)
     finally:
         s.fermer()

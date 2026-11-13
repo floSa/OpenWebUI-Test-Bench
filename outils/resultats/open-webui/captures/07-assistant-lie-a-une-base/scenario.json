@@ -1,0 +1,130 @@
+[
+ {
+  "capture": "07-assistant-lie-a-une-base/01-modeles.png",
+  "url": "/workspace/models",
+  "pastilles": [
+   [
+    1,
+    "Modèles"
+   ],
+   [
+    2,
+    "Créer"
+   ]
+  ],
+  "note": "",
+  "heure": "13:50:16"
+ },
+ {
+  "capture": "07-assistant-lie-a-une-base/02-identite.png",
+  "url": "/workspace/models/create",
+  "pastilles": [
+   [
+    1,
+    "Nom du modèle"
+   ],
+   [
+    2,
+    "ID du modèle"
+   ],
+   [
+    3,
+    "Description"
+   ],
+   [
+    4,
+    "Modèle de base"
+   ],
+   [
+    5,
+    "Prompt système"
+   ]
+  ],
+  "note": "",
+  "heure": "13:50:21"
+ },
+ {
+  "capture": "07-assistant-lie-a-une-base/03-choisir-base.png",
+  "url": "/workspace/models/create",
+  "pastilles": [
+   [
+    1,
+    "Search knowledge"
+   ],
+   [
+    2,
+    "Démo Vélanor"
+   ],
+   [
+    3,
+    "Terminé"
+   ]
+  ],
+  "note": "",
+  "heure": "13:50:24"
+ },
+ {
+  "capture": "07-assistant-lie-a-une-base/04-pret.png",
+  "url": "/workspace/models/create",
+  "pastilles": [
+   [
+    1,
+    "Connaissances"
+   ],
+   [
+    2,
+    "Démo Vélanor"
+   ],
+   [
+    3,
+    "Outils intégrés"
+   ],
+   [
+    4,
+    "Enregistrer & Créer"
+   ]
+  ],
+  "note": "",
+  "heure": "13:50:26"
+ },
+ {
+  "capture": "07-assistant-lie-a-une-base/05-liste.png",
+  "url": "/workspace/models",
+  "pastilles": [
+   [
+    1,
+    "Assistant qualité Vélanor"
+   ]
+  ],
+  "note": "",
+  "heure": "13:50:36"
+ },
+ {
+  "capture": "07-assistant-lie-a-une-base/06-partage.png",
+  "url": "/workspace/models/edit?id=assistant-qualit-vlanor",
+  "pastilles": [
+   [
+    1,
+    "Équipe production"
+   ],
+   [
+    2,
+    "Ajouter"
+   ]
+  ],
+  "note": "",
+  "heure": "13:50:47"
+ },
+ {
+  "capture": "07-assistant-lie-a-une-base/07-acces.png",
+  "url": "/workspace/models/edit?id=assistant-qualit-vlanor",
+  "pastilles": [
+   [
+    1,
+    "Équipe production"
+   ]
+  ],
+  "note": "",
+  "heure": "13:50:49"
+ }
+]

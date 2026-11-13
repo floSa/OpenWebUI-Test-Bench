@@ -1,0 +1,57 @@
+2026-11-13T14:43:35+01:00
+               total        used        free      shared  buff/cache   available
+Mem:           32098       10616        1482         914       21570       21482
+  bge-m3 (embedding)
+  bge-reranker-v2-m3 (rerank)
+  faster-whisper-small (audio_transcription)
+== chat (réflexion coupée pour l'essai)
+  Bienvenue
+== embed
+  dimensions : 1024
+== rerank
+  doc 0 score 9.05
+  doc 1 score -8.63
+== transcribe (corpus/documents/message-vocal-production.mp3)
+  Message vocale de Julien Moreau, directeur de production chez Vélanor, enregistrait le 3 novembre VVTSEC. La ligne d'assoblage numéro 3 de Nantes sera arrêtée du 2 au 6 mars VVTSI pour maintenance. Pe
+tâches : {'ENABLE_RETRIEVAL_QUERY_GENERATION': False}
+réglages appliqués : {'ENABLE_RAG_HYBRID_SEARCH': True, 'RAG_RERANKING_ENGINE': 'external', 'RAG_EXTERNAL_RERANKER_URL': 'http://llm-central:8080/v1/rerank', 'RAG_RERANKING_MODEL': 'rerank'}
+indexation : 0.0 s
+Q01 tableau         OK    38.9s  "Le chiffre d'affaires de Vélanor en 2025 s'élève à 48,6 M€ [1]."
+Q02 fait simple     OK    10.2s  'Vélanor a été fondée en 2014 [1].'
+Q03 fait simple     OK    31.5s  "La présidente de Vélanor est Hélène Marchais [1]. Elle dirige l'entreprise depuis 2019 et "
+Q04 fait simple     OK    42.0s  "L'adresse du siège de Vélanor est située au 12 quai de la Fosse à Nantes [1]. Le code post"
+Q05 tableau         OK    18.4s  'Au 31 décembre 2025, Vélanor compte **412 salariés** [1].'
+Q06 tableau         OK    31.8s  "Le chiffre d'affaires du troisième trimestre 2025 s'élevait à 14,2 M€ [1]."
+Q07 tableau         OK    68.8s  'En 2025, 15 400 unités du modèle Sèvre Trail ont été produites [1].'
+Q08 tableau         OK    20.4s  "D'après le tableau de production par modèle, le prix public TTC du modèle Erdre Cargo est "
+Q09 tableau         OK    21.6s  'Selon le tableau des effectifs par site figurant dans le document, 97 salariés travaillent'
+Q10 fait simple     OK    24.0s  "La part d'aluminium recyclé dans les cadres est de 82 % [1]."
+Q11 fait simple     OK    17.7s  "Selon le document de l'environnement mentionné, le taux de recyclage des batteries usagées"
+Q12 tableau         OK     3.7s  'Les moteurs sont fournis par **Motodrive Co.** qui est installé à **Taïwan** (Taiwan) [1].'
+Q13 tableau         OK    21.6s  'Selon les chiffres clés du rapport annuel, Vélanor a dégagé un **résultat net de 3,1 M€** '
+Q14 fait simple     OK    13.4s  "Le taux de retour sous garantie s'établit à 1,8 % des vélos vendus [1]."
+Q15 scan            OK    28.7s  "Selon le contrat d'approvisionnement N° BX-2025-117, le prix unitaire des batteries prévu "
+Q16 scan            OK    60.3s  "Selon l'article 5 du contrat d'approvisionnement, le délai de livraison prévu par le Fourn"
+Q17 scan            OK    18.3s  "Selon l'Article 6 du contrat mentionné dans le document, le plafond des pénalités de retar"
+Q18 scan            OK    15.9s  "Le contrat d'approvisionnement n° BX-2025-117 prévoit un volume minimal annuel de 40 000 b"
+Q19 fait simple     OK    37.4s  "D'après le document de stockage, les batteries doivent être maintenues entre 10 °C et 25 °"
+Q20 fait simple     OK    24.9s  'Karim Benali, responsable HSE, est le responsable de la procédure PR-SEC-04 — Charge et st'
+Q21 tableau         OK    29.6s  'Le local B2 est inspecté le premier lundi de chaque mois [1].'
+Q22 fait simple     OK    25.3s  "Le prix public du modèle Vilaine Compact s'élève à 2 490 € TTC [1]."
+Q23 fait simple     OK    19.5s  "La capacité prévue de l'usine de Saint-Nazaire est de 25 000 vélos par an [1]."
+Q24 tableau         OK    24.9s  'Selon le document de stock, il reste **1240** batteries du modèle BAT-48V-14Ah [1]. Le seu'
+Q25 fait simple     OK    23.0s  'Selon le contexte, la durée de garantie du cadre est de 7 ans [1].'
+Q26 fait simple     OK    19.1s  'Le numéro de téléphone du service après-vente est le 02 40 00 12 34 [1].'
+Q27 fait simple     OK    23.5s  "Selon le contexte fourni, le montant de la prime d'intéressement pour 2025 est de 1 150 eu"
+Q28 anglais         OK    22.3s  'Batterix obtained an overall score of 87 out of 100 at the supplier audit [1].'
+Q29 anglais         OK    16.2s  "Le taux de cellules défectueuses mesuré chez Batterix lors de l'audit est de 0,3 % [1]."
+Q30 multi-documents OK    46.2s  "Selon le contrat d'approvisionnement, le délai de livraison contractuel pour le fournisseu"
+Q31 multi-documents OK    20.1s  "Selon l'audit de qualité des fournisseurs, Batterix GmbH a obtenu un score de 87 sur 100 ["
+Q32 multi-documents OK    58.2s  "Vélanor vise un chiffre d'affaires de 55 M€ en 2026 et prévoit 70 embauches pour l'usine d"
+Q33 audio           OK    86.9s  "La ligne d'assemblage numéro 3 de Nantes sera arrêtée pour maintenance du 2 au 6 mars [1]."
+Q34 audio           OK    14.6s  'Le directeur de production de Vélanor est Julien Moreau [1].'
+Q35 piège           OK   100.7s  "D'après les documents fournis, aucune information spécifique concernant le chiffre d'affai"
+Q36 piège           OK    50.4s  "D'après les documents fournis, il n'y a pas de mention d'un directeur financier spécifique"
+Q37 piège           OK    91.9s  "D'après les documents fournis, Vélanor n'a pas vendu de **trottinettes électriques** en 20"
+Q38 piège           OK    35.1s  "D'après les documents fournis, Karim Benali est identifié comme responsable HSE [1] et pre"
+-> outils/resultats/open-webui/banc-2026-11-13-taches.json

@@ -1,0 +1,298 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Aujourd'hui
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 5 heures
+4h
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 5 heures
+4h
+Chargement de...
+Claire Admin
+chat
+
+
+
+
+chat
+Suggéré
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Donnez-moi des idées
+que faire avec les dessins de mes enfants
+Surmonter la procrastination
+donnez-moi des conseils
+Montrez-moi un extrait de code
+d'un en-tête collant d'un site web
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Nouvelle conversation
+Open WebUI
+Retour en arrière
+Recherche
+Personnel
+Bases
+Général
+Interface utilisateur
+Notifications
+Raccourcis
+Préférences
+Personnalisation
+Audio
+Données
+Contrôles des données
+Consommation de tokens
+Conversations archivées
+Profil
+Compte
+À propos
+Administrateur
+Système
+Général
+Authentification
+Interface utilisateur
+IA
+Connexions
+Modèles
+Sous-agents
+Outils
+Intégrations
+Documents
+Audio
+Images
+Recherche Web
+Exécution de code
+Pipelines
+Qualité
+Analytique
+Évaluations
+Données
+Base de données
+Documents
+Extraction de contenu
+Moteur d'extraction de contenu
+Par défaut
+Externe
+Tika
+Docling
+API Datalab Marker
+Document Intelligence
+Mistral OCR
+PaddleOCR-vl
+MinerU
+
+Moteur utilisé pour l'extraction de contenu.
+
+Types MIME pris en charge
+
+Types MIME de médias pris en charge.
+
+URL du serveur Docling
+
+URL du serveur Docling.
+
+Clé API
+Entrez la clé API Docling
+
+Clé API pour Docling.
+
+Réglages
+
+Paramètres pour Docling.
+
+Ignorer l'Embedding et le Retrieval
+
+Utiliser la récupération segmentée pour un contexte ciblé et pertinent.
+
+Découpage du texte
+Par défaut (Caractère)
+Token (Tiktoken)
+Token (Transformers)
+
+Méthode de division du texte.
+
+Découpage par en-têtes markdown
+
+Diviser le texte par en-têtes Markdown.
+
+Taille des chunks
+
+Taille des chunks pour le traitement.
+
+Chevauchement des chunks
+
+Chevauchement entre les chunks.
+
+Taille minimale cible des chunks
+
+Taille minimale cible pour les chunks.
+
+Embedding
+Moteur de modèle d'embedding
+Par défaut (Sentence Transformers)
+Ollama
+OpenAI
+Azure OpenAI
+
+Moteur pour le modèle d'embedding.
+
+URL de base de l'API
+
+URL du service OpenAI.
+
+Clé API
+Clé API
+
+Clé API pour OpenAI.
+
+Modèle d'embedding
+Après avoir changé le modèle d'embedding, réindexez les connaissances, la recherche de connaissances et les vecteurs de mémoire pour que les modifications prennent effet.
+
+Modèle utilisé pour les embeddings.
+
+Taille du lot d'embedding
+
+Taille du lot pour le traitement des embeddings.
+
+Traitement asynchrone des embeddings
+
+Activer le traitement asynchrone des embeddings.
+
+Requêtes d'embedding simultanées
+
+Nombre de requêtes d'embedding simultanées.
+
+Avancé
+Récupération
+Full Text Threshold (Characters)
+
+Include the complete extracted text of each uploaded file up to this character count. Only larger files switch to retrieval; text is never truncated at this threshold. Set to 0 to always use retrieval. Explicit full-context selections still take priority.
+
+Mode avec injection complète dans le contexte
+
+Mode avec injection complète dans le contexte.
+
+Recherche hybride
+
+Activer la recherche hybride.
+
+Enrichir le texte de recherche hybride
+
+Enrichir le texte de recherche hybride.
+
+Moteur de ré-ranking
+Par défaut (Sentence Transformers)
+Externe
+
+Moteur pour le réordonnancement.
+
+URL de base de l'API
+
+URL du reranker externe.
+
+Clé API
+Clé API
+
+Clé API pour le reranker externe.
+
+Modèle de ré-ranking
+
+Modèle pour le réordonnancement.
+
+Taille du lot de réordonnancement
+
+Taille du lot pour le réordonnancement.
+
+Top K
+
+Nombre de résultats à retourner.
+
+Top K Reranker
+
+Nombre de résultats à réordonner.
+
+Seuil de pertinence
+
+Seuil de pertinence pour la recherche.
+
+Poids BM25
+Sur mesure
+
+Poids pour l'algorithme BM25.
+
+sémantique
+lexical
+Modèle RAG
+
+Modèle pour le RAG.
+
+Fichiers
+Extensions de fichier autorisées
+
+Extensions de fichiers autorisées pour le téléversement.
+
+Limite de taille de téléversement
+
+Taille maximale des fichiers à téléverser.
+
+Nombre maximal de téléversements
+
+Nombre maximal de fichiers à téléverser.
+
+Knowledge Batch Upload Limit
+
+Maximum files per upload batch. Leave empty for no limit.
+
+Knowledge File Size Limit
+
+Maximum file size in MB per knowledge base. Leave empty for no limit.
+
+Knowledge File Count Limit
+
+Maximum total files per knowledge base. Leave empty for no limit.
+
+Compression de la largeur de l'image
+
+Largeur pour la compression d'images.
+
+Compression de la hauteur de l'image
+
+Hauteur pour la compression d'images.
+
+Intégration
+Google Drive
+
+Autoriser Google Drive comme source de documents.
+
+OneDrive
+
+Autoriser OneDrive comme source de documents.
+
+Zone de danger
+Réinitialiser le répertoire de téléchargement
+Réinitialiser
+
+Réinitialiser le répertoire de téléversement.
+
+Réinitialiser le stockage vectoriel/connaissances
+Réinitialiser
+
+Réinitialiser le stockage vectoriel et les connaissances.
+
+Réindexer les vecteurs
+Réindexer
+
+Réindexer les vecteurs de connaissances et de mémoire.
+
+Enregistrer

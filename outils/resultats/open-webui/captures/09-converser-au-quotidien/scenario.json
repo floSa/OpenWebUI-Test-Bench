@@ -1,0 +1,146 @@
+[
+ {
+  "capture": "09-converser-au-quotidien/01-menu.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "conversation"
+   ],
+   [
+    2,
+    "Menu des conversations"
+   ],
+   [
+    3,
+    "Partager"
+   ],
+   [
+    4,
+    "Télécharger"
+   ],
+   [
+    5,
+    "Renommer"
+   ],
+   [
+    6,
+    "Épingler"
+   ],
+   [
+    7,
+    "Archiver"
+   ],
+   [
+    8,
+    "Supprimer"
+   ]
+  ],
+  "note": "",
+  "heure": "13:59:53"
+ },
+ {
+  "capture": "09-converser-au-quotidien/02-renommer.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "nouveau titre"
+   ]
+  ],
+  "note": "",
+  "heure": "14:00:01"
+ },
+ {
+  "capture": "09-converser-au-quotidien/03-epinglee.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Épinglé"
+   ],
+   [
+    2,
+    "conversation épinglée"
+   ]
+  ],
+  "note": "",
+  "heure": "14:00:06"
+ },
+ {
+  "capture": "09-converser-au-quotidien/04-nouveau-dossier.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Nouveau dossier"
+   ],
+   [
+    2,
+    "Entrez le nom du dossier"
+   ]
+  ],
+  "note": "",
+  "heure": "14:00:12"
+ },
+ {
+  "capture": "09-converser-au-quotidien/05-dossier.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Questions rapport annuel"
+   ],
+   [
+    2,
+    "conversation rangée"
+   ]
+  ],
+  "note": "",
+  "heure": "14:02:33"
+ },
+ {
+  "capture": "09-converser-au-quotidien/06-partager.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Copier le lien"
+   ]
+  ],
+  "note": "",
+  "heure": "14:02:51"
+ },
+ {
+  "capture": "09-converser-au-quotidien/08-rechercher.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "recherche"
+   ],
+   [
+    2,
+    "résultat"
+   ]
+  ],
+  "note": "",
+  "heure": "14:03:13"
+ },
+ {
+  "capture": "09-converser-au-quotidien/07-telecharger.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Télécharger"
+   ],
+   [
+    2,
+    "formats"
+   ]
+  ],
+  "note": "",
+  "heure": "14:04:14"
+ }
+]

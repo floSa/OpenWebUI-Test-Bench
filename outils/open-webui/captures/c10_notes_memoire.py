@@ -80,9 +80,60 @@ def memoire(s):
     enr.click(); p.wait_for_timeout(1000)
 
 
+def menu_note(s):
+    """Reprise de 03-menu-note : chaque entrée du menu annotée."""
+    p = s.page
+    s.aller("/notes")
+    p.get_by_text(TITRE).first.click(); p.wait_for_timeout(2000)
+    b = p.get_by_role("button", name="Menu des notes")
+    b.click(); p.wait_for_timeout(800)
+    it = lambda n: p.get_by_role("menuitem").filter(has_text=n).first
+    s.cap_souple("03-menu-note", [(b, "Menu des notes"), (it("Télécharger"), "Télécharger"), (it("Téléverser des fichiers"), "Téléverser des fichiers"),
+                                  (it("Partager"), "Partager"), (it("Épingler"), "Épingler à la barre latérale"), (it("Supprimer"), "Supprimer")])
+    p.keyboard.press("Escape")
+
+
+def note_conversation(s):
+    """Sollicite le modèle : bouton « Conversation » d'une note, question sur la note."""
+    p = s.page
+    s.aller("/notes")
+    p.get_by_text(TITRE).first.click(); p.wait_for_timeout(2000)
+    conv = p.locator("button[aria-label='Conversation'], button").filter(has_text=re.compile("^\\s*$")).first
+    conv = p.locator("button[aria-label='Conversation']").first
+    conv.click(); p.wait_for_timeout(1500)
+    s.note("après Conversation : " + p.locator("body").inner_text()[-600:].replace("\n", " | "))
+    zone = p.locator("textarea, [contenteditable=true]").filter(visible=True).last
+    zone.click(); p.keyboard.type("Quelle décision a été prise pour le local B2 ?")
+    s.cap_souple("08-note-conversation", [(conv, "Conversation"), (zone, "question sur la note")])
+    p.keyboard.press("Enter")
+    p.wait_for_timeout(3000)
+    debut = __import__("time").time()
+    dernier = ""
+    while __import__("time").time() - debut < 240:
+        txt = p.locator("body").inner_text()
+        if txt == dernier and "16 novembre" in txt.split("Quelle décision")[-1]:
+            break
+        dernier = txt; p.wait_for_timeout(3000)
+    s.note("réponse sur la note : " + p.locator("body").inner_text().split("Quelle décision")[-1][:600].replace("\n", " | "))
+    s.cap_souple("09-note-reponse", [(p.get_by_text(re.compile("16 novembre")).last, "réponse tirée de la note")])
+
+
+def memoire_essai(s):
+    """Sollicite le modèle : le souvenir enregistré est-il utilisé dans une nouvelle conversation ?"""
+    p = s.page
+    s.aller("/")
+    p.locator("#chat-input").click(); p.keyboard.type("Dans quel service et dans quelle ville est-ce que je travaille ?")
+    p.locator("#send-message-button").click()
+    rep = s.attendre_reponse()
+    s.note(f"réponse mémoire : {rep[:600]!r}")
+    msg = p.locator(".chat-assistant").last
+    s.cap_souple("10-memoire-utilisee", [(msg.get_by_text(re.compile("Mémoire|mémoire|Memory|Exploré|Recherché")).first, "consultation de la mémoire"),
+                                         (msg.get_by_text(re.compile("qualité")).last, "réponse")])
+
+
 if __name__ == "__main__":
     s = Scenario(CH)
     try:
-        etapes([menage_notes, notes, memoire], s)
+        etapes([menage_notes, notes, memoire, menu_note, note_conversation, memoire_essai], s)
     finally:
         s.fermer()

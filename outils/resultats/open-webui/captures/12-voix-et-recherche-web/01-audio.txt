@@ -1,0 +1,129 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Épinglé
+Chiffre d'affaires 2025
+il y a 11 minutes
+11min
+Claire Admin
+chat
+
+
+
+
+chat
+Suggéré
+Expliquer le trading d'options
+si je connais l'achat et la vente d'actions
+Aidez-moi à étudier
+vocabulaire pour un examen d'entrée à l'université
+Montrez-moi un extrait de code
+d'un en-tête collant d'un site web
+Dites-moi un fait amusant
+à propos de l'Empire romain
+Donnez-moi des idées
+que faire avec les dessins de mes enfants
+Surmonter la procrastination
+donnez-moi des conseils
+Nouvelle conversation
+Open WebUI
+Retour en arrière
+Recherche
+Personnel
+Bases
+Général
+Interface utilisateur
+Notifications
+Raccourcis
+Préférences
+Personnalisation
+Audio
+Données
+Contrôles des données
+Consommation de tokens
+Conversations archivées
+Profil
+Compte
+À propos
+Administrateur
+Système
+Général
+Authentification
+Interface utilisateur
+IA
+Connexions
+Modèles
+Sous-agents
+Outils
+Intégrations
+Documents
+Audio
+Images
+Recherche Web
+Exécution de code
+Pipelines
+Qualité
+Analytique
+Évaluations
+Données
+Base de données
+Audio
+Voice calls
+Call mode
+Standard
+Realtime
+Reconnaissance vocale
+Moteur de reconnaissance vocale
+Whisper (local)
+OpenAI
+API Web
+Deepgram
+Azure AI Speech
+MistralAI
+
+Moteur utilisé pour la reconnaissance vocale.
+
+Types MIME pris en charge
+
+Types MIME pris en charge pour les fichiers audio.
+
+URL de base de l'API
+Clé API
+Clé API
+Format de la requête
+Téléversement multipartite
+JSON Base64
+
+Format de la requête audio pour les appels d'outils.
+
+Modèle de Speech-to-Text
+Text-to-Speech
+Moteur de Text-to-Speech
+API Web
+Transformers (Local)
+OpenAI
+OpenAI Realtime
+ElevenLabs
+Azure AI Speech
+MistralAI
+
+Moteur utilisé pour la synthèse vocale.
+
+Voix de Text-to-Speech
+Par défaut
+Division de la réponse
+Punctuation
+Paragraphs
+Aucun
+
+Contrôle la façon dont le texte des messages est divisé pour les demandes de Text-to-Speech. « ponctuation » divise en phrases, « paragraphes » divise en paragraphes et « aucun » garde le message en tant que chaîne de texte unique.
+
+Enregistrer

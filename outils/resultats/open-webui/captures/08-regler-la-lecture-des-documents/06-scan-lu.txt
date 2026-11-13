@@ -1,0 +1,147 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Aujourd'hui
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a une heure
+52min
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a une heure
+55min
+Chargement de...
+Claire Admin
+Modèles
+0
+Connaissances
+2
+Prompts
+1
+Skills
+0
+Outils
+1
+Retour en arrière
+Accès
+bded018b-b7e0-4f9c-a70c-fdd62f7b174b
+All files
+PDF
+contrat-batterix-scan.pdf
+747.3 KB
+PDF
+supplier-audit-batterix-en.pdf
+42.9 KB
+strategie-2026.pptx
+31.3 KB
+stocks-octobre-2025.xlsx
+5.7 KB
+PDF
+rapport-annuel-2025.pdf
+52.5 KB
+message-vocal-production.mp3
+144.4 KB
+procedure-batteries.docx
+36.4 KB
+faq-sav.html
+810.0 B
+cse-2025-10-14.md
+548.0 B
+contrat-batterix-scan.pdf
+Aperçu
+Indexed text
+Modifier
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117
+
+
+Entre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)
+
+
+Et: Batterix GmbH, Brême, Allemagne (le Fournisseur)
+
+
+Article 1 -Objet
+
+
+Fourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.
+
+
+Article 2-Durée
+
+
+Trois ans à compter du ler mars 2025.
+
+
+Article3-Volumes
+
+
+Volume minimal annuel : 40 000 batteries.
+
+
+Article 4 - Prix
+
+
+Prix unitaire : 212 euros HT, révisable une fois par an. Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.
+
+
+Article 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.
+
+
+Article 7 - Garantie
+
+
+5 ans ou 1 000 cycles de charge, au premier terme atteint.
+
+
+Article 8 - Litiges
+
+
+Tribunal de commerce de Nantes.
+
+
+Fait à Nantes, le 14 février 2025.
+
+
+Pour Batterix : Jonas Weber Pour Vélanor : Hélène Marchais
+Connaissances / Open WebUI

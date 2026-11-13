@@ -52,26 +52,6 @@
   "heure": "09:06:13"
  },
  {
-  "capture": "14-comptes-groupes-permissions/03-liste-comptes.png",
-  "url": "/admin/users/overview",
-  "pastilles": [
-   [
-    1,
-    "nouveau compte"
-   ],
-   [
-    2,
-    "rôle"
-   ],
-   [
-    3,
-    "Modifier l'utilisateur"
-   ]
-  ],
-  "note": "",
-  "heure": "09:06:14"
- },
- {
   "capture": "14-comptes-groupes-permissions/04-nouveau-groupe.png",
   "url": "/admin/users/groups",
   "pastilles": [
@@ -297,5 +277,69 @@
   ],
   "note": "",
   "heure": "09:14:39"
+ },
+ {
+  "capture": "15-administrer/01-general.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Général"
+   ],
+   [
+    2,
+    "Canaux"
+   ],
+   [
+    3,
+    "Notes"
+   ],
+   [
+    4,
+    "Automatisations"
+   ]
+  ],
+  "note": "",
+  "heure": "13:51:52"
+ },
+ {
+  "capture": "10-notes-et-memoire/01-notes.png",
+  "url": "/notes",
+  "pastilles": [
+   [
+    1,
+    "Notes"
+   ],
+   [
+    2,
+    "Créer"
+   ],
+   [
+    3,
+    "Rechercher des notes"
+   ]
+  ],
+  "note": "",
+  "heure": "13:51:58"
+ },
+ {
+  "capture": "14-comptes-groupes-permissions/03-liste-comptes.png",
+  "url": "/admin/users/overview",
+  "pastilles": [
+   [
+    1,
+    "nouveau compte"
+   ],
+   [
+    2,
+    "rôle"
+   ],
+   [
+    3,
+    "Modifier l'utilisateur"
+   ]
+  ],
+  "note": "",
+  "heure": "13:53:16"
  }
 ]

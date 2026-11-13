@@ -6,15 +6,16 @@ Recherche
 Ctrl+K
 Notes
 Espace de travail
+Canaux
 Dossiers
 Conversations
 Aujourd'hui
 Quel est le chiffre d’affaires 2025 de Vélanor ?
-il y a 12 minutes
-11min
+il y a 5 heures
+4h
 Quel est le chiffre d’affaires 2025 de Vélanor ?
-il y a 15 minutes
-14min
+il y a 5 heures
+5h
 Chargement de...
 Claire Admin
 Utilisateurs
@@ -24,7 +25,7 @@ Réglages
 Aperçu
 2
 Groupes
-0
+1
 Ajouter un utilisateur
 Nom d'utilisateur
 	
@@ -51,6 +52,6 @@ Julien Moreau
 	
 Changer Le Rôle De L'utilisateur
 Utilisateur	julien.moreau@velanor.example	
-il y a quelques secondes
+il y a 5 heures
 	13 novembre 2026	
 ⓘ Cliquez sur le bouton de rôle d'utilisateur pour modifier son rôle.

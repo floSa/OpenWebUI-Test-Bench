@@ -82,9 +82,40 @@ def calendrier(s):
                                    (p.get_by_text("Scheduled Tasks").first, "Scheduled Tasks")])
 
 
+def executer(s):
+    """Sollicite le modèle : lancer l'automatisation à la main, lire l'exécution, puis la mettre en pause."""
+    p = s.page
+    s.aller("/automations")
+    p.get_by_text("Point qualité du lundi").first.click(); p.wait_for_timeout(2000)
+    b = lambda n: p.locator(f"button[aria-label='{n}']").first
+    s.cap_souple("10-page-automatisation", [(b("Actif"), "Actif"), (b("Exécuter maintenant"), "Exécuter maintenant"),
+                                            (b("Modifier"), "Modifier"), (b("Supprimer"), "Supprimer"),
+                                            (p.get_by_text("Exécutions", exact=True).first, "Exécutions")])
+    b("Exécuter maintenant").click(); p.wait_for_timeout(2000)
+    for _ in range(80):
+        p.reload(); p.wait_for_timeout(3000)
+        txt = p.locator("main").inner_text()
+        if "Aucune exécution" not in txt and re.search(r"(Réussi|Succès|success|Terminé|completed)", txt, re.I):
+            break
+    s.note("après exécution : " + p.locator("main").inner_text()[:900].replace("\n", " | "))
+    s.cap_souple("11-execution", [(p.get_by_text("Dernière exécution").first, "Dernière exécution"),
+                                  (p.get_by_text("Exécutions", exact=True).first.locator("xpath=following::*[1]"), "exécution")])
+    lien = p.locator("main a[href^='/c/']").first
+    if lien.count():
+        lien.click(); p.wait_for_timeout(2500)
+        s.note("conversation produite : " + p.locator(".chat-assistant").last.inner_text()[:500].replace("\n", " | "))
+        s.cap_souple("12-conversation-produite", [(p.locator(".chat-assistant").last, "réponse de l'automatisation")])
+        s.aller("/automations")
+        p.get_by_text("Point qualité du lundi").first.click(); p.wait_for_timeout(2000)
+    b("Actif").click(); p.wait_for_timeout(1500)
+    s.note("après pause : " + p.locator("main").inner_text()[:300].replace("\n", " | "))
+    s.cap_souple("13-pause", [(p.locator("main button[aria-label]").filter(has_text=re.compile("")).first, "interrupteur"),
+                              (p.get_by_text(re.compile("^\\s*(En pause|Inactif|Pause)")).first, "statut")])
+
+
 if __name__ == "__main__":
     s = Scenario(CH)
     try:
-        etapes([automatisation, canaux, calendrier], s)
+        etapes([automatisation, canaux, calendrier, executer], s)
     finally:
         s.fermer()

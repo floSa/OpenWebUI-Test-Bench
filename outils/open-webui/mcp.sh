@@ -8,7 +8,7 @@ IMAGE="ghcr.io/open-webui/open-webui:v0.13.3@sha256:46b59158e6558eeb980bc828e0f1
 case "${1:-start}" in
   start)
     docker rm -f rag-mcp-velanor >/dev/null 2>&1 || true
-    docker run -d --name rag-mcp-velanor --network rag-local --restart unless-stopped --read-only --tmpfs /tmp \
+    docker run -d --name rag-mcp-velanor --network rag-local --restart unless-stopped --read-only --tmpfs /tmp --no-healthcheck \
       -v "$PWD/outils/open-webui/extensions/serveur_mcp_velanor.py:/srv/serveur.py:ro" \
       --entrypoint python "$IMAGE" /srv/serveur.py >/dev/null
     docker network connect rag-local rag-open-webui 2>/dev/null || true

@@ -16,8 +16,12 @@ def champ_apres(p, libelle):
 
 
 def extraction(s):
-    p = s.page
     s.reglages("admin:documents")
+    extraction_sans_ouvrir(s)
+
+
+def extraction_sans_ouvrir(s):
+    p = s.page
     moteur = selecteur(p, "Moteur d'extraction de contenu")
     s.cap("01-documents", [(s.onglet("Documents", admin=True), "Documents"), (moteur, "Moteur d'extraction de contenu")])
     moteur.select_option(label="Docling"); p.wait_for_timeout(1000)
@@ -33,6 +37,50 @@ def decoupage(s):
                                   (champ_apres(p, "Taille des chunks"), "Taille des chunks"),
                                   (champ_apres(p, "Chevauchement des chunks"), "Chevauchement des chunks"),
                                   (champ_apres(p, "Modèle d'embedding"), "Modèle d'embedding")])
+
+
+def extraction_seule(s):
+    """Reprise des captures 01 et 02 sans enregistrer (l'instance est déjà réglée sur Docling)."""
+    p = s.page
+    s.reglages("admin:documents")
+    selecteur(p, "Moteur d'extraction de contenu").select_option(label="Par défaut"); p.wait_for_timeout(800)
+    extraction_sans_ouvrir(s)
+    p.keyboard.press("Escape"); p.wait_for_timeout(500)
+
+
+def zone_danger(s):
+    """Bouton « Réindexer » (bas de l'onglet Documents), montré sans être cliqué."""
+    p = s.page
+    s.reglages("admin:documents")
+    titre = p.get_by_text("Réindexer les vecteurs", exact=True).filter(visible=True).first
+    titre.evaluate("e => e.scrollIntoView({block: 'center'})"); p.wait_for_timeout(600)
+    btn = titre.locator("xpath=following::button[1]")
+    s.cap_souple("07-reindexer", [(p.get_by_text("Zone de danger", exact=True).first, "Zone de danger"), (btn, "Réindexer")])
+    p.keyboard.press("Escape")
+
+
+def requetes(s):
+    """Génération des requêtes de RAG (Interface utilisateur › Tâches) : désactivée, réponses deux fois plus rapides au banc.
+    Montrée dans l'état désactivé, déjà enregistré par le banc « taches » ; rien n'est enregistré ici."""
+    p = s.page
+    s.reglages("admin:interface")
+    lib = p.get_by_text("Génération de requête de RAG", exact=True).filter(visible=True).first
+    lib.evaluate("e => e.scrollIntoView({block: 'center'})"); p.wait_for_timeout(600)
+    inter = lib.locator("xpath=following::*[@role='switch'][1]")
+    s.note("interrupteur génération de requête de RAG : " + str(inter.get_attribute("aria-checked")))
+    s.cap_souple("08-requetes", [(s.onglet("Interface utilisateur", admin=True), "Interface utilisateur"), (lib, "Génération de requête de RAG"),
+                                 (inter, "interrupteur"), (s.bouton("Enregistrer", exact=True).filter(visible=True).last, "Enregistrer")])
+    p.keyboard.press("Escape")
+
+
+def decoupage_seul(s):
+    """Reprise de la capture 03 sans rien modifier : la liste « Découpage du texte » doit rester dans le cadre."""
+    p = s.page
+    s.reglages("admin:documents")
+    titre = p.get_by_text("Découpage du texte", exact=True).filter(visible=True).first
+    titre.scroll_into_view_if_needed(); p.wait_for_timeout(300)
+    titre.evaluate("e => e.scrollIntoView({block: 'start'})"); p.wait_for_timeout(500)
+    decoupage(s)
 
 
 def recherche(s):
@@ -97,6 +145,16 @@ def scan(s):
     toast = p.locator("[data-sonner-toast]").first
     s.note("ajout du scan : " + (toast.inner_text() if toast.count() else "aucun message"))
     s.sans_toasts()
+    scan_affichage(s, deja=True)
+
+
+def scan_affichage(s, deja=False):
+    p = s.page
+    if not deja:
+        s.aller("/workspace/knowledge")
+        p.get_by_role("link", name="Démo Vélanor").first.click()
+        p.get_by_placeholder("Nom de la connaissance").wait_for(); p.wait_for_timeout(1000)
+    ligne = p.locator("button").filter(has_text="contrat-batterix-scan.pdf").first
     p.get_by_text("contrat-batterix-scan.pdf", exact=True).first.click(); p.wait_for_timeout(2000)
     idx = p.get_by_text("Indexed text", exact=True).first
     idx.click(); p.wait_for_timeout(1500)
@@ -108,6 +166,6 @@ def scan(s):
 if __name__ == "__main__":
     s = Scenario(CH)
     try:
-        etapes([reglages_documents, scan], s)
+        etapes([reglages_documents, scan, scan_affichage, extraction_seule, decoupage_seul, zone_danger, requetes], s)
     finally:
         s.fermer()

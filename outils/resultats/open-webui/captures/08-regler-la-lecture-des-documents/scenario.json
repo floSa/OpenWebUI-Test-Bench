@@ -1,0 +1,166 @@
+[
+ {
+  "capture": "08-regler-la-lecture-des-documents/04-reranker.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Recherche hybride"
+   ],
+   [
+    2,
+    "Moteur de ré-ranking"
+   ],
+   [
+    3,
+    "URL"
+   ],
+   [
+    4,
+    "Clé API (masquée)"
+   ],
+   [
+    5,
+    "Modèle de ré-ranking"
+   ],
+   [
+    6,
+    "Top K Reranker"
+   ]
+  ],
+  "note": "",
+  "heure": "09:46:12"
+ },
+ {
+  "capture": "08-regler-la-lecture-des-documents/05-enregistre.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Enregistrer"
+   ],
+   [
+    2,
+    "message"
+   ]
+  ],
+  "note": "",
+  "heure": "09:46:15"
+ },
+ {
+  "capture": "08-regler-la-lecture-des-documents/06-scan-lu.png",
+  "url": "/workspace/knowledge/bded018b-b7e0-4f9c-a70c-fdd62f7b174b",
+  "pastilles": [
+   [
+    1,
+    "contrat-batterix-scan.pdf"
+   ],
+   [
+    2,
+    "Indexed text"
+   ],
+   [
+    3,
+    "texte reconnu"
+   ]
+  ],
+  "note": "",
+  "heure": "09:47:01"
+ },
+ {
+  "capture": "08-regler-la-lecture-des-documents/03-decoupage.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Découpage du texte"
+   ],
+   [
+    2,
+    "Taille des chunks"
+   ],
+   [
+    3,
+    "Chevauchement des chunks"
+   ],
+   [
+    4,
+    "Modèle d'embedding"
+   ]
+  ],
+  "note": "",
+  "heure": "13:45:02"
+ },
+ {
+  "capture": "08-regler-la-lecture-des-documents/01-documents.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Documents"
+   ],
+   [
+    2,
+    "Moteur d'extraction de contenu"
+   ]
+  ],
+  "note": "",
+  "heure": "13:45:29"
+ },
+ {
+  "capture": "08-regler-la-lecture-des-documents/02-docling.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Docling"
+   ],
+   [
+    2,
+    "URL du serveur Docling"
+   ]
+  ],
+  "note": "",
+  "heure": "13:45:31"
+ },
+ {
+  "capture": "08-regler-la-lecture-des-documents/07-reindexer.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Zone de danger"
+   ],
+   [
+    2,
+    "Réindexer"
+   ]
+  ],
+  "note": "",
+  "heure": "13:46:17"
+ },
+ {
+  "capture": "08-regler-la-lecture-des-documents/08-requetes.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Interface utilisateur"
+   ],
+   [
+    2,
+    "Génération de requête de RAG"
+   ],
+   [
+    3,
+    "interrupteur"
+   ],
+   [
+    4,
+    "Enregistrer"
+   ]
+  ],
+  "note": "",
+  "heure": "14:05:36"
+ }
+]

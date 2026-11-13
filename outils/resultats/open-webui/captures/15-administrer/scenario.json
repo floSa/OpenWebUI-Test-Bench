@@ -1,33 +1,5 @@
 [
  {
-  "capture": "15-administrer/01-general.png",
-  "url": "/",
-  "pastilles": [
-   [
-    1,
-    "Général"
-   ],
-   [
-    2,
-    "Vérifier les mises à jour disponibles"
-   ],
-   [
-    3,
-    "Canaux"
-   ],
-   [
-    4,
-    "Notes"
-   ],
-   [
-    5,
-    "Automatisations"
-   ]
-  ],
-  "note": "",
-  "heure": "09:15:19"
- },
- {
   "capture": "15-administrer/02-general-bas.png",
   "url": "/",
   "pastilles": [
@@ -266,5 +238,29 @@
   ],
   "note": "",
   "heure": "09:20:04"
+ },
+ {
+  "capture": "15-administrer/01-general.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Général"
+   ],
+   [
+    2,
+    "Canaux"
+   ],
+   [
+    3,
+    "Notes"
+   ],
+   [
+    4,
+    "Automatisations"
+   ]
+  ],
+  "note": "",
+  "heure": "13:51:52"
  }
 ]

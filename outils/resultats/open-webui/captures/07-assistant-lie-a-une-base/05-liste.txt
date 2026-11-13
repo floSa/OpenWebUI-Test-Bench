@@ -1,0 +1,45 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Aujourd'hui
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 5 heures
+4h
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+il y a 5 heures
+4h
+Chargement de...
+Claire Admin
+Modèles
+1
+Connaissances
+3
+Prompts
+1
+Skills
+0
+Outils
+1
+Créer
+Modèles
+Tout
+Actions
+Nom d'utilisateur
+Owner
+Mise à jour le
+Actions
+Assistant qualité Vélanor
+Répond aux questions sur les documents de Vélanor, en citant ses sources.
+Claire Admin
+il y a quelques secondes
+Réalisé par la communauté OpenWebUI
+Trouvez un modèle
+Découvrir, télécharger et explorer des préréglages de modèles

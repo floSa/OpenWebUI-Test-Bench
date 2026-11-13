@@ -30,13 +30,14 @@ def identifiants():
 
 
 class Scenario:
-    def __init__(self, chapitre, connecter=True, compte="admin", langue="fr-FR"):
+    def __init__(self, chapitre, connecter=True, compte="admin", langue="fr-FR", args=None, permissions=None):
         self.chapitre = chapitre
         self.journal = []
         self._pw = sync_playwright().start()
-        self.navigateur = self._pw.chromium.launch()
+        # args : options de Chromium (ex. faux micro : --use-fake-device-for-media-stream) ; permissions : ex. ["microphone"]
+        self.navigateur = self._pw.chromium.launch(args=args or [])
         self.contexte = self.navigateur.new_context(viewport={"width": 1440, "height": 900}, locale="fr-FR",
-                                                    accept_downloads=True)
+                                                    accept_downloads=True, permissions=permissions or [])
         if langue:
             self.contexte.add_init_script(
                 f"try {{ if (!localStorage.getItem('locale')) localStorage.setItem('locale', '{langue}') }} catch (e) {{}}")

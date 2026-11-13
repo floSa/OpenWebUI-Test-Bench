@@ -66,7 +66,15 @@ def annoter(page, elements):
 
 
 def masquer(page, locator):
-    page.evaluate(_JS, [[_boite(page, locator, masque=True)], CLASSE])
+    """Recouvre un secret sans faire défiler : un secret hors de la fenêtre n'apparaît pas sur la capture."""
+    b = locator.bounding_box()
+    vw, vh = page.evaluate("[window.innerWidth, window.innerHeight]")
+    if not b or b["width"] < 2 or b["height"] < 2 or b["y"] + b["height"] < 0 or b["y"] > vh \
+            or b["x"] + b["width"] < 0 or b["x"] > vw:
+        return
+    sx, sy = page.evaluate("[window.scrollX, window.scrollY]")
+    boite = {"x": b["x"] + sx, "y": b["y"] + sy, "w": b["width"], "h": b["height"], "n": None, "masque": True}
+    page.evaluate(_JS, [[boite], CLASSE])
 
 
 def retirer(page):
@@ -76,9 +84,10 @@ def retirer(page):
 def capture(page, chemin, elements=(), masques=(), plein=False, clip=None, texte=None):
     """Annote, capture dans `chemin` (PNG), retire. `texte` : fichier où enregistrer le texte de la page."""
     chemin = Path(chemin); chemin.parent.mkdir(parents=True, exist_ok=True)
+    # annoter d'abord (peut faire défiler), masquer ensuite : les masques suivent les positions finales
+    libelles = annoter(page, list(elements)) if elements else []
     for m in masques:
         masquer(page, m)
-    libelles = annoter(page, list(elements)) if elements else []
     page.wait_for_timeout(300)
     page.screenshot(path=str(chemin), full_page=plein, clip=clip)
     retirer(page)

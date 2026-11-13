@@ -1,0 +1,65 @@
+2026-11-13T14:01:07+01:00
+               total        used        free      shared  buff/cache   available
+Mem:           32098        9791        1419         914       22185       22307
+  bge-m3 (embedding)
+  bge-reranker-v2-m3 (rerank)
+  faster-whisper-small (audio_transcription)
+== chat (réflexion coupée pour l'essai)
+  Bonjour !
+== embed
+  dimensions : 1024
+== rerank
+  doc 0 score 9.05
+  doc 1 score -8.63
+== transcribe (corpus/documents/message-vocal-production.mp3)
+  Message vocale de Julien Moreau, directeur de production chez Vélanor, enregistrait le 3 novembre VVTSEC. La ligne d'assoblage numéro 3 de Nantes sera arrêtée du 2 au 6 mars VVTSI pour maintenance. Pe
+réglages appliqués : {'CONTENT_EXTRACTION_ENGINE': 'docling', 'DOCLING_SERVER_URL': 'http://rag-docling-serve:5001', 'ENABLE_RAG_HYBRID_SEARCH': True, 'RAG_RERANKING_ENGINE': 'external', 'RAG_EXTERNAL_RERANKER_URL': 'http://llm-central:8080/v1/rerank', 'RAG_RERANKING_MODEL': 'rerank'}
+  contrat-batterix-scan.pdf: {'fichier': 'contrat-batterix-scan.pdf', 'statut': 'completed', 'erreur': None, 'caracteres': 887, 'duree_s': 13.9}
+  cse-2025-10-14.md: {'fichier': 'cse-2025-10-14.md', 'statut': 'completed', 'erreur': None, 'caracteres': 528, 'duree_s': 1.7}
+  faq-sav.html: {'fichier': 'faq-sav.html', 'statut': 'completed', 'erreur': None, 'caracteres': 594, 'duree_s': 3.2}
+  message-vocal-production.mp3: {'fichier': 'message-vocal-production.mp3', 'statut': 'completed', 'erreur': None, 'caracteres': 351, 'duree_s': 8.0}
+  procedure-batteries.docx: {'fichier': 'procedure-batteries.docx', 'statut': 'completed', 'erreur': None, 'caracteres': 1085, 'duree_s': 3.2}
+  rapport-annuel-2025.pdf: {'fichier': 'rapport-annuel-2025.pdf', 'statut': 'completed', 'erreur': None, 'caracteres': 4310, 'duree_s': 10.8}
+  stocks-octobre-2025.xlsx: {'fichier': 'stocks-octobre-2025.xlsx', 'statut': 'completed', 'erreur': None, 'caracteres': 1110, 'duree_s': 3.2}
+  strategie-2026.pptx: {'fichier': 'strategie-2026.pptx', 'statut': 'completed', 'erreur': None, 'caracteres': 513, 'duree_s': 3.2}
+  supplier-audit-batterix-en.pdf: {'fichier': 'supplier-audit-batterix-en.pdf', 'statut': 'completed', 'erreur': None, 'caracteres': 430, 'duree_s': 3.3}
+indexation : 50.9 s
+Q01 tableau         OK    53.4s  "Selon les données disponibles dans le rapport annuel 2025 de Vélanor, le chiffre d'affaire"
+Q02 fait simple     OK    54.4s  'Selon les informations fournies, Vélanor a été fondée en 2014 [1].'
+Q03 fait simple     OK    81.1s  'La présidente de Vélanor est Hélène Marchais [1].'
+Q04 fait simple     OK    56.0s  "L'adresse du siège de Vélanor est le 12 quai de la Fosse, à Nantes [1]."
+Q05 tableau         OK    68.1s  'Selon les données disponibles, Vélanor compte **412 salariés** au 31 décembre 2025 [1].'
+Q06 tableau         OK   108.7s  "Selon les données du rapport annuel fourni, le chiffre d'affaires enregistré pour le trois"
+Q07 tableau         OK    55.8s  'Selon les données de production par modèle, 15 400 unités du modèle Sèvre Trail ont été pr'
+Q08 tableau         OK    58.0s  'Le prix public TTC du modèle Erdre Cargo est de 4 290 € [1].'
+Q09 tableau         OK    80.2s  'Selon les informations du rapport annuel, il y a 97 salariés au site de Cholet [1].'
+Q10 fait simple     OK    79.8s  "La part d'aluminium recyclé dans les cadres est de 82 % [1]."
+Q11 fait simple     OK    40.5s  'Selon les informations fournies, le taux de recyclage des batteries usagées collectées att'
+Q12 tableau         OK    58.3s  'Le fournisseur des moteurs est **Motodrive Co.**, qui est installé au **Taïwan** [1].'
+Q13 tableau         OK    64.2s  'En 2025, Vélanor a dégagé un résultat net de 3,1 M€ [1].'
+Q14 fait simple     OK    46.0s  "Le taux de retour sous garantie s'établit à 1,8 % des vélos vendus [1]."
+Q15 scan            OK    94.7s  'Le prix unitaire des batteries prévu par le contrat avec Batterix est de 212 euros HT [1].'
+Q16 scan            OK    29.9s  "Selon le contrat d'approvisionnement n° BX-2025-117, la livraison prévue par Batterix est "
+Q17 scan            OK    63.0s  'Le plafond des pénalités de retard est fixé à **8 % du montant de la commande** [1].'
+Q18 scan            OK    69.0s  "Le contrat d'approvisionnement entre Vélanor SAS et Batterix GmbH précise dans son Article"
+Q19 fait simple     OK    46.9s  'Les batteries doivent être stockées entre 10 °C et 25 °C [1].'
+Q20 fait simple     OK    24.2s  'Selon le document PR-SEC-04 — Charge et stockage des batteries, la procédure de charge et '
+Q21 tableau         OK    71.7s  "D'après les contrôles établis dans le document, le local B2 est inspecté le premier lundi "
+Q22 fait simple     OK    49.6s  'Selon le document, le prix public du modèle Vilaine Compact est de 2 490 € TTC [1].'
+Q23 fait simple     OK    50.8s  "La capacité prévue de l'usine de Saint-Nazaire est de 25 000 vélos par an [1]."
+Q24 tableau         OK    60.1s  'Le stock actuel de batteries BAT-48V-14Ah est de **1 240 unités** [1], tandis que le seuil'
+Q25 fait simple     OK    27.2s  'Selon les informations fournies, la durée de garantie du cadre est de 7 ans [1].'
+Q26 fait simple     OK    76.8s  'Le numéro de téléphone du service après-vente est le 02 40 00 12 34 [1].'
+Q27 fait simple     OK    59.7s  "Selon les documents fournis, le montant de la prime d'intéressement 2025 est fixé à 1 150 "
+Q28 anglais         OK    37.5s  'According to the Supplier Quality Audit document for Batterix GmbH, the overall score obta'
+Q29 anglais         OK    50.8s  "D'après le rapport d'audit de qualité fournisseur concernant Batterix GmbH, le taux de cel"
+Q30 multi-documents OK    48.1s  "Selon le contrat d'approvisionnement (Article 5), le délai de livraison contractuel est de"
+Q31 multi-documents OK    35.4s  "Selon l'audit qualité, Batterix a obtenu un score de 87 sur 100 [1]. Le contrat d'approvis"
+Q32 multi-documents OK    90.1s  "Vélanor vise un chiffre d'affaires de 55 M€ en 2026 et prévoit 70 embauches à Saint-Nazair"
+Q33 audio           OK   114.7s  "D'après le contexte fourni, la ligne d'assemblage numéro 3 de Nantes sera arrêtée du 2 au "
+Q34 audio           OK    42.4s  'Le directeur de production de Vélanor est Julien Moreau [1].'
+Q35 piège           OK   118.4s  "D'après le contexte fourni, aucune information ne concerne spécifiquement le chiffre d'aff"
+Q36 piège           OK   121.6s  "D'après les documents fournis, le directeur financier de Vélanor n'est pas identifié. Le t"
+Q37 piège           OK   101.2s  "D'après le contexte fourni, Vélanor a produit et vendu **61 800 vélos à assistance électri"
+Q38 piège           OK    78.8s  "D'après le contexte fourni, il n'est pas possible de préciser le salaire de Karim Benali. "
+-> outils/resultats/open-webui/banc-2026-11-13-docling-rerank.json

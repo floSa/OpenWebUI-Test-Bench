@@ -1,25 +1,5 @@
 [
  {
-  "capture": "10-notes-et-memoire/01-notes.png",
-  "url": "/notes",
-  "pastilles": [
-   [
-    1,
-    "Notes"
-   ],
-   [
-    2,
-    "Créer"
-   ],
-   [
-    3,
-    "Rechercher des notes"
-   ]
-  ],
-  "note": "",
-  "heure": "09:31:01"
- },
- {
   "capture": "10-notes-et-memoire/02-nouvelle-note.png",
   "url": "/notes/a0d6f9d5-16ac-4352-b670-5ee10988caba",
   "pastilles": [
@@ -42,18 +22,6 @@
   ],
   "note": "",
   "heure": "09:31:12"
- },
- {
-  "capture": "10-notes-et-memoire/03-menu-note.png",
-  "url": "/notes/a0d6f9d5-16ac-4352-b670-5ee10988caba",
-  "pastilles": [
-   [
-    1,
-    "première action"
-   ]
-  ],
-  "note": "",
-  "heure": "09:31:14"
  },
  {
   "capture": "10-notes-et-memoire/04-liste-notes.png",
@@ -118,5 +86,81 @@
   ],
   "note": "",
   "heure": "09:33:29"
+ },
+ {
+  "capture": "15-administrer/01-general.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Général"
+   ],
+   [
+    2,
+    "Canaux"
+   ],
+   [
+    3,
+    "Notes"
+   ],
+   [
+    4,
+    "Automatisations"
+   ]
+  ],
+  "note": "",
+  "heure": "13:51:52"
+ },
+ {
+  "capture": "10-notes-et-memoire/01-notes.png",
+  "url": "/notes",
+  "pastilles": [
+   [
+    1,
+    "Notes"
+   ],
+   [
+    2,
+    "Créer"
+   ],
+   [
+    3,
+    "Rechercher des notes"
+   ]
+  ],
+  "note": "",
+  "heure": "13:51:58"
+ },
+ {
+  "capture": "10-notes-et-memoire/03-menu-note.png",
+  "url": "/notes/a0d6f9d5-16ac-4352-b670-5ee10988caba",
+  "pastilles": [
+   [
+    1,
+    "Menu des notes"
+   ],
+   [
+    2,
+    "Télécharger"
+   ],
+   [
+    3,
+    "Téléverser des fichiers"
+   ],
+   [
+    4,
+    "Partager"
+   ],
+   [
+    5,
+    "Épingler à la barre latérale"
+   ],
+   [
+    6,
+    "Supprimer"
+   ]
+  ],
+  "note": "",
+  "heure": "14:09:50"
  }
 ]

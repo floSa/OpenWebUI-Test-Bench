@@ -1,0 +1,42 @@
+[
+ {
+  "capture": "12-voix-et-recherche-web/01-audio.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Audio"
+   ],
+   [
+    2,
+    "Moteur de reconnaissance vocale"
+   ],
+   [
+    3,
+    "Modèle de Speech-to-Text"
+   ],
+   [
+    4,
+    "Moteur de Text-to-Speech"
+   ]
+  ],
+  "note": "",
+  "heure": "14:11:11"
+ },
+ {
+  "capture": "12-voix-et-recherche-web/06-recherche-web.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Recherche Web"
+   ],
+   [
+    2,
+    "interrupteur"
+   ]
+  ],
+  "note": "",
+  "heure": "14:11:18"
+ }
+]

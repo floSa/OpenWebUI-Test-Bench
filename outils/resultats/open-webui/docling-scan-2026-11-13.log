@@ -1,0 +1,4 @@
+INFO:	09:46:24 - docling.pipeline.base_pipeline - Processing document e89e4e25-5252-4210-982e-4d1d5fb42046_contrat-batterix-scan.pdf
+INFO:	09:46:33 - docling.document_converter - Finished converting document e89e4e25-5252-4210-982e-4d1d5fb42046_contrat-batterix-scan.pdf in 8.85 sec.
+INFO:	09:46:33 - docling_jobkit.convert.results - Processed 1 docs in 8.87 seconds.
+INFO:	09:46:34 - uvicorn.access - 172.18.0.2:43760 - "POST /v1/convert/file HTTP/1.1" 200
