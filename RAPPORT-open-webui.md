@@ -23,7 +23,7 @@ Aucun modèle n'a été téléchargé par Open WebUI (embeddings, tri et transcr
 ## Manuels écrits
 
 - Page d'accueil : [docs/open-webui/README.md](docs/open-webui/README.md).
-- Partie 1, manuel utilisateur, 18 chapitres : [docs/open-webui/manuel/](docs/open-webui/manuel/), 151 captures annotées (02 : 1 reprise du 03 ; 03 : 12 ; 04 : 5 ; 05 : 11 ; 06 : 8 ; 07 : 13 ; 08 : 8 ; 09 : 11 ; 10 : 10 ; 11 : 20 ; 12 : 6 ; 13 : 12 ; 14 : 15 ; 15 : 13 ; 16 : 3 ; 17 : 4 plus 2 reprises), et 45 captures de la carte de l'interface.
+- Partie 1, manuel utilisateur, 18 chapitres : [docs/open-webui/manuel/](docs/open-webui/manuel/), 153 captures annotées propres (02 : 1 reprise du 03 ; 03 : 12 ; 04 : 5 ; 05 : 11 ; 06 : 8 ; 07 : 13 ; 08 : 8 ; 09 : 11 ; 10 : 10 ; 11 : 22 ; 12 : 6 ; 13 : 12 ; 14 : 15 ; 15 : 13 ; 16 : 3 ; 17 : 4 plus 2 reprises des chapitres 05 et 14), et 45 captures de la carte de l'interface.
 - Partie 2, annexes A1 à A6 et carte de l'interface : [docs/open-webui/annexes/](docs/open-webui/annexes/).
 - Exemples d'API exécutés : [exemples/open-webui/](exemples/open-webui/), sorties dans `sorties_verifiees.txt`.
 - Index de la série et comparatif : [docs/README.md](docs/README.md) ; glossaire : [docs/glossaire.md](docs/glossaire.md).
