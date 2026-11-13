@@ -59,7 +59,7 @@ Machine type : PC portable Intel Core Ultra 7 255H, 15,3 Go de mémoire dans WSL
 | Résultats du banc | non mesurés sur ce profil ; mêmes modèles, donc même qualité attendue (34/34 avec les réglages conseillés) [Estimation] |
 | Temps d'attente, réflexion coupée | médiane 1,3 × 4,9 ≈ 6 s ; 95 % sous 3,1 × 4,9 ≈ 15 s [Estimation] |
 | Temps d'attente, génération des requêtes coupée, réflexion active | médiane 24,0 × 4,9 ≈ 2 min ; 95 % sous 86,9 × 4,9 ≈ 7 min [Estimation] |
-| Temps d'attente, réglages par défaut | médiane 58,3 × 4,9 ≈ 4,7 min ; 95 % sous 114,7 × 4,9 ≈ 9 min [Estimation] : à éviter |
+| Temps d'attente, réglages par défaut | médiane 58,3 × 4,9 = 285,7 s ≈ 4,8 min ; 95 % sous 114,7 × 4,9 ≈ 9 min [Estimation] : à éviter |
 
 Sur processeur, couper la réflexion et la génération des requêtes n'est pas un confort mais une condition d'usage. [Estimation]
 
@@ -93,7 +93,7 @@ Le modèle `chat` accepte 16 384 jetons par requête : consigne, passages, histo
 | reste pour l'historique d'une conversation | environ 12 800 [Estimation] (16 384 − 3 551) |
 
 - **Mode passages (par défaut)** : seuls « Top K » passages de 1 024 caractères au plus partent au modèle, quelle que soit la taille de la base. Le nombre de documents n'est donc pas limité par le contexte, seulement par le disque. [Source] (annexe [A5](A5-fonctionnement-interne.md))
-- **Mode texte intégral** (« Mode avec injection complète dans le contexte », [chapitre 08](../manuel/08-regler-la-lecture-des-documents.md)) : tout le texte des documents part au modèle. Place disponible : 16 384 − environ 500 de consigne − environ 4 000 réservés à la réflexion et à la réponse ≈ 11 800 jetons, soit environ 47 000 caractères à 4 caractères par jeton, une quinzaine de pages de 3 000 caractères. [Estimation] Le corpus d'essai entier (9 808 caractères lus par Docling, somme des lignes d'indexation du [journal du banc Docling](../../../outils/resultats/open-webui/banc-2026-11-13-docling-rerank.log)) tiendrait, soit environ 2 500 jetons. [Estimation] Non passé au banc. [À tester]
+- **Mode texte intégral** (« Mode avec injection complète dans le contexte », [chapitre 08](../manuel/08-regler-la-lecture-des-documents.md)) : tout le texte des documents part au modèle. Place disponible : 16 384 − environ 500 de consigne − environ 4 000 réservés à la réflexion et à la réponse = 11 884, soit environ 11 900 jetons, environ 47 500 caractères à 4 caractères par jeton, une quinzaine de pages de 3 000 caractères. [Estimation] Le corpus d'essai entier (9 808 caractères lus par Docling, somme des lignes d'indexation du [journal du banc Docling](../../../outils/resultats/open-webui/banc-2026-11-13-docling-rerank.log)) tiendrait, soit environ 2 500 jetons. [Estimation] Non passé au banc. [À tester]
 - **Réglage serré** (« Top K » 3) : il réduit le texte envoyé, mais perd deux réponses sur 34 (annexe [A1](A1-evaluation-qualite-et-performances.md#3-ce-qui-fait-réussir-ou-échouer)) ; avec 16 384 jetons, la place ne manque pas pour 10 passages : il n'est pas utile. [Vérifié] pour la perte ; [Estimation] pour la conclusion.
 
 ## 5. Modèles

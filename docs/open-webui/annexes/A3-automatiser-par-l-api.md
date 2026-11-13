@@ -19,7 +19,7 @@
 
 ## 1. L'API de l'instance
 
-[Source] Open WebUI expose une API REST sur la même adresse que l'interface (ici `http://127.0.0.1:3000`). La partie « conversation » suit le format d'OpenAI (`POST /api/chat/completions`, `GET /api/models`) : un programme écrit pour OpenAI peut s'y brancher en changeant l'adresse et la clé. Le reste (bases, fichiers, comptes, réglages) est propre à Open WebUI, sous `/api/v1/`. La documentation interactive de l'API (`/docs`) n'est servie qu'en mode développement (`main.py:558`) ; sur l'instance installée, `/docs` renvoie la page de l'interface. La liste des routes utiles est dans le relevé de cadrage.
+[Source] Open WebUI expose une API REST sur la même adresse que l'interface (ici `http://127.0.0.1:3000`). La partie « conversation » suit le format d'OpenAI (`POST /api/chat/completions`, `GET /api/models`) : un programme écrit pour OpenAI peut s'y brancher en changeant l'adresse et la clé. Le reste (bases, fichiers, comptes, réglages) est propre à Open WebUI, sous `/api/v1/`. La documentation interactive de l'API (`/docs`) n'est servie qu'en mode développement : `docs_url` n'est défini que si `ENV` vaut `dev` [Source] (`main.py:558`) ; ce que renvoie `/docs` sur l'instance installée n'a pas été relevé dans un résultat brut [À tester]. La liste des routes utiles est dans le relevé de cadrage.
 
 | Action | Route | Exemple |
 |---|---|---|
@@ -54,7 +54,7 @@ Les exemples Python n'utilisent que la bibliothèque standard ; les fonctions co
 
 ## 4. Exemples
 
-Toutes les questions sont posées avec `"chat_template_kwargs": {"enable_thinking": false}` : ce champ, inconnu d'Open WebUI, est transmis tel quel au service de modèles [Source] et coupe la phase de réflexion de `chat`. Les réponses arrivent alors en 1 à 2 secondes [Vérifié] ; avec la réflexion, compter de quelques secondes à une minute (annexe [A1](A1-evaluation-qualite-et-performances.md)).
+Toutes les questions sont posées avec `"chat_template_kwargs": {"enable_thinking": false}` : ce champ, inconnu d'Open WebUI, est transmis tel quel au service de modèles [Source] et coupe la phase de réflexion de `chat`. Les réponses arrivent alors en 1 à 2 secondes [Vérifié] ; avec la réflexion, compter jusqu'à deux minutes : 95 % des questions sous 71,1 à 119,5 s selon les bancs avec réflexion [Vérifié] (annexe [A1](A1-evaluation-qualite-et-performances.md), `latence_p95_s` des bancs `defaut-sans-rerank` à `serre`).
 
 ### 01. Lister les modèles (curl)
 
@@ -183,7 +183,7 @@ code 0
 6. **Réglages globaux.** [Source] Le nombre de passages, la recherche hybride et le reranker se règlent pour toute l'instance (chapitre 08, ou `POST /api/v1/retrieval/config/update` en administrateur) ; ils ne se passent pas question par question dans `/api/chat/completions`.
 7. **Flux.** [Source] Avec `"stream": true`, la réponse arrive en blocs `data: …` ; le premier bloc contient `sources`, les suivants le texte. Non utilisé dans les exemples. [À tester]
 
-[Estimation] Pour 1 000 questions par jour à 1,5 s chacune sans réflexion (exemples 04 et 05), le modèle est occupé environ 25 minutes (1 000 × 1,5 s = 1 500 s) ; les questions sont traitées l'une après l'autre par le service central, à prévoir si plusieurs scripts tournent en même temps.
+[Estimation] Pour 1 000 questions par jour à 1,5 s chacune sans réflexion (exemples 04 et 05), le modèle est occupé environ 25 minutes (1 000 × 1,5 s = 1 500 s) ; le service central traite plusieurs questions en même temps : 4 requêtes simultanées à 46 jetons/s chacune, 174 jetons/s cumulés, contre 68 jetons/s pour une requête seule [Source] (`~/mes_projets/Projet-IA/LLM-Service/README.md`, tableau des temps de réponse) ; plusieurs scripts en parallèle ralentissent donc chaque réponse sans la bloquer.
 
 ## 6. Outils du banc
 

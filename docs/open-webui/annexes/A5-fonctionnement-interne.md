@@ -38,16 +38,16 @@ Réseaux : `llm-net` (externe, créé par LLM-Service) relie Open WebUI au servi
 ## 2. Chemin d'un document
 
 1. Téléversement (`POST /api/v1/files/`) : fichier rangé dans `data/uploads/`. [Source]
-2. Lecture : moteur d'extraction choisi dans Réglages › Administrateur › Documents. Par défaut, chargeurs intégrés (PDF page par page, Word, PowerPoint, Excel, HTML, Markdown) ; audio transcrit par `transcribe`. Un PDF sans couche texte (scan) donne un contenu vide et l'ajout à une base est refusé (« The content provided is empty ») [Vérifié] `banc-2026-11-13-defaut-sans-rerank.log`. Avec Docling, le scan est lu par reconnaissance de caractères.
+2. Lecture : moteur d'extraction choisi dans Réglages › Administrateur › Documents. Par défaut, chargeurs intégrés (PDF page par page, Word, PowerPoint, Excel, HTML, Markdown) ; audio transcrit par `transcribe`. Un PDF sans couche texte (scan) donne un contenu vide et l'ajout à une base est refusé (« The content provided is empty ») [Vérifié] ([capture 05/08](../../../outils/resultats/open-webui/captures/05-bases-de-connaissances/08-scan-refuse.txt)) ; base du banc par défaut réduite à 8 documents sur 9 (champ `indexation` de `banc-2026-11-13-defaut-sans-rerank.json`). Avec Docling, le scan est lu par reconnaissance de caractères.
 3. Découpage : 1 024 caractères par passage, 100 de recouvrement, découpage par titres Markdown actif. [Vérifié] `retrieval-config-defaut-2026-11-13.json`
-4. Embeddings : `embed` (bge-m3, 1 024 dimensions) par lots de 4 (réglage de l'installation ; 1 par défaut). [Vérifié] `outils/open-webui/compose.yml`, `GET /api/v1/retrieval/embedding`
+4. Embeddings : `embed` (bge-m3, 1 024 dimensions) par lots de 4 (réglage de l'installation ; 1 par défaut). [Vérifié] `outils/open-webui/compose.yml` (`RAG_EMBEDDING_BATCH_SIZE: "4"`) et valeur relue par l'instance, `embedding.RAG_EMBEDDING_BATCH_SIZE` : 4 dans le champ `config` des six `banc-2026-11-13-*.json` ; valeur par défaut 1 [Source] ([cadrage-source-v0.13.3.md](../../../outils/resultats/open-webui/cadrage-source-v0.13.3.md), `config.py:1028-1030`)
 5. Stockage des vecteurs : Chroma, dans `data/vector_db/`, une collection par fichier et une par base. [Source]
 
 ## 3. Chemin d'une question
 
 Question posée avec une base attachée (« # » dans le chat, ou modèle personnalisé lié à la base) :
 
-1. **Réécriture de la requête** : le modèle de tâche (`chat` par défaut) reçoit la question et produit jusqu'à trois requêtes de recherche (« Génération de requêtes de récupération », active par défaut). Avec la réflexion de `chat`, cet appel prend une grande part du temps d'attente. [Vérifié] journal du conteneur, trois recherches par question ; [Source] `ENABLE_RETRIEVAL_QUERY_GENERATION`
+1. **Réécriture de la requête** : le modèle de tâche (`chat` par défaut) reçoit la question et produit plusieurs requêtes de recherche (« Génération de requête de RAG », active par défaut). Avec la réflexion de `chat`, cet appel prend une grande part du temps d'attente. [Vérifié] libellé : [capture 08/08](../../../outils/resultats/open-webui/captures/08-regler-la-lecture-des-documents/08-requetes.txt) ; 2 ou 3 requêtes par question dans le journal du conteneur (« Starting hybrid search for 2 queries », « … for 3 queries », [preuve-reranker-externe](../../../outils/resultats/open-webui/preuve-reranker-externe-2026-11-13.log)) ; [Source] `ENABLE_RETRIEVAL_QUERY_GENERATION` ([cadrage-source-v0.13.3.md](../../../outils/resultats/open-webui/cadrage-source-v0.13.3.md))
 2. **Recherche** : chaque requête est convertie par `embed` et comparée aux passages ; 10 passages retenus par défaut (« Top K »). Avec « Recherche hybride », une recherche par mots (BM25) est combinée à la recherche par le sens, puis `rerank` reclasse les passages (« Top K Reranker »). [Vérifié] `retrieval-config-defaut-2026-11-13.json` ; [Source] reranker externe
 3. **Réponse** : les passages sont insérés dans la consigne RAG (« Modèle RAG ») et envoyés à `chat`, qui répond avec des renvois `[1]`, `[2]`… La liste des sources (document, page, extrait, score) est jointe à la réponse. [Vérifié] `essai-minimal-api-2026-11-13.json`
 4. **Tâches de fond** dans l'interface : génération du titre, des étiquettes et des questions de suite, chacune par un appel au modèle de tâche. [Source]
@@ -63,13 +63,13 @@ Le service central accorde 16 384 jetons par requête à `chat` (consigne, passa
 | Passages | 10 × 1 024 caractères | environ 2 600 (1 jeton ≈ 4 caractères en français) |
 | Consigne RAG et question | — | environ 500 |
 | Historique | conversation entière | variable |
-| Réflexion et réponse | — | 1 000 à 5 000 observés |
+| Réflexion et réponse | — | 1 458 mesurés à Q01 [Vérifié] ; 4 000 réservés dans le calcul de l'annexe [A2](A2-choisir-son-materiel-et-ses-modeles.md) [Estimation] (marge pour une réflexion plus longue que celle de Q01) |
 
 Mesure : question Q01, 2 093 jetons envoyés, 1 458 jetons produits (réflexion comprise). [Vérifié] `essai-minimal-api-2026-11-13.json` (`usage`). Le budget est donc large pour une question isolée ; il se remplit avec un long historique ou le mode « texte intégral ».
 
 ## 5. Réglages : environnement et base
 
-Depuis la version 0.13, les réglages de l'instance sont gardés dans la base (table `config`) : les variables d'environnement du fichier compose ne sont lues qu'au premier démarrage, pour les clés absentes. Les changements faits ensuite dans l'interface sont conservés aux redémarrages. [Source] ; [Vérifié] valeurs du compose retrouvées par l'API après le premier démarrage (`GET /api/v1/retrieval/embedding`).
+En 0.13.3 [Source], les réglages de l'instance sont gardés dans la base (table `config`) : les variables d'environnement du fichier compose ne sont lues qu'au premier démarrage, pour les clés absentes. Les changements faits ensuite dans l'interface sont conservés aux redémarrages. [Source] ; [Vérifié] valeur du compose retrouvée par l'instance après le premier démarrage : `embedding.RAG_EMBEDDING_BATCH_SIZE` : 4 dans le champ `config` des `banc-2026-11-13-*.json`, alors que la valeur par défaut est 1.
 
 ## 6. Stockage
 
@@ -80,7 +80,7 @@ Depuis la version 0.13, les réglages de l'instance sont gardés dans la base (t
 | `vector_db/` | vecteurs Chroma |
 | `cache/` | modèles locaux éventuels (non utilisés ici) |
 
-[Source] ; taille mesurée dans l'annexe A4.
+[Source] ; taille mesurée dans l'annexe A4 (26 Mo en fin d'essais, [disque-donnees](../../../outils/resultats/open-webui/disque-donnees-2026-11-13.log)) [Vérifié].
 
 ## Dépannage
 

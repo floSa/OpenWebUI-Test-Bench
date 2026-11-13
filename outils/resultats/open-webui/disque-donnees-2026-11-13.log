@@ -1,0 +1,9 @@
+2026-11-13T16:49:02+01:00
+$ du -sh donnees/open-webui
+26M	donnees/open-webui
+$ du -sh donnees/open-webui/data
+26M	donnees/open-webui/data
+$ du -sh donnees/open-webui/data/uploads donnees/open-webui/data/vector_db donnees/open-webui/data/webui.db
+4.2M	donnees/open-webui/data/uploads
+19M	donnees/open-webui/data/vector_db
+1.4M	donnees/open-webui/data/webui.db
