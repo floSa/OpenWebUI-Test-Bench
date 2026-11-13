@@ -105,7 +105,7 @@ Sélectionner les huit fichiers autres que `contrat-batterix-scan.pdf` et clique
 | N° | Élément | Rôle |
 |---|---|---|
 | 1 | « Rechercher une collection » | filtre les fichiers par nom (« collection » est le nom technique d'une base de connaissances) ; l'icône à côté trie la liste |
-| 2 | « procedure-batteries.docx » | un fichier de la base, avec sa taille ; un clic ouvre son aperçu |
+| 2 | « procedure-batteries.docx » | un fichier de la base ; sa taille s'affiche une fois l'envoi terminé ; un clic ouvre son aperçu |
 
 *Résultat* : les huit fichiers sont listés sous « All files ». Tant qu'un fichier est en traitement, la mention « Téléversement en cours » s'affiche à sa place ; elle disparaît au bout de quelques secondes.
 

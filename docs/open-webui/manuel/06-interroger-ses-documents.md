@@ -23,7 +23,7 @@ Taper `#` (pastille 1) : la liste des bases accessibles s'ouvre. Cliquer sur « 
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | « # » | ouvre la liste à joindre : « Collections » désigne les bases de connaissances, puis viennent les notes et les fichiers |
+| 1 | « # » | ouvre la liste à joindre, par rubriques : « Dossiers » (dossiers de conversations), « Collections » (les bases de connaissances), puis les notes et les fichiers quand il y en a |
 | 2 | « Démo Vélanor » | base à interroger |
 
 *Résultat* : la base est jointe à la question.

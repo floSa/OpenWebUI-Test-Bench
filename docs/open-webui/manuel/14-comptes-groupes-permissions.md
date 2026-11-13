@@ -92,7 +92,7 @@ Saisir le nom `Équipe production` (pastille 3) et une description, puis cliquer
 *Où* : Panneau d'administration › « Utilisateurs » › « Groupes » › clic sur « Équipe production » › onglet « Permissions ».
 
 ![Permissions d'un groupe](../img/14-comptes-groupes-permissions/05-permissions.png)
-*Écran : fenêtre du groupe, onglet « Permissions ».*
+*Écran : onglet « Permissions » de la fenêtre du groupe (capture prise à la création du groupe, fenêtre « Ajouter un groupe d'utilisateurs » ; ouverte sur un groupe existant, la même fenêtre s'intitule « Modifier le groupe d'utilisateurs »).*
 
 | N° | Élément | Rôle |
 |---|---|---|
