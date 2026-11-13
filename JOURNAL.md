@@ -66,3 +66,9 @@ Mission : `kit/PROMPT.md` pour la fiche `kit/fiches/05-open-webui.md`. Une entr�
 - Relectures novice 2 à 5 : 23, 4, 5 puis **0 remarque** (cinquième lecteur : « Aucune remarque »). Corrections : renvois d'étapes, chemin Windows vers le corpus, relecture d'un document par retrait et remise (au lieu de « Réindexer »), captures 14/10 reprise après retrait du partage de `bge-m3`, légendes de captures prises à un autre moment, glossaire (Bearer, JSON, Collection, RAG, Skills, OpenAPI, Exploré, image).
 - Vérifications finales : `curl http://127.0.0.1:3000` → HTTP 200 (version 0.13.3) ; aucun port publié hors de 127.0.0.1 ; `verifier_docs.py` 0 point ; fichiers attendus présents. Instance laissée en marche (Open WebUI, Docling, serveur MCP d'essai ; automatisation en pause).
 - Mission terminée.
+
+### 2026-11-13 17:40 — Clôture : deux preuves non affichables
+
+- Contrôle `--essai` du début de session : fait à 08:56, sortie dans `outils/resultats/open-webui/sante-llm-central-2026-11-13-debut.log` (versé par `c9cd08c` à 09:00) ; la sortie d'origine n'est plus visible dans la conversation après la compaction du contexte. Relance de fin de session réussie (mêmes réponses).
+- Relecture novice : cinquième lecteur sans remarque, détail par chapitre (156 renvois de captures) ; trois captures tirées au hasard affichées (§10.8) ; l'affichage des 153 captures dans la conversation n'a pas été fait (taille du contexte).
+- Tous les autres critères de fin sont prouvés dans la conversation. Mission close de mon côté.
