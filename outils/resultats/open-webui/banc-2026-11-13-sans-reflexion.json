@@ -1,0 +1,3071 @@
+{
+  "date": "2026-11-13T15:23:11",
+  "solution": "Open WebUI",
+  "etiquette": "sans-reflexion",
+  "config": {
+    "url": "http://127.0.0.1:3000",
+    "base": "Banc-docling",
+    "modele": "chat",
+    "corps": "{\"chat_template_kwargs\": {\"enable_thinking\": false}}",
+    "taches": {
+      "TASK_MODEL": "",
+      "TASK_MODEL_PARAMS": {},
+      "ENABLE_RETRIEVAL_QUERY_GENERATION": false
+    },
+    "recherche": {
+      "TOP_K": 10,
+      "TOP_K_RERANKER": 10,
+      "RELEVANCE_THRESHOLD": 0,
+      "ENABLE_RAG_HYBRID_SEARCH": true,
+      "HYBRID_BM25_WEIGHT": 0.5,
+      "RAG_FULL_CONTEXT": false,
+      "BYPASS_EMBEDDING_AND_RETRIEVAL": false,
+      "CONTENT_EXTRACTION_ENGINE": "docling",
+      "DOCLING_SERVER_URL": "http://rag-docling-serve:5001",
+      "PDF_EXTRACT_IMAGES": false,
+      "PDF_LOADER_MODE": "page",
+      "RAG_RERANKING_ENGINE": "external",
+      "RAG_RERANKING_MODEL": "rerank",
+      "RAG_EXTERNAL_RERANKER_URL": "http://llm-central:8080/v1/rerank",
+      "TEXT_SPLITTER": "",
+      "CHUNK_SIZE": 1024,
+      "CHUNK_OVERLAP": 100
+    },
+    "embedding": {
+      "RAG_EMBEDDING_ENGINE": "openai",
+      "RAG_EMBEDDING_MODEL": "embed",
+      "RAG_EMBEDDING_BATCH_SIZE": 4
+    }
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "type": "tableau",
+      "question": "Quel est le chiffre d'affaires 2025 de Vélanor ?",
+      "attendu": [
+        "48,6"
+      ],
+      "latence_s": 1.68,
+      "erreur": null,
+      "reponse": "Le chiffre d'affaires de Vélanor pour l'année 2025 s'élève à **48,6 M€** [3]. Cela représente une augmentation de 12,4 % par rapport à l'année précédente.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "## 9. Perspectives 2026\nVélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.",
+          "score": 4.713183403015137
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": 4.063706874847412
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": 3.1317546367645264
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -0.8556931018829346
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": -1.255569338798523
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 1,
+          "extrait": "## Vélanor SAS - Rapport annuel 2025\nDocument fictif généré pour des essais. Toute ressemblance serait fortuite. Sommaire : 1. Mot de la présidente - 2. Chiffres clés - 3. Chiffre d'affaires trimestriel - 4. Production par modèle - 5. Effectifs - 6. Environnement - 7. Fournisseurs - 8. Risques - 9. ",
+          "score": -1.31546151638031
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 1,
+          "extrait": "# Objectifs 2026\n- Chiffre d'affaires visé : 55 M€\n- Part de l'export visée : 32 %\n- Marge nette visée : 7 %",
+          "score": -1.8372704982757568
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 4,
+          "extrait": "## 3. Chiffre d'affaires trimestriel\n| Trimestre   | Chiffre d'affaires (M€)   | Part du total   |\n|-------------|---------------------------|-----------------|\n| T1 2025     | 9,8                       | 20 %            |\n| T2 2025     | 13,7                      | 28 %            |\n| T3 2025     |",
+          "score": -2.050218105316162
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -2.805626153945923
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -3.870875597000122
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q02",
+      "type": "fait simple",
+      "question": "En quelle année Vélanor a-t-elle été fondée ?",
+      "attendu": [
+        "2014"
+      ],
+      "latence_s": 1.01,
+      "erreur": null,
+      "reponse": "Vélanor a été fondée en **2014** [1].",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": 4.566014289855957
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "## 9. Perspectives 2026\nVélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.",
+          "score": -4.760624408721924
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 1,
+          "extrait": "## Vélanor SAS - Rapport annuel 2025\nDocument fictif généré pour des essais. Toute ressemblance serait fortuite. Sommaire : 1. Mot de la présidente - 2. Chiffres clés - 3. Chiffre d'affaires trimestriel - 4. Production par modèle - 5. Effectifs - 6. Environnement - 7. Fournisseurs - 8. Risques - 9. ",
+          "score": -5.914666175842285
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -6.549052715301514
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": -6.685233116149902
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": -6.882774829864502
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -7.141424179077148
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -7.544088840484619
+        },
+        {
+          "document": "message-vocal-production.mp3",
+          "page": null,
+          "extrait": "Message vocale de Julien Moreau, directeur de production chez Vélanor, enregistrait le 3 novembre VVTSEC. La ligne d'assoblage numéro 3 de Nantes sera arrêtée du 2 au 6 mars VVTSI pour maintenance. Pendant cet arrêt, la production du loire urbain sera transférée sur la ligne. La Réunion de l'Osement",
+          "score": -9.565053939819336
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "## 7. Fournisseurs principaux\n| Composant   | Fournisseur   | Pays              |\n|-------------|---------------|-------------------|\n| Batteries   | Batterix GmbH | Allemagne (Brême) |\n| Moteurs     | Motodrive Co. | Taïwan            |\n| Freins      | Stopline      | Italie            |\n| Pneus   ",
+          "score": -10.558384895324707
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q03",
+      "type": "fait simple",
+      "question": "Qui est la présidente de Vélanor ?",
+      "attendu": [
+        "Marchais"
+      ],
+      "latence_s": 1.24,
+      "erreur": null,
+      "reponse": "La présidente de Vélanor est **Hélène Marchais** [1]. Elle dirige l'entreprise depuis 2019.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": 7.929503440856934
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -1.467851161956787
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -2.268930673599243
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 1,
+          "extrait": "## Vélanor SAS - Rapport annuel 2025\nDocument fictif généré pour des essais. Toute ressemblance serait fortuite. Sommaire : 1. Mot de la présidente - 2. Chiffres clés - 3. Chiffre d'affaires trimestriel - 4. Production par modèle - 5. Effectifs - 6. Environnement - 7. Fournisseurs - 8. Risques - 9. ",
+          "score": -2.7980852127075195
+        },
+        {
+          "document": "message-vocal-production.mp3",
+          "page": null,
+          "extrait": "Message vocale de Julien Moreau, directeur de production chez Vélanor, enregistrait le 3 novembre VVTSEC. La ligne d'assoblage numéro 3 de Nantes sera arrêtée du 2 au 6 mars VVTSI pour maintenance. Pendant cet arrêt, la production du loire urbain sera transférée sur la ligne. La Réunion de l'Osement",
+          "score": -4.482290267944336
+        },
+        {
+          "document": "cse-2025-10-14.md",
+          "page": null,
+          "extrait": "## Participants\nHélène Marchais (présidente), Sophie Le Gall (secrétaire du CSE), sept élus.",
+          "score": -4.730869770050049
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "## 9. Perspectives 2026\nVélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.",
+          "score": -5.267988204956055
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -6.8222198486328125
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": -6.854028701782227
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Peut-on remplacer soi-même la batterie ?\nOui, la batterie se retire avec la clé fournie. Seule une batterie d'origine Vélanor est couverte par la garantie.",
+          "score": -10.390656471252441
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q04",
+      "type": "fait simple",
+      "question": "Quelle est l'adresse du siège de Vélanor ?",
+      "attendu": [
+        "quai de la Fosse"
+      ],
+      "latence_s": 1.15,
+      "erreur": null,
+      "reponse": "Selon le document [1], le siège social de l'entreprise Vélanor est situé au **12 quai de la Fosse, à Nantes**.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": 6.573819160461426
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -0.7406940460205078
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "## 9. Perspectives 2026\nVélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.",
+          "score": -2.6725499629974365
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -4.135329723358154
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -4.283645153045654
+        },
+        {
+          "document": "message-vocal-production.mp3",
+          "page": null,
+          "extrait": "Message vocale de Julien Moreau, directeur de production chez Vélanor, enregistrait le 3 novembre VVTSEC. La ligne d'assoblage numéro 3 de Nantes sera arrêtée du 2 au 6 mars VVTSI pour maintenance. Pendant cet arrêt, la production du loire urbain sera transférée sur la ligne. La Réunion de l'Osement",
+          "score": -5.215038776397705
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "## 5. Effectifs par site\n| Site      | Activité               |   Salariés au 31/12/2025 |\n|-----------|------------------------|--------------------------|\n| Nantes    | siège et assemblage    |                      268 |\n| Cholet    | fabrication des cadres |                       97 |\n| Lyon     ",
+          "score": -5.47618293762207
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 1,
+          "extrait": "## Vélanor SAS - Rapport annuel 2025\nDocument fictif généré pour des essais. Toute ressemblance serait fortuite. Sommaire : 1. Mot de la présidente - 2. Chiffres clés - 3. Chiffre d'affaires trimestriel - 4. Production par modèle - 5. Effectifs - 6. Environnement - 7. Fournisseurs - 8. Risques - 9. ",
+          "score": -6.359428882598877
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": -6.702837944030762
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Comment joindre le service après-vente ?\nPar téléphone au 02 40 00 12 34, du lundi au vendredi de 9 h à 18 h, ou par le formulaire du site.",
+          "score": -9.529272079467773
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q05",
+      "type": "tableau",
+      "question": "Combien de salariés compte Vélanor au 31 décembre 2025 ?",
+      "attendu": [
+        "412"
+      ],
+      "latence_s": 13.11,
+      "erreur": null,
+      "reponse": "Selon les données du rapport annuel, le chiffre d'affaires était de 48,6 M€, avec une évolution de +12,4 % par rapport à l'année précédente. Le résultat net s'élevait à 3,1 M€, soit une augmentation de 0,6 M€. La production de vélos a atteint 61 800 unités, représentant une croissance de 9 %. Le nombre effectif au 31 décembre 2025 était de 412 salariés, ce qui correspond à une hausse de 38 emplois par rapport à la période précédente. De plus, la part des exportations s'est stabilisée à 27 %, avec une augmentation de 4 points. Le taux de retour sous garantie pour les vélos vendus était de 1,8 %.\n\nLes salaires moyens des employés s'élevaient à 36 ans, et 41 % des postes d'encadrement étaient occupés par des femmes. L'entreprise a également franchi le seuil de 60 000 vélos produits dans l'année pour la première fois. La production de cadres était réalisée à partir d'aluminium recyclé à 82 %, et la consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites d'ici 2030. Le taux de recyclage des batteries usagées collectées était de 96 %, grâce au partenariat avec la filière de collecte Recylo.\n\nLa relation commerciale avec Batterix GmbH, le fournisseur principal, était régie par un contrat d'approvisionnement n° BX-2025-117, conclue le 14 février 2025. Le contrat prévoyait une durée de trois ans à compter du 1er mars 2025, avec un volume minimal annuel de 40 000 batteries de référence BAT-48V-14Ah. Le prix unitaire était fixé à 212 euros HT, révisable une fois par an. Les délais de livraison étaient de 21 jours après la commande, et les pénalités de retard s'élevaient à 0,5 % du montant de la commande par jour de retard, plafonnées à 8 %. La garantie était de 5 ans ou 1 000 cycles de charge, au premier terme atteint. Les litiges devaient être portés devant le Tribunal de commerce de Nantes.\n\nLes auditeurs de qualité de Batterix GmbH ont réalisé un audit en juin 2025, avec une note globale de 87 sur 100. Deux non-conformités mineures ont été relevées : étiquetage incomplet des palettes et absence de bracelets anti-statique sur une station d'assemblage. Le taux de défaut mesuré des cellules était de 0,3 %. Le fournisseur a été approuvé pour une année supplémentaire. La prochaine audit devait avoir lieu en juin 2026.\n\nL'entreprise Vélanor SAS est située au 12 quai de la Fosse, à Nantes. Elle conçoit et assemble des vélos à assistance électrique depuis 2014. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les tensions sur les cellules de batterie. L'entreprise a franchi pour la première fois le seuil de 60 000 vélos produits dans l'année.\n\nLes sites principaux de Vélanor incluent Nantes (siège et assemblage), Cholet (fabrication des cadres), Lyon (agence commerciale) et Bruxelles (filiale Benelux). Le nombre effectif au 31 décembre 2025 était respectivement de 268, 97, 31 et 16.\n\nEn résumé, Vélanor compte **412 salariés** au 31 décembre 2025.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": 3.5562806129455566
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "## 9. Perspectives 2026\nVélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.",
+          "score": 2.0297255516052246
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": 1.9025852680206299
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "## 5. Effectifs par site\n| Site      | Activité               |   Salariés au 31/12/2025 |\n|-----------|------------------------|--------------------------|\n| Nantes    | siège et assemblage    |                      268 |\n| Cholet    | fabrication des cadres |                       97 |\n| Lyon     ",
+          "score": -1.2786753177642822
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 1,
+          "extrait": "## Vélanor SAS - Rapport annuel 2025\nDocument fictif généré pour des essais. Toute ressemblance serait fortuite. Sommaire : 1. Mot de la présidente - 2. Chiffres clés - 3. Chiffre d'affaires trimestriel - 4. Production par modèle - 5. Effectifs - 6. Environnement - 7. Fournisseurs - 8. Risques - 9. ",
+          "score": -2.7976016998291016
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": -2.9184861183166504
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -3.4208879470825195
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -3.7320666313171387
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -4.841550827026367
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Peut-on remplacer soi-même la batterie ?\nOui, la batterie se retire avec la clé fournie. Seule une batterie d'origine Vélanor est couverte par la garantie.",
+          "score": -9.847677230834961
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q06",
+      "type": "tableau",
+      "question": "Quel a été le chiffre d'affaires du troisième trimestre 2025 ?",
+      "attendu": [
+        "14,2"
+      ],
+      "latence_s": 1.29,
+      "erreur": null,
+      "reponse": "Le chiffre d'affaires du troisième trimestre (T3) 2025 a été de **14,2 millions d'euros**, soit 29 % de la part dans le total annuel [1].",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 4,
+          "extrait": "## 3. Chiffre d'affaires trimestriel\n| Trimestre   | Chiffre d'affaires (M€)   | Part du total   |\n|-------------|---------------------------|-----------------|\n| T1 2025     | 9,8                       | 20 %            |\n| T2 2025     | 13,7                      | 28 %            |\n| T3 2025     |",
+          "score": 5.112403869628906
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": 0.43690311908721924
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 1,
+          "extrait": "# Objectifs 2026\n- Chiffre d'affaires visé : 55 M€\n- Part de l'export visée : 32 %\n- Marge nette visée : 7 %",
+          "score": -2.0805273056030273
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "## 5. Effectifs par site\n| Site      | Activité               |   Salariés au 31/12/2025 |\n|-----------|------------------------|--------------------------|\n| Nantes    | siège et assemblage    |                      268 |\n| Cholet    | fabrication des cadres |                       97 |\n| Lyon     ",
+          "score": -4.321423530578613
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 1,
+          "extrait": "## Vélanor SAS - Rapport annuel 2025\nDocument fictif généré pour des essais. Toute ressemblance serait fortuite. Sommaire : 1. Mot de la présidente - 2. Chiffres clés - 3. Chiffre d'affaires trimestriel - 4. Production par modèle - 5. Effectifs - 6. Environnement - 7. Fournisseurs - 8. Risques - 9. ",
+          "score": -5.022751331329346
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": -5.203895568847656
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "## 9. Perspectives 2026\nVélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.",
+          "score": -5.281586647033691
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "## 7. Fournisseurs principaux\n| Composant   | Fournisseur   | Pays              |\n|-------------|---------------|-------------------|\n| Batteries   | Batterix GmbH | Allemagne (Brême) |\n| Moteurs     | Motodrive Co. | Taïwan            |\n| Freins      | Stopline      | Italie            |\n| Pneus   ",
+          "score": -6.509606838226318
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -6.710197925567627
+        },
+        {
+          "document": "cse-2025-10-14.md",
+          "page": null,
+          "extrait": "## Décisions\n- Prime d'intéressement 2025 : 1 150 euros par salarié, versée en avril 2026.\n- Télétravail : jusqu'à 2 jours par semaine pour les postes compatibles.\n- Le nouveau restaurant d'entreprise du site de Nantes ouvrira en janvier 2026.",
+          "score": -7.76171875
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q07",
+      "type": "tableau",
+      "question": "Combien d'unités du modèle Sèvre Trail ont été produites en 2025 ?",
+      "attendu": [
+        "15 400"
+      ],
+      "latence_s": 1.19,
+      "erreur": null,
+      "reponse": "15 400 unités du modèle Sèvre Trail ont été produites en 2025 [1].",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 5,
+          "extrait": "## 4. Production par modèle\n| Modèle      | Usage   | Unités produites   | Prix public TTC   |\n|-------------|---------|--------------------|-------------------|\n| Loire Urban | ville   | 24 300             | 1 890 €           |\n| Sèvre Trail | VTT     | 15 400             | 3 150 €           |\n| Br",
+          "score": -0.8544517755508423
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": -3.1715216636657715
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": -3.3221328258514404
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 4,
+          "extrait": "## 3. Chiffre d'affaires trimestriel\n| Trimestre   | Chiffre d'affaires (M€)   | Part du total   |\n|-------------|---------------------------|-----------------|\n| T1 2025     | 9,8                       | 20 %            |\n| T2 2025     | 13,7                      | 28 %            |\n| T3 2025     |",
+          "score": -5.542679786682129
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 1,
+          "extrait": "## Vélanor SAS - Rapport annuel 2025\nDocument fictif généré pour des essais. Toute ressemblance serait fortuite. Sommaire : 1. Mot de la présidente - 2. Chiffres clés - 3. Chiffre d'affaires trimestriel - 4. Production par modèle - 5. Effectifs - 6. Environnement - 7. Fournisseurs - 8. Risques - 9. ",
+          "score": -5.64518404006958
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 1,
+          "extrait": "# Objectifs 2026\n- Chiffre d'affaires visé : 55 M€\n- Part de l'export visée : 32 %\n- Marge nette visée : 7 %",
+          "score": -6.4416913986206055
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": -6.690762519836426
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "## 9. Perspectives 2026\nVélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.",
+          "score": -7.174136638641357
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 3,
+          "extrait": "# Usine de Saint-Nazaire\n- Ouverture en septembre 2026\n- Capacité : 25 000 vélos par an\n- Investissement : 14 M€",
+          "score": -7.7874555587768555
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 2,
+          "extrait": "# Nouveau modèle\n- Vilaine Compact : vélo pliant électrique\n- Lancement en avril 2026\n- Prix public : 2 490 € TTC",
+          "score": -8.021318435668945
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q08",
+      "type": "tableau",
+      "question": "Quel est le prix public du modèle Erdre Cargo ?",
+      "attendu": [
+        "4 290"
+      ],
+      "latence_s": 1.49,
+      "erreur": null,
+      "reponse": "Le prix public TTC du modèle **Erdre Cargo** est de **4 290 €**.\n\nCette information provient des données de production par modèle fournies dans le rapport [1].",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 5,
+          "extrait": "## 4. Production par modèle\n| Modèle      | Usage   | Unités produites   | Prix public TTC   |\n|-------------|---------|--------------------|-------------------|\n| Loire Urban | ville   | 24 300             | 1 890 €           |\n| Sèvre Trail | VTT     | 15 400             | 3 150 €           |\n| Br",
+          "score": 4.452025413513184
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 2,
+          "extrait": "# Nouveau modèle\n- Vilaine Compact : vélo pliant électrique\n- Lancement en avril 2026\n- Prix public : 2 490 € TTC",
+          "score": -3.919628620147705
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": -9.329769134521484
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "## 9. Perspectives 2026\nVélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.",
+          "score": -9.452217102050781
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -9.482895851135254
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 1,
+          "extrait": "# Objectifs 2026\n- Chiffre d'affaires visé : 55 M€\n- Part de l'export visée : 32 %\n- Marge nette visée : 7 %",
+          "score": -9.753817558288574
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 1,
+          "extrait": "## Vélanor SAS - Rapport annuel 2025\nDocument fictif généré pour des essais. Toute ressemblance serait fortuite. Sommaire : 1. Mot de la présidente - 2. Chiffres clés - 3. Chiffre d'affaires trimestriel - 4. Production par modèle - 5. Effectifs - 6. Environnement - 7. Fournisseurs - 8. Risques - 9. ",
+          "score": -9.80643081665039
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -9.918600082397461
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quelle est la durée de la garantie ?\nLe cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans.",
+          "score": -10.3177490234375
+        },
+        {
+          "document": "cse-2025-10-14.md",
+          "page": null,
+          "extrait": "## Décisions\n- Prime d'intéressement 2025 : 1 150 euros par salarié, versée en avril 2026.\n- Télétravail : jusqu'à 2 jours par semaine pour les postes compatibles.\n- Le nouveau restaurant d'entreprise du site de Nantes ouvrira en janvier 2026.",
+          "score": -10.385892868041992
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q09",
+      "type": "tableau",
+      "question": "Combien de salariés travaillent sur le site de Cholet ?",
+      "attendu": [
+        "97"
+      ],
+      "latence_s": 1.02,
+      "erreur": null,
+      "reponse": "Selon les données fournies, il y a **97 salariés** au sein du site de Cholet [1].",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "## 5. Effectifs par site\n| Site      | Activité               |   Salariés au 31/12/2025 |\n|-----------|------------------------|--------------------------|\n| Nantes    | siège et assemblage    |                      268 |\n| Cholet    | fabrication des cadres |                       97 |\n| Lyon     ",
+          "score": 2.140106439590454
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": -6.0016889572143555
+        },
+        {
+          "document": "cse-2025-10-14.md",
+          "page": null,
+          "extrait": "## Décisions\n- Prime d'intéressement 2025 : 1 150 euros par salarié, versée en avril 2026.\n- Télétravail : jusqu'à 2 jours par semaine pour les postes compatibles.\n- Le nouveau restaurant d'entreprise du site de Nantes ouvrira en janvier 2026.",
+          "score": -8.21023941040039
+        },
+        {
+          "document": "cse-2025-10-14.md",
+          "page": null,
+          "extrait": "## Points reportés\nLa question des horaires d'été de l'atelier de Cholet est reportée à la réunion de décembre.",
+          "score": -8.625022888183594
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "## 9. Perspectives 2026\nVélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.",
+          "score": -8.793360710144043
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 4,
+          "extrait": "## 3. Chiffre d'affaires trimestriel\n| Trimestre   | Chiffre d'affaires (M€)   | Part du total   |\n|-------------|---------------------------|-----------------|\n| T1 2025     | 9,8                       | 20 %            |\n| T2 2025     | 13,7                      | 28 %            |\n| T3 2025     |",
+          "score": -8.956266403198242
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -9.243369102478027
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Comment joindre le service après-vente ?\nPar téléphone au 02 40 00 12 34, du lundi au vendredi de 9 h à 18 h, ou par le formulaire du site.",
+          "score": -10.55998420715332
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 3,
+          "extrait": "# Usine de Saint-Nazaire\n- Ouverture en septembre 2026\n- Capacité : 25 000 vélos par an\n- Investissement : 14 M€",
+          "score": -10.835783004760742
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": -10.927779197692871
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q10",
+      "type": "fait simple",
+      "question": "Quelle est la part d'aluminium recyclé dans les cadres ?",
+      "attendu": [
+        "82"
+      ],
+      "latence_s": 0.97,
+      "erreur": null,
+      "reponse": "La part d'aluminium recyclé dans les cadres est de **82 %** [1].",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": 6.3520827293396
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -4.712606906890869
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "## 5. Effectifs par site\n| Site      | Activité               |   Salariés au 31/12/2025 |\n|-----------|------------------------|--------------------------|\n| Nantes    | siège et assemblage    |                      268 |\n| Cholet    | fabrication des cadres |                       97 |\n| Lyon     ",
+          "score": -7.439348220825195
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "## 8. Risques\nLes principaux risques identifiés sont la pénurie de cellules lithium-ion, la hausse du prix de l'aluminium et la concurrence des marques asiatiques à bas prix. Un stock de sécurité de batteries a été mis en place. Le risque de change concerne surtout les achats de moteurs, réglés en d",
+          "score": -9.133804321289062
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quelle est la durée de la garantie ?\nLe cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans.",
+          "score": -10.087336540222168
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": -10.135427474975586
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -10.726930618286133
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 1. Stockage\nLes batteries sont stockées entre 10 °C et 25 °C, dans le local B2 équipé d'une détection incendie.\nPour un stockage de plus de 30 jours, la charge est ramenée à 80 % au maximum.",
+          "score": -10.849050521850586
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 4,
+          "extrait": "# Export\n- Allemagne : croissance visée de 30 %\n- Pays-Bas : ouverture d'un showroom à Utrecht",
+          "score": -10.987204551696777
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -11.019471168518066
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q11",
+      "type": "fait simple",
+      "question": "Quel est le taux de recyclage des batteries usagées ?",
+      "attendu": [
+        "96"
+      ],
+      "latence_s": 1.15,
+      "erreur": null,
+      "reponse": "Le taux de recyclage des batteries usagées collectées atteint **96 %**. Cet objectif est rendu possible grâce au partenariat avec la filière de collecte Recylo [1].",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": 4.493561267852783
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 1. Stockage\nLes batteries sont stockées entre 10 °C et 25 °C, dans le local B2 équipé d'une détection incendie.\nPour un stockage de plus de 30 jours, la charge est ramenée à 80 % au maximum.",
+          "score": -2.7728989124298096
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -5.344343185424805
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -6.1461896896362305
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -6.359077453613281
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "# Procédure PR-SEC-04 — Charge et stockage des batteries\nResponsable de la procédure : Karim Benali, responsable HSE. Version 3 du 1er septembre 2025.",
+          "score": -6.66891622543335
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 2. Charge\nLa charge se fait uniquement sur les postes équipés d'un chargeur homologué, sous surveillance.\nUne batterie gonflée ou chaude est isolée immédiatement dans le bac sable du local B2.",
+          "score": -7.440533638000488
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "## 8. Risques\nLes principaux risques identifiés sont la pénurie de cellules lithium-ion, la hausse du prix de l'aluminium et la concurrence des marques asiatiques à bas prix. Un stock de sécurité de batteries a été mis en place. Le risque de change concerne surtout les achats de moteurs, réglés en d",
+          "score": -7.68328332901001
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": -8.155452728271484
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quelle est la durée de la garantie ?\nLe cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans.",
+          "score": -9.870048522949219
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q12",
+      "type": "tableau",
+      "question": "Quel fournisseur livre les moteurs et dans quel pays est-il installé ?",
+      "attendu": [
+        "Motodrive",
+        "Taïwan|Taiwan"
+      ],
+      "latence_s": 1.02,
+      "erreur": null,
+      "reponse": "Le fournisseur des moteurs est **Motodrive Co.** [2], qui est installé au **Taïwan** [1].",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "## 7. Fournisseurs principaux\n| Composant   | Fournisseur   | Pays              |\n|-------------|---------------|-------------------|\n| Batteries   | Batterix GmbH | Allemagne (Brême) |\n| Moteurs     | Motodrive Co. | Taïwan            |\n| Freins      | Stopline      | Italie            |\n| Pneus   ",
+          "score": -1.1140635013580322
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -6.204738140106201
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "## 8. Risques\nLes principaux risques identifiés sont la pénurie de cellules lithium-ion, la hausse du prix de l'aluminium et la concurrence des marques asiatiques à bas prix. Un stock de sécurité de batteries a été mis en place. Le risque de change concerne surtout les achats de moteurs, réglés en d",
+          "score": -7.600053787231445
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -7.740729808807373
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -8.009629249572754
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Motodrive Co. | Moteurs     |                             45 |\n| Stopline      | Freins      |                             12 |\n| Gomma Ouest   | Pneus       |                              6 |",
+          "score": -8.066762924194336
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -8.697540283203125
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": -9.118553161621094
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quelle est la durée de la garantie ?\nLe cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans.",
+          "score": -10.097824096679688
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Comment joindre le service après-vente ?\nPar téléphone au 02 40 00 12 34, du lundi au vendredi de 9 h à 18 h, ou par le formulaire du site.",
+          "score": -10.603803634643555
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q13",
+      "type": "tableau",
+      "question": "Quel résultat net Vélanor a-t-elle dégagé en 2025 ?",
+      "attendu": [
+        "3,1"
+      ],
+      "latence_s": 1.34,
+      "erreur": null,
+      "reponse": "En 2025, le résultat net de Vélanor s'est élevé à **3,1 M€**, soit une augmentation de 0,6 M€ par rapport à l'année précédente [1].",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": 2.689821720123291
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": 1.4795987606048584
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": 1.3134902715682983
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "## 9. Perspectives 2026\nVélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.",
+          "score": -0.03206735849380493
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 1,
+          "extrait": "## Vélanor SAS - Rapport annuel 2025\nDocument fictif généré pour des essais. Toute ressemblance serait fortuite. Sommaire : 1. Mot de la présidente - 2. Chiffres clés - 3. Chiffre d'affaires trimestriel - 4. Production par modèle - 5. Effectifs - 6. Environnement - 7. Fournisseurs - 8. Risques - 9. ",
+          "score": -1.4786591529846191
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -2.2383384704589844
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -2.322291374206543
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 4,
+          "extrait": "## 3. Chiffre d'affaires trimestriel\n| Trimestre   | Chiffre d'affaires (M€)   | Part du total   |\n|-------------|---------------------------|-----------------|\n| T1 2025     | 9,8                       | 20 %            |\n| T2 2025     | 13,7                      | 28 %            |\n| T3 2025     |",
+          "score": -2.880051612854004
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 1,
+          "extrait": "# Objectifs 2026\n- Chiffre d'affaires visé : 55 M€\n- Part de l'export visée : 32 %\n- Marge nette visée : 7 %",
+          "score": -5.275639533996582
+        },
+        {
+          "document": "cse-2025-10-14.md",
+          "page": null,
+          "extrait": "## Décisions\n- Prime d'intéressement 2025 : 1 150 euros par salarié, versée en avril 2026.\n- Télétravail : jusqu'à 2 jours par semaine pour les postes compatibles.\n- Le nouveau restaurant d'entreprise du site de Nantes ouvrira en janvier 2026.",
+          "score": -7.586393356323242
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q14",
+      "type": "fait simple",
+      "question": "Quel est le taux de retour sous garantie ?",
+      "attendu": [
+        "1,8"
+      ],
+      "latence_s": 1.03,
+      "erreur": null,
+      "reponse": "Le taux de retour sous garantie s'établit à **1,8 %** des vélos vendus [1].",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": 0.8203922510147095
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -5.258693695068359
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 4,
+          "extrait": "## 3. Chiffre d'affaires trimestriel\n| Trimestre   | Chiffre d'affaires (M€)   | Part du total   |\n|-------------|---------------------------|-----------------|\n| T1 2025     | 9,8                       | 20 %            |\n| T2 2025     | 13,7                      | 28 %            |\n| T3 2025     |",
+          "score": -7.386510372161865
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quelle est la durée de la garantie ?\nLe cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans.",
+          "score": -8.124163627624512
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 1. Stockage\nLes batteries sont stockées entre 10 °C et 25 °C, dans le local B2 équipé d'une détection incendie.\nPour un stockage de plus de 30 jours, la charge est ramenée à 80 % au maximum.",
+          "score": -8.80616569519043
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -9.218371391296387
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -9.394471168518066
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quel est le délai de réparation ?\nUne réparation en atelier prend 10 jours ouvrés en moyenne. Le diagnostic est gratuit.",
+          "score": -9.832883834838867
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 1,
+          "extrait": "# Objectifs 2026\n- Chiffre d'affaires visé : 55 M€\n- Part de l'export visée : 32 %\n- Marge nette visée : 7 %",
+          "score": -9.984796524047852
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -10.048622131347656
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q15",
+      "type": "scan",
+      "question": "Quel est le prix unitaire des batteries prévu par le contrat avec Batterix ?",
+      "attendu": [
+        "212"
+      ],
+      "latence_s": 2.16,
+      "erreur": null,
+      "reponse": "Le prix unitaire des batteries dans le contrat d'approvisionnement signé avec Batterix est de **212 euros HT** (hors taxes).\n\nCette information figure à l'article 4 - Prix du document contractuel [1].",
+      "citations": [
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": 4.993756294250488
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "## 7. Fournisseurs principaux\n| Composant   | Fournisseur   | Pays              |\n|-------------|---------------|-------------------|\n| Batteries   | Batterix GmbH | Allemagne (Brême) |\n| Moteurs     | Motodrive Co. | Taïwan            |\n| Freins      | Stopline      | Italie            |\n| Pneus   ",
+          "score": -1.8431777954101562
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -2.685206413269043
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -4.433257579803467
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -4.891298294067383
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "## 8. Risques\nLes principaux risques identifiés sont la pénurie de cellules lithium-ion, la hausse du prix de l'aluminium et la concurrence des marques asiatiques à bas prix. Un stock de sécurité de batteries a été mis en place. Le risque de change concerne surtout les achats de moteurs, réglés en d",
+          "score": -7.573359489440918
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 1. Stockage\nLes batteries sont stockées entre 10 °C et 25 °C, dans le local B2 équipé d'une détection incendie.\nPour un stockage de plus de 30 jours, la charge est ramenée à 80 % au maximum.",
+          "score": -8.2059326171875
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 5,
+          "extrait": "## 4. Production par modèle\n| Modèle      | Usage   | Unités produites   | Prix public TTC   |\n|-------------|---------|--------------------|-------------------|\n| Loire Urban | ville   | 24 300             | 1 890 €           |\n| Sèvre Trail | VTT     | 15 400             | 3 150 €           |\n| Br",
+          "score": -8.299814224243164
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 2,
+          "extrait": "# Nouveau modèle\n- Vilaine Compact : vélo pliant électrique\n- Lancement en avril 2026\n- Prix public : 2 490 € TTC",
+          "score": -8.512235641479492
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quelle est la durée de la garantie ?\nLe cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans.",
+          "score": -8.692584037780762
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q16",
+      "type": "scan",
+      "question": "Quel est le délai de livraison prévu par le contrat Batterix ?",
+      "attendu": [
+        "21"
+      ],
+      "latence_s": 3.09,
+      "erreur": null,
+      "reponse": "Le délai de livraison prévu pour l'achat des batteries auprès du fournisseur Batterix est de **21 jours** après la commande.\n\nCela s'applique au cadre de l'**Article 5** du contrat d'approvisionnement [1].\n\nPour faire le lien avec les données opérationnelles, un tableau indiquant les délais moyens constatés (source [3]) montre que pour Batterix GmbH, le délai moyen constaté est de **24 jours**. Cela signifie qu'il y a actuellement un léger écart entre l'échéance contractuelle (21 jours) et la réalité observée (24 jours).\n\n**Résumé :**\n*   **Délai contractuel :** 21 jours [1].\n*   **Délai moyen constaté :** 24 jours [3].",
+      "citations": [
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": 2.9814438819885254
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": 0.5258123874664307
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "## 7. Fournisseurs principaux\n| Composant   | Fournisseur   | Pays              |\n|-------------|---------------|-------------------|\n| Batteries   | Batterix GmbH | Allemagne (Brême) |\n| Moteurs     | Motodrive Co. | Taïwan            |\n| Freins      | Stopline      | Italie            |\n| Pneus   ",
+          "score": -0.1444016993045807
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -1.557003378868103
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -3.9348738193511963
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quelle est la durée de la garantie ?\nLe cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans.",
+          "score": -6.587479591369629
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 1. Stockage\nLes batteries sont stockées entre 10 °C et 25 °C, dans le local B2 équipé d'une détection incendie.\nPour un stockage de plus de 30 jours, la charge est ramenée à 80 % au maximum.",
+          "score": -7.973767280578613
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "# Procédure PR-SEC-04 — Charge et stockage des batteries\nResponsable de la procédure : Karim Benali, responsable HSE. Version 3 du 1er septembre 2025.",
+          "score": -8.061565399169922
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quel est le délai de réparation ?\nUne réparation en atelier prend 10 jours ouvrés en moyenne. Le diagnostic est gratuit.",
+          "score": -8.128637313842773
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "## 8. Risques\nLes principaux risques identifiés sont la pénurie de cellules lithium-ion, la hausse du prix de l'aluminium et la concurrence des marques asiatiques à bas prix. Un stock de sécurité de batteries a été mis en place. Le risque de change concerne surtout les achats de moteurs, réglés en d",
+          "score": -9.239151000976562
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q17",
+      "type": "scan",
+      "question": "Quel est le plafond des pénalités de retard du contrat Batterix ?",
+      "attendu": [
+        "8"
+      ],
+      "latence_s": 1.09,
+      "erreur": null,
+      "reponse": "Le contrat stipule que le montant des pénalités de retard est plafonné à **8 %** du montant de la commande [1].",
+      "citations": [
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": 2.4722213745117188
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -2.2575578689575195
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -3.4821341037750244
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "## 7. Fournisseurs principaux\n| Composant   | Fournisseur   | Pays              |\n|-------------|---------------|-------------------|\n| Batteries   | Batterix GmbH | Allemagne (Brême) |\n| Moteurs     | Motodrive Co. | Taïwan            |\n| Freins      | Stopline      | Italie            |\n| Pneus   ",
+          "score": -3.5086236000061035
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -3.9730775356292725
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quelle est la durée de la garantie ?\nLe cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans.",
+          "score": -8.03703498840332
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 1. Stockage\nLes batteries sont stockées entre 10 °C et 25 °C, dans le local B2 équipé d'une détection incendie.\nPour un stockage de plus de 30 jours, la charge est ramenée à 80 % au maximum.",
+          "score": -8.13449764251709
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "# Procédure PR-SEC-04 — Charge et stockage des batteries\nResponsable de la procédure : Karim Benali, responsable HSE. Version 3 du 1er septembre 2025.",
+          "score": -9.145088195800781
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "## 8. Risques\nLes principaux risques identifiés sont la pénurie de cellules lithium-ion, la hausse du prix de l'aluminium et la concurrence des marques asiatiques à bas prix. Un stock de sécurité de batteries a été mis en place. Le risque de change concerne surtout les achats de moteurs, réglés en d",
+          "score": -9.29145622253418
+        },
+        {
+          "document": "cse-2025-10-14.md",
+          "page": null,
+          "extrait": "## Décisions\n- Prime d'intéressement 2025 : 1 150 euros par salarié, versée en avril 2026.\n- Télétravail : jusqu'à 2 jours par semaine pour les postes compatibles.\n- Le nouveau restaurant d'entreprise du site de Nantes ouvrira en janvier 2026.",
+          "score": -10.023635864257812
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q18",
+      "type": "scan",
+      "question": "Quel volume minimal annuel de batteries le contrat Batterix prévoit-il ?",
+      "attendu": [
+        "40 000"
+      ],
+      "latence_s": 1.17,
+      "erreur": null,
+      "reponse": "Le contrat d'approvisionnement n° BX-2025-117 prévoit un volume minimal annuel de **40 000 batteries** [1].",
+      "citations": [
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": 5.07070255279541
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "## 7. Fournisseurs principaux\n| Composant   | Fournisseur   | Pays              |\n|-------------|---------------|-------------------|\n| Batteries   | Batterix GmbH | Allemagne (Brême) |\n| Moteurs     | Motodrive Co. | Taïwan            |\n| Freins      | Stopline      | Italie            |\n| Pneus   ",
+          "score": -1.411684513092041
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -2.920644998550415
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -4.178254127502441
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -4.288859844207764
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quelle est la durée de la garantie ?\nLe cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans.",
+          "score": -7.7883453369140625
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 1. Stockage\nLes batteries sont stockées entre 10 °C et 25 °C, dans le local B2 équipé d'une détection incendie.\nPour un stockage de plus de 30 jours, la charge est ramenée à 80 % au maximum.",
+          "score": -7.7946014404296875
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "## 8. Risques\nLes principaux risques identifiés sont la pénurie de cellules lithium-ion, la hausse du prix de l'aluminium et la concurrence des marques asiatiques à bas prix. Un stock de sécurité de batteries a été mis en place. Le risque de change concerne surtout les achats de moteurs, réglés en d",
+          "score": -8.494912147521973
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "# Procédure PR-SEC-04 — Charge et stockage des batteries\nResponsable de la procédure : Karim Benali, responsable HSE. Version 3 du 1er septembre 2025.",
+          "score": -8.752609252929688
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": -8.901018142700195
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q19",
+      "type": "fait simple",
+      "question": "À quelle température les batteries doivent-elles être stockées ?",
+      "attendu": [
+        "10",
+        "25"
+      ],
+      "latence_s": 1.45,
+      "erreur": null,
+      "reponse": "Les batteries doivent être stockées entre **10 °C et 25 °C** [1]. De plus, en cas de stockage supérieur à 30 jours, la charge des batteries doit être ramenée à un maximum de 80 % [1].",
+      "citations": [
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 1. Stockage\nLes batteries sont stockées entre 10 °C et 25 °C, dans le local B2 équipé d'une détection incendie.\nPour un stockage de plus de 30 jours, la charge est ramenée à 80 % au maximum.",
+          "score": 5.404343605041504
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -7.876595497131348
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "# Procédure PR-SEC-04 — Charge et stockage des batteries\nResponsable de la procédure : Karim Benali, responsable HSE. Version 3 du 1er septembre 2025.",
+          "score": -7.918214797973633
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "## 8. Risques\nLes principaux risques identifiés sont la pénurie de cellules lithium-ion, la hausse du prix de l'aluminium et la concurrence des marques asiatiques à bas prix. Un stock de sécurité de batteries a été mis en place. Le risque de change concerne surtout les achats de moteurs, réglés en d",
+          "score": -8.740219116210938
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -8.942004203796387
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -9.076580047607422
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 2. Charge\nLa charge se fait uniquement sur les postes équipés d'un chargeur homologué, sous surveillance.\nUne batterie gonflée ou chaude est isolée immédiatement dans le bac sable du local B2.",
+          "score": -9.099607467651367
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "## 7. Fournisseurs principaux\n| Composant   | Fournisseur   | Pays              |\n|-------------|---------------|-------------------|\n| Batteries   | Batterix GmbH | Allemagne (Brême) |\n| Moteurs     | Motodrive Co. | Taïwan            |\n| Freins      | Stopline      | Italie            |\n| Pneus   ",
+          "score": -9.754562377929688
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quelle est la durée de la garantie ?\nLe cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans.",
+          "score": -10.254444122314453
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -10.3157958984375
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": null
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q20",
+      "type": "fait simple",
+      "question": "Qui est responsable de la procédure de charge et de stockage des batteries ?",
+      "attendu": [
+        "Benali"
+      ],
+      "latence_s": 1.33,
+      "erreur": null,
+      "reponse": "La responsabilité de la procédure de charge et de stockage des batteries (Procédure PR-SEC-04) incombait à Karim Benali, responsable HSE [1].",
+      "citations": [
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "# Procédure PR-SEC-04 — Charge et stockage des batteries\nResponsable de la procédure : Karim Benali, responsable HSE. Version 3 du 1er septembre 2025.",
+          "score": 6.036338806152344
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 1. Stockage\nLes batteries sont stockées entre 10 °C et 25 °C, dans le local B2 équipé d'une détection incendie.\nPour un stockage de plus de 30 jours, la charge est ramenée à 80 % au maximum.",
+          "score": -1.3152127265930176
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 2. Charge\nLa charge se fait uniquement sur les postes équipés d'un chargeur homologué, sous surveillance.\nUne batterie gonflée ou chaude est isolée immédiatement dans le bac sable du local B2.",
+          "score": -2.6944334506988525
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "## 8. Risques\nLes principaux risques identifiés sont la pénurie de cellules lithium-ion, la hausse du prix de l'aluminium et la concurrence des marques asiatiques à bas prix. Un stock de sécurité de batteries a été mis en place. Le risque de change concerne surtout les achats de moteurs, réglés en d",
+          "score": -5.11283016204834
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -6.0868072509765625
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -6.243772029876709
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -6.521030426025391
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -6.529466152191162
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "## 7. Fournisseurs principaux\n| Composant   | Fournisseur   | Pays              |\n|-------------|---------------|-------------------|\n| Batteries   | Batterix GmbH | Allemagne (Brême) |\n| Moteurs     | Motodrive Co. | Taïwan            |\n| Freins      | Stopline      | Italie            |\n| Pneus   ",
+          "score": -6.604274272918701
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": -7.440643310546875
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": null
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q21",
+      "type": "tableau",
+      "question": "À quelle fréquence le local B2 est-il inspecté ?",
+      "attendu": [
+        "premier lundi"
+      ],
+      "latence_s": 1.27,
+      "erreur": null,
+      "reponse": "Selon la procédure PR-SEC-04, le local B2 doit être inspecté **le premier lundi de chaque mois** [1].",
+      "citations": [
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 3. Contrôles\n| Contrôle                                 | Fréquence                        | Responsable           |\n|------------------------------------------|----------------------------------|-----------------------|\n| Inspection du local B2                   | le premier lundi de chaque mois",
+          "score": 3.1682066917419434
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 1. Stockage\nLes batteries sont stockées entre 10 °C et 25 °C, dans le local B2 équipé d'une détection incendie.\nPour un stockage de plus de 30 jours, la charge est ramenée à 80 % au maximum.",
+          "score": -2.3171119689941406
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 2. Charge\nLa charge se fait uniquement sur les postes équipés d'un chargeur homologué, sous surveillance.\nUne batterie gonflée ou chaude est isolée immédiatement dans le bac sable du local B2.",
+          "score": -5.002251625061035
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Comment joindre le service après-vente ?\nPar téléphone au 02 40 00 12 34, du lundi au vendredi de 9 h à 18 h, ou par le formulaire du site.",
+          "score": -10.432096481323242
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "# Procédure PR-SEC-04 — Charge et stockage des batteries\nResponsable de la procédure : Karim Benali, responsable HSE. Version 3 du 1er septembre 2025.",
+          "score": -10.552450180053711
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -10.571897506713867
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -10.57301139831543
+        },
+        {
+          "document": "message-vocal-production.mp3",
+          "page": null,
+          "extrait": "Message vocale de Julien Moreau, directeur de production chez Vélanor, enregistrait le 3 novembre VVTSEC. La ligne d'assoblage numéro 3 de Nantes sera arrêtée du 2 au 6 mars VVTSI pour maintenance. Pendant cet arrêt, la production du loire urbain sera transférée sur la ligne. La Réunion de l'Osement",
+          "score": -10.60881519317627
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quel est le délai de réparation ?\nUne réparation en atelier prend 10 jours ouvrés en moyenne. Le diagnostic est gratuit.",
+          "score": -10.67800235748291
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "## 5. Effectifs par site\n| Site      | Activité               |   Salariés au 31/12/2025 |\n|-----------|------------------------|--------------------------|\n| Nantes    | siège et assemblage    |                      268 |\n| Cholet    | fabrication des cadres |                       97 |\n| Lyon     ",
+          "score": -10.900444030761719
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": null
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q22",
+      "type": "fait simple",
+      "question": "Quel est le prix du Vilaine Compact ?",
+      "attendu": [
+        "2 490"
+      ],
+      "latence_s": 2.13,
+      "erreur": null,
+      "reponse": "Le prix public TTC du modèle Vilaine Compact est de **2 490 €**, comme annoncé lors de son lancement en avril 2026 [1].\n\nCette information figure dans la présentation du nouveau modèle prévu pour être lancé en 2026, tandis que le catalogue actuel (fin 2025) ne présente pas encore ce modèle, la gamme étant composée notamment du Loire Urban, Sèvre Trail, Brière Kid et Erdre Cargo.",
+      "citations": [
+        {
+          "document": "strategie-2026.pptx",
+          "page": 2,
+          "extrait": "# Nouveau modèle\n- Vilaine Compact : vélo pliant électrique\n- Lancement en avril 2026\n- Prix public : 2 490 € TTC",
+          "score": 4.77822208404541
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "## 9. Perspectives 2026\nVélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.",
+          "score": -1.8444777727127075
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 5,
+          "extrait": "## 4. Production par modèle\n| Modèle      | Usage   | Unités produites   | Prix public TTC   |\n|-------------|---------|--------------------|-------------------|\n| Loire Urban | ville   | 24 300             | 1 890 €           |\n| Sèvre Trail | VTT     | 15 400             | 3 150 €           |\n| Br",
+          "score": -6.2093505859375
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -7.19908332824707
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": -8.301549911499023
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -8.985382080078125
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quelle est la durée de la garantie ?\nLe cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans.",
+          "score": -9.381426811218262
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -9.83053970336914
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -10.05308723449707
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 2. Charge\nLa charge se fait uniquement sur les postes équipés d'un chargeur homologué, sous surveillance.\nUne batterie gonflée ou chaude est isolée immédiatement dans le bac sable du local B2.",
+          "score": -10.628273963928223
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": false
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q23",
+      "type": "fait simple",
+      "question": "Quelle est la capacité prévue de l'usine de Saint-Nazaire ?",
+      "attendu": [
+        "25 000"
+      ],
+      "latence_s": 1.13,
+      "erreur": null,
+      "reponse": "La capacité prévue de l'usine de Saint-Nazaire est de **25 000 vélos par an** [1].",
+      "citations": [
+        {
+          "document": "strategie-2026.pptx",
+          "page": 3,
+          "extrait": "# Usine de Saint-Nazaire\n- Ouverture en septembre 2026\n- Capacité : 25 000 vélos par an\n- Investissement : 14 M€",
+          "score": 5.139606475830078
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "## 9. Perspectives 2026\nVélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.",
+          "score": 0.5026617050170898
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "## 5. Effectifs par site\n| Site      | Activité               |   Salariés au 31/12/2025 |\n|-----------|------------------------|--------------------------|\n| Nantes    | siège et assemblage    |                      268 |\n| Cholet    | fabrication des cadres |                       97 |\n| Lyon     ",
+          "score": -8.160473823547363
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": -9.13631820678711
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -9.638975143432617
+        },
+        {
+          "document": "cse-2025-10-14.md",
+          "page": null,
+          "extrait": "## Décisions\n- Prime d'intéressement 2025 : 1 150 euros par salarié, versée en avril 2026.\n- Télétravail : jusqu'à 2 jours par semaine pour les postes compatibles.\n- Le nouveau restaurant d'entreprise du site de Nantes ouvrira en janvier 2026.",
+          "score": -9.648626327514648
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 1. Stockage\nLes batteries sont stockées entre 10 °C et 25 °C, dans le local B2 équipé d'une détection incendie.\nPour un stockage de plus de 30 jours, la charge est ramenée à 80 % au maximum.",
+          "score": -9.697749137878418
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -10.39729118347168
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": -10.583941459655762
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -10.874954223632812
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": false
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q24",
+      "type": "tableau",
+      "question": "Quel stock de batteries BAT-48V-14Ah reste-t-il et est-il sous le seuil d'alerte ?",
+      "attendu": [
+        "1 240|1240",
+        "1 500|1500"
+      ],
+      "latence_s": 1.89,
+      "erreur": null,
+      "reponse": "D'après le tableau des stocks disponibles dans le contexte [1], il reste **1 240 unités** du composant \"Batterie 48 V 14 Ah\" (référence BAT-48V-14Ah) en stock à Nantes.\n\nCe stock est bien **sous le seuil d'alerte**, qui est fixé à **1 500 unités**.",
+      "citations": [
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": 1.9956870079040527
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": 0.5605440139770508
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 1. Stockage\nLes batteries sont stockées entre 10 °C et 25 °C, dans le local B2 équipé d'une détection incendie.\nPour un stockage de plus de 30 jours, la charge est ramenée à 80 % au maximum.",
+          "score": -4.039240837097168
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "## 8. Risques\nLes principaux risques identifiés sont la pénurie de cellules lithium-ion, la hausse du prix de l'aluminium et la concurrence des marques asiatiques à bas prix. Un stock de sécurité de batteries a été mis en place. Le risque de change concerne surtout les achats de moteurs, réglés en d",
+          "score": -4.825809478759766
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "## 7. Fournisseurs principaux\n| Composant   | Fournisseur   | Pays              |\n|-------------|---------------|-------------------|\n| Batteries   | Batterix GmbH | Allemagne (Brême) |\n| Moteurs     | Motodrive Co. | Taïwan            |\n| Freins      | Stopline      | Italie            |\n| Pneus   ",
+          "score": -5.919702529907227
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "# Procédure PR-SEC-04 — Charge et stockage des batteries\nResponsable de la procédure : Karim Benali, responsable HSE. Version 3 du 1er septembre 2025.",
+          "score": -6.5850830078125
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -6.916618347167969
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 2. Charge\nLa charge se fait uniquement sur les postes équipés d'un chargeur homologué, sous surveillance.\nUne batterie gonflée ou chaude est isolée immédiatement dans le bac sable du local B2.",
+          "score": -8.141546249389648
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": -8.443251609802246
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -8.879883766174316
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q25",
+      "type": "fait simple",
+      "question": "Quelle est la durée de garantie du cadre ?",
+      "attendu": [
+        "7 ans"
+      ],
+      "latence_s": 0.92,
+      "erreur": null,
+      "reponse": "La durée de garantie du cadre est de **7 ans** [1].",
+      "citations": [
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quelle est la durée de la garantie ?\nLe cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans.",
+          "score": 5.209079742431641
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -5.619294166564941
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -5.715619087219238
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "## 5. Effectifs par site\n| Site      | Activité               |   Salariés au 31/12/2025 |\n|-----------|------------------------|--------------------------|\n| Nantes    | siège et assemblage    |                      268 |\n| Cholet    | fabrication des cadres |                       97 |\n| Lyon     ",
+          "score": -7.112388610839844
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": -7.407931327819824
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -7.631219863891602
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quel est le délai de réparation ?\nUne réparation en atelier prend 10 jours ouvrés en moyenne. Le diagnostic est gratuit.",
+          "score": -8.475533485412598
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": -9.146760940551758
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "## 7. Fournisseurs principaux\n| Composant   | Fournisseur   | Pays              |\n|-------------|---------------|-------------------|\n| Batteries   | Batterix GmbH | Allemagne (Brême) |\n| Moteurs     | Motodrive Co. | Taïwan            |\n| Freins      | Stopline      | Italie            |\n| Pneus   ",
+          "score": -9.15298843383789
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 3. Contrôles\n| Contrôle                                 | Fréquence                        | Responsable           |\n|------------------------------------------|----------------------------------|-----------------------|\n| Inspection du local B2                   | le premier lundi de chaque mois",
+          "score": -9.357531547546387
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": null
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q26",
+      "type": "fait simple",
+      "question": "Quel est le numéro de téléphone du service après-vente ?",
+      "attendu": [
+        "02 40 00 12 34"
+      ],
+      "latence_s": 1.28,
+      "erreur": null,
+      "reponse": "Le numéro de téléphone du service après-vente est le **02 40 00 12 34** [1]. Ce numéro est disponible du lundi au vendredi de 9 h à 18 h.",
+      "citations": [
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Comment joindre le service après-vente ?\nPar téléphone au 02 40 00 12 34, du lundi au vendredi de 9 h à 18 h, ou par le formulaire du site.",
+          "score": 4.494382858276367
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "# FAQ du service après-vente\nDocument fictif.",
+          "score": -5.646668434143066
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -7.873106002807617
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -8.423807144165039
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quel est le délai de réparation ?\nUne réparation en atelier prend 10 jours ouvrés en moyenne. Le diagnostic est gratuit.",
+          "score": -8.848204612731934
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": -9.000300407409668
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -9.040178298950195
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 3. Contrôles\n| Contrôle                                 | Fréquence                        | Responsable           |\n|------------------------------------------|----------------------------------|-----------------------|\n| Inspection du local B2                   | le premier lundi de chaque mois",
+          "score": -9.102045059204102
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -9.477680206298828
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quelle est la durée de la garantie ?\nLe cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans.",
+          "score": -9.581338882446289
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": null
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q27",
+      "type": "fait simple",
+      "question": "Quel est le montant de la prime d'intéressement 2025 ?",
+      "attendu": [
+        "1 150|1150"
+      ],
+      "latence_s": 1.36,
+      "erreur": null,
+      "reponse": "Selon les décisions communales, la **prime d'intéressement pour 2025** est fixée à **1 150 euros par salarié**. Elle sera versée en avril 2026 [1].",
+      "citations": [
+        {
+          "document": "cse-2025-10-14.md",
+          "page": null,
+          "extrait": "## Décisions\n- Prime d'intéressement 2025 : 1 150 euros par salarié, versée en avril 2026.\n- Télétravail : jusqu'à 2 jours par semaine pour les postes compatibles.\n- Le nouveau restaurant d'entreprise du site de Nantes ouvrira en janvier 2026.",
+          "score": 5.639411926269531
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 4,
+          "extrait": "## 3. Chiffre d'affaires trimestriel\n| Trimestre   | Chiffre d'affaires (M€)   | Part du total   |\n|-------------|---------------------------|-----------------|\n| T1 2025     | 9,8                       | 20 %            |\n| T2 2025     | 13,7                      | 28 %            |\n| T3 2025     |",
+          "score": -4.678532600402832
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": -6.998623847961426
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "## 5. Effectifs par site\n| Site      | Activité               |   Salariés au 31/12/2025 |\n|-----------|------------------------|--------------------------|\n| Nantes    | siège et assemblage    |                      268 |\n| Cholet    | fabrication des cadres |                       97 |\n| Lyon     ",
+          "score": -7.150364875793457
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 1,
+          "extrait": "# Objectifs 2026\n- Chiffre d'affaires visé : 55 M€\n- Part de l'export visée : 32 %\n- Marge nette visée : 7 %",
+          "score": -7.886861324310303
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -7.920169830322266
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -8.375389099121094
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 1,
+          "extrait": "# Stratégie 2026\n- Comité de direction du 20 novembre 2025\n- Document fictif",
+          "score": -8.711776733398438
+        },
+        {
+          "document": "cse-2025-10-14.md",
+          "page": null,
+          "extrait": "# Compte rendu de la réunion du CSE du 14 octobre 2025\nDocument fictif.",
+          "score": -9.536996841430664
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": -10.288942337036133
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": null
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q28",
+      "type": "anglais",
+      "question": "What overall score did Batterix obtain at the supplier audit?",
+      "attendu": [
+        "87"
+      ],
+      "latence_s": 1.09,
+      "erreur": null,
+      "reponse": "Batterix obtained an overall score of **87 out of 100** at the supplier quality audit. [1]",
+      "citations": [
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": 6.772773742675781
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -3.5530872344970703
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "## 7. Fournisseurs principaux\n| Composant   | Fournisseur   | Pays              |\n|-------------|---------------|-------------------|\n| Batteries   | Batterix GmbH | Allemagne (Brême) |\n| Moteurs     | Motodrive Co. | Taïwan            |\n| Freins      | Stopline      | Italie            |\n| Pneus   ",
+          "score": -4.245390892028809
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -5.114418983459473
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -5.235113143920898
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": -7.7770304679870605
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Motodrive Co. | Moteurs     |                             45 |\n| Stopline      | Freins      |                             12 |\n| Gomma Ouest   | Pneus       |                              6 |",
+          "score": -8.945521354675293
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "## 8. Risques\nLes principaux risques identifiés sont la pénurie de cellules lithium-ion, la hausse du prix de l'aluminium et la concurrence des marques asiatiques à bas prix. Un stock de sécurité de batteries a été mis en place. Le risque de change concerne surtout les achats de moteurs, réglés en d",
+          "score": -9.215625762939453
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 1,
+          "extrait": "# Objectifs 2026\n- Chiffre d'affaires visé : 55 M€\n- Part de l'export visée : 32 %\n- Marge nette visée : 7 %",
+          "score": -9.356363296508789
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 1. Stockage\nLes batteries sont stockées entre 10 °C et 25 °C, dans le local B2 équipé d'une détection incendie.\nPour un stockage de plus de 30 jours, la charge est ramenée à 80 % au maximum.",
+          "score": -9.760457992553711
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": null
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q29",
+      "type": "anglais",
+      "question": "Quel est le taux de cellules défectueuses mesuré chez Batterix lors de l'audit ?",
+      "attendu": [
+        "0.3|0,3"
+      ],
+      "latence_s": 1.24,
+      "erreur": null,
+      "reponse": "Selon l'audit de qualité fournisseur effectué chez Batterix GmbH en juin 2025, le taux de défaut des cellules mesuré était de **0,3 %** [1].",
+      "citations": [
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": 6.072475433349609
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -3.5943338871002197
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -4.16420316696167
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -4.7607831954956055
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "## 7. Fournisseurs principaux\n| Composant   | Fournisseur   | Pays              |\n|-------------|---------------|-------------------|\n| Batteries   | Batterix GmbH | Allemagne (Brême) |\n| Moteurs     | Motodrive Co. | Taïwan            |\n| Freins      | Stopline      | Italie            |\n| Pneus   ",
+          "score": -5.455041885375977
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "## 8. Risques\nLes principaux risques identifiés sont la pénurie de cellules lithium-ion, la hausse du prix de l'aluminium et la concurrence des marques asiatiques à bas prix. Un stock de sécurité de batteries a été mis en place. Le risque de change concerne surtout les achats de moteurs, réglés en d",
+          "score": -6.925018310546875
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 1. Stockage\nLes batteries sont stockées entre 10 °C et 25 °C, dans le local B2 équipé d'une détection incendie.\nPour un stockage de plus de 30 jours, la charge est ramenée à 80 % au maximum.",
+          "score": -7.053281307220459
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": -7.757078170776367
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": -8.184598922729492
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": -8.42786693572998
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": null
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q30",
+      "type": "multi-documents",
+      "question": "Quel est le délai de livraison contractuel de Batterix et quel délai moyen est réellement constaté ?",
+      "attendu": [
+        "21",
+        "24"
+      ],
+      "latence_s": 1.78,
+      "erreur": null,
+      "reponse": "Le délai de livraison contractuel établi par le contrat avec Batterix GmbH est de **21 jours** après la commande [1].\n\nCependant, les données de suivi indiquent que le délai moyen réel constaté pour les batteries fournies par Batterix est d'environ **24 jours** [2], soit environ trois jours en retard par rapport au calendrier contractuel.",
+      "citations": [
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": 1.1007764339447021
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": 1.009595274925232
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -0.9403207302093506
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "## 7. Fournisseurs principaux\n| Composant   | Fournisseur   | Pays              |\n|-------------|---------------|-------------------|\n| Batteries   | Batterix GmbH | Allemagne (Brême) |\n| Moteurs     | Motodrive Co. | Taïwan            |\n| Freins      | Stopline      | Italie            |\n| Pneus   ",
+          "score": -1.5045251846313477
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -3.854468822479248
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quelle est la durée de la garantie ?\nLe cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans.",
+          "score": -7.417283058166504
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Quel est le délai de réparation ?\nUne réparation en atelier prend 10 jours ouvrés en moyenne. Le diagnostic est gratuit.",
+          "score": -7.526589393615723
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "# Procédure PR-SEC-04 — Charge et stockage des batteries\nResponsable de la procédure : Karim Benali, responsable HSE. Version 3 du 1er septembre 2025.",
+          "score": -8.005692481994629
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 1. Stockage\nLes batteries sont stockées entre 10 °C et 25 °C, dans le local B2 équipé d'une détection incendie.\nPour un stockage de plus de 30 jours, la charge est ramenée à 80 % au maximum.",
+          "score": -8.36974811553955
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "## 8. Risques\nLes principaux risques identifiés sont la pénurie de cellules lithium-ion, la hausse du prix de l'aluminium et la concurrence des marques asiatiques à bas prix. Un stock de sécurité de batteries a été mis en place. Le risque de change concerne surtout les achats de moteurs, réglés en d",
+          "score": -9.112580299377441
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q31",
+      "type": "multi-documents",
+      "question": "Quel score Batterix a-t-il obtenu à l'audit, et quel prix unitaire le contrat fixe-t-il ?",
+      "attendu": [
+        "87",
+        "212"
+      ],
+      "latence_s": 2.06,
+      "erreur": null,
+      "reponse": "Batterix GmbH a obtenu un **score de 87 sur 100** à l'audit de qualité réalisé le 18 juin 2025 [1].\n\nLe contrat d'approvisionnement fixe un prix unitaire de **212 euros HT** (hors taxes) pour les batteries 48 V 14 Ah, ce prix étant révisable une fois par an [2].",
+      "citations": [
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": 3.7128114700317383
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": 1.9948718547821045
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "## 7. Fournisseurs principaux\n| Composant   | Fournisseur   | Pays              |\n|-------------|---------------|-------------------|\n| Batteries   | Batterix GmbH | Allemagne (Brême) |\n| Moteurs     | Motodrive Co. | Taïwan            |\n| Freins      | Stopline      | Italie            |\n| Pneus   ",
+          "score": -2.1926889419555664
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -3.8518998622894287
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -4.861210823059082
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 5,
+          "extrait": "## 4. Production par modèle\n| Modèle      | Usage   | Unités produites   | Prix public TTC   |\n|-------------|---------|--------------------|-------------------|\n| Loire Urban | ville   | 24 300             | 1 890 €           |\n| Sèvre Trail | VTT     | 15 400             | 3 150 €           |\n| Br",
+          "score": -8.01176643371582
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "## 8. Risques\nLes principaux risques identifiés sont la pénurie de cellules lithium-ion, la hausse du prix de l'aluminium et la concurrence des marques asiatiques à bas prix. Un stock de sécurité de batteries a été mis en place. Le risque de change concerne surtout les achats de moteurs, réglés en d",
+          "score": -8.74814224243164
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": -10.01552963256836
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": -10.03553581237793
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 1. Stockage\nLes batteries sont stockées entre 10 °C et 25 °C, dans le local B2 équipé d'une détection incendie.\nPour un stockage de plus de 30 jours, la charge est ramenée à 80 % au maximum.",
+          "score": -10.175498962402344
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q32",
+      "type": "multi-documents",
+      "question": "Quel chiffre d'affaires Vélanor vise-t-elle en 2026 et combien d'embauches sont prévues à Saint-Nazaire ?",
+      "attendu": [
+        "55",
+        "70"
+      ],
+      "latence_s": 1.56,
+      "erreur": null,
+      "reponse": "Vélanor vise un chiffre d'affaires de **55 M€** en 2026 [1]. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec **70 embauches** prévues pour y travailler.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "## 9. Perspectives 2026\nVélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.",
+          "score": 10.49576473236084
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": 1.8834935426712036
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 1,
+          "extrait": "# Objectifs 2026\n- Chiffre d'affaires visé : 55 M€\n- Part de l'export visée : 32 %\n- Marge nette visée : 7 %",
+          "score": 1.135097622871399
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 3,
+          "extrait": "# Usine de Saint-Nazaire\n- Ouverture en septembre 2026\n- Capacité : 25 000 vélos par an\n- Investissement : 14 M€",
+          "score": 0.8516964316368103
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 1,
+          "extrait": "## Vélanor SAS - Rapport annuel 2025\nDocument fictif généré pour des essais. Toute ressemblance serait fortuite. Sommaire : 1. Mot de la présidente - 2. Chiffres clés - 3. Chiffre d'affaires trimestriel - 4. Production par modèle - 5. Effectifs - 6. Environnement - 7. Fournisseurs - 8. Risques - 9. ",
+          "score": -0.823800802230835
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": -0.8976964950561523
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": -1.026331901550293
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -2.214390277862549
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "## 5. Effectifs par site\n| Site      | Activité               |   Salariés au 31/12/2025 |\n|-----------|------------------------|--------------------------|\n| Nantes    | siège et assemblage    |                      268 |\n| Cholet    | fabrication des cadres |                       97 |\n| Lyon     ",
+          "score": -7.428609848022461
+        },
+        {
+          "document": "cse-2025-10-14.md",
+          "page": null,
+          "extrait": "## Décisions\n- Prime d'intéressement 2025 : 1 150 euros par salarié, versée en avril 2026.\n- Télétravail : jusqu'à 2 jours par semaine pour les postes compatibles.\n- Le nouveau restaurant d'entreprise du site de Nantes ouvrira en janvier 2026.",
+          "score": -7.602499008178711
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q33",
+      "type": "audio",
+      "question": "Quelle ligne d'assemblage sera arrêtée pour maintenance en mars 2026, et jusqu'à quelle date ?",
+      "attendu": [
+        "3",
+        "6 mars"
+      ],
+      "latence_s": 1.66,
+      "erreur": null,
+      "reponse": "La ligne d'assemblage arrêtée est la **ligne numéro 3 de l'usine de Nantes**. Elle sera fermée du **2 au 6 mars** (année non précisée dans le contexte, mais les dates relatives aux autres événements suggèrent 2025 ou début 2026) [1].",
+      "citations": [
+        {
+          "document": "message-vocal-production.mp3",
+          "page": null,
+          "extrait": "Message vocale de Julien Moreau, directeur de production chez Vélanor, enregistrait le 3 novembre VVTSEC. La ligne d'assoblage numéro 3 de Nantes sera arrêtée du 2 au 6 mars VVTSI pour maintenance. Pendant cet arrêt, la production du loire urbain sera transférée sur la ligne. La Réunion de l'Osement",
+          "score": 0.3751722574234009
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "## 9. Perspectives 2026\nVélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.",
+          "score": -2.7125704288482666
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -5.865660190582275
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "## 7. Fournisseurs principaux\n| Composant   | Fournisseur   | Pays              |\n|-------------|---------------|-------------------|\n| Batteries   | Batterix GmbH | Allemagne (Brême) |\n| Moteurs     | Motodrive Co. | Taïwan            |\n| Freins      | Stopline      | Italie            |\n| Pneus   ",
+          "score": -7.018402576446533
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -7.693024635314941
+        },
+        {
+          "document": "cse-2025-10-14.md",
+          "page": null,
+          "extrait": "## Décisions\n- Prime d'intéressement 2025 : 1 150 euros par salarié, versée en avril 2026.\n- Télétravail : jusqu'à 2 jours par semaine pour les postes compatibles.\n- Le nouveau restaurant d'entreprise du site de Nantes ouvrira en janvier 2026.",
+          "score": -7.7647809982299805
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 3,
+          "extrait": "# Usine de Saint-Nazaire\n- Ouverture en septembre 2026\n- Capacité : 25 000 vélos par an\n- Investissement : 14 M€",
+          "score": -8.087784767150879
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 1,
+          "extrait": "# Stratégie 2026\n- Comité de direction du 20 novembre 2025\n- Document fictif",
+          "score": -8.331339836120605
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": -8.554759979248047
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": 1,
+          "extrait": "| Référence    | Désignation               |   Quantité |   Seuil d'alerte | Entrepôt   |\n|--------------|---------------------------|------------|------------------|------------|\n| BAT-48V-14Ah | Batterie 48 V 14 Ah       |       1240 |             1500 | Nantes     |\n| MOT-250W     | Moteur roue a",
+          "score": -9.14113712310791
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": null
+      },
+      "juge_llm": false
+    },
+    {
+      "id": "Q34",
+      "type": "audio",
+      "question": "Qui est le directeur de production de Vélanor ?",
+      "attendu": [
+        "Moreau"
+      ],
+      "latence_s": 1.04,
+      "erreur": null,
+      "reponse": "Le directeur de production chez Vélanor est Julien Moreau, selon un message vocal enregistré par lui-même le 3 novembre [1].",
+      "citations": [
+        {
+          "document": "message-vocal-production.mp3",
+          "page": null,
+          "extrait": "Message vocale de Julien Moreau, directeur de production chez Vélanor, enregistrait le 3 novembre VVTSEC. La ligne d'assoblage numéro 3 de Nantes sera arrêtée du 2 au 6 mars VVTSI pour maintenance. Pendant cet arrêt, la production du loire urbain sera transférée sur la ligne. La Réunion de l'Osement",
+          "score": 3.3854782581329346
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": 2.7462096214294434
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -2.5462589263916016
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -3.605745315551758
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "## 9. Perspectives 2026\nVélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.",
+          "score": -3.685995101928711
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 1,
+          "extrait": "## Vélanor SAS - Rapport annuel 2025\nDocument fictif généré pour des essais. Toute ressemblance serait fortuite. Sommaire : 1. Mot de la présidente - 2. Chiffres clés - 3. Chiffre d'affaires trimestriel - 4. Production par modèle - 5. Effectifs - 6. Environnement - 7. Fournisseurs - 8. Risques - 9. ",
+          "score": -5.557560920715332
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -5.956758499145508
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": -6.307278156280518
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "# Procédure PR-SEC-04 — Charge et stockage des batteries\nResponsable de la procédure : Karim Benali, responsable HSE. Version 3 du 1er septembre 2025.",
+          "score": -8.309609413146973
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Peut-on remplacer soi-même la batterie ?\nOui, la batterie se retire avec la clé fournie. Seule une batterie d'origine Vélanor est couverte par la garantie.",
+          "score": -10.650338172912598
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": null
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q35",
+      "type": "piège",
+      "question": "Quel était le chiffre d'affaires de Vélanor en 2022 ?",
+      "attendu": [],
+      "latence_s": 1.54,
+      "erreur": null,
+      "reponse": "D'après les informations fournies, il n'est pas possible de connaître le chiffre d'affaires de Vélanor en 2022. Le contexte ne donne que des détails pour l'exercice 2025 et des perspectives pour 2026 [1].",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "## 9. Perspectives 2026\nVélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.",
+          "score": 2.689760684967041
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": 2.2913951873779297
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": 0.3718739449977875
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 1,
+          "extrait": "## Vélanor SAS - Rapport annuel 2025\nDocument fictif généré pour des essais. Toute ressemblance serait fortuite. Sommaire : 1. Mot de la présidente - 2. Chiffres clés - 3. Chiffre d'affaires trimestriel - 4. Production par modèle - 5. Effectifs - 6. Environnement - 7. Fournisseurs - 8. Risques - 9. ",
+          "score": -2.8754353523254395
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -3.01432466506958
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 4,
+          "extrait": "## 3. Chiffre d'affaires trimestriel\n| Trimestre   | Chiffre d'affaires (M€)   | Part du total   |\n|-------------|---------------------------|-----------------|\n| T1 2025     | 9,8                       | 20 %            |\n| T2 2025     | 13,7                      | 28 %            |\n| T3 2025     |",
+          "score": -3.4828708171844482
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 1,
+          "extrait": "# Objectifs 2026\n- Chiffre d'affaires visé : 55 M€\n- Part de l'export visée : 32 %\n- Marge nette visée : 7 %",
+          "score": -3.942002296447754
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -4.045023441314697
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": -4.68535852432251
+        },
+        {
+          "document": "message-vocal-production.mp3",
+          "page": null,
+          "extrait": "Message vocale de Julien Moreau, directeur de production chez Vélanor, enregistrait le 3 novembre VVTSEC. La ligne d'assoblage numéro 3 de Nantes sera arrêtée du 2 au 6 mars VVTSI pour maintenance. Pendant cet arrêt, la production du loire urbain sera transférée sur la ligne. La Réunion de l'Osement",
+          "score": -7.320960998535156
+        }
+      ],
+      "exacte": true,
+      "citation": null,
+      "juge_llm": true
+    },
+    {
+      "id": "Q36",
+      "type": "piège",
+      "question": "Qui est le directeur financier de Vélanor ?",
+      "attendu": [],
+      "latence_s": 1.81,
+      "erreur": null,
+      "reponse": "La information sur l'identité du directeur financier de Vélanor n'est pas présente dans les documents fournis. Les sources mentionnent Hélène Marchais (présidente) [1], Julien Moreau (directeur de production) [2] et Jonas Weber (représentant pour Batterix) [3], mais aucune mention spécifique d'un directeur financier ne peut être trouvée dans le contexte donné.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": 1.220467448234558
+        },
+        {
+          "document": "message-vocal-production.mp3",
+          "page": null,
+          "extrait": "Message vocale de Julien Moreau, directeur de production chez Vélanor, enregistrait le 3 novembre VVTSEC. La ligne d'assoblage numéro 3 de Nantes sera arrêtée du 2 au 6 mars VVTSI pour maintenance. Pendant cet arrêt, la production du loire urbain sera transférée sur la ligne. La Réunion de l'Osement",
+          "score": -1.781009316444397
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -3.750577211380005
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -3.9482831954956055
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "## 9. Perspectives 2026\nVélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.",
+          "score": -4.605221748352051
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 1,
+          "extrait": "## Vélanor SAS - Rapport annuel 2025\nDocument fictif généré pour des essais. Toute ressemblance serait fortuite. Sommaire : 1. Mot de la présidente - 2. Chiffres clés - 3. Chiffre d'affaires trimestriel - 4. Production par modèle - 5. Effectifs - 6. Environnement - 7. Fournisseurs - 8. Risques - 9. ",
+          "score": -5.984248638153076
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -6.552666187286377
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": -7.58209753036499
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "## 5. Effectifs par site\n| Site      | Activité               |   Salariés au 31/12/2025 |\n|-----------|------------------------|--------------------------|\n| Nantes    | siège et assemblage    |                      268 |\n| Cholet    | fabrication des cadres |                       97 |\n| Lyon     ",
+          "score": -8.689685821533203
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Peut-on remplacer soi-même la batterie ?\nOui, la batterie se retire avec la clé fournie. Seule une batterie d'origine Vélanor est couverte par la garantie.",
+          "score": -10.763521194458008
+        }
+      ],
+      "exacte": true,
+      "citation": null,
+      "juge_llm": true
+    },
+    {
+      "id": "Q37",
+      "type": "piège",
+      "question": "Combien de trottinettes électriques Vélanor a-t-elle vendues en 2025 ?",
+      "attendu": [],
+      "latence_s": 3.58,
+      "erreur": null,
+      "reponse": "D'après le contexte fourni, Vélanor n'a vendu **aucune** trottinette électrique en 2025.\n\nLe contexte mentionne uniquement des vélos à assistance électrique. En effet :\n*   En 2025, l'entreprise a produit et vendu **61 800 vélos** au total [1] (un chiffre confirmé dans les détails de production par modèle qui s'additionnent à 61 800 unités) [3].\n*   La gamme présente comprend des modèles tels que le *Loire Urban*, le *Sèvre Trail*, le *Brière Kid*, et le *Erdre Cargo*, mais aucun modèle de trottinette n'est listé ni décrit dans les documents.\n\nPar conséquent, il est impossible de fournir un chiffre d'écriture pour les trottinettes à partir des informations disponibles, car elles ne font pas l'objet de cette activité commerciale décrite.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "## 1. Mot de la présidente\nFondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les ",
+          "score": 3.784404754638672
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "## 6. Environnement\nLes cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au\npartenariat avec la",
+          "score": 0.4628778398036957
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": -0.721336305141449
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "## 9. Perspectives 2026\nVélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.",
+          "score": -1.8658649921417236
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "## CONTRAT D'APPROVISIONNEMENT N° BX-2025-117\nEntre : Vélanor SAS, 12 quai de la Fosse, 44000 Nantes (l'Acheteur)\nEt: Batterix GmbH, Brême, Allemagne (le Fournisseur)\nArticle 1 -Objet\nFourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah.\nArticle 2-Durée\nTrois ans à compter du ler mars 2025.\nAr",
+          "score": -2.063175678253174
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 1,
+          "extrait": "## Vélanor SAS - Rapport annuel 2025\nDocument fictif généré pour des essais. Toute ressemblance serait fortuite. Sommaire : 1. Mot de la présidente - 2. Chiffres clés - 3. Chiffre d'affaires trimestriel - 4. Production par modèle - 5. Effectifs - 6. Environnement - 7. Fournisseurs - 8. Risques - 9. ",
+          "score": -3.4308652877807617
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": null,
+          "extrait": "## Supplier Quality Audit - Batterix GmbH, Bremen\nFictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and mis",
+          "score": -3.665390968322754
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 5,
+          "extrait": "## 4. Production par modèle\n| Modèle      | Usage   | Unités produites   | Prix public TTC   |\n|-------------|---------|--------------------|-------------------|\n| Loire Urban | ville   | 24 300             | 1 890 €           |\n| Sèvre Trail | VTT     | 15 400             | 3 150 €           |\n| Br",
+          "score": -6.170663833618164
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 2,
+          "extrait": "# Nouveau modèle\n- Vilaine Compact : vélo pliant électrique\n- Lancement en avril 2026\n- Prix public : 2 490 € TTC",
+          "score": -6.628482818603516
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": 3,
+          "extrait": "# Usine de Saint-Nazaire\n- Ouverture en septembre 2026\n- Capacité : 25 000 vélos par an\n- Investissement : 14 M€",
+          "score": -7.011297225952148
+        }
+      ],
+      "exacte": true,
+      "citation": null,
+      "juge_llm": true
+    },
+    {
+      "id": "Q38",
+      "type": "piège",
+      "question": "Quel est le salaire de Karim Benali ?",
+      "attendu": [],
+      "latence_s": 1.84,
+      "erreur": null,
+      "reponse": "D'après les informations disponibles dans le contexte fourni, le salaire exact de Karim Benali n'est pas indiqué. Le document mentionne qu'il est le responsable HSE et que c'est lui qui mène l'inspection du local B2 [1][2], mais aucune donnée sur sa rémunération ou son salaire ne figure dans les textes fournis.",
+      "citations": [
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "# Procédure PR-SEC-04 — Charge et stockage des batteries\nResponsable de la procédure : Karim Benali, responsable HSE. Version 3 du 1er septembre 2025.",
+          "score": -4.737524509429932
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "## 3. Contrôles\n| Contrôle                                 | Fréquence                        | Responsable           |\n|------------------------------------------|----------------------------------|-----------------------|\n| Inspection du local B2                   | le premier lundi de chaque mois",
+          "score": -5.207983493804932
+        },
+        {
+          "document": "cse-2025-10-14.md",
+          "page": null,
+          "extrait": "## Décisions\n- Prime d'intéressement 2025 : 1 150 euros par salarié, versée en avril 2026.\n- Télétravail : jusqu'à 2 jours par semaine pour les postes compatibles.\n- Le nouveau restaurant d'entreprise du site de Nantes ouvrira en janvier 2026.",
+          "score": -8.636977195739746
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "## 5. Effectifs par site\n| Site      | Activité               |   Salariés au 31/12/2025 |\n|-----------|------------------------|--------------------------|\n| Nantes    | siège et assemblage    |                      268 |\n| Cholet    | fabrication des cadres |                       97 |\n| Lyon     ",
+          "score": -9.551410675048828
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "## 2. Chiffres clés 2025\n| Indicateur             | 2025         | Évolution   |\n|------------------------|--------------|-------------|\n| Chiffre d'affaires     | 48,6 M€      | +12,4 %     |\n| Résultat net           | 3,1 M€       | +0,6 M€     |\n| Vélos produits         | 61 800       | +9 %     ",
+          "score": -10.095293045043945
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 4,
+          "extrait": "## 3. Chiffre d'affaires trimestriel\n| Trimestre   | Chiffre d'affaires (M€)   | Part du total   |\n|-------------|---------------------------|-----------------|\n| T1 2025     | 9,8                       | 20 %            |\n| T2 2025     | 13,7                      | 28 %            |\n| T3 2025     |",
+          "score": -10.165266036987305
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "## 9. Perspectives 2026\nVélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.",
+          "score": -10.909347534179688
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "Article 5 - Délais de livraison Le Fournisseur livre sous 21 jours après la commande.\nArticle 6 - Pénalités de retard 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande.\nArticle 7 - Garantie\n5 ans ou 1 000 cycles de charge, au premier terme atteint.\nArticl",
+          "score": -10.983477592468262
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 5,
+          "extrait": "## 4. Production par modèle\n| Modèle      | Usage   | Unités produites   | Prix public TTC   |\n|-------------|---------|--------------------|-------------------|\n| Loire Urban | ville   | 24 300             | 1 890 €           |\n| Sèvre Trail | VTT     | 15 400             | 3 150 €           |\n| Br",
+          "score": -11.012940406799316
+        },
+        {
+          "document": "faq-sav.html",
+          "page": null,
+          "extrait": "## Peut-on remplacer soi-même la batterie ?\nOui, la batterie se retire avec la clé fournie. Seule une batterie d'origine Vélanor est couverte par la garantie.",
+          "score": -11.013652801513672
+        }
+      ],
+      "exacte": true,
+      "citation": null,
+      "juge_llm": true
+    }
+  ],
+  "indexation": {
+    "base": "13b16646-b22a-4a34-8bc9-e6246ccb8627",
+    "documents": 9,
+    "reprise": "base déjà indexée, réutilisée",
+    "duree_s": 0.0
+  },
+  "synthese": {
+    "questions": 38,
+    "exactes": 34,
+    "sur": 34,
+    "refus_corrects": 4,
+    "pieges": 4,
+    "citation_bon_document": 34,
+    "citation_bonne_page": 22,
+    "citations_avec_page": 24,
+    "juge_llm_oui": 37,
+    "juge_llm_sur": 38,
+    "erreurs": 0,
+    "latence_p50_s": 1.29,
+    "latence_p95_s": 3.09,
+    "par_type": {
+      "tableau": "10/10",
+      "fait simple": "13/13",
+      "scan": "4/4",
+      "anglais": "2/2",
+      "multi-documents": "3/3",
+      "audio": "2/2",
+      "piège": "4/4"
+    },
+    "pic_ram_mo": {
+      "rag-open-webui": 1571,
+      "rag-docling-serve": 1971,
+      "llm-central": 722,
+      "llm-swap": 5262,
+      "llm-speaches": 1309
+    },
+    "pic_ram_application_mo": 3542,
+    "vram": "9652 Mo / 16380 Mo (nvidia-smi, mesuré en fin de banc)",
+    "indexation_s": 0.0
+  }
+}

@@ -162,5 +162,45 @@
   ],
   "note": "",
   "heure": "14:09:50"
+ },
+ {
+  "capture": "10-notes-et-memoire/08-note-conversation.png",
+  "url": "/notes/a0d6f9d5-16ac-4352-b670-5ee10988caba",
+  "pastilles": [
+   [
+    1,
+    "Conversation"
+   ],
+   [
+    2,
+    "question sur la note"
+   ]
+  ],
+  "note": "",
+  "heure": "14:45:03"
+ },
+ {
+  "capture": "10-notes-et-memoire/09-note-reponse.png",
+  "url": "/notes/a0d6f9d5-16ac-4352-b670-5ee10988caba",
+  "pastilles": [
+   [
+    1,
+    "réponse tirée de la note"
+   ]
+  ],
+  "note": "",
+  "heure": "14:45:16"
+ },
+ {
+  "capture": "10-notes-et-memoire/10-memoire-utilisee.png",
+  "url": "/c/e7634e58-8b7d-40f4-9b4a-04538d32621a",
+  "pastilles": [
+   [
+    1,
+    "réponse tirée du souvenir"
+   ]
+  ],
+  "note": "",
+  "heure": "14:50:25"
  }
 ]

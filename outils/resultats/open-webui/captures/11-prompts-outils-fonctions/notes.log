@@ -6,3 +6,20 @@
 2026-11-13 09:25:37 éléments : [['BUTTON', 'Importer', '', None], ['BUTTON', 'Exporter', '', None], ['BUTTON', '', '', 'Fermer la fenêtre de configuration de la connexion'], ['INPUT', '', '', None], ['BUTTON', 'OpenAPI', '', None], ['INPUT', '', 'Entrez votre nom', None], ['INPUT', '', 'auto', None], ['INPUT', '', 'Entrez la description', None], ['INPUT', '', "URL de base de l'API", None], ['BUTTON', '', '', 'Vérifier la connexion'], ['BUTTON', '', '', None], ['SELECT', 'Aucun\nBearer\nSession\nOAuth', '', None], ['INPUT', '', 'Clé API', None], ['BUTTON', '', '', "Rendre visible les mots de passe dans l'interface"], ['BUTTON', 'Avancé', '', None], ['BUTTON', "Contrôle d'accès", '', None], ['INPUT', '', 'Entrez la liste de filtres de fonctions (par ex. func1, !func2)', None], ['BUTTON', 'Enregistrer', '', None]]
 2026-11-13 09:25:37 type après clic : Ajouter une connexion | Importer | Exporter | Type | MCP Streamable HTTP | Nom d'utilisateur | Connection ID | Description | URL | Auth | Aucun | Bearer | Session | OAuth | OAuth 2.1 | OAuth 2.1 (Stat
 2026-11-13 09:25:41 vérification : Connexion réussie
+2026-11-13 14:52:16 après activation : Stocks Vélanor | Vélanor MCP
+2026-11-13 14:54:46 réponse outils : 'Réflexion pendant 2 secondes\n\nVoici les informations demandées :\n\nStock de pièces :\n\nMoteur central : 8 unités disponibles en stock\n\nDélai (jours ouvrés) :\n\nDu 16 au 27 novembre 2026 : 12 jours ouvrés'
+2026-11-13 14:54:51 16-reponse-outils : élément absent « appels d'outils »
+2026-11-13 14:54:56 16-reponse-outils : élément absent « stock »
+2026-11-13 14:55:01 16-reponse-outils : élément absent « jours ouvrés »
+2026-11-13 14:55:32 détail des appels : Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator(".chat-assistant").last.get_by_text(re.compile(r"stock_piece|jours_ouvres|Exploré|Utilisé|Appel|Pensé")).first
+
+2026-11-13 14:55:47 choix des filtres : Let people choose approved parameter presets in chat. |  | Prompts | Par défaut | Connaissances | Démo Vélanor | Outils | Aucun | Skills | Aucun | Filtres | Aucun | Capacités | Vision, Téléversement du fichier, Interpréteur de code | +4 | Fonctionnalités par défaut | Aucun | Outils intégrés | Horodatage, Entrée utilisateur, Mémoire | +10 | Voix | Par défaut | Aperçu JSON | Afficher | Copier | Enregistrer & Mettre à jour | Modèles / Open WebUI | Activer tout (1) | Mention de source interne | Réponse en français et mention en fin de réponse | Gérer | Terminé
+2026-11-13 14:56:12 réponse avec filtre : "Exploré search_knowledge_files, grep_knowledge_files, view_file, list_knowledge, query_knowledge_files\n\nSelon la FAQ du service après-vente \nfaq-sav.html\n, le cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans. Le délai de réparation en atelier est d'environ 10 jours ouvrés.\n\n4 Sources"
+2026-11-13 14:56:17 20-mention : élément absent « mention ajoutée par le filtre »
+2026-11-13 14:58:23 après activation : Stocks Vélanor | Vélanor MCP
+2026-11-13 15:02:31 réponse outils : 'Exploré stock_piece, velanor-mcp_jours_ouvres\n\nVoici les réponses à vos questions :\n\nMoteurs centraux en stock : 238 unités (au 31 octobre 2025)\nJours ouvrés entre le 16 et le 27 novembre 2026 : 10 jours'
+2026-11-13 15:02:34 étapes dépliées : Exploré stock_piece, velanor-mcp_jours_ouvres | Réflexion | Voir le résultat de stock_piece | Voir le résultat de velanor-mcp_jours_ouvres | Réflexion pendant 1 secondes |  | Voici les réponses à vos questions : |  | Moteurs centraux en stock : 238 unités (au 31 octobre 2025) | Jours ouvrés entre le 16 et le 27 novembre 2026 : 10 jours
+2026-11-13 15:03:08 20-mention : élément absent « mention ajoutée par le filtre »
+2026-11-13 15:03:35 20-mention : élément absent « mention ajoutée par le filtre »

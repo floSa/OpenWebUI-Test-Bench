@@ -126,5 +126,105 @@
   ],
   "note": "",
   "heure": "13:50:49"
+ },
+ {
+  "capture": "07-assistant-lie-a-une-base/08-choisir.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "modèle"
+   ],
+   [
+    2,
+    "Assistant qualité Vélanor"
+   ]
+  ],
+  "note": "",
+  "heure": "14:30:06"
+ },
+ {
+  "capture": "07-assistant-lie-a-une-base/09-reponse.png",
+  "url": "/c/0c1865dd-2dd7-4243-b18a-6be8ff1e379d",
+  "pastilles": [
+   [
+    1,
+    "Assistant qualité Vélanor"
+   ],
+   [
+    2,
+    "étapes"
+   ],
+   [
+    3,
+    "Sources"
+   ]
+  ],
+  "note": "",
+  "heure": "14:34:53"
+ },
+ {
+  "capture": "07-assistant-lie-a-une-base/10-utilisateur-choisit.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Assistant qualité Vélanor"
+   ]
+  ],
+  "note": "",
+  "heure": "14:35:02"
+ },
+ {
+  "capture": "07-assistant-lie-a-une-base/11-utilisateur-reponse.png",
+  "url": "/c/eeb03f9f-8964-4108-960c-e311c826bc59",
+  "pastilles": [
+   [
+    1,
+    "Assistant qualité Vélanor"
+   ],
+   [
+    2,
+    "Sources"
+   ]
+  ],
+  "note": "",
+  "heure": "14:37:08"
+ },
+ {
+  "capture": "07-assistant-lie-a-une-base/12-reglage-personnalise.png",
+  "url": "/workspace/models/edit?id=assistant-qualit-vlanor",
+  "pastilles": [
+   [
+    1,
+    "Réglages avancés"
+   ],
+   [
+    2,
+    "Nom du réglage personnalisé"
+   ],
+   [
+    3,
+    "Valeur du réglage personnalisé"
+   ],
+   [
+    4,
+    "Enregistrer & Mettre à jour"
+   ]
+  ],
+  "note": "",
+  "heure": "14:37:27"
+ },
+ {
+  "capture": "07-assistant-lie-a-une-base/13-sans-reflexion.png",
+  "url": "/c/d2d0a966-76f0-4df3-ba51-154810c3912d",
+  "pastilles": [
+   [
+    1,
+    "Sources"
+   ]
+  ],
+  "note": "",
+  "heure": "14:37:52"
  }
 ]

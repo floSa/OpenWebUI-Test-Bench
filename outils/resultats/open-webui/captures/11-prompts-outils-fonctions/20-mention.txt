@@ -1,0 +1,68 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Épinglé
+Chiffre d'affaires 2025
+il y a une heure
+1h
+Aujourd'hui
+your concise title here
+il y a 5 minutes
+5min
+Durée garantie cadre
+il y a 8 minutes
+...
+il y a 12 minutes
+11min
+...
+il y a 16 minutes
+15min
+Dans quel service et dans quelle ville est-ce que je travaille ?
+il y a 19 minutes
+18min
+Battery Storage Temperature
+il y a 25 minutes
+25min
+Garantie Batteries
+il y a 26 minutes
+26min
+Quelle est la température de stockage des batteries ?
+il y a 34 minutes
+33min
+Quel est le taux de recyclage des batteries usagées collectées ?
+il y a 34 minutes
+34min
+Chargement de...
+Claire Admin
+Conversation par chat
+
+Quelle est la durée de garantie du cadre ?
+
+13 nov., 14:56
+Assistant qualité Vélanor
+Exploré search_knowledge_files, grep_knowledge_files, view_file, list_knowledge, query_knowledge_files
+
+Selon la FAQ du service après-vente 
+faq-sav.html
+, le cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans. Le délai de réparation en atelier est d'environ 10 jours ouvrés.
+
+4 Sources
+13 nov., 14:56
+Questions de suivi
+Voulez-vous que je détaille les conditions de validité de cette garantie ?
+L'avis d'un tiers sur le cadre est-il également garanti pour une durée identique ?
+Pouvons-nous comparer ce type de garantie avec celui des concurrents directs ?
+
+
+
+
+Assistant qualité Vélanor
+Durée garantie cadre

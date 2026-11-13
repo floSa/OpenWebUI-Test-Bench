@@ -1,2 +1,29 @@
 2026-11-13 14:11:10 réglages audio :  | Moteur de reconnaissance vocale | Whisper (local) | OpenAI | API Web | Deepgram | Azure AI Speech | MistralAI |  | Moteur utilisé pour la reconnaissance vocale. |  | Types MIME pris en charge |  | Types MIME pris en charge pour les fichiers audio. |  | URL de base de l'API | Clé API | Clé API | Format de la requête | Téléversement multipartite | JSON Base64 |  | Format de la requête audio pour les appels d'outils. |  | Modèle de Speech-to-Text | Text-to-Speech | Moteur de Text-to-Speech | API Web | Transformers (Local) | OpenAI | OpenAI Realtime | ElevenLabs | Azure AI Speech | MistralAI |  | Moteur utilisé pour la synthèse vocale. |  | Voix de Text-to-Speech | Par
 2026-11-13 14:11:17 recherche web activée : false
+2026-11-13 15:04:20 pendant l'enregistrement : ions | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Obtenir des informations sur chat dans l'interface utilisateur | Plus | Modèle sélectionné : chat | Model controls | Saisie vocale | Mode vocal | Split screen | Nouvelle conversation | New tab | conversation temporaire
+2026-11-13 15:04:25 03-enregistrement : élément absent « valider l'enregistrement »
+2026-11-13 15:05:36 texte dicté : 
+
+2026-11-13 15:05:48 après lecture : Afficher/masquer 1 source
+2026-11-13 15:06:10 pendant l'enregistrement : ions | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Obtenir des informations sur chat dans l'interface utilisateur | Plus | Modèle sélectionné : chat | Model controls | Saisie vocale | Mode vocal | Split screen | Nouvelle conversation | New tab | conversation temporaire
+2026-11-13 15:06:15 03-enregistrement : élément absent « valider l'enregistrement »
+2026-11-13 15:07:25 texte dicté : 
+
+2026-11-13 15:07:44 micro disponible : False ; contexte sûr : False
+2026-11-13 15:07:45 messages après clic : Accès au microphone refusé
+2026-11-13 15:07:49 console : 
+2026-11-13 15:07:49 pendant l'enregistrement : ions | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Obtenir des informations sur chat dans l'interface utilisateur | Plus | Modèle sélectionné : chat | Model controls | Saisie vocale | Mode vocal | Split screen | Nouvelle conversation | New tab | conversation temporaire
+2026-11-13 15:07:54 03-enregistrement : élément absent « valider l'enregistrement »
+2026-11-13 15:09:04 texte dicté : 
+
+2026-11-13 15:09:26 micro disponible : True ; contexte sûr : True
+2026-11-13 15:09:27 messages après clic : 
+2026-11-13 15:09:31 console : 
+2026-11-13 15:09:31 pendant l'enregistrement : enu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Obtenir des informations sur chat dans l'interface utilisateur | Annuler | Confirmer l'enregistrement | Split screen | Nouvelle conversation | New tab | conversation temporaire
+2026-11-13 15:10:00 texte dicté : Message vocale de Julien Moreau, directeur de production chez Vélanor, enregistrait le 3 novembre VVTSEC. La ligne d'assoblage numéro 3 de nôtre sera arrêtée du 2 au 6 mars VVTSEC pour maintenance. Pendant cet arrêt, la production du lois urbain sera transférée ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+2026-11-13 15:10:18 micro disponible : True ; contexte sûr : True
+2026-11-13 15:10:19 messages après clic : 
+2026-11-13 15:10:23 console : 
+2026-11-13 15:10:23 pendant l'enregistrement : enu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Menu des conversations | Obtenir des informations sur chat dans l'interface utilisateur | Annuler | Confirmer l'enregistrement | Split screen | Nouvelle conversation | New tab | conversation temporaire
+2026-11-13 15:10:33 texte dicté : Message vocal de Julien Moreau, directeur de production chez Vélanor, enregistré le 3 novembre VVTSEC. La ligne d'assoblage numéro 3 de note sera arrêtée du 2 au 6 mars VVTSI pour maintenant.
+2026-11-13 15:10:46 après lecture : Afficher/masquer 1 source

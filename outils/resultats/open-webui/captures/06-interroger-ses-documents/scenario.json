@@ -1,0 +1,154 @@
+[
+ {
+  "capture": "06-interroger-ses-documents/01-diese.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "#"
+   ],
+   [
+    2,
+    "Démo Vélanor"
+   ]
+  ],
+  "note": "",
+  "heure": "14:24:47"
+ },
+ {
+  "capture": "06-interroger-ses-documents/02-base-jointe.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Démo Vélanor (jointe)"
+   ],
+   [
+    2,
+    "question"
+   ]
+  ],
+  "note": "",
+  "heure": "14:24:50"
+ },
+ {
+  "capture": "06-interroger-ses-documents/03-reponse.png",
+  "url": "/c/0ae615b0-625f-4caf-a468-57d514312cd7",
+  "pastilles": [
+   [
+    1,
+    "étapes de recherche"
+   ],
+   [
+    2,
+    "Sources"
+   ],
+   [
+    3,
+    "actions sous la réponse"
+   ]
+  ],
+  "note": "",
+  "heure": "14:27:35"
+ },
+ {
+  "capture": "06-interroger-ses-documents/04-etapes.png",
+  "url": "/c/0ae615b0-625f-4caf-a468-57d514312cd7",
+  "pastilles": [
+   [
+    1,
+    "étapes dépliées"
+   ]
+  ],
+  "note": "",
+  "heure": "14:29:31"
+ },
+ {
+  "capture": "06-interroger-ses-documents/05-sources.png",
+  "url": "/c/0ae615b0-625f-4caf-a468-57d514312cd7",
+  "pastilles": [
+   [
+    1,
+    "Sources"
+   ],
+   [
+    2,
+    "document cité"
+   ]
+  ],
+  "note": "",
+  "heure": "14:29:34"
+ },
+ {
+  "capture": "06-interroger-ses-documents/06-passage.png",
+  "url": "/c/0ae615b0-625f-4caf-a468-57d514312cd7",
+  "pastilles": [
+   [
+    1,
+    "document"
+   ],
+   [
+    2,
+    "pertinence"
+   ]
+  ],
+  "note": "",
+  "heure": "14:29:36"
+ },
+ {
+  "capture": "06-interroger-ses-documents/07-actions.png",
+  "url": "/c/0ae615b0-625f-4caf-a468-57d514312cd7",
+  "pastilles": [
+   [
+    1,
+    "Modifier"
+   ],
+   [
+    2,
+    "Copier"
+   ],
+   [
+    3,
+    "Lire à haute voix"
+   ],
+   [
+    4,
+    "Dupliquer la conversation"
+   ],
+   [
+    5,
+    "Bonne réponse"
+   ],
+   [
+    6,
+    "Mauvaise réponse"
+   ],
+   [
+    7,
+    "Continuer la réponse"
+   ],
+   [
+    8,
+    "Regénérer"
+   ],
+   [
+    9,
+    "questions de suivi"
+   ]
+  ],
+  "note": "",
+  "heure": "14:29:38"
+ },
+ {
+  "capture": "06-interroger-ses-documents/08-noter.png",
+  "url": "/c/0ae615b0-625f-4caf-a468-57d514312cd7",
+  "pastilles": [
+   [
+    1,
+    "Bonne réponse"
+   ]
+  ],
+  "note": "",
+  "heure": "14:29:46"
+ }
+]

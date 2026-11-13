@@ -1,0 +1,66 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Épinglé
+Chiffre d'affaires 2025
+il y a une heure
+1h
+Aujourd'hui
+your concise title here
+il y a 12 minutes
+12min
+Durée garantie cadre
+il y a 15 minutes
+14min
+...
+il y a 18 minutes
+18min
+...
+il y a 23 minutes
+22min
+Dans quel service et dans quelle ville est-ce que je travaille ?
+il y a 26 minutes
+25min
+Battery Storage Temperature
+il y a 32 minutes
+32min
+Garantie Batteries
+il y a 33 minutes
+33min
+Quelle est la température de stockage des batteries ?
+il y a 41 minutes
+40min
+Quel est le taux de recyclage des batteries usagées collectées ?
+il y a 41 minutes
+41min
+Chargement de...
+Claire Admin
+Automatisations
+1
+/
+Point qualité du lundi
+Statut
+Actif
+Planifier
+Quotidien à 9:00
+Destination
+Nouvelle conversation
+Modèle
+chat
+Prochaine exécution
+14/11/2026 09:00
+Dernière exécution
+Jamais
+Prompt
+Rappelle en cinq lignes les contrôles de sécurité des batteries à faire cette semaine dans le local B2 (inspection, extincteurs, formation), en français.
+Exécutions
+Aucune exécution pour l'instant
+Automatisations / Open WebUI

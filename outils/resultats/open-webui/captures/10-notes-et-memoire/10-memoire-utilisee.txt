@@ -1,0 +1,58 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Épinglé
+Chiffre d'affaires 2025
+il y a une heure
+48min
+Aujourd'hui
+...
+il y a une minute
+Dans quel service et dans quelle ville est-ce que je travaille ?
+il y a 3 minutes
+2min
+Battery Storage Temperature
+il y a 9 minutes
+9min
+Garantie Batteries
+il y a 10 minutes
+10min
+Quelle est la température de stockage des batteries ?
+il y a 18 minutes
+17min
+Quel est le taux de recyclage des batteries usagées collectées ?
+il y a 18 minutes
+18min
+Chargement de...
+Claire Admin
+Response complete
+Conversation par chat
+
+Dans quel service et dans quelle ville est-ce que je travaille ?
+
+13 nov., 14:48
+chat
+Réflexion pendant 1 secondes
+
+Vous travaillez dans le service qualité chez Vélanor, et votre ville est Nantes.
+
+13 nov., 14:48
+Questions de suivi
+Comment je peux contacter le responsable du service qualité ?
+Quels sont mes responsabilités principales dans ce département ?
+Où se trouve l'interface d'accès aux dossiers internes ?
+Y a-t-il un document récapitulatif de la structure interne ?
+
+
+
+
+chat
+...

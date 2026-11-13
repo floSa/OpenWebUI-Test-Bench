@@ -54,9 +54,13 @@ def detail(s):
     s.note("actions : " + " | ".join(filter(None, (b.get_attribute("aria-label") for b in barre.all()))))
     msg.hover(); p.wait_for_timeout(500)
     def act(nom):
-        return msg.locator(f"button[aria-label='{nom}']").first
-    s.cap_souple("07-actions", [(act("Modifier"), "Modifier"), (act("Copier"), "Copier"), (act("Lire à voix haute"), "Lire à voix haute"),
-                                (act("Info"), "Info"), (act("Bonne réponse"), "Bonne réponse"), (act("Régénérer"), "Régénérer")])
+        return p.locator(f"button[aria-label='{nom}']").last
+    suivi = p.locator("button[aria-label^='Question de suivi']")
+    s.note("questions de suivi : " + " | ".join(b.get_attribute("aria-label") for b in suivi.all()))
+    s.cap_souple("07-actions", [(act("Modifier"), "Modifier"), (act("Copier"), "Copier"), (act("Lire à haute voix"), "Lire à haute voix"),
+                                (act("Dupliquer la conversation"), "Dupliquer la conversation"), (act("Bonne réponse"), "Bonne réponse"),
+                                (act("Mauvaise réponse"), "Mauvaise réponse"), (act("Continuer la réponse"), "Continuer la réponse"),
+                                (act("Regénérer"), "Regénérer"), (suivi.first, "questions de suivi")])
 
 
 def noter(s):
@@ -64,7 +68,8 @@ def noter(s):
     if "/c/" not in p.url:
         detail(s)
     msg = p.locator(".chat-assistant").last
-    b = msg.locator("button[aria-label='Bonne réponse']").first
+    msg.hover(); p.wait_for_timeout(400)
+    b = p.locator("button[aria-label='Bonne réponse']").last
     b.click(); p.wait_for_timeout(1500)
     s.note("après pouce : " + msg.inner_text().replace("\n", " | ")[-400:])
     s.cap_souple("08-noter", [(b, "Bonne réponse"), (msg.get_by_text(re.compile("Pourquoi|Why|raison", re.I)).first, "précisions")])

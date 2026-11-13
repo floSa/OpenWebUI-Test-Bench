@@ -1,0 +1,7 @@
+Aller au contenu principal
+Connectez-vous à Open WebUI
+E-mail
+Mot de passe
+Entrez votre mot de passe
+Connexion
+The email or password provided is incorrect. Please check for typos and try logging in again.

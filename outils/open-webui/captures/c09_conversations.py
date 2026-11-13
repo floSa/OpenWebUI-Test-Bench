@@ -57,7 +57,7 @@ def explorer(s):
 def survoler(s, titre=None):
     p = s.page
     ouvrir_barre(p)
-    item = p.locator("a[href^='/c/']").filter(has_text=titre).filter(visible=True).first if titre else premier_item(p)
+    item = p.locator("a[href^='/c/']").filter(has_text=titre).filter(visible=True).last if titre else premier_item(p)
     item.hover(); p.wait_for_timeout(600)
     return item
 
@@ -224,18 +224,19 @@ def archiver(s):
     """Archive une conversation de la comparaison (étape comparer)."""
     p = s.page
     s.aller("/")
-    item = survoler(s, re.compile("batteries|stock", re.I))
-    menu_conv(p).click(); p.wait_for_timeout(600)
-    p.get_by_role("menuitem").filter(has_text="Archiver").first.click(); p.wait_for_timeout(1500)
-    s.sans_toasts()
-    s.aller("/")
-    p.locator("button[aria-label='Menu utilisateur']").first.click(); p.wait_for_timeout(600)
-    p.get_by_role("menuitem").filter(has_text=re.compile("Réglages")).first.click(); p.wait_for_timeout(1000)
-    s.onglet("Conversations archivées").click(); p.wait_for_timeout(1200)
-    dlg = p.get_by_role("dialog").last
+    if not p.evaluate("""async () => { const r = await fetch('/api/v1/chats/archived', {headers: {Authorization: 'Bearer ' + localStorage.token}});
+            return (await r.json()).some(c => c.title === 'Stock Trends') }"""):
+        item = survoler(s, "Stock Trends")
+        item.locator("xpath=../../..").locator("button[aria-label='Menu des conversations']").first.click(); p.wait_for_timeout(600)
+        p.get_by_role("menuitem").filter(has_text="Archiver").first.click(); p.wait_for_timeout(1500)
+        s.sans_toasts()
+    s.reglages("general")
+    s.onglet("Conversations archivées").click(); p.wait_for_timeout(1500)
+    p.get_by_text("Stock Trends").last.wait_for(timeout=15000)
+    dlg = p.get_by_role("dialog").filter(has_text="Stock Trends").last
     s.note("archives : " + dlg.inner_text()[-600:].replace("\n", " | "))
     s.cap_souple("09-archives", [(s.onglet("Conversations archivées"), "Conversations archivées"),
-                                 (dlg.get_by_text(re.compile("batteries|stock", re.I)).first, "conversation archivée")])
+                                 (dlg.get_by_text("Stock Trends").first, "conversation archivée")])
 
 
 if __name__ == "__main__":

@@ -1,0 +1,77 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Épinglé
+Chiffre d'affaires 2025
+il y a une heure
+Aujourd'hui
+your concise title here
+il y a 12 minutes
+11min
+Durée garantie cadre
+il y a 14 minutes
+14min
+...
+il y a 18 minutes
+18min
+...
+il y a 22 minutes
+22min
+Dans quel service et dans quelle ville est-ce que je travaille ?
+il y a 25 minutes
+25min
+Battery Storage Temperature
+il y a 32 minutes
+31min
+Garantie Batteries
+il y a 33 minutes
+32min
+Quelle est la température de stockage des batteries ?
+il y a 40 minutes
+40min
+Quel est le taux de recyclage des batteries usagées collectées ?
+il y a 41 minutes
+40min
+Claire Admin
+Conversation par chat
+rapport-annuel-2025.pdf
+52.5 KB
+
+Quel est le chiffre d’affaires 2025 de Vélanor ?
+
+13 nov., 8:54
+chat
+Exploré query_chat_files
+
+Le chiffre d'affaires de Vélanor pour l'année 2025 est de 48,6 millions d'euros .
+
+Cette figure représente une croissance de +12,4% par rapport à l'exercice précédent. Le chiffre d'affaires a été réparti sur les quatre trimestres comme suit :
+
+T1 2025 : 9,8 M€ (20 % du total)
+T2 2025 : 13,7 M€ (28 % du total)
+T3 2025 : 14,2 M€ (29 % du total) - trimestre le plus élevé de l'année
+T4 2025 : 10,9 M€ (22 % du total)
+
+Source : Rapport annuel 2025 de Vélanor SAS
+
+1 Source
+13 nov., 8:54
+Questions de suivi
+Je souhaite obtenir les marges brutes et opérationnelles pour l'exercice 2025.
+Il faut connaître la répartition du CA par secteur d'activité dans ce rapport.
+L'équipe cherche les prévisions de croissance pour l'exercice fiscal suivant.
+
+
+
+
+chat
+Chiffre d'affaires 2025
+Open WebUI

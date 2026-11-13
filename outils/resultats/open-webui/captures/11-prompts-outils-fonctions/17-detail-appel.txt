@@ -1,0 +1,72 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Épinglé
+Chiffre d'affaires 2025
+il y a une heure
+58min
+Aujourd'hui
+your concise title here
+il y a 4 minutes
+Durée garantie cadre
+il y a 2 minutes
+2min
+...
+il y a 6 minutes
+5min
+...
+il y a 10 minutes
+10min
+Dans quel service et dans quelle ville est-ce que je travaille ?
+il y a 13 minutes
+12min
+Battery Storage Temperature
+il y a 19 minutes
+19min
+Garantie Batteries
+il y a 21 minutes
+20min
+Quelle est la température de stockage des batteries ?
+il y a 28 minutes
+28min
+Quel est le taux de recyclage des batteries usagées collectées ?
+il y a 29 minutes
+28min
+Chargement de...
+Claire Admin
+Response complete
+Conversation par chat
+
+Combien de moteurs centraux reste-t-il en stock, et combien de jours ouvrés y a-t-il entre le 16 et le 27 novembre 2026 ?
+
+13 nov., 14:58
+chat
+Exploré stock_piece, velanor-mcp_jours_ouvres
+Réflexion
+Voir le résultat de stock_piece
+Voir le résultat de velanor-mcp_jours_ouvres
+Réflexion pendant 1 secondes
+
+Voici les réponses à vos questions :
+
+Moteurs centraux en stock : 238 unités (au 31 octobre 2025)
+Jours ouvrés entre le 16 et le 27 novembre 2026 : 10 jours
+13 nov., 14:58
+Questions de suivi
+Je souhaite vérifier la faisabilité de la livraison en novembre avec le stock d'octobre actuel.
+Merci d'indiquer les délais standards d'expédition pour une commande immédiate.
+Je dois savoir si je dois prévoir des marges de sécurité avant la date de rupture du stock.
+
+
+
+
+chat
+your concise title here

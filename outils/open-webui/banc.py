@@ -89,9 +89,11 @@ class Adaptateur:
         return {"base": kid, "fichiers": detail}
 
     def demander(self, question):
-        r = self.api.post("/api/chat/completions", {
-            "model": "chat", "stream": False, "messages": [{"role": "user", "content": question}],
-            "files": [{"type": "collection", "id": self._base()}]})
+        corps = {"model": "chat", "stream": False, "messages": [{"role": "user", "content": question}],
+                 "files": [{"type": "collection", "id": self._base()}]}
+        if self.a.corps:  # champs ajoutés à chaque requête (ex. réflexion de `chat` coupée)
+            corps.update(json.loads(self.a.corps))
+        r = self.api.post("/api/chat/completions", corps)
         m = r["choices"][0]["message"]
         cits = []
         for s in r.get("sources") or []:
@@ -113,7 +115,7 @@ class Adaptateur:
         c = self.api.get("/api/v1/retrieval/config")
         e = self.api.get("/api/v1/retrieval/embedding")
         tc = self.api.get("/api/v1/tasks/config")
-        return {"url": BASE, "base": self.a.base, "modele": "chat",
+        return {"url": BASE, "base": self.a.base, "modele": "chat", "corps": self.a.corps,
                 "taches": {k: tc.get(k) for k in ("TASK_MODEL", "TASK_MODEL_PARAMS", "ENABLE_RETRIEVAL_QUERY_GENERATION")},
                 "recherche": {k: c.get(k) for k in CLES},
                 "embedding": {k: e.get(k) for k in ("RAG_EMBEDDING_ENGINE", "RAG_EMBEDDING_MODEL", "RAG_EMBEDDING_BATCH_SIZE")}}
@@ -127,6 +129,7 @@ def main():
     p.add_argument("--reglages", help="JSON écrit par /api/v1/retrieval/config/update avant le banc")
     p.add_argument("--rerank", action="store_true", help="recherche hybride et reranker externe `rerank` du service central")
     p.add_argument("--taches", help="JSON fusionné dans /api/v1/tasks/config (ex. génération des requêtes de recherche)")
+    p.add_argument("--corps", help='JSON fusionné dans chaque requête (ex. {"chat_template_kwargs": {"enable_thinking": false}})')
     p.add_argument("--limite", type=int)
     p.add_argument("--ids")
     p.add_argument("--sans-juge", action="store_true")

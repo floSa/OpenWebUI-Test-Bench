@@ -1,0 +1,44 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Épinglé
+Chiffre d'affaires 2025
+il y a 30 minutes
+29min
+Aujourd'hui
+Quelle est la température de stockage des batteries ?
+il y a 5 minutes
+Quel est le taux de recyclage des batteries usagées collectées ?
+il y a quelques secondes
+1min
+Chargement de...
+Claire Admin
+Response complete
+Conversation par chat
+
+Quelle est la température de stockage des batteries ?
+
+13 nov., 14:30
+Assistant qualité Vélanor
+Exploré query_knowledge_files
+
+La température de stockage des batteries doit être comprise entre 10 °C et 25 °C, selon la procédure PR-SEC-04 
+procedure-batteries.docx
+. Ces batteries sont conservées dans le local B2, équipé d'une détection incendie. Pour les stockages dépassant 30 jours, la charge est ramenée à 80 % au maximum.
+
+5 Sources
+13 nov., 14:30
+
+
+
+
+Assistant qualité Vélanor
+Quelle est la température de stockage des batteries ?

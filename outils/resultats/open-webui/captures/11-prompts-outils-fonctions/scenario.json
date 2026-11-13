@@ -238,5 +238,125 @@
   ],
   "note": "",
   "heure": "09:25:52"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/18-filtre-active.png",
+  "url": "/admin/functions",
+  "pastilles": [
+   [
+    1,
+    "Mention de source interne"
+   ],
+   [
+    2,
+    "interrupteur (activée)"
+   ]
+  ],
+  "note": "",
+  "heure": "14:55:39"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/19-filtre-assistant.png",
+  "url": "/workspace/models/edit?id=assistant-qualit-vlanor",
+  "pastilles": [
+   [
+    1,
+    "Mention de source interne"
+   ]
+  ],
+  "note": "",
+  "heure": "14:55:48"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/14-activer-outils.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "+"
+   ],
+   [
+    2,
+    "Outils"
+   ],
+   [
+    3,
+    "Stocks Vélanor"
+   ],
+   [
+    4,
+    "Vélanor MCP"
+   ]
+  ],
+  "note": "",
+  "heure": "14:58:24"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/15-outils-actifs.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "question"
+   ],
+   [
+    2,
+    "outils actifs"
+   ]
+  ],
+  "note": "",
+  "heure": "14:58:26"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/16-reponse-outils.png",
+  "url": "/c/d09059c9-d20d-47b5-acca-4aae969bac24",
+  "pastilles": [
+   [
+    1,
+    "appels d'outils"
+   ],
+   [
+    2,
+    "stock"
+   ],
+   [
+    3,
+    "jours ouvrés"
+   ]
+  ],
+  "note": "",
+  "heure": "15:02:32"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/17-detail-appel.png",
+  "url": "/c/d09059c9-d20d-47b5-acca-4aae969bac24",
+  "pastilles": [
+   [
+    1,
+    "stock_piece"
+   ],
+   [
+    2,
+    "jours_ouvres"
+   ]
+  ],
+  "note": "",
+  "heure": "15:02:35"
+ },
+ {
+  "capture": "11-prompts-outils-fonctions/20-mention.png",
+  "url": "/c/712013bd-c9c9-42ec-b44d-f34abff546f1",
+  "pastilles": [
+   [
+    1,
+    "Assistant qualité Vélanor"
+   ],
+   [
+    2,
+    "fin de la réponse : mention absente à l'écran"
+   ]
+  ],
+  "note": "",
+  "heure": "15:04:02"
  }
 ]

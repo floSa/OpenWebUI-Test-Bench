@@ -1,0 +1,76 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Épinglé
+Chiffre d'affaires 2025
+il y a une heure
+1h
+Aujourd'hui
+Quelle est l’adresse du site de Nantes de Vélanor ?
+il y a 3 minutes
+Point qualité du lundi
+il y a 9 minutes
+8min
+your concise title here
+il y a 21 minutes
+21min
+Durée garantie cadre
+il y a 24 minutes
+23min
+...
+il y a 28 minutes
+27min
+...
+il y a 32 minutes
+31min
+Dans quel service et dans quelle ville est-ce que je travaille ?
+il y a 35 minutes
+34min
+Battery Storage Temperature
+il y a 41 minutes
+41min
+Garantie Batteries
+il y a 42 minutes
+42min
+Quelle est la température de stockage des batteries ?
+il y a une heure
+49min
+Quel est le taux de recyclage des batteries usagées collectées ?
+il y a une heure
+50min
+Chargement de...
+Claire Admin
+Conversation par chat
+
+Quelle est l’adresse du site de Nantes de Vélanor ?
+
+13 nov., 15:17
+chat
+Failed to connect to MCP server 'velanor-mcp'
+Exploré search_knowledge_bases, search_knowledge_files
+
+Je ne trouve pas d'informations précises sur l'adresse du site de Vélanor à Nantes dans mes connaissances actuelles.
+
+Pourriez-vous me fournir cette information ou indiquer où vous l'avez trouvée ? Je pourrai ainsi mettre à jour mes connaissances et vous répondre plus précisément la prochaine fois.
+
+13 nov., 15:17
+Questions de suivi
+J'ai trouvé une adresse via un site de tourisme, je veux vérifier que ce soit bien le Vélanor.
+Besoin d'une confirmation si cette mention correspond au Vélanor du centre-ville uniquement.
+Je cherche les mots-clés pour trouver la bonne page sur Google Maps rapidement.
+Il ne me suffit pas de l'adresse, j'ai besoin des heures d'ouverture avant un déplacement.
+Tu peux m'aider à formuler une requête précise pour localiser le lieu sans chercher partout.
+
+
+
+
+chat
+Quelle est l’adresse du site de Nantes de Vélanor ?

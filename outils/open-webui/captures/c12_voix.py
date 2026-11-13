@@ -5,7 +5,10 @@ from ui import Scenario, etapes
 
 CH = "12-voix-et-recherche-web"
 WAV = "/depot/donnees/voix-dictee.wav"
-ARGS = ["--use-fake-ui-for-media-stream", "--use-fake-device-for-media-stream", f"--use-file-for-fake-audio-capture={WAV}%noloop"]
+# Le micro n'est accessible que dans un contexte sûr : http://<nom>.localhost l'est, http://rag-open-webui ne l'est pas.
+import ui
+ui.BASE = "http://owui.localhost:8080"
+ARGS = ["--host-resolver-rules=MAP owui.localhost rag-open-webui", "--use-fake-ui-for-media-stream", "--use-fake-device-for-media-stream", f"--use-file-for-fake-audio-capture={WAV}%noloop"]
 
 
 def selecteur(p, libelle):
@@ -31,11 +34,18 @@ def dicter(s):
     s.aller("/")
     micro = p.locator("button[aria-label='Saisie vocale']").first
     s.cap("02-micro", [(micro, "Saisie vocale"), (p.locator("button[aria-label='Mode vocal']").first, "Mode vocal")])
-    micro.click(); p.wait_for_timeout(5000)
+    journal = []
+    p.on("console", lambda m: journal.append(m.type + ": " + m.text[:200]))
+    s.note("micro disponible : " + str(p.evaluate("() => !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia)"))
+           + " ; contexte sûr : " + str(p.evaluate("() => window.isSecureContext")))
+    micro.click(); p.wait_for_timeout(1200)
+    s.note("messages après clic : " + " || ".join(x.inner_text() for x in p.locator("[data-sonner-toast]").all()))
+    p.wait_for_timeout(3800)
+    s.note("console : " + " || ".join(journal[-8:]))
     s.note("pendant l'enregistrement : " + " | ".join(filter(None, (b.get_attribute("aria-label") for b in p.locator("button[aria-label]").filter(visible=True).all())))[-400:])
     arret = p.locator("button[aria-label*='Confirm' i], button[aria-label*='Arrêter' i], button[aria-label*='Stop' i], button[aria-label*='Valider' i]").filter(visible=True)
     s.cap_souple("03-enregistrement", [(arret.last, "valider l'enregistrement")])
-    p.wait_for_timeout(9000)
+    p.wait_for_timeout(4500)  # arrêt avant la fin du fichier son (le silence final est mal transcrit)
     if arret.count():
         arret.last.click()
     for _ in range(60):
@@ -57,7 +67,7 @@ def lire(s):
     p.locator("a[href^='/c/']").filter(has_text="Chiffre d'affaires 2025").first.click(); p.wait_for_timeout(2500)
     msg = p.locator(".chat-assistant").last
     msg.hover(); p.wait_for_timeout(500)
-    lire_ = msg.locator("button[aria-label='Lire à voix haute']").first
+    lire_ = p.locator("button[aria-label='Lire à haute voix']").last
     s.cap_souple("05-lire", [(lire_, "Lire à voix haute")])
     lire_.click(); p.wait_for_timeout(2000)
     s.note("après lecture : " + " | ".join(filter(None, (x.get_attribute("aria-label") for x in msg.locator("button[aria-label]").all()))))

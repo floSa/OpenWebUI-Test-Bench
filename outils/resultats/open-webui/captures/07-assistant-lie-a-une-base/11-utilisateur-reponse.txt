@@ -1,0 +1,36 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Canaux
+Dossiers
+Conversations
+Aujourd'hui
+Délai de livraison Batterix
+il y a 2 minutes
+Chargement de...
+Julien Moreau
+Response complete
+Conversation par chat
+
+Quel est le délai de livraison prévu par le contrat avec Batterix ?
+
+13 nov., 14:35
+Assistant qualité Vélanor
+Exploré list_knowledge, view_file
+
+Le délai de livraison prévu par le contrat avec Batterix est de 21 jours après la commande 
+contrat-batterix-scan.pdf
+.
+
+1 Source
+13 nov., 14:35
+
+
+
+
+Assistant qualité Vélanor
+Délai de livraison Batterix

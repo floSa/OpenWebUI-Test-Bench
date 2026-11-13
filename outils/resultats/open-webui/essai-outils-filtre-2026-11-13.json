@@ -1,0 +1,40 @@
+[
+ {
+  "conversation": "your concise title here",
+  "id": "d09059c9-d20d-47b5-acca-4aae969bac24",
+  "question": "Combien de moteurs centraux reste-t-il en stock, et combien de jours ouvrés y a-t-il entre le 16 et le 27 novembre 2026 ?",
+  "modele": "chat",
+  "appels": [
+   "recall_memories",
+   "stock_piece",
+   "velanor-mcp_jours_ouvres"
+  ],
+  "reponse": "Voici les réponses à vos questions :\n\n- **Moteurs centraux en stock** : 238 unités (au 31 octobre 2025)\n- **Jours ouvrés entre le 16 et le 27 novembre 2026** : 10 jours"
+ },
+ {
+  "conversation": "Durée garantie cadre",
+  "id": "712013bd-c9c9-42ec-b44d-f34abff546f1",
+  "question": "Quelle est la durée de garantie du cadre ?",
+  "modele": "assistant-qualit-vlanor",
+  "appels": [
+   "recall_memories",
+   "list_attached_knowledge",
+   "search_knowledge_files",
+   "grep_knowledge_files",
+   "view_file",
+   "list_knowledge",
+   "query_knowledge_files"
+  ],
+  "reponse": "Selon la FAQ du service après-vente [1], le cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans. Le délai de réparation en atelier est d'environ 10 jours ouvrés.\n\n_Réponse générée par l'assistant interne Vélanor._"
+ },
+ {
+  "conversation": "...",
+  "id": "04825384-b88b-4d59-8d48-bc952fae96fc",
+  "question": "Combien de moteurs centraux reste-t-il en stock, et combien de jours ouvrés y a-t-il entre le 16 et le 27 novembre 2026 ?",
+  "modele": "chat",
+  "appels": [
+   "recall_memories"
+  ],
+  "reponse": "Voici les informations demandées :\n\n**Stock de pièces :**\n* Moteur central : **8 unités** disponibles en stock\n\n**Délai (jours ouvrés) :**\n* Du 16 au 27 novembre 2026 : **12 jours ouvrés**"
+ }
+]

@@ -127,8 +127,8 @@ def memoire_essai(s):
     rep = s.attendre_reponse()
     s.note(f"réponse mémoire : {rep[:600]!r}")
     msg = p.locator(".chat-assistant").last
-    s.cap_souple("10-memoire-utilisee", [(msg.get_by_text(re.compile("Mémoire|mémoire|Memory|Exploré|Recherché")).first, "consultation de la mémoire"),
-                                         (msg.get_by_text(re.compile("qualité")).last, "réponse")])
+    s.cap_souple("10-memoire-utilisee", [(p.locator("#chat-input").locator("xpath=//*[contains(text(),'Dans quel service')]").last, "question"),
+                                         (msg.get_by_text(re.compile("qualité", re.I)).last, "réponse tirée du souvenir")])
 
 
 if __name__ == "__main__":

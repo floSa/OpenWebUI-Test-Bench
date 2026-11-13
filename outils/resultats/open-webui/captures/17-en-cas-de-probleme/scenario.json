@@ -1,0 +1,62 @@
+[
+ {
+  "capture": "17-en-cas-de-probleme/01-mot-de-passe.png",
+  "url": "/auth",
+  "pastilles": [
+   [
+    1,
+    "message d'erreur"
+   ],
+   [
+    2,
+    "Mot de passe"
+   ]
+  ],
+  "note": "",
+  "heure": "14:14:18"
+ },
+ {
+  "capture": "17-en-cas-de-probleme/02-docling-arrete.png",
+  "url": "/workspace/knowledge/08d4e8cc-43ad-4711-9369-5655c68675bb",
+  "pastilles": [
+   [
+    1,
+    "message d'erreur"
+   ]
+  ],
+  "note": "",
+  "heure": "15:15:49"
+ },
+ {
+  "capture": "17-en-cas-de-probleme/03-mcp-menu.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Stocks Vélanor"
+   ],
+   [
+    2,
+    "Vélanor MCP"
+   ]
+  ],
+  "note": "",
+  "heure": "15:17:15"
+ },
+ {
+  "capture": "17-en-cas-de-probleme/04-mcp-arrete.png",
+  "url": "/c/4cdb5e00-cbfc-4be2-8aab-bf8071a32010",
+  "pastilles": [
+   [
+    1,
+    "Failed to connect to MCP server"
+   ],
+   [
+    2,
+    "réponse sans l'outil"
+   ]
+  ],
+  "note": "",
+  "heure": "15:20:06"
+ }
+]

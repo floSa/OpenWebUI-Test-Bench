@@ -1,0 +1,68 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Épinglé
+Chiffre d'affaires 2025
+il y a une heure
+1h
+Aujourd'hui
+Point qualité du lundi
+il y a 5 minutes
+4min
+your concise title here
+il y a 17 minutes
+17min
+Durée garantie cadre
+il y a 19 minutes
+19min
+...
+il y a 23 minutes
+23min
+...
+il y a 27 minutes
+27min
+Dans quel service et dans quelle ville est-ce que je travaille ?
+il y a 30 minutes
+30min
+Battery Storage Temperature
+il y a 37 minutes
+36min
+Garantie Batteries
+il y a 38 minutes
+37min
+Quelle est la température de stockage des batteries ?
+il y a une heure
+45min
+Quel est le taux de recyclage des batteries usagées collectées ?
+il y a une heure
+45min
+Chargement de...
+Claire Admin
+Modèles
+1
+Connaissances
+4
+Prompts
+1
+Skills
+0
+Outils
+1
+Retour en arrière
+Accès
+08d4e8cc-43ad-4711-9369-5655c68675bb
+All files
+
+No files
+
+Select a file to preview
+HTTPConnectionPool(host='rag-docling-serve', port=5001): Max retries exceeded with url: /v1/convert/file (Caused by NameResolutionError("HTTPConnection(host='rag-docling-serve', port=5001): Failed to resolve 'rag-docling-serve' ([Errno -2] Name or service not known)"))
+Connaissances / Open WebUI

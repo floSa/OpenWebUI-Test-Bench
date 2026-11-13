@@ -1,0 +1,51 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Épinglé
+Chiffre d'affaires 2025
+il y a 37 minutes
+37min
+Aujourd'hui
+Garantie Batteries
+il y a quelques secondes
+Quelle est la température de stockage des batteries ?
+il y a 7 minutes
+7min
+Quel est le taux de recyclage des batteries usagées collectées ?
+il y a 8 minutes
+7min
+Chargement de...
+Claire Admin
+Response complete
+Conversation par chat
+
+Quelle est la durée de garantie des batteries prévue par le contrat Batterix ?
+
+13 nov., 14:37
+Assistant qualité Vélanor
+Voir le résultat de query_knowledge_files
+
+Le contrat d'approvisionnement avec Batterix (contrat n° BX-2025-117) prévoit une durée de garantie des batteries de 5 ans ou 1 000 cycles de charge, au premier terme atteint 
+contrat-batterix-scan.pdf
+.
+
+Note : Le document ne précise pas si cette garantie s'applique aux batteries seulement ou à d'autres composants (comme le cadre ou le moteur).
+
+4 Sources
+13 nov., 14:37
+Questions de suivi
+Peux-tu confirmer que la garantie de Batterix concerne uniquement les batteries et non d'autres composants comme le cadre ?
+
+
+
+
+Assistant qualité Vélanor
+Garantie Batteries

@@ -1,0 +1,69 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Épinglé
+Chiffre d'affaires 2025
+il y a 38 minutes
+37min
+Aujourd'hui
+Battery Storage Temperature
+il y a 2 minutes
+2min
+Stock Trends
+il y a une minute
+Garantie Batteries
+il y a quelques secondes
+1min
+Quelle est la température de stockage des batteries ?
+il y a 8 minutes
+7min
+Quel est le taux de recyclage des batteries usagées collectées ?
+il y a 8 minutes
+8min
+Chargement de...
+Claire Admin
+Response complete
+Conversation par chat
+
+En une phrase : pourquoi stocker les batteries entre 10 et 25 °C ?
+
+13 nov., 14:38
+chat
+Réflexion pendant 2 secondes
+
+Stocker les batteries entre 10 et 25 °C optimise leur durée de vie et performance : des températures trop basses (< 10°C) risquent de cristalliser l'électrolyte ou réduire la capacité, tandis que des températures trop élevées (> 25°C) accélèrent la dégradation chimique interne.
+
+13 nov., 14:38
+Questions de suivi
+Cette plage de température s'applique-t-elle aussi aux batteries lithium-ion ou plomb ?
+Je souhaiterais stocker pendant 6 mois, quel niveau de tension est le plus sécurisé pour ne pas dégrader la cellule ?
+Est-il possible d'utiliser un coffre fermé en voiture pour maintenir cette température sans chauffage ?
+
+
+
+
+chat
+Battery Storage Temperature
+Stock Trends
+Conversation par chat
+
+En une phrase : pourquoi stocker les batteries entre 10 et 25 °C ?
+
+13 nov., 14:38
+gemma-4-e4b
+Réflexion pendant 7 secondes
+
+Cette plage de température est optimale car elle permet de maintenir une cinétique chimique stable pour maximiser la durée de vie et la capacité des batteries tout en minimisant les risques de dégradation chimique accélérée.
+
+
+
+
+gemma-4-e4b

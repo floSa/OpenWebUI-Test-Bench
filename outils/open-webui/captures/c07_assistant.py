@@ -121,9 +121,45 @@ def utiliser_julien(s):
         u.fermer()
 
 
+def sans_reflexion(s):
+    """Réglage personnalisé chat_template_kwargs = {"enable_thinking": false} sur l'assistant (réflexion de `chat` coupée)."""
+    p = s.page
+    s.aller("/workspace/models")
+    p.get_by_text(NOM).first.click(); p.wait_for_timeout(2000)
+    av = p.get_by_text("Réglages avancés", exact=True).filter(visible=True).first
+    av.click(); p.wait_for_timeout(800)
+    aj = p.get_by_text("Ajoutez votre réglage personnalisé", exact=True).filter(visible=True).first
+    aj.scroll_into_view_if_needed(); aj.click(); p.wait_for_timeout(600)
+    nom = p.get_by_placeholder("Nom du réglage personnalisé").last
+    val = p.get_by_placeholder("Valeur du réglage personnalisé").last
+    nom.fill("chat_template_kwargs"); val.fill('{"enable_thinking": false}'); p.wait_for_timeout(400)
+    enr = p.get_by_role("button", name=re.compile("Enregistrer & Mettre à jour")).first
+    s.cap_souple("12-reglage-personnalise", [(av, "Réglages avancés"), (nom, "Nom du réglage personnalisé"),
+                                             (val, "Valeur du réglage personnalisé"), (enr, "Enregistrer & Mettre à jour")])
+    enr.click(); p.wait_for_timeout(2000)
+    s.note("après enregistrement : " + " || ".join(x.inner_text() for x in p.locator("[data-sonner-toast]").all()))
+
+
+def essai_sans_reflexion(s):
+    """Sollicite le modèle : l'assistant répond sans étape « Pensé »."""
+    p = s.page
+    s.aller("/")
+    p.locator("button[aria-label^='Modèle sélectionné']").first.click(); p.wait_for_timeout(800)
+    p.get_by_text(NOM).filter(visible=True).first.click(); p.wait_for_timeout(800)
+    import time
+    t0 = time.time()
+    p.locator("#chat-input").click(); p.keyboard.type("Quelle est la durée de garantie des batteries prévue par le contrat Batterix ?")
+    p.locator("#send-message-button").click()
+    rep = s.attendre_reponse()
+    s.note(f"réponse sans réflexion en {time.time() - t0:.0f} s (attente de stabilité comprise) : {rep[:500]!r}")
+    msg = p.locator(".chat-assistant").last
+    s.cap_souple("13-sans-reflexion", [(msg.get_by_text(re.compile("Exploré|Recherché")).first, "recherche dans la base"),
+                                       (msg.locator("button").filter(has_text=re.compile("Source")).last, "Sources")])
+
+
 if __name__ == "__main__":
     s = Scenario(CH)
     try:
-        etapes([creer, partager, utiliser, utiliser_julien], s)
+        etapes([creer, partager, utiliser, utiliser_julien, sans_reflexion, essai_sans_reflexion], s)
     finally:
         s.fermer()

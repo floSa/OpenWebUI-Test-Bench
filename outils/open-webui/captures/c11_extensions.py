@@ -142,10 +142,17 @@ def usage_outils(s):
     plus.click(); p.wait_for_timeout(800)
     menu = p.get_by_role("menuitem").filter(has_text="Outils").filter(visible=True).first
     menu.click(); p.wait_for_timeout(1000)
-    stocks = p.get_by_role("button", name=re.compile("Stocks Vélanor")).filter(visible=True).first
-    mcpb = p.get_by_role("button", name=re.compile("Vélanor MCP")).filter(visible=True).first
-    stocks.click(); p.wait_for_timeout(500)
-    mcpb.click(); p.wait_for_timeout(500)
+    stocks = p.get_by_text("Stocks Vélanor", exact=True).filter(visible=True).first
+    mcpb = p.get_by_text("Vélanor MCP", exact=True).filter(visible=True).first
+    stocks.click(); p.wait_for_timeout(700)
+    if not mcpb.is_visible():
+        plus.click(); p.wait_for_timeout(800)
+        p.get_by_role("menuitem").filter(has_text="Outils").filter(visible=True).first.click(); p.wait_for_timeout(1000)
+    mcpb.click(); p.wait_for_timeout(700)
+    if not stocks.is_visible():
+        plus.click(); p.wait_for_timeout(800)
+        menu = p.get_by_role("menuitem").filter(has_text="Outils").filter(visible=True).first
+        menu.click(); p.wait_for_timeout(1000)
     s.note("après activation : " + " | ".join(str(b.get_attribute("aria-checked") or b.get_attribute("aria-pressed") or b.inner_text())
                                                for b in (stocks, mcpb)))
     s.cap_souple("14-activer-outils", [(plus, "+"), (menu, "Outils"), (stocks, "Stocks Vélanor"), (mcpb, "Vélanor MCP")])
@@ -201,12 +208,24 @@ def filtre_actif(s):
     rep = s.attendre_reponse()
     s.note(f"réponse avec filtre : {rep[-400:]!r}")
     msg = p.locator(".chat-assistant").last
-    s.cap_souple("20-mention", [(msg.get_by_text(re.compile("assistant interne Vélanor")).first, "mention ajoutée par le filtre")])
+    s.cap_souple("20-mention", [(msg.get_by_text(re.compile("10 jours ouvrés")).first, "fin de la réponse : mention absente à l'écran")])
+
+
+def mention_reprise(s):
+    """La mention du filtre (outlet) s'affiche après la fin de la réponse : capture à la réouverture de la conversation."""
+    p = s.page
+    s.aller("/")
+    cid = p.evaluate("""async () => { const r = await fetch('/api/v1/chats/?page=1', {headers: {Authorization: 'Bearer ' + localStorage.token}});
+        const d = await r.json(); return d.find(c => /garantie/i.test(c.title)).id }""")
+    s.aller(f"/c/{cid}"); p.locator(".chat-assistant").last.wait_for(); p.wait_for_timeout(2000)
+    msg = p.locator(".chat-assistant").last
+    s.cap_souple("20-mention", [(p.locator("button[aria-label^='Modèle sélectionné']").first, "Assistant qualité Vélanor"),
+                                (msg.get_by_text(re.compile("10 jours ouvrés")).first, "fin de la réponse : mention absente à l'écran")])
 
 
 if __name__ == "__main__":
     s = Scenario(CH)
     try:
-        etapes([prompt, outil, fonction, mcp, usage_outils, filtre_actif], s)
+        etapes([prompt, outil, fonction, mcp, usage_outils, filtre_actif, mention_reprise], s)
     finally:
         s.fermer()

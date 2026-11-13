@@ -142,5 +142,57 @@
   ],
   "note": "",
   "heure": "14:04:14"
+ },
+ {
+  "capture": "09-converser-au-quotidien/10-ecran-partage.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Split screen"
+   ],
+   [
+    2,
+    "chat"
+   ],
+   [
+    3,
+    "gemma-4-e4b"
+   ]
+  ],
+  "note": "",
+  "heure": "14:38:11"
+ },
+ {
+  "capture": "09-converser-au-quotidien/11-comparaison.png",
+  "url": "/c/e1f3d354-76a4-4b3b-b5e7-e4b2831ae016",
+  "pastilles": [
+   [
+    1,
+    "réponse de chat"
+   ],
+   [
+    2,
+    "réponse de gemma-4-e4b"
+   ]
+  ],
+  "note": "",
+  "heure": "14:41:20"
+ },
+ {
+  "capture": "09-converser-au-quotidien/09-archives.png",
+  "url": "/",
+  "pastilles": [
+   [
+    1,
+    "Conversations archivées"
+   ],
+   [
+    2,
+    "conversation archivée"
+   ]
+  ],
+  "note": "",
+  "heure": "14:44:44"
  }
 ]

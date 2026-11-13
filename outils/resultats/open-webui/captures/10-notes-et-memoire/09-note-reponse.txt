@@ -1,0 +1,67 @@
+Aller au contenu principal
+Open WebUI
+Nouvelle conversation
+Ctrl+Shift+O
+Recherche
+Ctrl+K
+Notes
+Espace de travail
+Canaux
+Dossiers
+Conversations
+Épinglé
+Chiffre d'affaires 2025
+il y a une heure
+44min
+Aujourd'hui
+Battery Storage Temperature
+il y a 6 minutes
+6min
+Garantie Batteries
+il y a 7 minutes
+7min
+Quelle est la température de stockage des batteries ?
+il y a 15 minutes
+14min
+Quel est le taux de recyclage des batteries usagées collectées ?
+il y a 15 minutes
+15min
+Chargement de...
+Claire Admin
+Accès
+Toggle pages
+Réunion qualité du 13 novembre
+Aujourd'hui à 9h31
+31 mots
+191 caractères
+
+Participants : Karim Benali (HSE), Julien Moreau (production).
+
+Décision : inspection du local B2 avancée au lundi 16 novembre.
+
+À faire : vérifier les extincteurs de classe D avant fin novembre.
+
+Conversation
+Chat
+Response complete
+Conversation par chat
+
+Quelle décision a été prise pour le local B2 ?
+
+Active note page_id: main
+
+13 nov., 14:45
+chat
+Exploré view_note
+
+Pour le local B2, la décision prise lors de la réunion qualité du 13 novembre était :
+
+L'inspection du local B2 avancée au lundi 16 novembre.
+
+13 nov., 14:45
+
+
+
+
+chat
+Open WebUI
