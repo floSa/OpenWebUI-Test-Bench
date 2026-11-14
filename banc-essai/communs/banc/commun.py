@@ -15,9 +15,9 @@ QUESTIONS = RACINE / "banc-essai/corpus/questions.json"
 DOCUMENTS = RACINE / "banc-essai/corpus/documents"
 
 def _env():
-    """Lit le .env du dépôt (clé du service LLM central, jamais affichée)."""
+    """Lit service/.env (clé du service LLM central, jamais affichée)."""
     env = {}
-    f = RACINE / ".env"
+    f = RACINE / "service/.env"
     if f.exists():
         for l in f.read_text().splitlines():
             if "=" in l and not l.lstrip().startswith("#"):
