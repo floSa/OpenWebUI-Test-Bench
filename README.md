@@ -1,8 +1,8 @@
-# Open WebUI — banc d'essai et manuels vérifiés
+# Open WebUI
 
-**Interroger ses propres documents dans une interface de conversation complète (bases de connaissances, assistants, notes, outils, comptes et permissions), sur sa machine et sans service en ligne : Open WebUI 0.13.3 installé, branché sur un service de modèles local, mesuré sur 38 questions et documenté en un manuel utilisateur de 18 chapitres suivis de 6 annexes, illustré de captures d'écran annotées.**
+Interface de conversation pour interroger ses propres documents (bases de connaissances, assistants, outils), sur sa machine, sans service en ligne.
 
-Trois dossiers : `service/` pour lancer Open WebUI, `banc-essai/` pour rejouer les tests, `documentations/` pour lire.
+Ce dépôt contient le service (`service/`, pour lancer Open WebUI sous Docker), le banc d'essai (`banc-essai/`, 38 questions) et la documentation avec le manuel utilisateur (`documentations/`).
 
 ```text
 OpenWebUI-Test-Bench/
