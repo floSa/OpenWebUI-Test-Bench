@@ -80,7 +80,8 @@ Réseaux Docker externes : `llm-net` (créé par LLM-Service) relie Open WebUI a
 Prérequis : Windows 11 avec WSL2 et Docker Desktop ; [LLM-Service](https://github.com/floSa/llm-service) installé et démarré ; environ 5 Go de disque pour l'image d'Open WebUI (4,59 Go).
 
 ```bash
-cp .env.example .env                          # puis y mettre LLM_CENTRAL_KEY (clé du service LLM central)
+cp .env.example .env
+~/mes_projets/Projet-IA/LLM-Service/scripts/cle.sh creer openwebui-test-bench --dans "$PWD/.env" --noms LLM_CENTRAL_URL,LLM_CENTRAL_KEY   # clé propre au banc, écrite sans affichage
 outils/communs/llm_central_sante.sh --essai   # le service répond-il, modèle par modèle ?
 outils/open-webui/installer.sh                # image, secret de session, démarrage, contrôle des ports
 ```

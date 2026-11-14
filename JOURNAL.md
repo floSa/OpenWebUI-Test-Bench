@@ -106,3 +106,10 @@ Mission : `kit/PROMPT.md` pour la fiche `kit/fiches/05-open-webui.md`. Une entr�
 ### 2026-11-13 — Index de la série : tableaux de même largeur, ligne Docling
 
 - Tableaux en HTML à largeurs fixes (200 px puis 5 × 150 px), tous de la même largeur. Lecture des PDF : une ligne « Docling » (conteneur, déporté) et une ligne « OCR intégré, autre que Docling » ; Docling expliqué ; ligne « OCR utilisé au banc » retirée (elle est dans le détail du meilleur réglage).
+
+### 2026-11-14 — Clé propre au banc pour LLM-Service
+
+- Fait : clé propre au banc créée dans LLM-Service (nom `openwebui-test-bench`) et écrite dans `LLM_CENTRAL_KEY` du `.env` par `~/mes_projets/Projet-IA/LLM-Service/scripts/cle.sh creer openwebui-test-bench --dans <dépôt>/.env --noms LLM_CENTRAL_URL,LLM_CENTRAL_KEY` (procédure : `docs/brancher-une-application.md` de LLM-Service). La clé maîtresse de LLM-Service n'est plus utilisée par ce banc.
+- Essai : `outils/communs/llm_central_sante.sh --essai` avec la nouvelle clé : `models`, `chat`, `embed` (1024 dimensions), `rerank` et `transcribe` répondent ; 4 requêtes comptées sur la clé du banc (`cle.sh lister`).
+- Documentation : `.env.example`, README et chapitre 02 du manuel donnent désormais la commande `cle.sh` au lieu de recopier `LITELLM_MASTER_KEY`.
+- Conteneurs : `rag-open-webui` tourne encore avec la clé maîtresse (`OPENAI_API_KEY`, `RAG_OPENAI_API_KEY`, `AUDIO_STT_OPENAI_API_KEY` fixées à sa création) ; il n'a été ni arrêté ni modifié. Reste à faire par l'utilisateur, à sa convenance : recréer le conteneur à partir du `.env` ; la connexion étant aussi enregistrée dans la base au premier démarrage (chapitre 02), mettre à jour la clé dans l'interface (Réglages, Connexions, et clé du ré-ranking externe du chapitre 08).
